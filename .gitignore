@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+
+.tmp_*/
+
+Thumbs.db
+.DS_Store
+
+# Raw source archives and heavy inputs (rebuildable)
+Data/*.zip
+Data/TIGER2008_18_IN_counties/
+Data/openelections-data-in/
