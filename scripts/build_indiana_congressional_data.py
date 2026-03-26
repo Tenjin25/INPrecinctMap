@@ -36,7 +36,7 @@ import zipfile
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional, Tuple
+from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
 
 import shapefile
 from shapely.geometry import shape
@@ -79,10 +79,33 @@ OUT_CROSSWALK_COUNTY_TO_STATE_HOUSE_2022 = OUT_CROSSWALKS_DIR / "county_to_2022_
 OUT_CROSSWALK_COUNTY_TO_STATE_SENATE_2022 = OUT_CROSSWALKS_DIR / "county_to_2022_state_senate.csv"
 OUT_ELECTION_AGG = DATA_DIR / "in_elections_aggregated.json"
 OUT_DISTRICT_AGG = DATA_DIR / "in_district_results_2022_lines.json"
+SOS_2024_OFFICIAL_CONTESTS = DATA_DIR / "sources" / "in_sos_2024_statewide_county_totals.json"
 
 
 INDIANA_COUNTY_COUNT = 92
 MIN_STATEWIDE_COUNTY_COVERAGE = 70
+MIN_IMPUTE_OVERLAP_COUNTIES = 40
+SUPPORTED_CONTEST_TYPES = {
+    "attorney_general",
+    "governor",
+    "president",
+    "superintendent",
+    "us_senate",
+    "auditor",
+    "secretary_of_state",
+    "treasurer",
+}
+
+IMPUTATION_DONOR_PREFERENCE: Dict[str, Tuple[str, ...]] = {
+    "attorney_general": ("governor", "us_senate", "president"),
+    "treasurer": ("governor", "us_senate", "president"),
+    "auditor": ("governor", "us_senate", "president"),
+    "secretary_of_state": ("governor", "us_senate", "president"),
+    "superintendent": ("governor", "us_senate", "president"),
+    "governor": ("president", "us_senate"),
+    "us_senate": ("governor", "president"),
+    "president": ("governor", "us_senate"),
+}
 
 
 @dataclass
@@ -123,6 +146,8 @@ def title_case_county(name: str) -> str:
     lower = (name or "").strip().lower()
     if lower == "laporte":
         return "LaPorte"
+    if lower == "lagrange":
+        return "LaGrange"
     if lower == "dekalb":
         return "DeKalb"
     if lower == "st. joseph" or lower == "st joseph":
@@ -174,13 +199,13 @@ def map_office_to_contest_type(office_raw: str) -> Optional[str]:
     ):
         return None
 
-    if any(token in o for token in ("STATE SENATE", "STATE HOUSE", "US HOUSE", "CONGRESSIONAL DISTRICT")):
+    if any(token in o for token in ("STATE SENATE", "STATE SENATOR", "STATE HOUSE", "US HOUSE", "CONGRESSIONAL DISTRICT")):
         return None
 
     if "PRESIDENT" in o:
         return "president"
 
-    if "SENATE" in o and (("US" in o) or ("UNITED STATES" in o) or ("U S" in o)):
+    if ("SENATE" in o or "SENATOR" in o) and (("US" in o) or ("UNITED STATES" in o) or ("U S" in o)):
         return "us_senate"
 
     if "GOVERNOR" in o:
@@ -476,6 +501,125 @@ def iter_general_precinct_files(root: Path) -> Iterable[Path]:
         yield p
 
 
+def iter_general_county_files(root: Path) -> Iterable[Path]:
+    for p in root.rglob("*.csv"):
+        rel = p.relative_to(root)
+        if not rel.parts:
+            continue
+        if not re.fullmatch(r"\d{4}", rel.parts[0]):
+            continue
+        name = p.name.lower()
+        if "__general__" not in name:
+            continue
+        if "county" not in name:
+            continue
+        # Keep true county totals files only; avoid county-named precinct files.
+        if "precinct" in name:
+            continue
+        yield p
+
+
+def choose_imputation_donor_contest(
+    *,
+    grouped: Dict[Tuple[int, str], Dict[str, Dict[str, int]]],
+    year: int,
+    contest_type: str,
+    missing_counties: Set[str],
+) -> Optional[Tuple[str, Dict[str, Dict[str, int]]]]:
+    candidates = [ct for (y, ct) in grouped.keys() if y == year and ct != contest_type]
+    if not candidates:
+        return None
+
+    pref = IMPUTATION_DONOR_PREFERENCE.get(contest_type, ())
+
+    def sort_key(ct: str) -> Tuple[int, int, int, str]:
+        donor = grouped[(year, ct)]
+        has_all_missing = 0 if missing_counties.issubset(set(donor.keys())) else 1
+        pref_rank = pref.index(ct) if ct in pref else len(pref) + 1
+        return (has_all_missing, pref_rank, -len(donor), ct)
+
+    for ct in sorted(candidates, key=sort_key):
+        donor = grouped[(year, ct)]
+        if not missing_counties.issubset(set(donor.keys())):
+            continue
+        return ct, donor
+    return None
+
+
+def load_sos_2024_official_contests(
+    county_alias_map: Dict[str, str],
+) -> Tuple[Dict[str, Dict[str, Dict[str, int]]], Dict[str, Dict[str, str]]]:
+    if not SOS_2024_OFFICIAL_CONTESTS.exists():
+        return {}, {}
+
+    obj = json.loads(SOS_2024_OFFICIAL_CONTESTS.read_text(encoding="utf-8"))
+    contests = obj.get("contests") or []
+
+    by_contest: Dict[str, Dict[str, Dict[str, int]]] = {}
+    candidates: Dict[str, Dict[str, str]] = {}
+    for contest in contests:
+        if int(contest.get("year") or 0) != 2024:
+            continue
+        contest_type = str(contest.get("contest_type") or "").strip()
+        if contest_type not in SUPPORTED_CONTEST_TYPES:
+            continue
+
+        rows = contest.get("rows") or []
+        by_county: Dict[str, Dict[str, int]] = {}
+        for r in rows:
+            county_name = canonicalize_county_name(str(r.get("county") or ""), county_alias_map)
+            if not county_name:
+                continue
+            by_county[county_name] = {
+                "dem": int(round(clean_number(r.get("dem_votes"), 0.0))),
+                "rep": int(round(clean_number(r.get("rep_votes"), 0.0))),
+                "other": int(round(clean_number(r.get("other_votes"), 0.0))),
+            }
+
+        if not by_county:
+            continue
+        by_contest[contest_type] = by_county
+        candidates[contest_type] = {
+            "dem_candidate": str(contest.get("dem_candidate") or "").strip(),
+            "rep_candidate": str(contest.get("rep_candidate") or "").strip(),
+        }
+
+    return by_contest, candidates
+
+
+def impute_missing_counties_from_donor(
+    *,
+    target_by_county: Dict[str, Dict[str, int]],
+    donor_by_county: Dict[str, Dict[str, int]],
+    missing_counties: Set[str],
+) -> Dict[str, Dict[str, int]]:
+    overlap = [c for c in target_by_county.keys() if c in donor_by_county]
+    if len(overlap) < MIN_IMPUTE_OVERLAP_COUNTIES:
+        return {}
+
+    scales: Dict[str, float] = {}
+    for party in ("dem", "rep", "other"):
+        target_sum = sum(int(target_by_county[c].get(party, 0)) for c in overlap)
+        donor_sum = sum(int(donor_by_county[c].get(party, 0)) for c in overlap)
+        scales[party] = (target_sum / donor_sum) if donor_sum > 0 else 0.0
+
+    out: Dict[str, Dict[str, int]] = {}
+    for county in sorted(missing_counties):
+        dv = donor_by_county.get(county)
+        if not dv:
+            continue
+        dem = int(round(int(dv.get("dem", 0)) * scales["dem"]))
+        rep = int(round(int(dv.get("rep", 0)) * scales["rep"]))
+        oth = int(round(int(dv.get("other", 0)) * scales["other"]))
+        out[county] = {
+            "dem": max(0, dem),
+            "rep": max(0, rep),
+            "other": max(0, oth),
+        }
+
+    return out
+
+
 def collect_statewide_contests(
     root: Path,
     county_alias_map: Dict[str, str],
@@ -494,7 +638,9 @@ def collect_statewide_contests(
         if not m:
             continue
         year = int(m.group(1))
-        with path.open("r", encoding="utf-8", errors="replace", newline="") as f:
+        # Some OpenElections county files are UTF-8 with BOM; use utf-8-sig so
+        # the first header still resolves to "county" instead of "\ufeffcounty".
+        with path.open("r", encoding="utf-8-sig", errors="replace", newline="") as f:
             reader = csv.DictReader(f)
             for row in reader:
                 district = (row.get("district") or "").strip()
@@ -503,6 +649,8 @@ def collect_statewide_contests(
 
                 contest_type = map_office_to_contest_type(row.get("office") or "")
                 if not contest_type:
+                    continue
+                if contest_type not in SUPPORTED_CONTEST_TYPES:
                     continue
 
                 county_name = canonicalize_county_name(row.get("county") or "", county_alias_map)
@@ -524,6 +672,53 @@ def collect_statewide_contests(
                 seen_rows.add(row_key)
 
                 county_votes[(year, contest_type, county_name)][party] += votes
+                if candidate:
+                    candidate_votes[(year, contest_type, party)][candidate] += votes
+                coverage[(year, contest_type)].add(county_name)
+
+    # Some older years have canonical county-level statewide totals files.
+    # Use them only to backfill county/contest pairs missing from precinct parses.
+    existing_county_contests = set(county_votes.keys())
+    seen_county_rows = set()
+    for path in iter_general_county_files(root):
+        m = re.match(r"^(\d{4})", path.name)
+        if not m:
+            continue
+        year = int(m.group(1))
+        with path.open("r", encoding="utf-8-sig", errors="replace", newline="") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                district = (row.get("district") or "").strip()
+                if district:
+                    continue
+
+                contest_type = map_office_to_contest_type(row.get("office") or "")
+                if not contest_type:
+                    continue
+                if contest_type not in SUPPORTED_CONTEST_TYPES:
+                    continue
+
+                county_name = canonicalize_county_name(row.get("county") or "", county_alias_map)
+                if not county_name:
+                    continue
+
+                key = (year, contest_type, county_name)
+                if key in existing_county_contests:
+                    continue
+
+                votes = parse_votes(row.get("votes"))
+                if votes <= 0:
+                    continue
+
+                party = party_bucket(row.get("party") or "")
+                candidate = normalize_space(row.get("candidate") or "")
+
+                row_key = (year, contest_type, county_name, party, candidate.upper(), votes)
+                if row_key in seen_county_rows:
+                    continue
+                seen_county_rows.add(row_key)
+
+                county_votes[key][party] += votes
                 if candidate:
                     candidate_votes[(year, contest_type, party)][candidate] += votes
                 coverage[(year, contest_type)].add(county_name)
@@ -698,6 +893,54 @@ def build_outputs() -> None:
     )
 
     county_votes, candidate_votes, coverage = collect_statewide_contests(OPENELECTIONS_ROOT, county_alias_map)
+    official_2024_by_contest, official_2024_candidates = load_sos_2024_official_contests(county_alias_map)
+    official_2024_contests = set(official_2024_by_contest.keys())
+
+    if official_2024_contests:
+        # Remove pseudo-statewide 2024 contests not present in official statewide SOS feeds.
+        for key in list(county_votes.keys()):
+            year, contest_type, _county = key
+            if year == 2024 and contest_type in SUPPORTED_CONTEST_TYPES and contest_type not in official_2024_contests:
+                del county_votes[key]
+
+        for key in list(candidate_votes.keys()):
+            year, contest_type, _party = key
+            if year == 2024 and contest_type in SUPPORTED_CONTEST_TYPES and contest_type not in official_2024_contests:
+                del candidate_votes[key]
+
+        for key in list(coverage.keys()):
+            year, contest_type = key
+            if year == 2024 and contest_type in SUPPORTED_CONTEST_TYPES and contest_type not in official_2024_contests:
+                del coverage[key]
+
+        # Overlay 2024 county totals/candidate names from official SOS feeds.
+        for contest_type, by_county in official_2024_by_contest.items():
+            for key in list(county_votes.keys()):
+                if key[0] == 2024 and key[1] == contest_type:
+                    del county_votes[key]
+            coverage[(2024, contest_type)] = set(by_county.keys())
+
+            dem_total = 0
+            rep_total = 0
+            for county, votes in by_county.items():
+                county_votes[(2024, contest_type, county)] = {
+                    "dem": int(votes.get("dem", 0)),
+                    "rep": int(votes.get("rep", 0)),
+                    "other": int(votes.get("other", 0)),
+                }
+                dem_total += int(votes.get("dem", 0))
+                rep_total += int(votes.get("rep", 0))
+
+            candidate_votes[(2024, contest_type, "dem")] = defaultdict(int)
+            candidate_votes[(2024, contest_type, "rep")] = defaultdict(int)
+            candidate_votes[(2024, contest_type, "other")] = defaultdict(int)
+            cand_info = official_2024_candidates.get(contest_type, {})
+            dem_name = cand_info.get("dem_candidate") or ""
+            rep_name = cand_info.get("rep_candidate") or ""
+            if dem_name:
+                candidate_votes[(2024, contest_type, "dem")][dem_name] = dem_total
+            if rep_name:
+                candidate_votes[(2024, contest_type, "rep")][rep_name] = rep_total
 
     # Build contest slices + manifests + aggregated fallback JSON.
     contest_manifest_files: List[Dict[str, Any]] = []
@@ -717,19 +960,46 @@ def build_outputs() -> None:
             scope_weights[r["county"]].append((int(r["district_num"]), float(r["area_weight"])))
         county_weights_by_scope[scope] = scope_weights
 
+    all_county_names = {c.name for c in counties}
+
     grouped = defaultdict(dict)  # (year, contest_type) -> county -> votes dict
     for (year, contest_type, county), votes in county_votes.items():
         grouped[(year, contest_type)][county] = votes
 
     for (year, contest_type), by_county in sorted(grouped.items()):
+        coverage_counties = len(coverage.get((year, contest_type), set()))
+        coverage_pct = round((coverage_counties / INDIANA_COUNTY_COUNT) * 100.0, 2)
+        if coverage_counties < MIN_STATEWIDE_COUNTY_COVERAGE:
+            continue  # exclude low-coverage pseudo-statewide artifacts
+
+        imputed_counties: List[str] = []
+        imputed_from_contest = ""
+        missing_counties = all_county_names.difference(set(by_county.keys()))
+        if missing_counties:
+            donor_info = choose_imputation_donor_contest(
+                grouped=grouped,
+                year=year,
+                contest_type=contest_type,
+                missing_counties=missing_counties,
+            )
+            if donor_info:
+                donor_contest_type, donor_by_county = donor_info
+                imputed_votes = impute_missing_counties_from_donor(
+                    target_by_county=by_county,
+                    donor_by_county=donor_by_county,
+                    missing_counties=missing_counties,
+                )
+                if imputed_votes:
+                    for county, votes in imputed_votes.items():
+                        by_county[county] = votes
+                    imputed_counties = sorted(imputed_votes.keys())
+                    imputed_from_contest = donor_contest_type
+
         dem_total = sum(v["dem"] for v in by_county.values())
         rep_total = sum(v["rep"] for v in by_county.values())
         other_total = sum(v["other"] for v in by_county.values())
-        coverage_counties = len(coverage.get((year, contest_type), set()))
         if dem_total <= 0 or rep_total <= 0:
             continue  # contested statewide only
-        if coverage_counties < MIN_STATEWIDE_COUNTY_COVERAGE:
-            continue  # exclude low-coverage pseudo-statewide artifacts
 
         dem_candidate = top_candidate(candidate_votes.get((year, contest_type, "dem"), {}))
         rep_candidate = top_candidate(candidate_votes.get((year, contest_type, "rep"), {}))
@@ -737,6 +1007,7 @@ def build_outputs() -> None:
         # County contest rows
         contest_rows = []
         county_results_obj = {}
+        imputed_set = set(imputed_counties)
         for county in sorted(by_county.keys()):
             v = by_county[county]
             dem = int(v["dem"])
@@ -761,8 +1032,10 @@ def build_outputs() -> None:
                 "winner": winner,
                 "color": color_from_winner(winner),
             }
+            if county in imputed_set:
+                row["imputed"] = True
             contest_rows.append(row)
-            county_results_obj[county] = {
+            county_payload = {
                 "dem_votes": dem,
                 "rep_votes": rep,
                 "other_votes": oth,
@@ -774,37 +1047,49 @@ def build_outputs() -> None:
                 "winner": winner,
                 "competitiveness": {"color": color_from_winner(winner)},
             }
+            if county in imputed_set:
+                county_payload["imputed"] = True
+            county_results_obj[county] = county_payload
 
         contest_filename = f"{contest_type}_{year}.json"
         contest_path = OUT_CONTESTS_DIR / contest_filename
+        contest_meta: Dict[str, Any] = {
+            "contest_type": contest_type,
+            "year": year,
+            "rows": len(contest_rows),
+            "dem_total": dem_total,
+            "rep_total": rep_total,
+            "other_total": other_total,
+            "match_coverage_pct": coverage_pct,
+            "major_party_contested": True,
+        }
+        if imputed_counties:
+            contest_meta["imputed_count"] = len(imputed_counties)
+            contest_meta["imputed_counties"] = imputed_counties
+            contest_meta["imputed_from_contest"] = imputed_from_contest
         write_json(
             contest_path,
             {
-                "meta": {
-                    "contest_type": contest_type,
-                    "year": year,
-                    "rows": len(contest_rows),
-                    "dem_total": dem_total,
-                    "rep_total": rep_total,
-                    "other_total": other_total,
-                    "major_party_contested": True,
-                },
+                "meta": contest_meta,
                 "rows": contest_rows,
             },
         )
 
-        contest_manifest_files.append(
-            {
-                "year": year,
-                "contest_type": contest_type,
-                "file": contest_filename,
-                "rows": len(contest_rows),
-                "dem_total": dem_total,
-                "rep_total": rep_total,
-                "other_total": other_total,
-                "major_party_contested": True,
-            }
-        )
+        manifest_entry: Dict[str, Any] = {
+            "year": year,
+            "contest_type": contest_type,
+            "file": contest_filename,
+            "rows": len(contest_rows),
+            "dem_total": dem_total,
+            "rep_total": rep_total,
+            "other_total": other_total,
+            "match_coverage_pct": coverage_pct,
+            "major_party_contested": True,
+        }
+        if imputed_counties:
+            manifest_entry["imputed_count"] = len(imputed_counties)
+            manifest_entry["imputed_from_contest"] = imputed_from_contest
+        contest_manifest_files.append(manifest_entry)
 
         # Aggregated election JSON fallback
         year_node = election_agg["results_by_year"].setdefault(str(year), {})
@@ -812,7 +1097,6 @@ def build_outputs() -> None:
         office_node[contest_type] = {"results": county_results_obj}
 
         # District slices from county-area-weight allocations for each scope.
-        coverage_pct = round((coverage_counties / INDIANA_COUNTY_COUNT) * 100.0, 2)
         for scope in ("congressional", "state_house", "state_senate"):
             scope_weights = county_weights_by_scope.get(scope, {})
             district_float = defaultdict(lambda: {"dem": 0.0, "rep": 0.0, "other": 0.0})
@@ -850,14 +1134,20 @@ def build_outputs() -> None:
                     "color": color_from_winner(winner),
                 }
 
+            district_meta: Dict[str, Any] = {
+                "scope": scope,
+                "contest_type": contest_type,
+                "year": year,
+                "districts": len(district_results),
+                "match_coverage_pct": coverage_pct,
+                "allocation": "county_area_weighted_from_statewide_contest",
+            }
+            if imputed_counties:
+                district_meta["imputed_count"] = len(imputed_counties)
+                district_meta["imputed_from_contest"] = imputed_from_contest
             district_payload = {
                 "meta": {
-                    "scope": scope,
-                    "contest_type": contest_type,
-                    "year": year,
-                    "districts": len(district_results),
-                    "match_coverage_pct": coverage_pct,
-                    "allocation": "county_area_weighted_from_statewide_contest",
+                    **district_meta,
                 },
                 "general": {
                     "results": district_results,
@@ -877,6 +1167,8 @@ def build_outputs() -> None:
                     "other_total": other_total,
                     "major_party_contested": True,
                     "match_coverage_pct": coverage_pct,
+                    "imputed_count": len(imputed_counties),
+                    "imputed_from_contest": imputed_from_contest,
                 }
             )
 

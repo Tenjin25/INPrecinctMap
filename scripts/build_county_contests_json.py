@@ -56,16 +56,25 @@ def build() -> None:
         total_rows += len(rows) if isinstance(rows, list) else 0
 
         year_node = county_results_by_year.setdefault(year, {})
+        meta_out = {
+            "contest_type": meta.get("contest_type", contest_type),
+            "year": int(meta.get("year", int(year))),
+            "rows": int(meta.get("rows", len(rows) if isinstance(rows, list) else 0)),
+            "dem_total": int(meta.get("dem_total", 0)),
+            "rep_total": int(meta.get("rep_total", 0)),
+            "other_total": int(meta.get("other_total", 0)),
+            "major_party_contested": bool(meta.get("major_party_contested", True)),
+        }
+        if meta.get("match_coverage_pct") is not None:
+            meta_out["match_coverage_pct"] = float(meta.get("match_coverage_pct"))
+        if meta.get("imputed_count") is not None:
+            meta_out["imputed_count"] = int(meta.get("imputed_count"))
+        if meta.get("imputed_from_contest"):
+            meta_out["imputed_from_contest"] = str(meta.get("imputed_from_contest"))
+        if isinstance(meta.get("imputed_counties"), list):
+            meta_out["imputed_counties"] = [str(x) for x in meta.get("imputed_counties")]
         year_node[contest_type] = {
-            "meta": {
-                "contest_type": meta.get("contest_type", contest_type),
-                "year": int(meta.get("year", int(year))),
-                "rows": int(meta.get("rows", len(rows) if isinstance(rows, list) else 0)),
-                "dem_total": int(meta.get("dem_total", 0)),
-                "rep_total": int(meta.get("rep_total", 0)),
-                "other_total": int(meta.get("other_total", 0)),
-                "major_party_contested": bool(meta.get("major_party_contested", True)),
-            },
+            "meta": meta_out,
             "rows": rows if isinstance(rows, list) else [],
         }
 
@@ -88,4 +97,3 @@ def build() -> None:
 
 if __name__ == "__main__":
     build()
-
