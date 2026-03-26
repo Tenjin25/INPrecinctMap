@@ -7600,7 +7600,10 @@ document.addEventListener('DOMContentLoaded', function() {
       // (e.g. `http://localhost:8000/NCPrecinctMap/index.html`) and in file-like previews.
       // Only prefix an explicit GitHub Pages base when detected.
       const cleaned = path.replace(/^\.\//, '').replace(/^\/+/, '');
-      return base ? `${base}/${cleaned}` : cleaned;
+      // GitHub Pages is case-sensitive, while local Windows previews are not.
+      // Normalize top-level generated data paths to the on-disk `Data/` directory.
+      const normalized = cleaned.replace(/^data\//i, 'Data/');
+      return base ? `${base}/${normalized}` : normalized;
     }
 
     function toAbsoluteUrl(path) {
