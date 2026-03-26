@@ -8496,6 +8496,66 @@ document.addEventListener('DOMContentLoaded', function() {
       return !!key;
     }
 
+    function preferredContestTypesForView(view = currentView) {
+      const normalizedView = String(view || '').trim().toLowerCase();
+      if (normalizedView === 'districts') {
+        return ['us_house', 'president', 'us_senate', 'governor', 'attorney_general', 'secretary_of_state', 'treasurer', 'auditor', 'superintendent'];
+      }
+      if (normalizedView === 'state_house') {
+        return ['state_house', 'president', 'us_senate', 'governor', 'attorney_general', 'secretary_of_state', 'treasurer', 'auditor', 'superintendent'];
+      }
+      if (normalizedView === 'state_senate') {
+        return ['state_senate', 'president', 'us_senate', 'governor', 'attorney_general', 'secretary_of_state', 'treasurer', 'auditor', 'superintendent'];
+      }
+      return ['president', 'us_senate', 'governor', 'attorney_general', 'secretary_of_state', 'treasurer', 'auditor', 'superintendent', 'labor_commissioner', 'insurance_commissioner', 'agriculture_commissioner'];
+    }
+
+    function preferredInitialContestValue(view = currentView) {
+      const sel = document.getElementById('contestSelect');
+      if (!sel) return '';
+      const preferredTypes = preferredContestTypesForView(view);
+      const options = Array.from(sel.options || [])
+        .map(opt => String(opt?.value || '').trim())
+        .filter(Boolean)
+        .map(value => {
+          const [contestType, yearRaw] = parseContestValue(value);
+          return {
+            value,
+            contestType,
+            year: Number(yearRaw) || 0,
+            priority: preferredTypes.indexOf(contestType)
+          };
+        });
+      if (!options.length) return '';
+      options.sort((a, b) => {
+        const aPriority = a.priority === -1 ? Number.MAX_SAFE_INTEGER : a.priority;
+        const bPriority = b.priority === -1 ? Number.MAX_SAFE_INTEGER : b.priority;
+        if (aPriority !== bPriority) return aPriority - bPriority;
+        if (a.year !== b.year) return b.year - a.year;
+        return String(a.value).localeCompare(String(b.value));
+      });
+      return options[0]?.value || '';
+    }
+
+    function releaseContestSelectIfReady() {
+      const sel = document.getElementById('contestSelect');
+      if (!sel) return false;
+      const hasContestOptions = Array.from(sel.options || []).some(opt => String(opt?.value || '').trim());
+      if (!hasContestOptions) return false;
+      setContestSelectDeferredLoading(false);
+      return true;
+    }
+
+    async function ensureInitialContestSelection() {
+      const sel = document.getElementById('contestSelect');
+      if (!sel || hasActiveContestSelection()) return false;
+      const preferredValue = preferredInitialContestValue(currentView);
+      if (!preferredValue) return false;
+      sel.value = preferredValue;
+      await handleContestSelectionChange(preferredValue);
+      return true;
+    }
+
     function reinforceMapLabelHalos() {
       const heavyOverlay = hasActiveContestSelection() && ((currentView === 'counties' && !precinctsEnabled) || (currentView !== 'counties'));
       const settlementTextColor = 'rgba(15, 23, 42, 0.94)';
@@ -8895,14 +8955,16 @@ document.addEventListener('DOMContentLoaded', function() {
       let senateBaseOpacity = preset.senate;
       let precinctFillBaseOpacity = preset.precinctFill;
       let precinctDotBaseOpacity = preset.precinctDot;
+      let countyStrokeOpacity = contestIsActive ? 0.9 : 0.88;
+      let countyStrokeWidth = contestIsActive ? 1.0 : 1.4;
 
       if (!contestIsActive) {
-        countyBaseOpacity = precinctsEnabled ? 0.04 : 0.08;
-        districtBaseOpacity = 0.10;
-        houseBaseOpacity = 0.10;
-        senateBaseOpacity = 0.10;
-        precinctFillBaseOpacity = 0.22;
-        precinctDotBaseOpacity = 0.62;
+        countyBaseOpacity = precinctsEnabled ? 0.12 : 0.26;
+        districtBaseOpacity = 0.14;
+        houseBaseOpacity = 0.14;
+        senateBaseOpacity = 0.14;
+        precinctFillBaseOpacity = 0.28;
+        precinctDotBaseOpacity = 0.72;
       }
       if (contestIsActive && demographicsModeActive) {
         countyBaseOpacity = precinctsEnabled ? Math.max(countyBaseOpacity, 0.16) : Math.max(countyBaseOpacity, 0.84);
@@ -8923,7 +8985,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       if (map.getLayer('county-fill')) {
         if (!contestIsActive) {
-          try { map.setPaintProperty('county-fill', 'fill-color', '#d9e3ef'); } catch (_) {}
+          try { map.setPaintProperty('county-fill', 'fill-color', '#cbd5e1'); } catch (_) {}
         }
         const countyOpacity = useTurnoutOpacity && !precinctsEnabled
           ? buildCountyTurnoutOpacityExpression(countyBaseOpacity)
@@ -8931,6 +8993,12 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
           map.setPaintProperty('county-fill', 'fill-opacity', countyOpacity);
           updateCountyLabelHaloForFillOpacity(countyBaseOpacity);
+        } catch (_) {}
+      }
+      if (map.getLayer('county-stroke')) {
+        try {
+          map.setPaintProperty('county-stroke', 'line-opacity', countyStrokeOpacity);
+          map.setPaintProperty('county-stroke', 'line-width', countyStrokeWidth);
         } catch (_) {}
       }
       if (map.getLayer('district-fill')) {
@@ -10329,12 +10397,17 @@ document.addEventListener('DOMContentLoaded', function() {
       return r.json();
     }
 
-	    async function loadCSV(path) {
-	      const requestPath = withCacheBuster(path);
-	      const r = await fetch(requestPath, { cache: 'force-cache' });
-	      if (!r.ok) throw new Error(`${requestPath} fetch failed: ${r.status}`);
-	      return r.text();
-	    }
+    async function loadCSV(path) {
+      const requestPath = withCacheBuster(path);
+      const r = await fetch(requestPath, { cache: 'force-cache' });
+      if (!r.ok) throw new Error(`${requestPath} fetch failed: ${r.status}`);
+      return r.text();
+    }
+
+    function isMissingOptionalDataError(err) {
+      const msg = (err?.message || err || '').toString();
+      return /\bfetch failed:\s*404\b/i.test(msg) || /\bnot found\b/i.test(msg);
+    }
 
 	    const PRESIDENT_OPEN_ELECTIONS_CSV = {};
 
@@ -13914,9 +13987,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function getBellwetherCountyCap() {
-      const countyCount = Array.isArray(countiesGeoJSON?.features)
-        ? countiesGeoJSON.features.length
-        : 100;
+      let countyCount = 100;
+      try {
+        if (Array.isArray(window.countiesData?.features) && window.countiesData.features.length) {
+          countyCount = window.countiesData.features.length;
+        } else {
+          const countiesSource = map?.getSource?.('counties');
+          const sourceData = countiesSource?._data;
+          if (Array.isArray(sourceData?.features) && sourceData.features.length) {
+            countyCount = sourceData.features.length;
+          }
+        }
+      } catch (_) {}
       const byShare = countyCount > 0
         ? Math.round(countyCount * BELLWETHER_COUNTY_SHARE)
         : BELLWETHER_MAX_COUNTIES;
@@ -18451,6 +18533,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         electionData = [];
         updateContestSelectForCurrentView();
+        releaseContestSelectIfReady();
         setStatus('Election index loaded');
       } catch (manifestErr) {
         setStatus('Loading election data...');
@@ -18467,6 +18550,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         setStatus('Election data loaded');
         populateContestSelectFromElectionJSON(electionData);
+        releaseContestSelectIfReady();
       }
 
       try {
@@ -18499,6 +18583,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (contestManifest.length > 0 || districtManifest.length > 0) {
           updateContestSelectForCurrentView();
         }
+        releaseContestSelectIfReady();
         setStatus('District index loaded');
       } catch (manifestErr) {
         try {
@@ -18535,7 +18620,9 @@ document.addEventListener('DOMContentLoaded', function() {
         countyDemographics = await loadJSON(CONFIG.paths.county_demographics);
       } catch (err) {
         countyDemographics = null;
-        console.warn('County demographics not loaded:', err?.message || err);
+        if (!isMissingOptionalDataError(err)) {
+          console.warn('County demographics not loaded:', err?.message || err);
+        }
       }
 
       // Optional precinct demographics (VAP by race from block aggregation).
@@ -18548,7 +18635,9 @@ document.addEventListener('DOMContentLoaded', function() {
       } catch (err) {
         precinctDemographicsByNorm = null;
         precinctDemographicsByCountyCode = null;
-        console.warn('Precinct demographics not loaded:', err?.message || err);
+        if (!isMissingOptionalDataError(err)) {
+          console.warn('Precinct demographics not loaded:', err?.message || err);
+        }
       }
 
       try {
@@ -18626,20 +18715,20 @@ document.addEventListener('DOMContentLoaded', function() {
           started = true;
           hydrateAtlasDataAndDistrictSources().then(resolve).catch(reject);
         };
-        const kickoff = () => {
-          if (typeof window.requestIdleCallback === 'function') {
-            window.requestIdleCallback(() => start(), { timeout: 2600 });
-          } else {
-            setTimeout(start, 360);
-          }
-        };
-        map.once('idle', kickoff);
-        setTimeout(kickoff, 1600);
+        if (typeof window.requestIdleCallback === 'function') {
+          window.requestIdleCallback(() => start(), { timeout: 700 });
+        } else {
+          setTimeout(start, 120);
+        }
+        map.once('idle', start);
+        setTimeout(start, 900);
       });
     }
 
     async function finalizeAppPostHydration() {
       try { await restoreUIState(); } catch (_) {}
+      try { releaseContestSelectIfReady(); } catch (_) {}
+      try { await ensureInitialContestSelection(); } catch (_) {}
       try { applyLayerOpacityTuning(); } catch (_) {}
       try { syncSplitTicketToggleUI(); } catch (_) {}
       try { updateRecountRadarBadge(); } catch (_) {}
@@ -18667,6 +18756,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         addCountyLayers();
         reinforceMapLabelHalos();
+        try { applyLayerOpacityTuning(); } catch (_) {}
         map.once('idle', () => reinforceMapLabelHalos());
         setupCountySearch().catch(err => console.warn('County search setup failed:', err?.message || err));
         map.on('zoomend', updatePrecinctVisibility);
