@@ -650,6 +650,10 @@ def impute_missing_counties_from_donor(
 def collect_statewide_contests(
     root: Path,
     county_alias_map: Dict[str, str],
+    *,
+    allow_flat: bool = False,
+    years: Optional[Set[int]] = None,
+    shared_seen_rows: Optional[Set[Tuple[Any, ...]]] = None,
 ) -> Tuple[Dict[Tuple[int, str, str], Dict[str, int]], Dict[Tuple[int, str, str], Dict[str, int]], Dict[Tuple[int, str], set]]:
     # (year, contest_type, county) -> dem/rep/other vote totals
     county_votes: Dict[Tuple[int, str, str], Dict[str, int]] = defaultdict(lambda: {"dem": 0, "rep": 0, "other": 0})
@@ -658,13 +662,15 @@ def collect_statewide_contests(
     # contest coverage counties
     coverage: Dict[Tuple[int, str], set] = defaultdict(set)
 
-    seen_rows = set()
+    seen_rows = shared_seen_rows if shared_seen_rows is not None else set()
 
-    for path in iter_general_precinct_files(root, allow_flat=False):
+    for path in iter_general_precinct_files(root, allow_flat=allow_flat):
         m = re.match(r"^(\d{4})", path.name)
         if not m:
             continue
         year = int(m.group(1))
+        if years is not None and year not in years:
+            continue
         # Some OpenElections county files are UTF-8 with BOM; use utf-8-sig so
         # the first header still resolves to "county" instead of "\ufeffcounty".
         with path.open("r", encoding="utf-8-sig", errors="replace", newline="") as f:
@@ -707,11 +713,13 @@ def collect_statewide_contests(
     # Use them only to backfill county/contest pairs missing from precinct parses.
     existing_county_contests = set(county_votes.keys())
     seen_county_rows = set()
-    for path in iter_general_county_files(root, allow_flat=False):
+    for path in iter_general_county_files(root, allow_flat=allow_flat):
         m = re.match(r"^(\d{4})", path.name)
         if not m:
             continue
         year = int(m.group(1))
+        if years is not None and year not in years:
+            continue
         with path.open("r", encoding="utf-8-sig", errors="replace", newline="") as f:
             reader = csv.DictReader(f)
             for row in reader:
@@ -991,7 +999,29 @@ def build_outputs() -> None:
         out_precinct_crosswalk_2024_csv=OUT_CROSSWALK_PRECINCT_TO_STATE_SENATE_2024,
     )
 
-    county_votes, candidate_votes, coverage = collect_statewide_contests(OPENELECTIONS_ROOT, county_alias_map)
+    shared_seen_statewide_rows: Set[Tuple[Any, ...]] = set()
+    county_votes, candidate_votes, coverage = collect_statewide_contests(
+        OPENELECTIONS_ROOT,
+        county_alias_map,
+        allow_flat=False,
+        years=None,
+        shared_seen_rows=shared_seen_statewide_rows,
+    )
+    if OPENELECTIONS_GENERATED_ROOT.exists():
+        county_votes_generated, candidate_votes_generated, coverage_generated = collect_statewide_contests(
+            OPENELECTIONS_GENERATED_ROOT,
+            county_alias_map,
+            allow_flat=True,
+            years={2022, 2024},
+            shared_seen_rows=shared_seen_statewide_rows,
+        )
+        county_votes.update(county_votes_generated)
+        for k, v in candidate_votes_generated.items():
+            bucket = candidate_votes[k]
+            for candidate, votes in v.items():
+                bucket[candidate] += votes
+        for k, s in coverage_generated.items():
+            coverage[k].update(s)
     official_2024_by_contest, official_2024_candidates = load_sos_2024_official_contests(county_alias_map)
     official_2024_contests = set(official_2024_by_contest.keys())
 
@@ -1068,7 +1098,12 @@ def build_outputs() -> None:
     for (year, contest_type), by_county in sorted(grouped.items()):
         coverage_counties = len(coverage.get((year, contest_type), set()))
         coverage_pct = round((coverage_counties / INDIANA_COUNTY_COUNT) * 100.0, 2)
-        if coverage_counties < MIN_STATEWIDE_COUNTY_COVERAGE:
+        min_coverage = MIN_STATEWIDE_COUNTY_COVERAGE
+        # The generated precinct exports we ingest for 2022/2024 can be partial (not all counties),
+        # but we still want to materialize county layers when requested.
+        if year in {2022, 2024}:
+            min_coverage = 1
+        if coverage_counties < min_coverage:
             continue  # exclude low-coverage pseudo-statewide artifacts
 
         imputed_counties: List[str] = []
