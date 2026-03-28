@@ -1007,14 +1007,16 @@ def build_outputs() -> None:
         years=None,
         shared_seen_rows=shared_seen_statewide_rows,
     )
+    generated_contests: Set[Tuple[int, str]] = set()
     if OPENELECTIONS_GENERATED_ROOT.exists():
         county_votes_generated, candidate_votes_generated, coverage_generated = collect_statewide_contests(
             OPENELECTIONS_GENERATED_ROOT,
             county_alias_map,
             allow_flat=True,
-            years={2022, 2024},
+            years={2020, 2022, 2024},
             shared_seen_rows=shared_seen_statewide_rows,
         )
+        generated_contests = set(coverage_generated.keys())
         county_votes.update(county_votes_generated)
         for k, v in candidate_votes_generated.items():
             bucket = candidate_votes[k]
@@ -1099,9 +1101,10 @@ def build_outputs() -> None:
         coverage_counties = len(coverage.get((year, contest_type), set()))
         coverage_pct = round((coverage_counties / INDIANA_COUNTY_COUNT) * 100.0, 2)
         min_coverage = MIN_STATEWIDE_COUNTY_COVERAGE
-        # The generated precinct exports we ingest for 2022/2024 can be partial (not all counties),
-        # but we still want to materialize county layers when requested.
-        if year in {2022, 2024}:
+        # If we're using generated precinct exports (partial county coverage), still materialize
+        # those contests; keep the stricter threshold for anything *not* backed by generated data
+        # to avoid low-coverage artifacts.
+        if (year, contest_type) in generated_contests:
             min_coverage = 1
         if coverage_counties < min_coverage:
             continue  # exclude low-coverage pseudo-statewide artifacts
@@ -1322,7 +1325,7 @@ def build_outputs() -> None:
     district_votes, district_candidate_votes, district_coverage = collect_district_race_contests(
         district_race_root,
         county_alias_map,
-        years={2022, 2024},
+        years={2020, 2022, 2024},
     )
 
     grouped_district = defaultdict(dict)  # (year, scope, contest_type) -> district_num -> votes dict
