@@ -1,1 +1,123 @@
-{"meta":{"scope":"congressional","contest_type":"auditor","year":2006,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":91954,"rep_votes":49682,"other_votes":0,"total_votes":141636,"dem_candidate":"Judy Anderson","rep_candidate":"Tim Berry","margin":-42272,"margin_pct":-29.8455,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":102691,"rep_votes":106414,"other_votes":0,"total_votes":209105,"dem_candidate":"Judy Anderson","rep_candidate":"Tim Berry","margin":3723,"margin_pct":1.7804,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":68808,"rep_votes":107581,"other_votes":0,"total_votes":176389,"dem_candidate":"Judy Anderson","rep_candidate":"Tim Berry","margin":38773,"margin_pct":21.9815,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":61582,"rep_votes":95081,"other_votes":0,"total_votes":156663,"dem_candidate":"Judy Anderson","rep_candidate":"Tim Berry","margin":33499,"margin_pct":21.3828,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":78354,"rep_votes":99195,"other_votes":0,"total_votes":177549,"dem_candidate":"Judy Anderson","rep_candidate":"Tim Berry","margin":20841,"margin_pct":11.7382,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":81075,"rep_votes":100046,"other_votes":0,"total_votes":181121,"dem_candidate":"Judy Anderson","rep_candidate":"Tim Berry","margin":18971,"margin_pct":10.4742,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":73664,"rep_votes":64741,"other_votes":0,"total_votes":138405,"dem_candidate":"Judy Anderson","rep_candidate":"Tim Berry","margin":-8923,"margin_pct":-6.447,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":124931,"rep_votes":105274,"other_votes":0,"total_votes":230205,"dem_candidate":"Judy Anderson","rep_candidate":"Tim Berry","margin":-19657,"margin_pct":-8.5389,"winner":"DEM","color":"#2563eb"},"9":{"dem_votes":109096,"rep_votes":100204,"other_votes":0,"total_votes":209300,"dem_candidate":"Judy Anderson","rep_candidate":"Tim Berry","margin":-8892,"margin_pct":-4.2484,"winner":"DEM","color":"#2563eb"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "auditor",
+    "year": 2006,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "county_area_weighted_from_statewide_contest",
+    "precinct_rows": 0
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 91954,
+        "rep_votes": 49682,
+        "other_votes": 0,
+        "total_votes": 141636,
+        "dem_candidate": "Judy Anderson",
+        "rep_candidate": "Tim Berry",
+        "margin": -42272,
+        "margin_pct": -29.8455,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 102691,
+        "rep_votes": 106414,
+        "other_votes": 0,
+        "total_votes": 209105,
+        "dem_candidate": "Judy Anderson",
+        "rep_candidate": "Tim Berry",
+        "margin": 3723,
+        "margin_pct": 1.7804,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 68808,
+        "rep_votes": 107581,
+        "other_votes": 0,
+        "total_votes": 176389,
+        "dem_candidate": "Judy Anderson",
+        "rep_candidate": "Tim Berry",
+        "margin": 38773,
+        "margin_pct": 21.9815,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 61581,
+        "rep_votes": 95081,
+        "other_votes": 0,
+        "total_votes": 156662,
+        "dem_candidate": "Judy Anderson",
+        "rep_candidate": "Tim Berry",
+        "margin": 33500,
+        "margin_pct": 21.3836,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 78354,
+        "rep_votes": 99195,
+        "other_votes": 0,
+        "total_votes": 177549,
+        "dem_candidate": "Judy Anderson",
+        "rep_candidate": "Tim Berry",
+        "margin": 20841,
+        "margin_pct": 11.7382,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 81075,
+        "rep_votes": 100046,
+        "other_votes": 0,
+        "total_votes": 181121,
+        "dem_candidate": "Judy Anderson",
+        "rep_candidate": "Tim Berry",
+        "margin": 18971,
+        "margin_pct": 10.4742,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 73664,
+        "rep_votes": 64741,
+        "other_votes": 0,
+        "total_votes": 138405,
+        "dem_candidate": "Judy Anderson",
+        "rep_candidate": "Tim Berry",
+        "margin": -8923,
+        "margin_pct": -6.447,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 124931,
+        "rep_votes": 105274,
+        "other_votes": 0,
+        "total_votes": 230205,
+        "dem_candidate": "Judy Anderson",
+        "rep_candidate": "Tim Berry",
+        "margin": -19657,
+        "margin_pct": -8.5389,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "9": {
+        "dem_votes": 109096,
+        "rep_votes": 100204,
+        "other_votes": 0,
+        "total_votes": 209300,
+        "dem_candidate": "Judy Anderson",
+        "rep_candidate": "Tim Berry",
+        "margin": -8892,
+        "margin_pct": -4.2484,
+        "winner": "DEM",
+        "color": "#2563eb"
+      }
+    }
+  }
+}

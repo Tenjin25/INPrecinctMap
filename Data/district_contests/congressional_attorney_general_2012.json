@@ -1,1 +1,124 @@
-{"meta":{"scope":"congressional","contest_type":"attorney_general","year":2012,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":159109,"rep_votes":103507,"other_votes":0,"total_votes":262616,"dem_candidate":"Kay Fleming","rep_candidate":"Greg Zoeller","margin":-55602,"margin_pct":-21.1724,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":117473,"rep_votes":174850,"other_votes":0,"total_votes":292323,"dem_candidate":"Kay Fleming","rep_candidate":"Greg Zoeller","margin":57377,"margin_pct":19.6279,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":91467,"rep_votes":178670,"other_votes":0,"total_votes":270137,"dem_candidate":"Kay Fleming","rep_candidate":"Greg Zoeller","margin":87203,"margin_pct":32.281,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":85251,"rep_votes":176510,"other_votes":0,"total_votes":261761,"dem_candidate":"Kay Fleming","rep_candidate":"Greg Zoeller","margin":91259,"margin_pct":34.8635,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":104515,"rep_votes":186466,"other_votes":0,"total_votes":290981,"dem_candidate":"Kay Fleming","rep_candidate":"Greg Zoeller","margin":81951,"margin_pct":28.1637,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":117724,"rep_votes":177587,"other_votes":0,"total_votes":295311,"dem_candidate":"Kay Fleming","rep_candidate":"Greg Zoeller","margin":59863,"margin_pct":20.2712,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":135578,"rep_votes":109524,"other_votes":0,"total_votes":245102,"dem_candidate":"Kay Fleming","rep_candidate":"Greg Zoeller","margin":-26054,"margin_pct":-10.6299,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":118312,"rep_votes":172400,"other_votes":0,"total_votes":290712,"dem_candidate":"Kay Fleming","rep_candidate":"Greg Zoeller","margin":54088,"margin_pct":18.6054,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":121951,"rep_votes":173889,"other_votes":0,"total_votes":295840,"dem_candidate":"Kay Fleming","rep_candidate":"Greg Zoeller","margin":51938,"margin_pct":17.5561,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "attorney_general",
+    "year": 2012,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 5223,
+    "precinct_geom_match_pct": 47.46
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 162385,
+        "rep_votes": 106391,
+        "other_votes": 0,
+        "total_votes": 268776,
+        "dem_candidate": "Kay Fleming",
+        "rep_candidate": "Greg Zoeller",
+        "margin": -55994,
+        "margin_pct": -20.833,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 113138,
+        "rep_votes": 171302,
+        "other_votes": 0,
+        "total_votes": 284440,
+        "dem_candidate": "Kay Fleming",
+        "rep_candidate": "Greg Zoeller",
+        "margin": 58164,
+        "margin_pct": 20.4486,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 92203,
+        "rep_votes": 179709,
+        "other_votes": 0,
+        "total_votes": 271912,
+        "dem_candidate": "Kay Fleming",
+        "rep_candidate": "Greg Zoeller",
+        "margin": 87506,
+        "margin_pct": 32.1817,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 86070,
+        "rep_votes": 176753,
+        "other_votes": 0,
+        "total_votes": 262823,
+        "dem_candidate": "Kay Fleming",
+        "rep_candidate": "Greg Zoeller",
+        "margin": 90683,
+        "margin_pct": 34.5034,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 104603,
+        "rep_votes": 186636,
+        "other_votes": 0,
+        "total_votes": 291239,
+        "dem_candidate": "Kay Fleming",
+        "rep_candidate": "Greg Zoeller",
+        "margin": 82033,
+        "margin_pct": 28.1669,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 116988,
+        "rep_votes": 176547,
+        "other_votes": 0,
+        "total_votes": 293535,
+        "dem_candidate": "Kay Fleming",
+        "rep_candidate": "Greg Zoeller",
+        "margin": 59559,
+        "margin_pct": 20.2903,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 135578,
+        "rep_votes": 109524,
+        "other_votes": 0,
+        "total_votes": 245102,
+        "dem_candidate": "Kay Fleming",
+        "rep_candidate": "Greg Zoeller",
+        "margin": -26054,
+        "margin_pct": -10.6299,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 118464,
+        "rep_votes": 172651,
+        "other_votes": 0,
+        "total_votes": 291115,
+        "dem_candidate": "Kay Fleming",
+        "rep_candidate": "Greg Zoeller",
+        "margin": 54187,
+        "margin_pct": 18.6136,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 121951,
+        "rep_votes": 173889,
+        "other_votes": 0,
+        "total_votes": 295840,
+        "dem_candidate": "Kay Fleming",
+        "rep_candidate": "Greg Zoeller",
+        "margin": 51938,
+        "margin_pct": 17.5561,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

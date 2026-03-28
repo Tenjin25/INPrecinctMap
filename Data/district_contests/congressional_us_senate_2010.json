@@ -1,1 +1,123 @@
-{"meta":{"scope":"congressional","contest_type":"us_senate","year":2010,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":88717,"rep_votes":72339,"other_votes":5039,"total_votes":166095,"dem_candidate":"Brad Ellsworth","rep_candidate":"Dan Coats","margin":-16378,"margin_pct":-9.8606,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":82023,"rep_votes":123990,"other_votes":9712,"total_votes":215725,"dem_candidate":"Brad Ellsworth","rep_candidate":"Dan Coats","margin":41967,"margin_pct":19.4539,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":59741,"rep_votes":117973,"other_votes":10031,"total_votes":187745,"dem_candidate":"Brad Ellsworth","rep_candidate":"Dan Coats","margin":58232,"margin_pct":31.0165,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":54569,"rep_votes":110806,"other_votes":13208,"total_votes":178583,"dem_candidate":"Brad Ellsworth","rep_candidate":"Dan Coats","margin":56237,"margin_pct":31.4907,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":69487,"rep_votes":115103,"other_votes":12548,"total_votes":197138,"dem_candidate":"Brad Ellsworth","rep_candidate":"Dan Coats","margin":45616,"margin_pct":23.1391,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":74138,"rep_votes":108566,"other_votes":14242,"total_votes":196946,"dem_candidate":"Brad Ellsworth","rep_candidate":"Dan Coats","margin":34428,"margin_pct":17.4809,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":79802,"rep_votes":62196,"other_votes":8342,"total_votes":150340,"dem_candidate":"Brad Ellsworth","rep_candidate":"Dan Coats","margin":-17606,"margin_pct":-11.7108,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":102040,"rep_votes":117736,"other_votes":10162,"total_votes":229938,"dem_candidate":"Brad Ellsworth","rep_candidate":"Dan Coats","margin":15696,"margin_pct":6.8262,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":87259,"rep_votes":123407,"other_votes":11305,"total_votes":221971,"dem_candidate":"Brad Ellsworth","rep_candidate":"Dan Coats","margin":36148,"margin_pct":16.285,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "us_senate",
+    "year": 2010,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "county_area_weighted_from_statewide_contest",
+    "precinct_rows": 0
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 88717,
+        "rep_votes": 72339,
+        "other_votes": 5039,
+        "total_votes": 166095,
+        "dem_candidate": "Brad Ellsworth",
+        "rep_candidate": "Dan Coats",
+        "margin": -16378,
+        "margin_pct": -9.8606,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 82023,
+        "rep_votes": 123990,
+        "other_votes": 9712,
+        "total_votes": 215725,
+        "dem_candidate": "Brad Ellsworth",
+        "rep_candidate": "Dan Coats",
+        "margin": 41967,
+        "margin_pct": 19.4539,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 59741,
+        "rep_votes": 117973,
+        "other_votes": 10031,
+        "total_votes": 187745,
+        "dem_candidate": "Brad Ellsworth",
+        "rep_candidate": "Dan Coats",
+        "margin": 58232,
+        "margin_pct": 31.0165,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 54569,
+        "rep_votes": 110806,
+        "other_votes": 13208,
+        "total_votes": 178583,
+        "dem_candidate": "Brad Ellsworth",
+        "rep_candidate": "Dan Coats",
+        "margin": 56237,
+        "margin_pct": 31.4907,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 69487,
+        "rep_votes": 115103,
+        "other_votes": 12548,
+        "total_votes": 197138,
+        "dem_candidate": "Brad Ellsworth",
+        "rep_candidate": "Dan Coats",
+        "margin": 45616,
+        "margin_pct": 23.1391,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 74138,
+        "rep_votes": 108566,
+        "other_votes": 14242,
+        "total_votes": 196946,
+        "dem_candidate": "Brad Ellsworth",
+        "rep_candidate": "Dan Coats",
+        "margin": 34428,
+        "margin_pct": 17.4809,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 79801,
+        "rep_votes": 62196,
+        "other_votes": 8342,
+        "total_votes": 150339,
+        "dem_candidate": "Brad Ellsworth",
+        "rep_candidate": "Dan Coats",
+        "margin": -17605,
+        "margin_pct": -11.7102,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 102040,
+        "rep_votes": 117736,
+        "other_votes": 10162,
+        "total_votes": 229938,
+        "dem_candidate": "Brad Ellsworth",
+        "rep_candidate": "Dan Coats",
+        "margin": 15696,
+        "margin_pct": 6.8262,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 87259,
+        "rep_votes": 123407,
+        "other_votes": 11306,
+        "total_votes": 221972,
+        "dem_candidate": "Brad Ellsworth",
+        "rep_candidate": "Dan Coats",
+        "margin": 36148,
+        "margin_pct": 16.2849,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

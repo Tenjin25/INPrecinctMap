@@ -1,1 +1,123 @@
-{"meta":{"scope":"congressional","contest_type":"attorney_general","year":2004,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":138681,"rep_votes":107454,"other_votes":6184,"total_votes":252319,"dem_candidate":"Joseph H Hogsett","rep_candidate":"Steve Carter","margin":-31227,"margin_pct":-12.376,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":113013,"rep_votes":170086,"other_votes":5667,"total_votes":288766,"dem_candidate":"Joseph H Hogsett","rep_candidate":"Steve Carter","margin":57073,"margin_pct":19.7644,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":83825,"rep_votes":166439,"other_votes":4107,"total_votes":254371,"dem_candidate":"Joseph H Hogsett","rep_candidate":"Steve Carter","margin":82614,"margin_pct":32.4778,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":69792,"rep_votes":168153,"other_votes":4656,"total_votes":242601,"dem_candidate":"Joseph H Hogsett","rep_candidate":"Steve Carter","margin":98361,"margin_pct":40.5444,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":89833,"rep_votes":177487,"other_votes":4538,"total_votes":271858,"dem_candidate":"Joseph H Hogsett","rep_candidate":"Steve Carter","margin":87654,"margin_pct":32.2426,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":105197,"rep_votes":170269,"other_votes":5239,"total_votes":280705,"dem_candidate":"Joseph H Hogsett","rep_candidate":"Steve Carter","margin":65072,"margin_pct":23.1816,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":106309,"rep_votes":111432,"other_votes":3570,"total_votes":221311,"dem_candidate":"Joseph H Hogsett","rep_candidate":"Steve Carter","margin":5123,"margin_pct":2.3148,"winner":"REP","color":"#dc2626"},"8":{"dem_votes":129266,"rep_votes":160276,"other_votes":5339,"total_votes":294881,"dem_candidate":"Joseph H Hogsett","rep_candidate":"Steve Carter","margin":31010,"margin_pct":10.5161,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":117583,"rep_votes":158045,"other_votes":5912,"total_votes":281540,"dem_candidate":"Joseph H Hogsett","rep_candidate":"Steve Carter","margin":40462,"margin_pct":14.3717,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "attorney_general",
+    "year": 2004,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "county_area_weighted_from_statewide_contest",
+    "precinct_rows": 0
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 138681,
+        "rep_votes": 107454,
+        "other_votes": 6184,
+        "total_votes": 252319,
+        "dem_candidate": "Joseph H Hogsett",
+        "rep_candidate": "Steve Carter",
+        "margin": -31227,
+        "margin_pct": -12.376,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 113013,
+        "rep_votes": 170086,
+        "other_votes": 5667,
+        "total_votes": 288766,
+        "dem_candidate": "Joseph H Hogsett",
+        "rep_candidate": "Steve Carter",
+        "margin": 57073,
+        "margin_pct": 19.7644,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 83825,
+        "rep_votes": 166439,
+        "other_votes": 4107,
+        "total_votes": 254371,
+        "dem_candidate": "Joseph H Hogsett",
+        "rep_candidate": "Steve Carter",
+        "margin": 82614,
+        "margin_pct": 32.4778,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 69792,
+        "rep_votes": 168153,
+        "other_votes": 4656,
+        "total_votes": 242601,
+        "dem_candidate": "Joseph H Hogsett",
+        "rep_candidate": "Steve Carter",
+        "margin": 98361,
+        "margin_pct": 40.5444,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 89833,
+        "rep_votes": 177487,
+        "other_votes": 4538,
+        "total_votes": 271858,
+        "dem_candidate": "Joseph H Hogsett",
+        "rep_candidate": "Steve Carter",
+        "margin": 87654,
+        "margin_pct": 32.2426,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 105197,
+        "rep_votes": 170268,
+        "other_votes": 5239,
+        "total_votes": 280704,
+        "dem_candidate": "Joseph H Hogsett",
+        "rep_candidate": "Steve Carter",
+        "margin": 65071,
+        "margin_pct": 23.1814,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 106309,
+        "rep_votes": 111432,
+        "other_votes": 3570,
+        "total_votes": 221311,
+        "dem_candidate": "Joseph H Hogsett",
+        "rep_candidate": "Steve Carter",
+        "margin": 5123,
+        "margin_pct": 2.3148,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "8": {
+        "dem_votes": 129266,
+        "rep_votes": 160276,
+        "other_votes": 5339,
+        "total_votes": 294881,
+        "dem_candidate": "Joseph H Hogsett",
+        "rep_candidate": "Steve Carter",
+        "margin": 31010,
+        "margin_pct": 10.5161,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 117584,
+        "rep_votes": 158045,
+        "other_votes": 5912,
+        "total_votes": 281541,
+        "dem_candidate": "Joseph H Hogsett",
+        "rep_candidate": "Steve Carter",
+        "margin": 40461,
+        "margin_pct": 14.3713,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

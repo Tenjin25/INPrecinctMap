@@ -1,1 +1,126 @@
-{"meta":{"scope":"congressional","contest_type":"superintendent","year":2016,"districts":9,"match_coverage_pct":97.83,"allocation":"county_area_weighted_from_statewide_contest","imputed_count":2,"imputed_from_contest":"governor"},"general":{"results":{"1":{"dem_votes":173050,"rep_votes":110158,"other_votes":0,"total_votes":283208,"dem_candidate":"Glenda Ritz","rep_candidate":"Jennifer Mccormick","margin":-62892,"margin_pct":-22.207,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":178084,"rep_votes":230203,"other_votes":0,"total_votes":408287,"dem_candidate":"Glenda Ritz","rep_candidate":"Jennifer Mccormick","margin":52119,"margin_pct":12.7653,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":129504,"rep_votes":192068,"other_votes":0,"total_votes":321572,"dem_candidate":"Glenda Ritz","rep_candidate":"Jennifer Mccormick","margin":62564,"margin_pct":19.4557,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":139074,"rep_votes":216668,"other_votes":0,"total_votes":355742,"dem_candidate":"Glenda Ritz","rep_candidate":"Jennifer Mccormick","margin":77594,"margin_pct":21.8119,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":132750,"rep_votes":183173,"other_votes":0,"total_votes":315923,"dem_candidate":"Glenda Ritz","rep_candidate":"Jennifer Mccormick","margin":50423,"margin_pct":15.9605,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":157949,"rep_votes":195344,"other_votes":0,"total_votes":353293,"dem_candidate":"Glenda Ritz","rep_candidate":"Jennifer Mccormick","margin":37395,"margin_pct":10.5847,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":155657,"rep_votes":96131,"other_votes":0,"total_votes":251788,"dem_candidate":"Glenda Ritz","rep_candidate":"Jennifer Mccormick","margin":-59526,"margin_pct":-23.6413,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":164137,"rep_votes":205380,"other_votes":0,"total_votes":369517,"dem_candidate":"Glenda Ritz","rep_candidate":"Jennifer Mccormick","margin":41243,"margin_pct":11.1613,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":163974,"rep_votes":228484,"other_votes":0,"total_votes":392458,"dem_candidate":"Glenda Ritz","rep_candidate":"Jennifer Mccormick","margin":64510,"margin_pct":16.4374,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "superintendent",
+    "year": 2016,
+    "districts": 9,
+    "match_coverage_pct": 97.83,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 1368,
+    "precinct_geom_match_pct": 47.81,
+    "imputed_count": 2,
+    "imputed_from_contest": "governor"
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 173050,
+        "rep_votes": 110158,
+        "other_votes": 0,
+        "total_votes": 283208,
+        "dem_candidate": "Glenda Ritz",
+        "rep_candidate": "Jennifer Mccormick",
+        "margin": -62892,
+        "margin_pct": -22.207,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 178084,
+        "rep_votes": 230203,
+        "other_votes": 0,
+        "total_votes": 408287,
+        "dem_candidate": "Glenda Ritz",
+        "rep_candidate": "Jennifer Mccormick",
+        "margin": 52119,
+        "margin_pct": 12.7653,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 129504,
+        "rep_votes": 192068,
+        "other_votes": 0,
+        "total_votes": 321572,
+        "dem_candidate": "Glenda Ritz",
+        "rep_candidate": "Jennifer Mccormick",
+        "margin": 62564,
+        "margin_pct": 19.4557,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 139074,
+        "rep_votes": 216668,
+        "other_votes": 0,
+        "total_votes": 355742,
+        "dem_candidate": "Glenda Ritz",
+        "rep_candidate": "Jennifer Mccormick",
+        "margin": 77594,
+        "margin_pct": 21.8119,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 132749,
+        "rep_votes": 183173,
+        "other_votes": 0,
+        "total_votes": 315922,
+        "dem_candidate": "Glenda Ritz",
+        "rep_candidate": "Jennifer Mccormick",
+        "margin": 50424,
+        "margin_pct": 15.9609,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 157949,
+        "rep_votes": 195344,
+        "other_votes": 0,
+        "total_votes": 353293,
+        "dem_candidate": "Glenda Ritz",
+        "rep_candidate": "Jennifer Mccormick",
+        "margin": 37395,
+        "margin_pct": 10.5847,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 155657,
+        "rep_votes": 96131,
+        "other_votes": 0,
+        "total_votes": 251788,
+        "dem_candidate": "Glenda Ritz",
+        "rep_candidate": "Jennifer Mccormick",
+        "margin": -59526,
+        "margin_pct": -23.6413,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 164137,
+        "rep_votes": 205380,
+        "other_votes": 0,
+        "total_votes": 369517,
+        "dem_candidate": "Glenda Ritz",
+        "rep_candidate": "Jennifer Mccormick",
+        "margin": 41243,
+        "margin_pct": 11.1613,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 163974,
+        "rep_votes": 228484,
+        "other_votes": 0,
+        "total_votes": 392458,
+        "dem_candidate": "Glenda Ritz",
+        "rep_candidate": "Jennifer Mccormick",
+        "margin": 64510,
+        "margin_pct": 16.4374,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

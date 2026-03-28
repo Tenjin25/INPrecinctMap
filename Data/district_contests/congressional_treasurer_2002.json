@@ -1,1 +1,123 @@
-{"meta":{"scope":"congressional","contest_type":"treasurer","year":2002,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":71856,"rep_votes":50822,"other_votes":5611,"total_votes":128289,"dem_candidate":"Day Smith","rep_candidate":"Tim Berry","margin":-21034,"margin_pct":-16.3958,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":72456,"rep_votes":113637,"other_votes":8111,"total_votes":194204,"dem_candidate":"Day Smith","rep_candidate":"Tim Berry","margin":41181,"margin_pct":21.205,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":41658,"rep_votes":101479,"other_votes":6474,"total_votes":149611,"dem_candidate":"Day Smith","rep_candidate":"Tim Berry","margin":59821,"margin_pct":39.9844,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":39313,"rep_votes":96602,"other_votes":7760,"total_votes":143675,"dem_candidate":"Day Smith","rep_candidate":"Tim Berry","margin":57289,"margin_pct":39.874,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":52878,"rep_votes":99153,"other_votes":7494,"total_votes":159525,"dem_candidate":"Day Smith","rep_candidate":"Tim Berry","margin":46275,"margin_pct":29.008,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":58913,"rep_votes":102710,"other_votes":7486,"total_votes":169109,"dem_candidate":"Day Smith","rep_candidate":"Tim Berry","margin":43797,"margin_pct":25.8987,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":63379,"rep_votes":69918,"other_votes":3848,"total_votes":137145,"dem_candidate":"Day Smith","rep_candidate":"Tim Berry","margin":6539,"margin_pct":4.7679,"winner":"REP","color":"#dc2626"},"8":{"dem_votes":89424,"rep_votes":104204,"other_votes":8532,"total_votes":202160,"dem_candidate":"Day Smith","rep_candidate":"Tim Berry","margin":14780,"margin_pct":7.311,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":74397,"rep_votes":94131,"other_votes":8349,"total_votes":176877,"dem_candidate":"Day Smith","rep_candidate":"Tim Berry","margin":19734,"margin_pct":11.1569,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "treasurer",
+    "year": 2002,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "county_area_weighted_from_statewide_contest",
+    "precinct_rows": 0
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 71856,
+        "rep_votes": 50822,
+        "other_votes": 5611,
+        "total_votes": 128289,
+        "dem_candidate": "Day Smith",
+        "rep_candidate": "Tim Berry",
+        "margin": -21034,
+        "margin_pct": -16.3958,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 72456,
+        "rep_votes": 113637,
+        "other_votes": 8111,
+        "total_votes": 194204,
+        "dem_candidate": "Day Smith",
+        "rep_candidate": "Tim Berry",
+        "margin": 41181,
+        "margin_pct": 21.205,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 41658,
+        "rep_votes": 101479,
+        "other_votes": 6474,
+        "total_votes": 149611,
+        "dem_candidate": "Day Smith",
+        "rep_candidate": "Tim Berry",
+        "margin": 59821,
+        "margin_pct": 39.9844,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 39313,
+        "rep_votes": 96602,
+        "other_votes": 7760,
+        "total_votes": 143675,
+        "dem_candidate": "Day Smith",
+        "rep_candidate": "Tim Berry",
+        "margin": 57289,
+        "margin_pct": 39.874,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 52878,
+        "rep_votes": 99153,
+        "other_votes": 7494,
+        "total_votes": 159525,
+        "dem_candidate": "Day Smith",
+        "rep_candidate": "Tim Berry",
+        "margin": 46275,
+        "margin_pct": 29.008,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 58913,
+        "rep_votes": 102710,
+        "other_votes": 7486,
+        "total_votes": 169109,
+        "dem_candidate": "Day Smith",
+        "rep_candidate": "Tim Berry",
+        "margin": 43797,
+        "margin_pct": 25.8987,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 63379,
+        "rep_votes": 69918,
+        "other_votes": 3848,
+        "total_votes": 137145,
+        "dem_candidate": "Day Smith",
+        "rep_candidate": "Tim Berry",
+        "margin": 6539,
+        "margin_pct": 4.7679,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "8": {
+        "dem_votes": 89424,
+        "rep_votes": 104204,
+        "other_votes": 8532,
+        "total_votes": 202160,
+        "dem_candidate": "Day Smith",
+        "rep_candidate": "Tim Berry",
+        "margin": 14780,
+        "margin_pct": 7.311,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 74397,
+        "rep_votes": 94131,
+        "other_votes": 8349,
+        "total_votes": 176877,
+        "dem_candidate": "Day Smith",
+        "rep_candidate": "Tim Berry",
+        "margin": 19734,
+        "margin_pct": 11.1569,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

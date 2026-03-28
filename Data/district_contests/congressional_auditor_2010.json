@@ -1,1 +1,123 @@
-{"meta":{"scope":"congressional","contest_type":"auditor","year":2010,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":86727,"rep_votes":69714,"other_votes":6049,"total_votes":162490,"dem_candidate":"Sam Locke","rep_candidate":"Tim Berry","margin":-17013,"margin_pct":-10.4702,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":76599,"rep_votes":121393,"other_votes":9537,"total_votes":207529,"dem_candidate":"Sam Locke","rep_candidate":"Tim Berry","margin":44794,"margin_pct":21.5845,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":49246,"rep_votes":123730,"other_votes":8329,"total_votes":181305,"dem_candidate":"Sam Locke","rep_candidate":"Tim Berry","margin":74484,"margin_pct":41.0822,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":46379,"rep_votes":117197,"other_votes":9598,"total_votes":173174,"dem_candidate":"Sam Locke","rep_candidate":"Tim Berry","margin":70818,"margin_pct":40.8941,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":60739,"rep_votes":121900,"other_votes":8991,"total_votes":191630,"dem_candidate":"Sam Locke","rep_candidate":"Tim Berry","margin":61161,"margin_pct":31.9162,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":65899,"rep_votes":116686,"other_votes":10339,"total_votes":192924,"dem_candidate":"Sam Locke","rep_candidate":"Tim Berry","margin":50787,"margin_pct":26.3249,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":72606,"rep_votes":69605,"other_votes":6006,"total_votes":148217,"dem_candidate":"Sam Locke","rep_candidate":"Tim Berry","margin":-3001,"margin_pct":-2.0247,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":84353,"rep_votes":125020,"other_votes":8974,"total_votes":218347,"dem_candidate":"Sam Locke","rep_candidate":"Tim Berry","margin":40667,"margin_pct":18.6249,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":83082,"rep_votes":121056,"other_votes":10181,"total_votes":214319,"dem_candidate":"Sam Locke","rep_candidate":"Tim Berry","margin":37974,"margin_pct":17.7184,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "auditor",
+    "year": 2010,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "county_area_weighted_from_statewide_contest",
+    "precinct_rows": 0
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 86727,
+        "rep_votes": 69714,
+        "other_votes": 6049,
+        "total_votes": 162490,
+        "dem_candidate": "Sam Locke",
+        "rep_candidate": "Tim Berry",
+        "margin": -17013,
+        "margin_pct": -10.4702,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 76599,
+        "rep_votes": 121393,
+        "other_votes": 9537,
+        "total_votes": 207529,
+        "dem_candidate": "Sam Locke",
+        "rep_candidate": "Tim Berry",
+        "margin": 44794,
+        "margin_pct": 21.5845,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 49246,
+        "rep_votes": 123730,
+        "other_votes": 8329,
+        "total_votes": 181305,
+        "dem_candidate": "Sam Locke",
+        "rep_candidate": "Tim Berry",
+        "margin": 74484,
+        "margin_pct": 41.0822,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 46379,
+        "rep_votes": 117197,
+        "other_votes": 9598,
+        "total_votes": 173174,
+        "dem_candidate": "Sam Locke",
+        "rep_candidate": "Tim Berry",
+        "margin": 70818,
+        "margin_pct": 40.8941,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 60739,
+        "rep_votes": 121900,
+        "other_votes": 8991,
+        "total_votes": 191630,
+        "dem_candidate": "Sam Locke",
+        "rep_candidate": "Tim Berry",
+        "margin": 61161,
+        "margin_pct": 31.9162,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 65899,
+        "rep_votes": 116686,
+        "other_votes": 10339,
+        "total_votes": 192924,
+        "dem_candidate": "Sam Locke",
+        "rep_candidate": "Tim Berry",
+        "margin": 50787,
+        "margin_pct": 26.3249,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 72606,
+        "rep_votes": 69605,
+        "other_votes": 6006,
+        "total_votes": 148217,
+        "dem_candidate": "Sam Locke",
+        "rep_candidate": "Tim Berry",
+        "margin": -3001,
+        "margin_pct": -2.0247,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 84353,
+        "rep_votes": 125020,
+        "other_votes": 8974,
+        "total_votes": 218347,
+        "dem_candidate": "Sam Locke",
+        "rep_candidate": "Tim Berry",
+        "margin": 40667,
+        "margin_pct": 18.6249,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 83082,
+        "rep_votes": 121056,
+        "other_votes": 10181,
+        "total_votes": 214319,
+        "dem_candidate": "Sam Locke",
+        "rep_candidate": "Tim Berry",
+        "margin": 37974,
+        "margin_pct": 17.7184,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

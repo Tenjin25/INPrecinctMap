@@ -1,1 +1,124 @@
-{"meta":{"scope":"congressional","contest_type":"attorney_general","year":2024,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":150413,"rep_votes":149125,"other_votes":0,"total_votes":299538,"dem_candidate":"Destiny Wells","rep_candidate":"Todd Rokita","margin":-1288,"margin_pct":-0.43,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":118232,"rep_votes":196818,"other_votes":0,"total_votes":315050,"dem_candidate":"Destiny Wells","rep_candidate":"Todd Rokita","margin":78586,"margin_pct":24.944,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":106103,"rep_votes":197984,"other_votes":0,"total_votes":304087,"dem_candidate":"Destiny Wells","rep_candidate":"Todd Rokita","margin":91881,"margin_pct":30.2154,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":116038,"rep_votes":207123,"other_votes":0,"total_votes":323161,"dem_candidate":"Destiny Wells","rep_candidate":"Todd Rokita","margin":91085,"margin_pct":28.1856,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":146655,"rep_votes":201357,"other_votes":0,"total_votes":348012,"dem_candidate":"Destiny Wells","rep_candidate":"Todd Rokita","margin":54702,"margin_pct":15.7184,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":141991,"rep_votes":190271,"other_votes":0,"total_votes":332262,"dem_candidate":"Destiny Wells","rep_candidate":"Todd Rokita","margin":48280,"margin_pct":14.5307,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":160144,"rep_votes":86963,"other_votes":0,"total_votes":247107,"dem_candidate":"Destiny Wells","rep_candidate":"Todd Rokita","margin":-73181,"margin_pct":-29.6151,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":104559,"rep_votes":216322,"other_votes":0,"total_votes":320881,"dem_candidate":"Destiny Wells","rep_candidate":"Todd Rokita","margin":111763,"margin_pct":34.83,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":124377,"rep_votes":223622,"other_votes":0,"total_votes":347999,"dem_candidate":"Destiny Wells","rep_candidate":"Todd Rokita","margin":99245,"margin_pct":28.5188,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "attorney_general",
+    "year": 2024,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 5014,
+    "precinct_geom_match_pct": 64.16
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 158858,
+        "rep_votes": 157299,
+        "other_votes": 0,
+        "total_votes": 316157,
+        "dem_candidate": "Destiny Wells",
+        "rep_candidate": "Todd Rokita",
+        "margin": -1559,
+        "margin_pct": -0.4931,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 109190,
+        "rep_votes": 187169,
+        "other_votes": 0,
+        "total_votes": 296359,
+        "dem_candidate": "Destiny Wells",
+        "rep_candidate": "Todd Rokita",
+        "margin": 77979,
+        "margin_pct": 26.3123,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 107323,
+        "rep_votes": 200820,
+        "other_votes": 0,
+        "total_votes": 308143,
+        "dem_candidate": "Destiny Wells",
+        "rep_candidate": "Todd Rokita",
+        "margin": 93497,
+        "margin_pct": 30.3421,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 115761,
+        "rep_votes": 206418,
+        "other_votes": 0,
+        "total_votes": 322179,
+        "dem_candidate": "Destiny Wells",
+        "rep_candidate": "Todd Rokita",
+        "margin": 90657,
+        "margin_pct": 28.1387,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 146843,
+        "rep_votes": 201480,
+        "other_votes": 0,
+        "total_votes": 348323,
+        "dem_candidate": "Destiny Wells",
+        "rep_candidate": "Todd Rokita",
+        "margin": 54637,
+        "margin_pct": 15.6857,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 141345,
+        "rep_votes": 188915,
+        "other_votes": 0,
+        "total_votes": 330260,
+        "dem_candidate": "Destiny Wells",
+        "rep_candidate": "Todd Rokita",
+        "margin": 47570,
+        "margin_pct": 14.4038,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 160144,
+        "rep_votes": 86963,
+        "other_votes": 0,
+        "total_votes": 247107,
+        "dem_candidate": "Destiny Wells",
+        "rep_candidate": "Todd Rokita",
+        "margin": -73181,
+        "margin_pct": -29.6151,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 104671,
+        "rep_votes": 216900,
+        "other_votes": 0,
+        "total_votes": 321571,
+        "dem_candidate": "Destiny Wells",
+        "rep_candidate": "Todd Rokita",
+        "margin": 112229,
+        "margin_pct": 34.9002,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 124377,
+        "rep_votes": 223622,
+        "other_votes": 0,
+        "total_votes": 347999,
+        "dem_candidate": "Destiny Wells",
+        "rep_candidate": "Todd Rokita",
+        "margin": 99245,
+        "margin_pct": 28.5188,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

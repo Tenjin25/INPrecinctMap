@@ -1,1 +1,123 @@
-{"meta":{"scope":"congressional","contest_type":"governor","year":2004,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":161980,"rep_votes":94519,"other_votes":4011,"total_votes":260510,"dem_candidate":"Joseph E Kernan","rep_candidate":"Mitchell E Daniels, Jr.","margin":-67461,"margin_pct":-25.8957,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":134120,"rep_votes":159299,"other_votes":3303,"total_votes":296722,"dem_candidate":"Joseph E Kernan","rep_candidate":"Mitchell E Daniels, Jr.","margin":25179,"margin_pct":8.4857,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":101977,"rep_votes":155109,"other_votes":2601,"total_votes":259687,"dem_candidate":"Joseph E Kernan","rep_candidate":"Mitchell E Daniels, Jr.","margin":53132,"margin_pct":20.46,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":89553,"rep_votes":154265,"other_votes":3612,"total_votes":247430,"dem_candidate":"Joseph E Kernan","rep_candidate":"Mitchell E Daniels, Jr.","margin":64712,"margin_pct":26.1537,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":107865,"rep_votes":166882,"other_votes":2989,"total_votes":277736,"dem_candidate":"Joseph E Kernan","rep_candidate":"Mitchell E Daniels, Jr.","margin":59017,"margin_pct":21.2493,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":120571,"rep_votes":160510,"other_votes":4054,"total_votes":285135,"dem_candidate":"Joseph E Kernan","rep_candidate":"Mitchell E Daniels, Jr.","margin":39939,"margin_pct":14.007,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":117347,"rep_votes":104515,"other_votes":2735,"total_votes":224597,"dem_candidate":"Joseph E Kernan","rep_candidate":"Mitchell E Daniels, Jr.","margin":-12832,"margin_pct":-5.7133,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":148098,"rep_votes":152029,"other_votes":4271,"total_votes":304398,"dem_candidate":"Joseph E Kernan","rep_candidate":"Mitchell E Daniels, Jr.","margin":3931,"margin_pct":1.2914,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":132389,"rep_votes":155784,"other_votes":4110,"total_votes":292283,"dem_candidate":"Joseph E Kernan","rep_candidate":"Mitchell E Daniels, Jr.","margin":23395,"margin_pct":8.0042,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "governor",
+    "year": 2004,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "county_area_weighted_from_statewide_contest",
+    "precinct_rows": 0
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 161980,
+        "rep_votes": 94519,
+        "other_votes": 4011,
+        "total_votes": 260510,
+        "dem_candidate": "Joseph E Kernan",
+        "rep_candidate": "Mitchell E Daniels, Jr.",
+        "margin": -67461,
+        "margin_pct": -25.8957,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 134120,
+        "rep_votes": 159299,
+        "other_votes": 3303,
+        "total_votes": 296722,
+        "dem_candidate": "Joseph E Kernan",
+        "rep_candidate": "Mitchell E Daniels, Jr.",
+        "margin": 25179,
+        "margin_pct": 8.4857,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 101977,
+        "rep_votes": 155109,
+        "other_votes": 2601,
+        "total_votes": 259687,
+        "dem_candidate": "Joseph E Kernan",
+        "rep_candidate": "Mitchell E Daniels, Jr.",
+        "margin": 53132,
+        "margin_pct": 20.46,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 89553,
+        "rep_votes": 154265,
+        "other_votes": 3612,
+        "total_votes": 247430,
+        "dem_candidate": "Joseph E Kernan",
+        "rep_candidate": "Mitchell E Daniels, Jr.",
+        "margin": 64712,
+        "margin_pct": 26.1537,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 107865,
+        "rep_votes": 166882,
+        "other_votes": 2989,
+        "total_votes": 277736,
+        "dem_candidate": "Joseph E Kernan",
+        "rep_candidate": "Mitchell E Daniels, Jr.",
+        "margin": 59017,
+        "margin_pct": 21.2493,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 120571,
+        "rep_votes": 160510,
+        "other_votes": 4054,
+        "total_votes": 285135,
+        "dem_candidate": "Joseph E Kernan",
+        "rep_candidate": "Mitchell E Daniels, Jr.",
+        "margin": 39939,
+        "margin_pct": 14.007,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 117347,
+        "rep_votes": 104515,
+        "other_votes": 2735,
+        "total_votes": 224597,
+        "dem_candidate": "Joseph E Kernan",
+        "rep_candidate": "Mitchell E Daniels, Jr.",
+        "margin": -12832,
+        "margin_pct": -5.7133,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 148098,
+        "rep_votes": 152029,
+        "other_votes": 4271,
+        "total_votes": 304398,
+        "dem_candidate": "Joseph E Kernan",
+        "rep_candidate": "Mitchell E Daniels, Jr.",
+        "margin": 3931,
+        "margin_pct": 1.2914,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 132389,
+        "rep_votes": 155784,
+        "other_votes": 4110,
+        "total_votes": 292283,
+        "dem_candidate": "Joseph E Kernan",
+        "rep_candidate": "Mitchell E Daniels, Jr.",
+        "margin": 23395,
+        "margin_pct": 8.0042,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

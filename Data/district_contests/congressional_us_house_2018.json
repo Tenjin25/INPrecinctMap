@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "us_house",
+    "year": 2018,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_sum_by_district_number",
+    "source": "openelections-data-in"
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 269446,
+        "rep_votes": 137455,
+        "other_votes": 240,
+        "total_votes": 407141,
+        "dem_candidate": "Peter Visclosky",
+        "rep_candidate": "Mark Leyva",
+        "margin": -131991,
+        "margin_pct": -32.419,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 106016,
+        "rep_votes": 132748,
+        "other_votes": 134,
+        "total_votes": 238898,
+        "dem_candidate": "Mel Wall",
+        "rep_candidate": "Jackie Walorski",
+        "margin": 26732,
+        "margin_pct": 11.1897,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 88971,
+        "rep_votes": 172912,
+        "other_votes": 13226,
+        "total_votes": 275109,
+        "dem_candidate": "Courtney Tritch",
+        "rep_candidate": "Jim Banks",
+        "margin": 83941,
+        "margin_pct": 30.5119,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 140226,
+        "rep_votes": 233561,
+        "other_votes": 23762,
+        "total_votes": 397549,
+        "dem_candidate": "Tobi Beck",
+        "rep_candidate": "Jim Baird",
+        "margin": 93335,
+        "margin_pct": 23.4776,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 193345,
+        "rep_votes": 345787,
+        "other_votes": 5222,
+        "total_votes": 544354,
+        "dem_candidate": "Dee Thornton",
+        "rep_candidate": "Susan Brooks",
+        "margin": 152442,
+        "margin_pct": 28.0042,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 72562,
+        "rep_votes": 141323,
+        "other_votes": 33180,
+        "total_votes": 247065,
+        "dem_candidate": "Jeannine Lee Lake",
+        "rep_candidate": "Greg Pence",
+        "margin": 68761,
+        "margin_pct": 27.8311,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 141139,
+        "rep_votes": 76457,
+        "other_votes": 233,
+        "total_votes": 217829,
+        "dem_candidate": "ANDRE D. CARSON",
+        "rep_candidate": "WAYNE (GUNNY) HARMON",
+        "margin": -64682,
+        "margin_pct": -29.6939,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 104514,
+        "rep_votes": 191042,
+        "other_votes": 50863,
+        "total_votes": 346419,
+        "dem_candidate": "William Tanoos",
+        "rep_candidate": "Larry D Bucshon",
+        "margin": 86528,
+        "margin_pct": 24.9778,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 134529,
+        "rep_votes": 171064,
+        "other_votes": 16601,
+        "total_votes": 322194,
+        "dem_candidate": "Liz Watson",
+        "rep_candidate": "TREY HOLLINGSWORTH",
+        "margin": 36535,
+        "margin_pct": 11.3394,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

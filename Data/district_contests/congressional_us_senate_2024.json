@@ -1,1 +1,124 @@
-{"meta":{"scope":"congressional","contest_type":"us_senate","year":2024,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":148650,"rep_votes":142466,"other_votes":5789,"total_votes":296905,"dem_candidate":"Valerie McCray","rep_candidate":"Jim Banks","margin":-6184,"margin_pct":-2.0828,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":111900,"rep_votes":195347,"other_votes":7060,"total_votes":314307,"dem_candidate":"Valerie McCray","rep_candidate":"Jim Banks","margin":83447,"margin_pct":26.5495,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":96579,"rep_votes":198941,"other_votes":7746,"total_votes":303266,"dem_candidate":"Valerie McCray","rep_candidate":"Jim Banks","margin":102362,"margin_pct":33.7532,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":104559,"rep_votes":206558,"other_votes":9599,"total_votes":320716,"dem_candidate":"Valerie McCray","rep_candidate":"Jim Banks","margin":101999,"margin_pct":31.8035,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":133731,"rep_votes":205301,"other_votes":9244,"total_votes":348276,"dem_candidate":"Valerie McCray","rep_candidate":"Jim Banks","margin":71570,"margin_pct":20.5498,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":129741,"rep_votes":191635,"other_votes":10223,"total_votes":331599,"dem_candidate":"Valerie McCray","rep_candidate":"Jim Banks","margin":61894,"margin_pct":18.6653,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":152967,"rep_votes":88937,"other_votes":5932,"total_votes":247836,"dem_candidate":"Valerie McCray","rep_candidate":"Jim Banks","margin":-64030,"margin_pct":-25.8356,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":99518,"rep_votes":210662,"other_votes":8028,"total_votes":318208,"dem_candidate":"Valerie McCray","rep_candidate":"Jim Banks","margin":111144,"margin_pct":34.9281,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":119416,"rep_votes":219569,"other_votes":9799,"total_votes":348784,"dem_candidate":"Valerie McCray","rep_candidate":"Jim Banks","margin":100153,"margin_pct":28.7149,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "us_senate",
+    "year": 2024,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 5030,
+    "precinct_geom_match_pct": 64.17
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 156942,
+        "rep_votes": 150130,
+        "other_votes": 6179,
+        "total_votes": 313251,
+        "dem_candidate": "Valerie McCray",
+        "rep_candidate": "Jim Banks",
+        "margin": -6812,
+        "margin_pct": -2.1746,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 103107,
+        "rep_votes": 186174,
+        "other_votes": 6616,
+        "total_votes": 295897,
+        "dem_candidate": "Valerie McCray",
+        "rep_candidate": "Jim Banks",
+        "margin": 83067,
+        "margin_pct": 28.0729,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 97624,
+        "rep_votes": 201784,
+        "other_votes": 7818,
+        "total_votes": 307226,
+        "dem_candidate": "Valerie McCray",
+        "rep_candidate": "Jim Banks",
+        "margin": 104160,
+        "margin_pct": 33.9034,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 104309,
+        "rep_votes": 205845,
+        "other_votes": 9571,
+        "total_votes": 319725,
+        "dem_candidate": "Valerie McCray",
+        "rep_candidate": "Jim Banks",
+        "margin": 101536,
+        "margin_pct": 31.7573,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 133908,
+        "rep_votes": 205423,
+        "other_votes": 9266,
+        "total_votes": 348597,
+        "dem_candidate": "Valerie McCray",
+        "rep_candidate": "Jim Banks",
+        "margin": 71515,
+        "margin_pct": 20.5151,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 129180,
+        "rep_votes": 190310,
+        "other_votes": 10175,
+        "total_votes": 329665,
+        "dem_candidate": "Valerie McCray",
+        "rep_candidate": "Jim Banks",
+        "margin": 61130,
+        "margin_pct": 18.5431,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 152967,
+        "rep_votes": 88937,
+        "other_votes": 5932,
+        "total_votes": 247836,
+        "dem_candidate": "Valerie McCray",
+        "rep_candidate": "Jim Banks",
+        "margin": -64030,
+        "margin_pct": -25.8356,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 99608,
+        "rep_votes": 211244,
+        "other_votes": 8064,
+        "total_votes": 318916,
+        "dem_candidate": "Valerie McCray",
+        "rep_candidate": "Jim Banks",
+        "margin": 111636,
+        "margin_pct": 35.0048,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 119416,
+        "rep_votes": 219569,
+        "other_votes": 9799,
+        "total_votes": 348784,
+        "dem_candidate": "Valerie McCray",
+        "rep_candidate": "Jim Banks",
+        "margin": 100153,
+        "margin_pct": 28.7149,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

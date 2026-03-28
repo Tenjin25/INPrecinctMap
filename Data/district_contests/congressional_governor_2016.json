@@ -1,1 +1,124 @@
-{"meta":{"scope":"congressional","contest_type":"governor","year":2016,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":353675,"rep_votes":207728,"other_votes":15329,"total_votes":576732,"dem_candidate":"John Gregg","rep_candidate":"Eric Holcomb","margin":-145947,"margin_pct":-25.3059,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":265208,"rep_votes":328420,"other_votes":20575,"total_votes":614203,"dem_candidate":"John Gregg","rep_candidate":"Eric Holcomb","margin":63212,"margin_pct":10.2917,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":208461,"rep_votes":326956,"other_votes":18921,"total_votes":554338,"dem_candidate":"John Gregg","rep_candidate":"Eric Holcomb","margin":118495,"margin_pct":21.3759,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":225749,"rep_votes":349823,"other_votes":20339,"total_votes":595911,"dem_candidate":"John Gregg","rep_candidate":"Eric Holcomb","margin":124074,"margin_pct":20.8209,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":206394,"rep_votes":264465,"other_votes":16411,"total_votes":487270,"dem_candidate":"John Gregg","rep_candidate":"Eric Holcomb","margin":58071,"margin_pct":11.9176,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":285121,"rep_votes":335318,"other_votes":27406,"total_votes":647845,"dem_candidate":"John Gregg","rep_candidate":"Eric Holcomb","margin":50197,"margin_pct":7.7483,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":317585,"rep_votes":179024,"other_votes":15165,"total_votes":511774,"dem_candidate":"John Gregg","rep_candidate":"Eric Holcomb","margin":-138561,"margin_pct":-27.0746,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":282228,"rep_votes":333116,"other_votes":16276,"total_votes":631620,"dem_candidate":"John Gregg","rep_candidate":"Eric Holcomb","margin":50888,"margin_pct":8.0567,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":219643,"rep_votes":338220,"other_votes":18327,"total_votes":576190,"dem_candidate":"John Gregg","rep_candidate":"Eric Holcomb","margin":118577,"margin_pct":20.5795,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "governor",
+    "year": 2016,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 5375,
+    "precinct_geom_match_pct": 54.14
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 363843,
+        "rep_votes": 213832,
+        "other_votes": 15958,
+        "total_votes": 593633,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Eric Holcomb",
+        "margin": -150011,
+        "margin_pct": -25.27,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 254442,
+        "rep_votes": 321046,
+        "other_votes": 19841,
+        "total_votes": 595329,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Eric Holcomb",
+        "margin": 66604,
+        "margin_pct": 11.1878,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 210130,
+        "rep_votes": 329833,
+        "other_votes": 19072,
+        "total_votes": 559035,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Eric Holcomb",
+        "margin": 119703,
+        "margin_pct": 21.4124,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 225118,
+        "rep_votes": 348861,
+        "other_votes": 20305,
+        "total_votes": 594284,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Eric Holcomb",
+        "margin": 123743,
+        "margin_pct": 20.8222,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 206622,
+        "rep_votes": 264634,
+        "other_votes": 16428,
+        "total_votes": 487684,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Eric Holcomb",
+        "margin": 58012,
+        "margin_pct": 11.8954,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 284429,
+        "rep_votes": 334142,
+        "other_votes": 27374,
+        "total_votes": 645945,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Eric Holcomb",
+        "margin": 49713,
+        "margin_pct": 7.6962,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 317585,
+        "rep_votes": 179024,
+        "other_votes": 15165,
+        "total_votes": 511774,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Eric Holcomb",
+        "margin": -138561,
+        "margin_pct": -27.0746,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 282369,
+        "rep_votes": 333382,
+        "other_votes": 16279,
+        "total_votes": 632030,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Eric Holcomb",
+        "margin": 51013,
+        "margin_pct": 8.0713,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 219526,
+        "rep_votes": 338316,
+        "other_votes": 18326,
+        "total_votes": 576168,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Eric Holcomb",
+        "margin": 118790,
+        "margin_pct": 20.6173,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

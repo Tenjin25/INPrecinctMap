@@ -1,1 +1,243 @@
-{"meta":{"scope":"state_senate","contest_type":"state_senate","year":2022,"districts":19,"match_coverage_pct":38.0,"allocation":"precinct_sum_by_district_number","source":"openelections_generated"},"general":{"results":{"1":{"dem_votes":21392,"rep_votes":23486,"other_votes":0,"total_votes":44878,"dem_candidate":"Michael W. Griffin","rep_candidate":"Daniel E. Dernulc","margin":2094,"margin_pct":4.666,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":0,"rep_votes":21922,"other_votes":0,"total_votes":21922,"dem_candidate":"","rep_candidate":"Rick Niemeyer","margin":21922,"margin_pct":100.0,"winner":"REP","color":"#dc2626"},"14":{"dem_votes":2351,"rep_votes":6286,"other_votes":0,"total_votes":8637,"dem_candidate":"Zach Heimach","rep_candidate":"Tyler Johnson","margin":3935,"margin_pct":45.5598,"winner":"REP","color":"#dc2626"},"17":{"dem_votes":9146,"rep_votes":27512,"other_votes":0,"total_votes":36658,"dem_candidate":"Joe Swisher","rep_candidate":"Andy Zay","margin":18366,"margin_pct":50.1009,"winner":"REP","color":"#dc2626"},"19":{"dem_votes":0,"rep_votes":14966,"other_votes":0,"total_votes":14966,"dem_candidate":"","rep_candidate":"Travis Holdman","margin":14966,"margin_pct":100.0,"winner":"REP","color":"#dc2626"},"21":{"dem_votes":14857,"rep_votes":24721,"other_votes":0,"total_votes":39578,"dem_candidate":"Josh Lowry","rep_candidate":"James R. Buck","margin":9864,"margin_pct":24.9229,"winner":"REP","color":"#dc2626"},"25":{"dem_votes":13447,"rep_votes":23967,"other_votes":0,"total_votes":37414,"dem_candidate":"Tamie Dixon-Tatum","rep_candidate":"Mike Gaskill","margin":10520,"margin_pct":28.1178,"winner":"REP","color":"#dc2626"},"26":{"dem_votes":12833,"rep_votes":17285,"other_votes":0,"total_votes":30118,"dem_candidate":"Melanie M. Wright","rep_candidate":"Scott Alexander","margin":4452,"margin_pct":14.7819,"winner":"REP","color":"#dc2626"},"27":{"dem_votes":4698,"rep_votes":15264,"other_votes":0,"total_votes":19962,"dem_candidate":"Ronald Itnyre","rep_candidate":"Jeffrey S. Raatz","margin":10566,"margin_pct":52.9306,"winner":"REP","color":"#dc2626"},"29":{"dem_votes":8625,"rep_votes":9359,"other_votes":0,"total_votes":17984,"dem_candidate":"J.d. Ford","rep_candidate":"Alex Choi","margin":734,"margin_pct":4.0814,"winner":"REP","color":"#dc2626"},"31":{"dem_votes":16377,"rep_votes":21214,"other_votes":0,"total_votes":37591,"dem_candidate":"Jocelyn Vare","rep_candidate":"Kyle Walker","margin":4837,"margin_pct":12.8674,"winner":"REP","color":"#dc2626"},"38":{"dem_votes":0,"rep_votes":1250,"other_votes":0,"total_votes":1250,"dem_candidate":"","rep_candidate":"Jon Ford","margin":1250,"margin_pct":100.0,"winner":"REP","color":"#dc2626"},"39":{"dem_votes":0,"rep_votes":14939,"other_votes":0,"total_votes":14939,"dem_candidate":"","rep_candidate":"Eric Bassler","margin":14939,"margin_pct":100.0,"winner":"REP","color":"#dc2626"},"41":{"dem_votes":11729,"rep_votes":24698,"other_votes":0,"total_votes":36427,"dem_candidate":"Bryan Mu\u00f1oz","rep_candidate":"Greg Walker","margin":12969,"margin_pct":35.6027,"winner":"REP","color":"#dc2626"},"43":{"dem_votes":0,"rep_votes":22201,"other_votes":0,"total_votes":22201,"dem_candidate":"","rep_candidate":"Chip Perfect","margin":22201,"margin_pct":100.0,"winner":"REP","color":"#dc2626"},"45":{"dem_votes":13551,"rep_votes":22585,"other_votes":0,"total_votes":36136,"dem_candidate":"Nick Marshall","rep_candidate":"Chris Garten","margin":9034,"margin_pct":25.0,"winner":"REP","color":"#dc2626"},"47":{"dem_votes":3753,"rep_votes":10141,"other_votes":0,"total_votes":13894,"dem_candidate":"Kathleen Forte","rep_candidate":"Gary Byrne","margin":6388,"margin_pct":45.9767,"winner":"REP","color":"#dc2626"},"48":{"dem_votes":802,"rep_votes":2860,"other_votes":0,"total_votes":3662,"dem_candidate":"Jeff Hill","rep_candidate":"Mark Messmer","margin":2058,"margin_pct":56.1988,"winner":"REP","color":"#dc2626"},"49":{"dem_votes":0,"rep_votes":7140,"other_votes":0,"total_votes":7140,"dem_candidate":"","rep_candidate":"Jim Tomes","margin":7140,"margin_pct":100.0,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "state_senate",
+    "contest_type": "state_senate",
+    "year": 2022,
+    "districts": 19,
+    "match_coverage_pct": 38.0,
+    "allocation": "precinct_sum_by_district_number",
+    "source": "openelections_generated"
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 21392,
+        "rep_votes": 23486,
+        "other_votes": 0,
+        "total_votes": 44878,
+        "dem_candidate": "Michael W. Griffin",
+        "rep_candidate": "Daniel E. Dernulc",
+        "margin": 2094,
+        "margin_pct": 4.666,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 0,
+        "rep_votes": 21922,
+        "other_votes": 0,
+        "total_votes": 21922,
+        "dem_candidate": "",
+        "rep_candidate": "Rick Niemeyer",
+        "margin": 21922,
+        "margin_pct": 100.0,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "14": {
+        "dem_votes": 2351,
+        "rep_votes": 6286,
+        "other_votes": 0,
+        "total_votes": 8637,
+        "dem_candidate": "Zach Heimach",
+        "rep_candidate": "Tyler Johnson",
+        "margin": 3935,
+        "margin_pct": 45.5598,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "17": {
+        "dem_votes": 9146,
+        "rep_votes": 27512,
+        "other_votes": 0,
+        "total_votes": 36658,
+        "dem_candidate": "Joe Swisher",
+        "rep_candidate": "Andy Zay",
+        "margin": 18366,
+        "margin_pct": 50.1009,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "19": {
+        "dem_votes": 0,
+        "rep_votes": 14966,
+        "other_votes": 0,
+        "total_votes": 14966,
+        "dem_candidate": "",
+        "rep_candidate": "Travis Holdman",
+        "margin": 14966,
+        "margin_pct": 100.0,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "21": {
+        "dem_votes": 14857,
+        "rep_votes": 24721,
+        "other_votes": 0,
+        "total_votes": 39578,
+        "dem_candidate": "Josh Lowry",
+        "rep_candidate": "James R. Buck",
+        "margin": 9864,
+        "margin_pct": 24.9229,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "25": {
+        "dem_votes": 13447,
+        "rep_votes": 23967,
+        "other_votes": 0,
+        "total_votes": 37414,
+        "dem_candidate": "Tamie Dixon-Tatum",
+        "rep_candidate": "Mike Gaskill",
+        "margin": 10520,
+        "margin_pct": 28.1178,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "26": {
+        "dem_votes": 12833,
+        "rep_votes": 17285,
+        "other_votes": 0,
+        "total_votes": 30118,
+        "dem_candidate": "Melanie M. Wright",
+        "rep_candidate": "Scott Alexander",
+        "margin": 4452,
+        "margin_pct": 14.7819,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "27": {
+        "dem_votes": 4698,
+        "rep_votes": 15264,
+        "other_votes": 0,
+        "total_votes": 19962,
+        "dem_candidate": "Ronald Itnyre",
+        "rep_candidate": "Jeffrey S. Raatz",
+        "margin": 10566,
+        "margin_pct": 52.9306,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "29": {
+        "dem_votes": 8625,
+        "rep_votes": 9359,
+        "other_votes": 0,
+        "total_votes": 17984,
+        "dem_candidate": "J.d. Ford",
+        "rep_candidate": "Alex Choi",
+        "margin": 734,
+        "margin_pct": 4.0814,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "31": {
+        "dem_votes": 16377,
+        "rep_votes": 21214,
+        "other_votes": 0,
+        "total_votes": 37591,
+        "dem_candidate": "Jocelyn Vare",
+        "rep_candidate": "Kyle Walker",
+        "margin": 4837,
+        "margin_pct": 12.8674,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "38": {
+        "dem_votes": 0,
+        "rep_votes": 1250,
+        "other_votes": 0,
+        "total_votes": 1250,
+        "dem_candidate": "",
+        "rep_candidate": "Jon Ford",
+        "margin": 1250,
+        "margin_pct": 100.0,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "39": {
+        "dem_votes": 0,
+        "rep_votes": 14939,
+        "other_votes": 0,
+        "total_votes": 14939,
+        "dem_candidate": "",
+        "rep_candidate": "Eric Bassler",
+        "margin": 14939,
+        "margin_pct": 100.0,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "41": {
+        "dem_votes": 11729,
+        "rep_votes": 24698,
+        "other_votes": 0,
+        "total_votes": 36427,
+        "dem_candidate": "Bryan Muñoz",
+        "rep_candidate": "Greg Walker",
+        "margin": 12969,
+        "margin_pct": 35.6027,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "43": {
+        "dem_votes": 0,
+        "rep_votes": 22201,
+        "other_votes": 0,
+        "total_votes": 22201,
+        "dem_candidate": "",
+        "rep_candidate": "Chip Perfect",
+        "margin": 22201,
+        "margin_pct": 100.0,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "45": {
+        "dem_votes": 13551,
+        "rep_votes": 22585,
+        "other_votes": 0,
+        "total_votes": 36136,
+        "dem_candidate": "Nick Marshall",
+        "rep_candidate": "Chris Garten",
+        "margin": 9034,
+        "margin_pct": 25.0,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "47": {
+        "dem_votes": 3753,
+        "rep_votes": 10141,
+        "other_votes": 0,
+        "total_votes": 13894,
+        "dem_candidate": "Kathleen Forte",
+        "rep_candidate": "Gary Byrne",
+        "margin": 6388,
+        "margin_pct": 45.9767,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "48": {
+        "dem_votes": 802,
+        "rep_votes": 2860,
+        "other_votes": 0,
+        "total_votes": 3662,
+        "dem_candidate": "Jeff Hill",
+        "rep_candidate": "Mark Messmer",
+        "margin": 2058,
+        "margin_pct": 56.1988,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "49": {
+        "dem_votes": 0,
+        "rep_votes": 7140,
+        "other_votes": 0,
+        "total_votes": 7140,
+        "dem_candidate": "",
+        "rep_candidate": "Jim Tomes",
+        "margin": 7140,
+        "margin_pct": 100.0,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

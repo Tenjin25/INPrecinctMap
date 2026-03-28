@@ -1,1 +1,124 @@
-{"meta":{"scope":"congressional","contest_type":"president","year":2024,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":152750,"rep_votes":151996,"other_votes":5106,"total_votes":309852,"dem_candidate":"Kamala D. Harris & Tim  Walz","rep_candidate":"Donald J Trump & JD  Vance","margin":-754,"margin_pct":-0.2433,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":118003,"rep_votes":198267,"other_votes":5500,"total_votes":321770,"dem_candidate":"Kamala D. Harris & Tim  Walz","rep_candidate":"Donald J Trump & JD  Vance","margin":80264,"margin_pct":24.9445,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":106528,"rep_votes":204725,"other_votes":5661,"total_votes":316914,"dem_candidate":"Kamala D. Harris & Tim  Walz","rep_candidate":"Donald J Trump & JD  Vance","margin":98197,"margin_pct":30.9854,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":114504,"rep_votes":212740,"other_votes":6311,"total_votes":333555,"dem_candidate":"Kamala D. Harris & Tim  Walz","rep_candidate":"Donald J Trump & JD  Vance","margin":98236,"margin_pct":29.4512,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":149769,"rep_votes":211621,"other_votes":7271,"total_votes":368661,"dem_candidate":"Kamala D. Harris & Tim  Walz","rep_candidate":"Donald J Trump & JD  Vance","margin":61852,"margin_pct":16.7775,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":139134,"rep_votes":201647,"other_votes":6343,"total_votes":347124,"dem_candidate":"Kamala D. Harris & Tim  Walz","rep_candidate":"Donald J Trump & JD  Vance","margin":62513,"margin_pct":18.0088,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":155706,"rep_votes":87311,"other_votes":4561,"total_votes":247578,"dem_candidate":"Kamala D. Harris & Tim  Walz","rep_candidate":"Donald J Trump & JD  Vance","margin":-68395,"margin_pct":-27.6256,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":103740,"rep_votes":222626,"other_votes":5721,"total_votes":332087,"dem_candidate":"Kamala D. Harris & Tim  Walz","rep_candidate":"Donald J Trump & JD  Vance","margin":118886,"margin_pct":35.7997,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":123470,"rep_votes":229413,"other_votes":6254,"total_votes":359137,"dem_candidate":"Kamala D. Harris & Tim  Walz","rep_candidate":"Donald J Trump & JD  Vance","margin":105943,"margin_pct":29.4993,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "president",
+    "year": 2024,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 5030,
+    "precinct_geom_match_pct": 64.17
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 161606,
+        "rep_votes": 160333,
+        "other_votes": 5425,
+        "total_votes": 327364,
+        "dem_candidate": "Kamala D. Harris & Tim  Walz",
+        "rep_candidate": "Donald J Trump & JD  Vance",
+        "margin": -1273,
+        "margin_pct": -0.3889,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 108577,
+        "rep_votes": 188368,
+        "other_votes": 5154,
+        "total_votes": 302099,
+        "dem_candidate": "Kamala D. Harris & Tim  Walz",
+        "rep_candidate": "Donald J Trump & JD  Vance",
+        "margin": 79791,
+        "margin_pct": 26.4122,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 107688,
+        "rep_votes": 207700,
+        "other_votes": 5716,
+        "total_votes": 321104,
+        "dem_candidate": "Kamala D. Harris & Tim  Walz",
+        "rep_candidate": "Donald J Trump & JD  Vance",
+        "margin": 100012,
+        "margin_pct": 31.1463,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 114256,
+        "rep_votes": 212026,
+        "other_votes": 6291,
+        "total_votes": 332573,
+        "dem_candidate": "Kamala D. Harris & Tim  Walz",
+        "rep_candidate": "Donald J Trump & JD  Vance",
+        "margin": 97770,
+        "margin_pct": 29.3981,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 149949,
+        "rep_votes": 211750,
+        "other_votes": 7283,
+        "total_votes": 368982,
+        "dem_candidate": "Kamala D. Harris & Tim  Walz",
+        "rep_candidate": "Donald J Trump & JD  Vance",
+        "margin": 61801,
+        "margin_pct": 16.7491,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 138524,
+        "rep_votes": 200227,
+        "other_votes": 6296,
+        "total_votes": 345047,
+        "dem_candidate": "Kamala D. Harris & Tim  Walz",
+        "rep_candidate": "Donald J Trump & JD  Vance",
+        "margin": 61703,
+        "margin_pct": 17.8825,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 155706,
+        "rep_votes": 87311,
+        "other_votes": 4560,
+        "total_votes": 247577,
+        "dem_candidate": "Kamala D. Harris & Tim  Walz",
+        "rep_candidate": "Donald J Trump & JD  Vance",
+        "margin": -68395,
+        "margin_pct": -27.6257,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 103827,
+        "rep_votes": 223219,
+        "other_votes": 5748,
+        "total_votes": 332794,
+        "dem_candidate": "Kamala D. Harris & Tim  Walz",
+        "rep_candidate": "Donald J Trump & JD  Vance",
+        "margin": 119392,
+        "margin_pct": 35.8756,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 123470,
+        "rep_votes": 229413,
+        "other_votes": 6254,
+        "total_votes": 359137,
+        "dem_candidate": "Kamala D. Harris & Tim  Walz",
+        "rep_candidate": "Donald J Trump & JD  Vance",
+        "margin": 105943,
+        "margin_pct": 29.4993,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

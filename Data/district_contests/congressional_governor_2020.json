@@ -1,1 +1,124 @@
-{"meta":{"scope":"congressional","contest_type":"governor","year":2020,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":157443,"rep_votes":157687,"other_votes":19979,"total_votes":335109,"dem_candidate":"Woodrow (Woody) Myers & Linda C Lawson","rep_candidate":"Eric Holcomb & Suzanne Crouch","margin":244,"margin_pct":0.0728,"winner":"REP","color":"#dc2626"},"2":{"dem_votes":171959,"rep_votes":307172,"other_votes":51953,"total_votes":531084,"dem_candidate":"Woodrow (Woody) Myers & Linda C Lawson","rep_candidate":"Eric Holcomb & Suzanne Crouch","margin":135213,"margin_pct":25.4598,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":95137,"rep_votes":267056,"other_votes":58230,"total_votes":420423,"dem_candidate":"Woodrow (Woody) Myers & Linda C Lawson","rep_candidate":"Eric Holcomb & Suzanne Crouch","margin":171919,"margin_pct":40.8919,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":141929,"rep_votes":349194,"other_votes":92999,"total_votes":584122,"dem_candidate":"Woodrow (Woody) Myers & Linda C Lawson","rep_candidate":"Eric Holcomb & Suzanne Crouch","margin":207265,"margin_pct":35.4832,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":106345,"rep_votes":224617,"other_votes":44533,"total_votes":375495,"dem_candidate":"Woodrow (Woody) Myers & Linda C Lawson","rep_candidate":"Eric Holcomb & Suzanne Crouch","margin":118272,"margin_pct":31.4976,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":134384,"rep_votes":259623,"other_votes":69816,"total_votes":463823,"dem_candidate":"Woodrow (Woody) Myers & Linda C Lawson","rep_candidate":"Eric Holcomb & Suzanne Crouch","margin":125239,"margin_pct":27.0015,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":142894,"rep_votes":107029,"other_votes":24561,"total_votes":274484,"dem_candidate":"Woodrow (Woody) Myers & Linda C Lawson","rep_candidate":"Eric Holcomb & Suzanne Crouch","margin":-35865,"margin_pct":-13.0663,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":134600,"rep_votes":362906,"other_votes":60302,"total_votes":557808,"dem_candidate":"Woodrow (Woody) Myers & Linda C Lawson","rep_candidate":"Eric Holcomb & Suzanne Crouch","margin":228306,"margin_pct":40.9291,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":166004,"rep_votes":372497,"other_votes":71393,"total_votes":609894,"dem_candidate":"Woodrow (Woody) Myers & Linda C Lawson","rep_candidate":"Eric Holcomb & Suzanne Crouch","margin":206493,"margin_pct":33.8572,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "governor",
+    "year": 2020,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 5022,
+    "precinct_geom_match_pct": 60.87
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 165652,
+        "rep_votes": 166412,
+        "other_votes": 21137,
+        "total_votes": 353201,
+        "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+        "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+        "margin": 760,
+        "margin_pct": 0.2152,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "2": {
+        "dem_votes": 163316,
+        "rep_votes": 296851,
+        "other_votes": 50600,
+        "total_votes": 510767,
+        "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+        "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+        "margin": 133535,
+        "margin_pct": 26.144,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 96037,
+        "rep_votes": 270083,
+        "other_votes": 58760,
+        "total_votes": 424880,
+        "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+        "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+        "margin": 174046,
+        "margin_pct": 40.9636,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 141623,
+        "rep_votes": 348496,
+        "other_votes": 92840,
+        "total_votes": 582959,
+        "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+        "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+        "margin": 206873,
+        "margin_pct": 35.4867,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 106607,
+        "rep_votes": 225009,
+        "other_votes": 44600,
+        "total_votes": 376216,
+        "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+        "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+        "margin": 118402,
+        "margin_pct": 31.4718,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 135699,
+        "rep_votes": 261402,
+        "other_votes": 70007,
+        "total_votes": 467108,
+        "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+        "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+        "margin": 125703,
+        "margin_pct": 26.9109,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 142894,
+        "rep_votes": 107029,
+        "other_votes": 24561,
+        "total_votes": 274484,
+        "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+        "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+        "margin": -35865,
+        "margin_pct": -13.0663,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 134644,
+        "rep_votes": 363212,
+        "other_votes": 60394,
+        "total_votes": 558250,
+        "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+        "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+        "margin": 228568,
+        "margin_pct": 40.9437,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 170206,
+        "rep_votes": 384640,
+        "other_votes": 73954,
+        "total_votes": 628800,
+        "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+        "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+        "margin": 214434,
+        "margin_pct": 34.1021,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

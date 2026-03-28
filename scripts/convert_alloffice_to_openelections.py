@@ -79,6 +79,10 @@ OUTPUT_HEADER_WITH_BREAKDOWN = OUTPUT_HEADER_BASE + [
 ]
 
 
+def canonicalize_header(name: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", (name or "").strip().lower())
+
+
 def slugify_county(county: str) -> str:
     slug = re.sub(r"[^a-z0-9]+", "_", county.strip().lower())
     slug = re.sub(r"_+", "_", slug).strip("_")
@@ -222,36 +226,38 @@ def convert_file(
 
     with input_csv.open("r", newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
-        required = {
-            "Election",
-            "ReportingCountyName",
-            "DataEntryJurisdictionName",
-            "DataEntryLevelName",
-            "Office",
-            "OfficeCategory",
-            "NameonBallot",
-            "PoliticalParty",
-            "NumberofOfficeSeats",
-            "TotalVotes",
+        canon_headers = {canonicalize_header(h or "") for h in (reader.fieldnames or [])}
+        required_any = {
+            "election",
+            "reportingcountyname",
+            "dataentryjurisdictionname",
+            "dataentrylevelname",
+            "office",
+            "officecategory",
+            "nameonballot",
+            "politicalparty",
+            "totalvotes",
         }
-        missing = sorted(required - set(reader.fieldnames or []))
+        missing = sorted(required_any - canon_headers)
         if missing:
-            raise ValueError(f"{input_csv}: missing required columns: {', '.join(missing)}")
+            raise ValueError(f"{input_csv}: missing required columns (canonicalized): {', '.join(missing)}")
 
         for row in reader:
-            if (row.get("DataEntryLevelName") or "").strip().lower() != "precinct":
+            canon_row = {canonicalize_header(k or ""): (v if v is not None else "") for k, v in (row or {}).items()}
+
+            if (canon_row.get("dataentrylevelname") or "").strip().lower() != "precinct":
                 continue
 
-            election_info = parse_election_info(row["Election"])
-            county = (row.get("ReportingCountyName") or "").strip()
-            precinct = (row.get("DataEntryJurisdictionName") or "").strip()
+            election_info = parse_election_info(canon_row["election"])
+            county = (canon_row.get("reportingcountyname") or "").strip()
+            precinct = (canon_row.get("dataentryjurisdictionname") or "").strip()
 
-            office, district = normalize_office_and_district(row.get("Office"), row.get("OfficeCategory"))
-            candidate, is_write_in = normalize_candidate(row.get("NameonBallot"))
-            party = normalize_party(row.get("PoliticalParty"), force_blank=is_write_in or candidate in {"Yes", "No"})
+            office, district = normalize_office_and_district(canon_row.get("office"), canon_row.get("officecategory"))
+            candidate, is_write_in = normalize_candidate(canon_row.get("nameonballot"))
+            party = normalize_party(canon_row.get("politicalparty"), force_blank=is_write_in or candidate in {"Yes", "No"})
 
-            votes = int_required(row.get("TotalVotes"), field="TotalVotes")
-            seats = int_optional(row.get("NumberofOfficeSeats"), field="NumberofOfficeSeats")
+            votes = int_required(canon_row.get("totalvotes"), field="TotalVotes")
+            seats = int_optional(canon_row.get("numberofofficeseats"), field="NumberofOfficeSeats")
 
             out_paths: list[Path] = []
             if consolidated:

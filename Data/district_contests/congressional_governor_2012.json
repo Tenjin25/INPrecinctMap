@@ -1,1 +1,124 @@
-{"meta":{"scope":"congressional","contest_type":"governor","year":2012,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":170280,"rep_votes":90491,"other_votes":6390,"total_votes":267161,"dem_candidate":"John Gregg","rep_candidate":"Mike Pence","margin":-79789,"margin_pct":-29.8655,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":138743,"rep_votes":153392,"other_votes":10021,"total_votes":302156,"dem_candidate":"John Gregg","rep_candidate":"Mike Pence","margin":14649,"margin_pct":4.8482,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":109446,"rep_votes":159881,"other_votes":8472,"total_votes":277799,"dem_candidate":"John Gregg","rep_candidate":"Mike Pence","margin":50435,"margin_pct":18.1552,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":104867,"rep_votes":150219,"other_votes":14341,"total_votes":269427,"dem_candidate":"John Gregg","rep_candidate":"Mike Pence","margin":45352,"margin_pct":16.8328,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":119264,"rep_votes":165993,"other_votes":13100,"total_votes":298357,"dem_candidate":"John Gregg","rep_candidate":"Mike Pence","margin":46729,"margin_pct":15.6621,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":132730,"rep_votes":154545,"other_votes":16191,"total_votes":303466,"dem_candidate":"John Gregg","rep_candidate":"Mike Pence","margin":21815,"margin_pct":7.1886,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":147560,"rep_votes":90944,"other_votes":12341,"total_votes":250845,"dem_candidate":"John Gregg","rep_candidate":"Mike Pence","margin":-56616,"margin_pct":-22.5701,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":147235,"rep_votes":146572,"other_votes":9436,"total_votes":303243,"dem_candidate":"John Gregg","rep_candidate":"Mike Pence","margin":-663,"margin_pct":-0.2186,"winner":"DEM","color":"#2563eb"},"9":{"dem_votes":131040,"rep_votes":162305,"other_votes":12031,"total_votes":305376,"dem_candidate":"John Gregg","rep_candidate":"Mike Pence","margin":31265,"margin_pct":10.2382,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "governor",
+    "year": 2012,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 5222,
+    "precinct_geom_match_pct": 47.47
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 173687,
+        "rep_votes": 93079,
+        "other_votes": 6611,
+        "total_votes": 273377,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Mike Pence",
+        "margin": -80608,
+        "margin_pct": -29.486,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 134248,
+        "rep_votes": 150221,
+        "other_votes": 9698,
+        "total_votes": 294167,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Mike Pence",
+        "margin": 15973,
+        "margin_pct": 5.4299,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 110275,
+        "rep_votes": 160832,
+        "other_votes": 8540,
+        "total_votes": 279647,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Mike Pence",
+        "margin": 50557,
+        "margin_pct": 18.0789,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 105675,
+        "rep_votes": 150416,
+        "other_votes": 14438,
+        "total_votes": 270529,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Mike Pence",
+        "margin": 44741,
+        "margin_pct": 16.5383,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 119412,
+        "rep_votes": 166099,
+        "other_votes": 13113,
+        "total_votes": 298624,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Mike Pence",
+        "margin": 46687,
+        "margin_pct": 15.634,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 131900,
+        "rep_votes": 153594,
+        "other_votes": 16123,
+        "total_votes": 301617,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Mike Pence",
+        "margin": 21694,
+        "margin_pct": 7.1926,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 147560,
+        "rep_votes": 90944,
+        "other_votes": 12341,
+        "total_votes": 250845,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Mike Pence",
+        "margin": -56616,
+        "margin_pct": -22.5701,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 147367,
+        "rep_votes": 146852,
+        "other_votes": 9428,
+        "total_votes": 303647,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Mike Pence",
+        "margin": -515,
+        "margin_pct": -0.1696,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "9": {
+        "dem_votes": 131040,
+        "rep_votes": 162305,
+        "other_votes": 12031,
+        "total_votes": 305376,
+        "dem_candidate": "John Gregg",
+        "rep_candidate": "Mike Pence",
+        "margin": 31265,
+        "margin_pct": 10.2382,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

@@ -1,1 +1,124 @@
-{"meta":{"scope":"congressional","contest_type":"us_senate","year":2018,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":248623,"rep_votes":143658,"other_votes":9221,"total_votes":401502,"dem_candidate":"Joe Donnelly","rep_candidate":"Mike Braun","margin":-104965,"margin_pct":-26.1431,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":118067,"rep_votes":142376,"other_votes":36168,"total_votes":296611,"dem_candidate":"Joe Donnelly","rep_candidate":"Mike Braun","margin":24309,"margin_pct":8.1956,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":90495,"rep_votes":143768,"other_votes":23951,"total_votes":258214,"dem_candidate":"Joe Donnelly","rep_candidate":"Mike Braun","margin":53273,"margin_pct":20.6313,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":116791,"rep_votes":165060,"other_votes":33056,"total_votes":314907,"dem_candidate":"Joe Donnelly","rep_candidate":"Mike Braun","margin":48269,"margin_pct":15.328,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":178957,"rep_votes":218043,"other_votes":16235,"total_votes":413235,"dem_candidate":"Joe Donnelly","rep_candidate":"Mike Braun","margin":39086,"margin_pct":9.4585,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":114239,"rep_votes":134063,"other_votes":31549,"total_votes":279851,"dem_candidate":"Joe Donnelly","rep_candidate":"Mike Braun","margin":19824,"margin_pct":7.0838,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":138965,"rep_votes":69093,"other_votes":7755,"total_votes":215813,"dem_candidate":"Joe Donnelly","rep_candidate":"Mike Braun","margin":-69872,"margin_pct":-32.3762,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":113110,"rep_votes":162581,"other_votes":448871,"total_votes":724562,"dem_candidate":"Joe Donnelly","rep_candidate":"Mike Braun","margin":49471,"margin_pct":6.8277,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":136606,"rep_votes":202782,"other_votes":45337,"total_votes":384725,"dem_candidate":"Joe Donnelly","rep_candidate":"Mike Braun","margin":66176,"margin_pct":17.2009,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "us_senate",
+    "year": 2018,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 5285,
+    "precinct_geom_match_pct": 58.52
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 257201,
+        "rep_votes": 148828,
+        "other_votes": 9675,
+        "total_votes": 415704,
+        "dem_candidate": "Joe Donnelly",
+        "rep_candidate": "Mike Braun",
+        "margin": -108373,
+        "margin_pct": -26.0698,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 108722,
+        "rep_votes": 135604,
+        "other_votes": 37315,
+        "total_votes": 281641,
+        "dem_candidate": "Joe Donnelly",
+        "rep_candidate": "Mike Braun",
+        "margin": 26882,
+        "margin_pct": 9.5448,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 91855,
+        "rep_votes": 146258,
+        "other_votes": 24132,
+        "total_votes": 262245,
+        "dem_candidate": "Joe Donnelly",
+        "rep_candidate": "Mike Braun",
+        "margin": 54403,
+        "margin_pct": 20.7451,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 116492,
+        "rep_votes": 164592,
+        "other_votes": 31363,
+        "total_votes": 312447,
+        "dem_candidate": "Joe Donnelly",
+        "rep_candidate": "Mike Braun",
+        "margin": 48100,
+        "margin_pct": 15.3946,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 179175,
+        "rep_votes": 218191,
+        "other_votes": 16253,
+        "total_votes": 413619,
+        "dem_candidate": "Joe Donnelly",
+        "rep_candidate": "Mike Braun",
+        "margin": 39016,
+        "margin_pct": 9.4328,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 113647,
+        "rep_votes": 133175,
+        "other_votes": 31438,
+        "total_votes": 278260,
+        "dem_candidate": "Joe Donnelly",
+        "rep_candidate": "Mike Braun",
+        "margin": 19528,
+        "margin_pct": 7.0179,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 138965,
+        "rep_votes": 69093,
+        "other_votes": 7755,
+        "total_votes": 215813,
+        "dem_candidate": "Joe Donnelly",
+        "rep_candidate": "Mike Braun",
+        "margin": -69872,
+        "margin_pct": -32.3762,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 113191,
+        "rep_votes": 162901,
+        "other_votes": 448876,
+        "total_votes": 724968,
+        "dem_candidate": "Joe Donnelly",
+        "rep_candidate": "Mike Braun",
+        "margin": 49710,
+        "margin_pct": 6.8569,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 136606,
+        "rep_votes": 202782,
+        "other_votes": 45337,
+        "total_votes": 384725,
+        "dem_candidate": "Joe Donnelly",
+        "rep_candidate": "Mike Braun",
+        "margin": 66176,
+        "margin_pct": 17.2009,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

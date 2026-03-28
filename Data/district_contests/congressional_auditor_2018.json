@@ -1,1 +1,124 @@
-{"meta":{"scope":"congressional","contest_type":"auditor","year":2018,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":270299,"rep_votes":177446,"other_votes":11278,"total_votes":459023,"dem_candidate":"Joselyn Whitticker","rep_candidate":"Tera Klutz","margin":-92853,"margin_pct":-20.2284,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":99707,"rep_votes":154092,"other_votes":36279,"total_votes":290078,"dem_candidate":"Joselyn Whitticker","rep_candidate":"Tera Klutz","margin":54385,"margin_pct":18.7484,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":76213,"rep_votes":154814,"other_votes":22267,"total_votes":253294,"dem_candidate":"Joselyn Whitticker","rep_candidate":"Tera Klutz","margin":78601,"margin_pct":31.0315,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":102602,"rep_votes":185691,"other_votes":30859,"total_votes":319152,"dem_candidate":"Joselyn Whitticker","rep_candidate":"Tera Klutz","margin":83089,"margin_pct":26.0343,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":149917,"rep_votes":242555,"other_votes":13481,"total_votes":405953,"dem_candidate":"Joselyn Whitticker","rep_candidate":"Tera Klutz","margin":92638,"margin_pct":22.8199,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":101244,"rep_votes":185420,"other_votes":41734,"total_votes":328398,"dem_candidate":"Joselyn Whitticker","rep_candidate":"Tera Klutz","margin":84176,"margin_pct":25.6323,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":127495,"rep_votes":78544,"other_votes":7142,"total_votes":213181,"dem_candidate":"Joselyn Whitticker","rep_candidate":"Tera Klutz","margin":-48951,"margin_pct":-22.9622,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":106335,"rep_votes":163752,"other_votes":60414,"total_votes":330501,"dem_candidate":"Joselyn Whitticker","rep_candidate":"Tera Klutz","margin":57417,"margin_pct":17.3727,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":124448,"rep_votes":189251,"other_votes":30300,"total_votes":343999,"dem_candidate":"Joselyn Whitticker","rep_candidate":"Tera Klutz","margin":64803,"margin_pct":18.8381,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "auditor",
+    "year": 2018,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 5283,
+    "precinct_geom_match_pct": 58.55
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 278295,
+        "rep_votes": 182926,
+        "other_votes": 11785,
+        "total_votes": 473006,
+        "dem_candidate": "Joselyn Whitticker",
+        "rep_candidate": "Tera Klutz",
+        "margin": -95369,
+        "margin_pct": -20.1623,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 91027,
+        "rep_votes": 146973,
+        "other_votes": 37366,
+        "total_votes": 275366,
+        "dem_candidate": "Joselyn Whitticker",
+        "rep_candidate": "Tera Klutz",
+        "margin": 55946,
+        "margin_pct": 20.317,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 77403,
+        "rep_votes": 157400,
+        "other_votes": 22385,
+        "total_votes": 257188,
+        "dem_candidate": "Joselyn Whitticker",
+        "rep_candidate": "Tera Klutz",
+        "margin": 79997,
+        "margin_pct": 31.1045,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 102323,
+        "rep_votes": 185213,
+        "other_votes": 29179,
+        "total_votes": 316715,
+        "dem_candidate": "Joselyn Whitticker",
+        "rep_candidate": "Tera Klutz",
+        "margin": 82890,
+        "margin_pct": 26.1718,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 150119,
+        "rep_votes": 242718,
+        "other_votes": 13495,
+        "total_votes": 406332,
+        "dem_candidate": "Joselyn Whitticker",
+        "rep_candidate": "Tera Klutz",
+        "margin": 92599,
+        "margin_pct": 22.789,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 100739,
+        "rep_votes": 184472,
+        "other_votes": 41681,
+        "total_votes": 326892,
+        "dem_candidate": "Joselyn Whitticker",
+        "rep_candidate": "Tera Klutz",
+        "margin": 83733,
+        "margin_pct": 25.6149,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 127495,
+        "rep_votes": 78544,
+        "other_votes": 7142,
+        "total_votes": 213181,
+        "dem_candidate": "Joselyn Whitticker",
+        "rep_candidate": "Tera Klutz",
+        "margin": -48951,
+        "margin_pct": -22.9622,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 106412,
+        "rep_votes": 164068,
+        "other_votes": 60421,
+        "total_votes": 330901,
+        "dem_candidate": "Joselyn Whitticker",
+        "rep_candidate": "Tera Klutz",
+        "margin": 57656,
+        "margin_pct": 17.4239,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 124448,
+        "rep_votes": 189251,
+        "other_votes": 30301,
+        "total_votes": 344000,
+        "dem_candidate": "Joselyn Whitticker",
+        "rep_candidate": "Tera Klutz",
+        "margin": 64803,
+        "margin_pct": 18.8381,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

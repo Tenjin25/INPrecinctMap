@@ -1,1 +1,112 @@
-{"meta":{"scope":"congressional","contest_type":"us_senate","year":2022,"districts":8,"match_coverage_pct":38.04,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":73866,"rep_votes":57426,"other_votes":2401,"total_votes":133693,"dem_candidate":"Thomas M. Mcdermott, Jr.","rep_candidate":"Todd Young","margin":-16440,"margin_pct":-12.2968,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":6933,"rep_votes":28449,"other_votes":1299,"total_votes":36681,"dem_candidate":"Thomas M. Mcdermott, Jr.","rep_candidate":"Todd Young","margin":21516,"margin_pct":58.6571,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":13122,"rep_votes":48502,"other_votes":1971,"total_votes":63595,"dem_candidate":"Thomas M. Mcdermott, Jr.","rep_candidate":"Todd Young","margin":35380,"margin_pct":55.6333,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":22657,"rep_votes":49976,"other_votes":5459,"total_votes":78092,"dem_candidate":"Thomas M. Mcdermott, Jr.","rep_candidate":"Todd Young","margin":27319,"margin_pct":34.9831,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":88145,"rep_votes":136586,"other_votes":10106,"total_votes":234837,"dem_candidate":"Thomas M. Mcdermott, Jr.","rep_candidate":"Todd Young","margin":48441,"margin_pct":20.6275,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":23417,"rep_votes":54138,"other_votes":4599,"total_votes":82154,"dem_candidate":"Thomas M. Mcdermott, Jr.","rep_candidate":"Todd Young","margin":30721,"margin_pct":37.3944,"winner":"REP","color":"#dc2626"},"8":{"dem_votes":7629,"rep_votes":23790,"other_votes":880,"total_votes":32299,"dem_candidate":"Thomas M. Mcdermott, Jr.","rep_candidate":"Todd Young","margin":16161,"margin_pct":50.0356,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":28273,"rep_votes":72188,"other_votes":3312,"total_votes":103773,"dem_candidate":"Thomas M. Mcdermott, Jr.","rep_candidate":"Todd Young","margin":43915,"margin_pct":42.3183,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "us_senate",
+    "year": 2022,
+    "districts": 8,
+    "match_coverage_pct": 38.04,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 2007,
+    "precinct_geom_match_pct": 70.4
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 73866,
+        "rep_votes": 57426,
+        "other_votes": 2401,
+        "total_votes": 133693,
+        "dem_candidate": "Thomas M. Mcdermott, Jr.",
+        "rep_candidate": "Todd Young",
+        "margin": -16440,
+        "margin_pct": -12.2968,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 6577,
+        "rep_votes": 27289,
+        "other_votes": 1239,
+        "total_votes": 35105,
+        "dem_candidate": "Thomas M. Mcdermott, Jr.",
+        "rep_candidate": "Todd Young",
+        "margin": 20712,
+        "margin_pct": 59.0001,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 13478,
+        "rep_votes": 49662,
+        "other_votes": 2031,
+        "total_votes": 65171,
+        "dem_candidate": "Thomas M. Mcdermott, Jr.",
+        "rep_candidate": "Todd Young",
+        "margin": 36184,
+        "margin_pct": 55.5216,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 22503,
+        "rep_votes": 49782,
+        "other_votes": 5459,
+        "total_votes": 77744,
+        "dem_candidate": "Thomas M. Mcdermott, Jr.",
+        "rep_candidate": "Todd Young",
+        "margin": 27279,
+        "margin_pct": 35.0882,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 88299,
+        "rep_votes": 136780,
+        "other_votes": 10106,
+        "total_votes": 235185,
+        "dem_candidate": "Thomas M. Mcdermott, Jr.",
+        "rep_candidate": "Todd Young",
+        "margin": 48481,
+        "margin_pct": 20.614,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 24989,
+        "rep_votes": 56046,
+        "other_votes": 4720,
+        "total_votes": 85755,
+        "dem_candidate": "Thomas M. Mcdermott, Jr.",
+        "rep_candidate": "Todd Young",
+        "margin": 31057,
+        "margin_pct": 36.216,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "8": {
+        "dem_votes": 7629,
+        "rep_votes": 23790,
+        "other_votes": 880,
+        "total_votes": 32299,
+        "dem_candidate": "Thomas M. Mcdermott, Jr.",
+        "rep_candidate": "Todd Young",
+        "margin": 16161,
+        "margin_pct": 50.0356,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 26701,
+        "rep_votes": 70280,
+        "other_votes": 3191,
+        "total_votes": 100172,
+        "dem_candidate": "Thomas M. Mcdermott, Jr.",
+        "rep_candidate": "Todd Young",
+        "margin": 43579,
+        "margin_pct": 43.5042,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

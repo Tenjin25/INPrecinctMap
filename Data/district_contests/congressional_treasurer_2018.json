@@ -1,1 +1,124 @@
-{"meta":{"scope":"congressional","contest_type":"treasurer","year":2018,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":241348,"rep_votes":154406,"other_votes":0,"total_votes":395754,"dem_candidate":"John Aguilera","rep_candidate":"Kelly Mitchell","margin":-86942,"margin_pct":-21.9687,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":99926,"rep_votes":162523,"other_votes":26428,"total_votes":288877,"dem_candidate":"John Aguilera","rep_candidate":"Kelly Mitchell","margin":62597,"margin_pct":21.6691,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":78115,"rep_votes":159866,"other_votes":14456,"total_votes":252437,"dem_candidate":"John Aguilera","rep_candidate":"Kelly Mitchell","margin":81751,"margin_pct":32.3847,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":100929,"rep_votes":189549,"other_votes":19593,"total_votes":310071,"dem_candidate":"John Aguilera","rep_candidate":"Kelly Mitchell","margin":88620,"margin_pct":28.5806,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":151444,"rep_votes":253881,"other_votes":11,"total_votes":405336,"dem_candidate":"John Aguilera","rep_candidate":"Kelly Mitchell","margin":102437,"margin_pct":25.2721,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":102230,"rep_votes":152688,"other_votes":20614,"total_votes":275532,"dem_candidate":"John Aguilera","rep_candidate":"Kelly Mitchell","margin":50458,"margin_pct":18.3129,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":129873,"rep_votes":82836,"other_votes":0,"total_votes":212709,"dem_candidate":"John Aguilera","rep_candidate":"Kelly Mitchell","margin":-47037,"margin_pct":-22.1133,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":104333,"rep_votes":175247,"other_votes":51359,"total_votes":330939,"dem_candidate":"John Aguilera","rep_candidate":"Kelly Mitchell","margin":70914,"margin_pct":21.4281,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":122874,"rep_votes":200949,"other_votes":18131,"total_votes":341954,"dem_candidate":"John Aguilera","rep_candidate":"Kelly Mitchell","margin":78075,"margin_pct":22.832,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "treasurer",
+    "year": 2018,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 5283,
+    "precinct_geom_match_pct": 58.55
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 249510,
+        "rep_votes": 160197,
+        "other_votes": 0,
+        "total_votes": 409707,
+        "dem_candidate": "John Aguilera",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": -89313,
+        "margin_pct": -21.7992,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 91080,
+        "rep_votes": 155026,
+        "other_votes": 28095,
+        "total_votes": 274201,
+        "dem_candidate": "John Aguilera",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 63946,
+        "margin_pct": 23.3208,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 79287,
+        "rep_votes": 162601,
+        "other_votes": 14456,
+        "total_votes": 256344,
+        "dem_candidate": "John Aguilera",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 83314,
+        "margin_pct": 32.5009,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 100652,
+        "rep_votes": 189043,
+        "other_votes": 17925,
+        "total_votes": 307620,
+        "dem_candidate": "John Aguilera",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 88391,
+        "margin_pct": 28.7338,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 151650,
+        "rep_votes": 254055,
+        "other_votes": 11,
+        "total_votes": 405716,
+        "dem_candidate": "John Aguilera",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 102405,
+        "margin_pct": 25.2406,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 101743,
+        "rep_votes": 151660,
+        "other_votes": 20614,
+        "total_votes": 274017,
+        "dem_candidate": "John Aguilera",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 49917,
+        "margin_pct": 18.2168,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 129873,
+        "rep_votes": 82836,
+        "other_votes": 0,
+        "total_votes": 212709,
+        "dem_candidate": "John Aguilera",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": -47037,
+        "margin_pct": -22.1133,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 104404,
+        "rep_votes": 175579,
+        "other_votes": 51359,
+        "total_votes": 331342,
+        "dem_candidate": "John Aguilera",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 71175,
+        "margin_pct": 21.4808,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 122874,
+        "rep_votes": 200949,
+        "other_votes": 18131,
+        "total_votes": 341954,
+        "dem_candidate": "John Aguilera",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 78075,
+        "margin_pct": 22.832,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

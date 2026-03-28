@@ -1,1 +1,112 @@
-{"meta":{"scope":"congressional","contest_type":"treasurer","year":2022,"districts":8,"match_coverage_pct":38.04,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":71475,"rep_votes":60489,"other_votes":0,"total_votes":131964,"dem_candidate":"Jessica Mcclellan","rep_candidate":"Daniel Elliott","margin":-10986,"margin_pct":-8.325,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":7505,"rep_votes":28769,"other_votes":0,"total_votes":36274,"dem_candidate":"Jessica Mcclellan","rep_candidate":"Daniel Elliott","margin":21264,"margin_pct":58.6205,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":14110,"rep_votes":48894,"other_votes":0,"total_votes":63004,"dem_candidate":"Jessica Mcclellan","rep_candidate":"Daniel Elliott","margin":34784,"margin_pct":55.2092,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":23093,"rep_votes":54392,"other_votes":0,"total_votes":77485,"dem_candidate":"Jessica Mcclellan","rep_candidate":"Daniel Elliott","margin":31299,"margin_pct":40.3936,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":89355,"rep_votes":143343,"other_votes":0,"total_votes":232698,"dem_candidate":"Jessica Mcclellan","rep_candidate":"Daniel Elliott","margin":53988,"margin_pct":23.2009,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":24006,"rep_votes":57459,"other_votes":0,"total_votes":81465,"dem_candidate":"Jessica Mcclellan","rep_candidate":"Daniel Elliott","margin":33453,"margin_pct":41.0643,"winner":"REP","color":"#dc2626"},"8":{"dem_votes":8456,"rep_votes":23220,"other_votes":0,"total_votes":31676,"dem_candidate":"Jessica Mcclellan","rep_candidate":"Daniel Elliott","margin":14764,"margin_pct":46.6094,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":30184,"rep_votes":72316,"other_votes":0,"total_votes":102500,"dem_candidate":"Jessica Mcclellan","rep_candidate":"Daniel Elliott","margin":42132,"margin_pct":41.1044,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "treasurer",
+    "year": 2022,
+    "districts": 8,
+    "match_coverage_pct": 38.04,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 2007,
+    "precinct_geom_match_pct": 70.4
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 71475,
+        "rep_votes": 60489,
+        "other_votes": 0,
+        "total_votes": 131964,
+        "dem_candidate": "Jessica Mcclellan",
+        "rep_candidate": "Daniel Elliott",
+        "margin": -10986,
+        "margin_pct": -8.325,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 7102,
+        "rep_votes": 27600,
+        "other_votes": 0,
+        "total_votes": 34702,
+        "dem_candidate": "Jessica Mcclellan",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 20498,
+        "margin_pct": 59.0686,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 14513,
+        "rep_votes": 50063,
+        "other_votes": 0,
+        "total_votes": 64576,
+        "dem_candidate": "Jessica Mcclellan",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 35550,
+        "margin_pct": 55.0514,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 22928,
+        "rep_votes": 54210,
+        "other_votes": 0,
+        "total_votes": 77138,
+        "dem_candidate": "Jessica Mcclellan",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 31282,
+        "margin_pct": 40.5533,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 89520,
+        "rep_votes": 143525,
+        "other_votes": 0,
+        "total_votes": 233045,
+        "dem_candidate": "Jessica Mcclellan",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 54005,
+        "margin_pct": 23.1736,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 25589,
+        "rep_votes": 59428,
+        "other_votes": 0,
+        "total_votes": 85017,
+        "dem_candidate": "Jessica Mcclellan",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 33839,
+        "margin_pct": 39.8026,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "8": {
+        "dem_votes": 8456,
+        "rep_votes": 23220,
+        "other_votes": 0,
+        "total_votes": 31676,
+        "dem_candidate": "Jessica Mcclellan",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 14764,
+        "margin_pct": 46.6094,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 28601,
+        "rep_votes": 70347,
+        "other_votes": 0,
+        "total_votes": 98948,
+        "dem_candidate": "Jessica Mcclellan",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 41746,
+        "margin_pct": 42.1898,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

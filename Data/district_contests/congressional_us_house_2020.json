@@ -1,1 +1,123 @@
-{"meta":{"scope":"congressional","contest_type":"us_house","year":2020,"districts":9,"match_coverage_pct":100.0,"allocation":"precinct_sum_by_district_number","source":"openelections_generated"},"general":{"results":{"1":{"dem_votes":172543,"rep_votes":121563,"other_votes":8396,"total_votes":302502,"dem_candidate":"Frank J. Mrvan","rep_candidate":"Mark Leyva","margin":-50980,"margin_pct":-16.8528,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":34326,"rep_votes":81380,"other_votes":0,"total_votes":115706,"dem_candidate":"Patricia (Pat) Hackett","rep_candidate":"Jackie Walorski","margin":47054,"margin_pct":40.6669,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":94403,"rep_votes":188320,"other_votes":0,"total_votes":282723,"dem_candidate":"Chip Coldiron","rep_candidate":"Jim Banks","margin":93917,"margin_pct":33.2187,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":26735,"rep_votes":64160,"other_votes":0,"total_votes":90895,"dem_candidate":"Joe Mackey","rep_candidate":"Jim Baird","margin":37425,"margin_pct":41.1739,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":189320,"rep_votes":202672,"other_votes":16276,"total_votes":408268,"dem_candidate":"Christina Hale","rep_candidate":"Victoria Spartz","margin":13352,"margin_pct":3.2704,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":62411,"rep_votes":134674,"other_votes":7415,"total_votes":204500,"dem_candidate":"Jeannine Lee Lake","rep_candidate":"Greg Pence","margin":72263,"margin_pct":35.3364,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":176422,"rep_votes":106146,"other_votes":0,"total_votes":282568,"dem_candidate":"Andr\u00e9 Carson","rep_candidate":"Susan Marie Smith","margin":-70276,"margin_pct":-24.8705,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":16329,"rep_votes":52987,"other_votes":2460,"total_votes":71776,"dem_candidate":"E. Thomasina Marsili","rep_candidate":"Larry D. Bucshon","margin":36658,"margin_pct":51.0728,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":63800,"rep_votes":88859,"other_votes":6228,"total_votes":158887,"dem_candidate":"Andy Ruff","rep_candidate":"Trey Hollingsworth","margin":25059,"margin_pct":15.7716,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "us_house",
+    "year": 2020,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_sum_by_district_number",
+    "source": "openelections-data-in"
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 197817,
+        "rep_votes": 142931,
+        "other_votes": 10654,
+        "total_votes": 351402,
+        "dem_candidate": "Frank J. Mrvan",
+        "rep_candidate": "Mark Leyva",
+        "margin": -54886,
+        "margin_pct": -15.6191,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 184700,
+        "rep_votes": 267280,
+        "other_votes": 20,
+        "total_votes": 452000,
+        "dem_candidate": "Patricia (Pat) Hackett",
+        "rep_candidate": "Jackie Walorski",
+        "margin": 82580,
+        "margin_pct": 18.2699,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 118166,
+        "rep_votes": 264611,
+        "other_votes": 26,
+        "total_votes": 382803,
+        "dem_candidate": "Chip Coldiron",
+        "rep_candidate": "Jim Banks",
+        "margin": 146445,
+        "margin_pct": 38.256,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 167778,
+        "rep_votes": 329153,
+        "other_votes": 966,
+        "total_votes": 497897,
+        "dem_candidate": "Joe Mackey",
+        "rep_candidate": "Jim Baird",
+        "margin": 161375,
+        "margin_pct": 32.4113,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 193132,
+        "rep_votes": 213752,
+        "other_votes": 17311,
+        "total_votes": 424195,
+        "dem_candidate": "Christina Hale",
+        "rep_candidate": "Victoria Spartz",
+        "margin": 20620,
+        "margin_pct": 4.861,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 138007,
+        "rep_votes": 358001,
+        "other_votes": 18731,
+        "total_votes": 514739,
+        "dem_candidate": "Jeannine Lee Lake",
+        "rep_candidate": "Greg Pence",
+        "margin": 219994,
+        "margin_pct": 42.7389,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 176422,
+        "rep_votes": 106146,
+        "other_votes": 0,
+        "total_votes": 282568,
+        "dem_candidate": "Andr√© Carson",
+        "rep_candidate": "Susan Marie Smith",
+        "margin": -70276,
+        "margin_pct": -24.8705,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 143824,
+        "rep_votes": 340818,
+        "other_votes": 17411,
+        "total_votes": 502053,
+        "dem_candidate": "E. Thomasina Marsili",
+        "rep_candidate": "Larry D. Bucshon",
+        "margin": 196994,
+        "margin_pct": 39.2377,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 181048,
+        "rep_votes": 342472,
+        "other_votes": 35546,
+        "total_votes": 559066,
+        "dem_candidate": "Andy Ruff",
+        "rep_candidate": "Trey Hollingsworth",
+        "margin": 161424,
+        "margin_pct": 28.8739,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

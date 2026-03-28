@@ -1,1 +1,124 @@
-{"meta":{"scope":"congressional","contest_type":"treasurer","year":2014,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":74385,"rep_votes":56093,"other_votes":5915,"total_votes":136393,"dem_candidate":"Mike Boland","rep_candidate":"Kelly Mitchell","margin":-18292,"margin_pct":-13.4112,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":56758,"rep_votes":94692,"other_votes":7156,"total_votes":158606,"dem_candidate":"Mike Boland","rep_candidate":"Kelly Mitchell","margin":37934,"margin_pct":23.9171,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":41393,"rep_votes":96602,"other_votes":7143,"total_votes":145138,"dem_candidate":"Mike Boland","rep_candidate":"Kelly Mitchell","margin":55209,"margin_pct":38.039,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":35548,"rep_votes":92411,"other_votes":7340,"total_votes":135299,"dem_candidate":"Mike Boland","rep_candidate":"Kelly Mitchell","margin":56863,"margin_pct":42.0277,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":46191,"rep_votes":91666,"other_votes":6939,"total_votes":144796,"dem_candidate":"Mike Boland","rep_candidate":"Kelly Mitchell","margin":45475,"margin_pct":31.4063,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":47554,"rep_votes":85609,"other_votes":7215,"total_votes":140378,"dem_candidate":"Mike Boland","rep_candidate":"Kelly Mitchell","margin":38055,"margin_pct":27.1089,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":56825,"rep_votes":48773,"other_votes":4618,"total_votes":110216,"dem_candidate":"Mike Boland","rep_candidate":"Kelly Mitchell","margin":-8052,"margin_pct":-7.3057,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":67297,"rep_votes":104786,"other_votes":8367,"total_votes":180450,"dem_candidate":"Mike Boland","rep_candidate":"Kelly Mitchell","margin":37489,"margin_pct":20.7753,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":63225,"rep_votes":103315,"other_votes":9105,"total_votes":175645,"dem_candidate":"Mike Boland","rep_candidate":"Kelly Mitchell","margin":40090,"margin_pct":22.8244,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "treasurer",
+    "year": 2014,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 5298,
+    "precinct_geom_match_pct": 51.98
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 76148,
+        "rep_votes": 57821,
+        "other_votes": 6122,
+        "total_votes": 140091,
+        "dem_candidate": "Mike Boland",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": -18327,
+        "margin_pct": -13.0822,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 54856,
+        "rep_votes": 92549,
+        "other_votes": 6934,
+        "total_votes": 154339,
+        "dem_candidate": "Mike Boland",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 37693,
+        "margin_pct": 24.4222,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 41784,
+        "rep_votes": 97659,
+        "other_votes": 7182,
+        "total_votes": 146625,
+        "dem_candidate": "Mike Boland",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 55875,
+        "margin_pct": 38.1074,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 35109,
+        "rep_votes": 91521,
+        "other_votes": 7301,
+        "total_votes": 133931,
+        "dem_candidate": "Mike Boland",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 56412,
+        "margin_pct": 42.1202,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 46325,
+        "rep_votes": 91796,
+        "other_votes": 6939,
+        "total_votes": 145060,
+        "dem_candidate": "Mike Boland",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 45471,
+        "margin_pct": 31.3463,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 47474,
+        "rep_votes": 85508,
+        "other_votes": 7227,
+        "total_votes": 140209,
+        "dem_candidate": "Mike Boland",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 38034,
+        "margin_pct": 27.1266,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 56825,
+        "rep_votes": 48773,
+        "other_votes": 4618,
+        "total_votes": 110216,
+        "dem_candidate": "Mike Boland",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": -8052,
+        "margin_pct": -7.3057,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 67430,
+        "rep_votes": 105004,
+        "other_votes": 8371,
+        "total_votes": 180805,
+        "dem_candidate": "Mike Boland",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 37574,
+        "margin_pct": 20.7815,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 63225,
+        "rep_votes": 103315,
+        "other_votes": 9105,
+        "total_votes": 175645,
+        "dem_candidate": "Mike Boland",
+        "rep_candidate": "Kelly Mitchell",
+        "margin": 40090,
+        "margin_pct": 22.8244,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

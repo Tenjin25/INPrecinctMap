@@ -1,1 +1,112 @@
-{"meta":{"scope":"congressional","contest_type":"auditor","year":2022,"districts":8,"match_coverage_pct":38.04,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":68706,"rep_votes":60037,"other_votes":3399,"total_votes":132142,"dem_candidate":"Zenai Brooks","rep_candidate":"Tera K. Klutz","margin":-8669,"margin_pct":-6.5604,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":6685,"rep_votes":28304,"other_votes":1337,"total_votes":36326,"dem_candidate":"Zenai Brooks","rep_candidate":"Tera K. Klutz","margin":21619,"margin_pct":59.5138,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":12476,"rep_votes":48358,"other_votes":2239,"total_votes":63073,"dem_candidate":"Zenai Brooks","rep_candidate":"Tera K. Klutz","margin":35882,"margin_pct":56.8896,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":21284,"rep_votes":58815,"other_votes":4264,"total_votes":84363,"dem_candidate":"Zenai Brooks","rep_candidate":"Tera K. Klutz","margin":37531,"margin_pct":44.4875,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":83143,"rep_votes":141561,"other_votes":8372,"total_votes":233076,"dem_candidate":"Zenai Brooks","rep_candidate":"Tera K. Klutz","margin":58418,"margin_pct":25.0639,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":22050,"rep_votes":56095,"other_votes":3489,"total_votes":81634,"dem_candidate":"Zenai Brooks","rep_candidate":"Tera K. Klutz","margin":34045,"margin_pct":41.7044,"winner":"REP","color":"#dc2626"},"8":{"dem_votes":7563,"rep_votes":23009,"other_votes":1222,"total_votes":31794,"dem_candidate":"Zenai Brooks","rep_candidate":"Tera K. Klutz","margin":15446,"margin_pct":48.5815,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":27592,"rep_votes":71334,"other_votes":3776,"total_votes":102702,"dem_candidate":"Zenai Brooks","rep_candidate":"Tera K. Klutz","margin":43742,"margin_pct":42.5912,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "auditor",
+    "year": 2022,
+    "districts": 8,
+    "match_coverage_pct": 38.04,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 2007,
+    "precinct_geom_match_pct": 70.4
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 68706,
+        "rep_votes": 60037,
+        "other_votes": 3399,
+        "total_votes": 132142,
+        "dem_candidate": "Zenai Brooks",
+        "rep_candidate": "Tera K. Klutz",
+        "margin": -8669,
+        "margin_pct": -6.5604,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 6327,
+        "rep_votes": 27157,
+        "other_votes": 1275,
+        "total_votes": 34759,
+        "dem_candidate": "Zenai Brooks",
+        "rep_candidate": "Tera K. Klutz",
+        "margin": 20830,
+        "margin_pct": 59.9269,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 12834,
+        "rep_votes": 49505,
+        "other_votes": 2301,
+        "total_votes": 64640,
+        "dem_candidate": "Zenai Brooks",
+        "rep_candidate": "Tera K. Klutz",
+        "margin": 36671,
+        "margin_pct": 56.7311,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 21132,
+        "rep_votes": 58629,
+        "other_votes": 4252,
+        "total_votes": 84013,
+        "dem_candidate": "Zenai Brooks",
+        "rep_candidate": "Tera K. Klutz",
+        "margin": 37497,
+        "margin_pct": 44.6324,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 83295,
+        "rep_votes": 141747,
+        "other_votes": 8384,
+        "total_votes": 233426,
+        "dem_candidate": "Zenai Brooks",
+        "rep_candidate": "Tera K. Klutz",
+        "margin": 58452,
+        "margin_pct": 25.0409,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 23538,
+        "rep_votes": 58053,
+        "other_votes": 3611,
+        "total_votes": 85202,
+        "dem_candidate": "Zenai Brooks",
+        "rep_candidate": "Tera K. Klutz",
+        "margin": 34515,
+        "margin_pct": 40.5096,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "8": {
+        "dem_votes": 7563,
+        "rep_votes": 23009,
+        "other_votes": 1222,
+        "total_votes": 31794,
+        "dem_candidate": "Zenai Brooks",
+        "rep_candidate": "Tera K. Klutz",
+        "margin": 15446,
+        "margin_pct": 48.5815,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 26104,
+        "rep_votes": 69376,
+        "other_votes": 3654,
+        "total_votes": 99134,
+        "dem_candidate": "Zenai Brooks",
+        "rep_candidate": "Tera K. Klutz",
+        "margin": 43272,
+        "margin_pct": 43.65,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

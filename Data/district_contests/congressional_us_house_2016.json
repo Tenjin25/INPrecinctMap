@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "us_house",
+    "year": 2016,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_sum_by_district_number",
+    "source": "openelections-data-in"
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 415030,
+        "rep_votes": 0,
+        "other_votes": 95246,
+        "total_votes": 510276,
+        "dem_candidate": "Peter Visclosky",
+        "rep_candidate": "",
+        "margin": -415030,
+        "margin_pct": -81.3344,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 198565,
+        "rep_votes": 308661,
+        "other_votes": 20340,
+        "total_votes": 527566,
+        "dem_candidate": "Lynn Coleman",
+        "rep_candidate": "Jackie Walorski",
+        "margin": 110096,
+        "margin_pct": 20.8687,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 129552,
+        "rep_votes": 390921,
+        "other_votes": 38709,
+        "total_votes": 559182,
+        "dem_candidate": "Tommy Schrader",
+        "rep_candidate": "Jim Banks",
+        "margin": 261369,
+        "margin_pct": 46.7413,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 182519,
+        "rep_votes": 386839,
+        "other_votes": 29666,
+        "total_votes": 599024,
+        "dem_candidate": "John Dale",
+        "rep_candidate": "Todd Rokita",
+        "margin": 204320,
+        "margin_pct": 34.1088,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 147418,
+        "rep_votes": 237476,
+        "other_votes": 15541,
+        "total_votes": 400435,
+        "dem_candidate": "Angela Demaree",
+        "rep_candidate": "Susan Brooks",
+        "margin": 90058,
+        "margin_pct": 22.49,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 158811,
+        "rep_votes": 410966,
+        "other_votes": 24907,
+        "total_votes": 594684,
+        "dem_candidate": "Barry Welsh",
+        "rep_candidate": "Luke Messer",
+        "margin": 252155,
+        "margin_pct": 42.4015,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 317475,
+        "rep_votes": 188911,
+        "other_votes": 23065,
+        "total_votes": 529451,
+        "dem_candidate": "Andre Carson",
+        "rep_candidate": "Catherine Ping",
+        "margin": -128564,
+        "margin_pct": -24.2825,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 188204,
+        "rep_votes": 375562,
+        "other_votes": 27455,
+        "total_votes": 591221,
+        "dem_candidate": "Ron Drake",
+        "rep_candidate": "Larry Bucshon",
+        "margin": 187358,
+        "margin_pct": 31.69,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 224894,
+        "rep_votes": 329846,
+        "other_votes": 33863,
+        "total_votes": 588603,
+        "dem_candidate": "Shelli Yoder",
+        "rep_candidate": "Trey Hollingsworth",
+        "margin": 104952,
+        "margin_pct": 17.8307,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

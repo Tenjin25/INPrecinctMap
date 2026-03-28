@@ -1,1 +1,124 @@
-{"meta":{"scope":"congressional","contest_type":"governor","year":2008,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":170956,"rep_votes":102529,"other_votes":4950,"total_votes":278435,"dem_candidate":"Jill Long Thompson","rep_candidate":"Mitchell E Daniels","margin":-68427,"margin_pct":-24.5756,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":145587,"rep_votes":168268,"other_votes":7147,"total_votes":321002,"dem_candidate":"Jill Long Thompson","rep_candidate":"Mitchell E Daniels","margin":22681,"margin_pct":7.0657,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":107183,"rep_votes":172997,"other_votes":5880,"total_votes":286060,"dem_candidate":"Jill Long Thompson","rep_candidate":"Mitchell E Daniels","margin":65814,"margin_pct":23.0071,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":84091,"rep_votes":194502,"other_votes":7056,"total_votes":285649,"dem_candidate":"Jill Long Thompson","rep_candidate":"Mitchell E Daniels","margin":110411,"margin_pct":38.6527,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":87211,"rep_votes":212660,"other_votes":5284,"total_votes":305155,"dem_candidate":"Jill Long Thompson","rep_candidate":"Mitchell E Daniels","margin":125449,"margin_pct":41.1099,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":108331,"rep_votes":203770,"other_votes":7649,"total_votes":319750,"dem_candidate":"Jill Long Thompson","rep_candidate":"Mitchell E Daniels","margin":95439,"margin_pct":29.848,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":112586,"rep_votes":147445,"other_votes":5181,"total_votes":265212,"dem_candidate":"Jill Long Thompson","rep_candidate":"Mitchell E Daniels","margin":34859,"margin_pct":13.1438,"winner":"REP","color":"#dc2626"},"8":{"dem_votes":137756,"rep_votes":178463,"other_votes":6799,"total_votes":323018,"dem_candidate":"Jill Long Thompson","rep_candidate":"Mitchell E Daniels","margin":40707,"margin_pct":12.6021,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":128763,"rep_votes":183251,"other_votes":7472,"total_votes":319486,"dem_candidate":"Jill Long Thompson","rep_candidate":"Mitchell E Daniels","margin":54488,"margin_pct":17.0549,"winner":"REP","color":"#dc2626"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "governor",
+    "year": 2008,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 196,
+    "precinct_geom_match_pct": 84.18
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 170955,
+        "rep_votes": 102529,
+        "other_votes": 4950,
+        "total_votes": 278434,
+        "dem_candidate": "Jill Long Thompson",
+        "rep_candidate": "Mitchell E Daniels",
+        "margin": -68426,
+        "margin_pct": -24.5753,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 145587,
+        "rep_votes": 168268,
+        "other_votes": 7147,
+        "total_votes": 321002,
+        "dem_candidate": "Jill Long Thompson",
+        "rep_candidate": "Mitchell E Daniels",
+        "margin": 22681,
+        "margin_pct": 7.0657,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 107183,
+        "rep_votes": 172997,
+        "other_votes": 5880,
+        "total_votes": 286060,
+        "dem_candidate": "Jill Long Thompson",
+        "rep_candidate": "Mitchell E Daniels",
+        "margin": 65814,
+        "margin_pct": 23.0071,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 84091,
+        "rep_votes": 194502,
+        "other_votes": 7056,
+        "total_votes": 285649,
+        "dem_candidate": "Jill Long Thompson",
+        "rep_candidate": "Mitchell E Daniels",
+        "margin": 110411,
+        "margin_pct": 38.6527,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 87211,
+        "rep_votes": 212660,
+        "other_votes": 5284,
+        "total_votes": 305155,
+        "dem_candidate": "Jill Long Thompson",
+        "rep_candidate": "Mitchell E Daniels",
+        "margin": 125449,
+        "margin_pct": 41.1099,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 108331,
+        "rep_votes": 203770,
+        "other_votes": 7649,
+        "total_votes": 319750,
+        "dem_candidate": "Jill Long Thompson",
+        "rep_candidate": "Mitchell E Daniels",
+        "margin": 95439,
+        "margin_pct": 29.848,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 112586,
+        "rep_votes": 147445,
+        "other_votes": 5181,
+        "total_votes": 265212,
+        "dem_candidate": "Jill Long Thompson",
+        "rep_candidate": "Mitchell E Daniels",
+        "margin": 34859,
+        "margin_pct": 13.1438,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "8": {
+        "dem_votes": 137756,
+        "rep_votes": 178463,
+        "other_votes": 6799,
+        "total_votes": 323018,
+        "dem_candidate": "Jill Long Thompson",
+        "rep_candidate": "Mitchell E Daniels",
+        "margin": 40707,
+        "margin_pct": 12.6021,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 128763,
+        "rep_votes": 183251,
+        "other_votes": 7472,
+        "total_votes": 319486,
+        "dem_candidate": "Jill Long Thompson",
+        "rep_candidate": "Mitchell E Daniels",
+        "margin": 54488,
+        "margin_pct": 17.0549,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

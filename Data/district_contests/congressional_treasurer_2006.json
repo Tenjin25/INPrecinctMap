@@ -1,1 +1,123 @@
-{"meta":{"scope":"congressional","contest_type":"treasurer","year":2006,"districts":9,"match_coverage_pct":100.0,"allocation":"county_area_weighted_from_statewide_contest"},"general":{"results":{"1":{"dem_votes":94911,"rep_votes":47191,"other_votes":0,"total_votes":142102,"dem_candidate":"Michael W Griffin","rep_candidate":"Richard E Mourdock","margin":-47720,"margin_pct":-33.5815,"winner":"DEM","color":"#2563eb"},"2":{"dem_votes":100303,"rep_votes":106676,"other_votes":0,"total_votes":206979,"dem_candidate":"Michael W Griffin","rep_candidate":"Richard E Mourdock","margin":6373,"margin_pct":3.0791,"winner":"REP","color":"#dc2626"},"3":{"dem_votes":68798,"rep_votes":104456,"other_votes":0,"total_votes":173254,"dem_candidate":"Michael W Griffin","rep_candidate":"Richard E Mourdock","margin":35658,"margin_pct":20.5813,"winner":"REP","color":"#dc2626"},"4":{"dem_votes":60166,"rep_votes":95413,"other_votes":0,"total_votes":155579,"dem_candidate":"Michael W Griffin","rep_candidate":"Richard E Mourdock","margin":35247,"margin_pct":22.6554,"winner":"REP","color":"#dc2626"},"5":{"dem_votes":76241,"rep_votes":99830,"other_votes":0,"total_votes":176071,"dem_candidate":"Michael W Griffin","rep_candidate":"Richard E Mourdock","margin":23589,"margin_pct":13.3974,"winner":"REP","color":"#dc2626"},"6":{"dem_votes":79407,"rep_votes":100028,"other_votes":0,"total_votes":179435,"dem_candidate":"Michael W Griffin","rep_candidate":"Richard E Mourdock","margin":20621,"margin_pct":11.4922,"winner":"REP","color":"#dc2626"},"7":{"dem_votes":73703,"rep_votes":64064,"other_votes":0,"total_votes":137767,"dem_candidate":"Michael W Griffin","rep_candidate":"Richard E Mourdock","margin":-9639,"margin_pct":-6.9966,"winner":"DEM","color":"#2563eb"},"8":{"dem_votes":112117,"rep_votes":114185,"other_votes":0,"total_votes":226302,"dem_candidate":"Michael W Griffin","rep_candidate":"Richard E Mourdock","margin":2068,"margin_pct":0.9138,"winner":"REP","color":"#dc2626"},"9":{"dem_votes":105965,"rep_votes":101688,"other_votes":0,"total_votes":207653,"dem_candidate":"Michael W Griffin","rep_candidate":"Richard E Mourdock","margin":-4277,"margin_pct":-2.0597,"winner":"DEM","color":"#2563eb"}}}}
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "treasurer",
+    "year": 2006,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "county_area_weighted_from_statewide_contest",
+    "precinct_rows": 0
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 94911,
+        "rep_votes": 47191,
+        "other_votes": 0,
+        "total_votes": 142102,
+        "dem_candidate": "Michael W Griffin",
+        "rep_candidate": "Richard E Mourdock",
+        "margin": -47720,
+        "margin_pct": -33.5815,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 100302,
+        "rep_votes": 106676,
+        "other_votes": 0,
+        "total_votes": 206978,
+        "dem_candidate": "Michael W Griffin",
+        "rep_candidate": "Richard E Mourdock",
+        "margin": 6374,
+        "margin_pct": 3.0796,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 68798,
+        "rep_votes": 104456,
+        "other_votes": 0,
+        "total_votes": 173254,
+        "dem_candidate": "Michael W Griffin",
+        "rep_candidate": "Richard E Mourdock",
+        "margin": 35658,
+        "margin_pct": 20.5813,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 60166,
+        "rep_votes": 95413,
+        "other_votes": 0,
+        "total_votes": 155579,
+        "dem_candidate": "Michael W Griffin",
+        "rep_candidate": "Richard E Mourdock",
+        "margin": 35247,
+        "margin_pct": 22.6554,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 76241,
+        "rep_votes": 99830,
+        "other_votes": 0,
+        "total_votes": 176071,
+        "dem_candidate": "Michael W Griffin",
+        "rep_candidate": "Richard E Mourdock",
+        "margin": 23589,
+        "margin_pct": 13.3974,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 79407,
+        "rep_votes": 100028,
+        "other_votes": 0,
+        "total_votes": 179435,
+        "dem_candidate": "Michael W Griffin",
+        "rep_candidate": "Richard E Mourdock",
+        "margin": 20621,
+        "margin_pct": 11.4922,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 73703,
+        "rep_votes": 64064,
+        "other_votes": 0,
+        "total_votes": 137767,
+        "dem_candidate": "Michael W Griffin",
+        "rep_candidate": "Richard E Mourdock",
+        "margin": -9639,
+        "margin_pct": -6.9966,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 112117,
+        "rep_votes": 114185,
+        "other_votes": 0,
+        "total_votes": 226302,
+        "dem_candidate": "Michael W Griffin",
+        "rep_candidate": "Richard E Mourdock",
+        "margin": 2068,
+        "margin_pct": 0.9138,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 105965,
+        "rep_votes": 101688,
+        "other_votes": 0,
+        "total_votes": 207653,
+        "dem_candidate": "Michael W Griffin",
+        "rep_candidate": "Richard E Mourdock",
+        "margin": -4277,
+        "margin_pct": -2.0597,
+        "winner": "DEM",
+        "color": "#2563eb"
+      }
+    }
+  }
+}
