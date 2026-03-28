@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 
 .tmp_*/
+.tmp_*
 
 Thumbs.db
 .DS_Store
@@ -11,3 +12,7 @@ Thumbs.db
 Data/*.zip
 Data/TIGER2008_18_IN_counties/
 Data/openelections-data-in/
+Data/*AllOfficeResults*.csv
+
+# Generated OpenElections-format exports (large, rebuildable)
+Data/openelections_generated/

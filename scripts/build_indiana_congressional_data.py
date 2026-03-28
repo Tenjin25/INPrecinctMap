@@ -51,6 +51,7 @@ CD118_ZIP = DATA_DIR / "tl_2022_18_cd118.zip"
 SLDL_ZIP = DATA_DIR / "tl_2022_18_sldl.zip"
 SLDU_ZIP = DATA_DIR / "tl_2022_18_sldu.zip"
 OPENELECTIONS_ROOT = DATA_DIR / "openelections-data-in"
+OPENELECTIONS_GENERATED_ROOT = DATA_DIR / "openelections_generated"
 
 OUT_TILESET_DIR = DATA_DIR / "tileset"
 OUT_CROSSWALKS_DIR = DATA_DIR / "crosswalks"
@@ -234,6 +235,29 @@ def map_office_to_contest_type(office_raw: str) -> Optional[str]:
 
     if "LABOR" in o and "COMMISSIONER" in o:
         return "labor_commissioner"
+
+    return None
+
+
+def map_office_to_district_race_type(office_raw: str) -> Optional[Tuple[str, str]]:
+    """
+    Map OpenElections-style office labels to (scope, contest_type) for district-specific races.
+
+    These contests are aggregated by the district number embedded in the precinct rows.
+    """
+    o = normalize_alnum_token(office_raw)
+    if not o:
+        return None
+
+    # Congressional districts.
+    if "US HOUSE" in o or "U S HOUSE" in o or "UNITED STATES HOUSE" in o:
+        return "congressional", "us_house"
+
+    # Indiana legislative districts.
+    if "STATE HOUSE" in o or "STATE REPRESENTATIVE" in o:
+        return "state_house", "state_house"
+    if "STATE SENATE" in o or "STATE SENATOR" in o:
+        return "state_senate", "state_senate"
 
     return None
 
@@ -485,14 +509,16 @@ def build_county_to_cd_weights(counties: List[CountyFeature], districts: List[Di
     return rows
 
 
-def iter_general_precinct_files(root: Path) -> Iterable[Path]:
+def iter_general_precinct_files(root: Path, *, allow_flat: bool = False) -> Iterable[Path]:
     for p in root.rglob("*.csv"):
         rel = p.relative_to(root)
         if not rel.parts:
             continue
-        # Use only canonical year folders; skip parser/test folders.
+        # Use only canonical year folders; optionally support top-level OpenElections
+        # filenames like 20241105__in__general__<county>__precinct.csv.
         if not re.fullmatch(r"\d{4}", rel.parts[0]):
-            continue
+            if not (allow_flat and re.match(r"^\d{8}__", p.name)):
+                continue
         name = p.name.lower()
         if "__general__" not in name:
             continue
@@ -501,13 +527,14 @@ def iter_general_precinct_files(root: Path) -> Iterable[Path]:
         yield p
 
 
-def iter_general_county_files(root: Path) -> Iterable[Path]:
+def iter_general_county_files(root: Path, *, allow_flat: bool = False) -> Iterable[Path]:
     for p in root.rglob("*.csv"):
         rel = p.relative_to(root)
         if not rel.parts:
             continue
         if not re.fullmatch(r"\d{4}", rel.parts[0]):
-            continue
+            if not (allow_flat and re.match(r"^\d{8}__", p.name)):
+                continue
         name = p.name.lower()
         if "__general__" not in name:
             continue
@@ -633,7 +660,7 @@ def collect_statewide_contests(
 
     seen_rows = set()
 
-    for path in iter_general_precinct_files(root):
+    for path in iter_general_precinct_files(root, allow_flat=False):
         m = re.match(r"^(\d{4})", path.name)
         if not m:
             continue
@@ -680,7 +707,7 @@ def collect_statewide_contests(
     # Use them only to backfill county/contest pairs missing from precinct parses.
     existing_county_contests = set(county_votes.keys())
     seen_county_rows = set()
-    for path in iter_general_county_files(root):
+    for path in iter_general_county_files(root, allow_flat=False):
         m = re.match(r"^(\d{4})", path.name)
         if not m:
             continue
@@ -724,6 +751,78 @@ def collect_statewide_contests(
                 coverage[(year, contest_type)].add(county_name)
 
     return county_votes, candidate_votes, coverage
+
+
+def collect_district_race_contests(
+    root: Path,
+    county_alias_map: Dict[str, str],
+    *,
+    years: Optional[Set[int]] = None,
+) -> Tuple[
+    Dict[Tuple[int, str, str, int], Dict[str, int]],
+    Dict[Tuple[int, str, str, int, str], Dict[str, int]],
+    Dict[Tuple[int, str, str], set],
+]:
+    # (year, scope, contest_type, district_num) -> dem/rep/other vote totals
+    district_votes: Dict[Tuple[int, str, str, int], Dict[str, int]] = defaultdict(lambda: {"dem": 0, "rep": 0, "other": 0})
+    # (year, scope, contest_type, district_num, party) -> candidate -> votes
+    candidate_votes: Dict[Tuple[int, str, str, int, str], Dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    # contest coverage districts
+    coverage: Dict[Tuple[int, str, str], set] = defaultdict(set)
+
+    seen_rows = set()
+
+    for path in iter_general_precinct_files(root, allow_flat=True):
+        m = re.match(r"^(\d{4})", path.name)
+        if not m:
+            continue
+        year = int(m.group(1))
+        if years is not None and year not in years:
+            continue
+
+        with path.open("r", encoding="utf-8-sig", errors="replace", newline="") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                district_raw = (row.get("district") or "").strip()
+                if not district_raw:
+                    continue
+
+                # District numbers are expected for these races; ignore anything non-numeric.
+                digits = re.sub(r"[^0-9]", "", district_raw)
+                if not digits:
+                    continue
+                district_num = int(digits)
+                if district_num <= 0:
+                    continue
+
+                mapped = map_office_to_district_race_type(row.get("office") or "")
+                if not mapped:
+                    continue
+                scope, contest_type = mapped
+
+                county_name = canonicalize_county_name(row.get("county") or "", county_alias_map)
+                if not county_name:
+                    continue
+
+                votes = parse_votes(row.get("votes"))
+                if votes <= 0:
+                    continue
+
+                precinct = normalize_space((row.get("precinct") or "").upper())
+                party = party_bucket(row.get("party") or "")
+                candidate = normalize_space(row.get("candidate") or "")
+
+                row_key = (year, scope, contest_type, district_num, county_name, precinct, party, candidate.upper(), votes)
+                if row_key in seen_rows:
+                    continue
+                seen_rows.add(row_key)
+
+                district_votes[(year, scope, contest_type, district_num)][party] += votes
+                if candidate:
+                    candidate_votes[(year, scope, contest_type, district_num, party)][candidate] += votes
+                coverage[(year, scope, contest_type)].add(district_num)
+
+    return district_votes, candidate_votes, coverage
 
 
 def top_candidate(candidate_totals: Dict[str, int]) -> str:
@@ -1175,6 +1274,109 @@ def build_outputs() -> None:
             year_d = district_agg["results_by_year"].setdefault(str(year), {})
             scope_d = year_d.setdefault(scope, {})
             scope_d[contest_type] = district_payload
+
+    # District-specific races (U.S. House / State House / State Senate) aggregated
+    # directly from precinct results when available.
+    scope_to_expected_districts: Dict[str, Set[int]] = {
+        "congressional": {d.district_num for d in congressional_districts},
+        "state_house": {d.district_num for d in state_house_districts},
+        "state_senate": {d.district_num for d in state_senate_districts},
+    }
+
+    district_race_root = OPENELECTIONS_GENERATED_ROOT if OPENELECTIONS_GENERATED_ROOT.exists() else OPENELECTIONS_ROOT
+    district_votes, district_candidate_votes, district_coverage = collect_district_race_contests(
+        district_race_root,
+        county_alias_map,
+        years={2022, 2024},
+    )
+
+    grouped_district = defaultdict(dict)  # (year, scope, contest_type) -> district_num -> votes dict
+    for (year, scope, contest_type, district_num), votes in district_votes.items():
+        if scope not in scope_to_expected_districts:
+            continue
+        if district_num not in scope_to_expected_districts[scope]:
+            continue
+        grouped_district[(year, scope, contest_type)][district_num] = votes
+
+    for (year, scope, contest_type), by_district in sorted(grouped_district.items()):
+        expected = scope_to_expected_districts.get(scope, set())
+        expected_count = len(expected) or len(by_district)
+        covered = district_coverage.get((year, scope, contest_type), set())
+        coverage_pct = round((len(covered) / expected_count) * 100.0, 2) if expected_count else 0.0
+
+        dem_total = sum(v["dem"] for v in by_district.values())
+        rep_total = sum(v["rep"] for v in by_district.values())
+        other_total = sum(v["other"] for v in by_district.values())
+        if dem_total <= 0 and rep_total <= 0 and other_total <= 0:
+            continue
+
+        district_results = {}
+        for d in sorted(by_district.keys()):
+            v = by_district[d]
+            dem = int(v.get("dem", 0))
+            rep = int(v.get("rep", 0))
+            oth = int(v.get("other", 0))
+            total = dem + rep + oth
+            if total <= 0:
+                continue
+            margin = rep - dem
+            margin_pct = (margin / total) * 100.0
+            winner = winner_from_votes(dem, rep)
+            dem_candidate = top_candidate(district_candidate_votes.get((year, scope, contest_type, d, "dem"), {}))
+            rep_candidate = top_candidate(district_candidate_votes.get((year, scope, contest_type, d, "rep"), {}))
+            district_results[str(d)] = {
+                "dem_votes": dem,
+                "rep_votes": rep,
+                "other_votes": oth,
+                "total_votes": total,
+                "dem_candidate": dem_candidate,
+                "rep_candidate": rep_candidate,
+                "margin": int(margin),
+                "margin_pct": round(margin_pct, 4),
+                "winner": winner,
+                "color": color_from_winner(winner),
+            }
+
+        if not district_results:
+            continue
+
+        district_meta: Dict[str, Any] = {
+            "scope": scope,
+            "contest_type": contest_type,
+            "year": year,
+            "districts": len(district_results),
+            "match_coverage_pct": coverage_pct,
+            "allocation": "precinct_sum_by_district_number",
+            "source": str(district_race_root.name),
+        }
+        district_payload = {
+            "meta": {
+                **district_meta,
+            },
+            "general": {
+                "results": district_results,
+            },
+        }
+        district_filename = f"{scope}_{contest_type}_{year}.json"
+        write_json(OUT_DISTRICT_CONTESTS_DIR / district_filename, district_payload)
+        district_manifest_files.append(
+            {
+                "scope": scope,
+                "year": year,
+                "contest_type": contest_type,
+                "file": district_filename,
+                "districts": len(district_results),
+                "dem_total": dem_total,
+                "rep_total": rep_total,
+                "other_total": other_total,
+                "major_party_contested": bool(dem_total > 0 and rep_total > 0),
+                "match_coverage_pct": coverage_pct,
+            }
+        )
+
+        year_d = district_agg["results_by_year"].setdefault(str(year), {})
+        scope_d = year_d.setdefault(scope, {})
+        scope_d[contest_type] = district_payload
 
     write_json(OUT_CONTESTS_DIR / "manifest.json", {"files": contest_manifest_files})
     write_json(OUT_DISTRICT_CONTESTS_DIR / "manifest.json", {"files": district_manifest_files})

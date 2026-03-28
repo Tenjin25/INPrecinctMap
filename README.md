@@ -64,6 +64,18 @@ Build consolidated county contest JSON:
 .\.venv\Scripts\python.exe scripts\build_county_contests_json.py
 ```
 
+## Convert IDOE "AllOfficeResults" exports to OpenElections format
+
+These exports (like `Data/2022AllOfficeResults.csv` / `Data/2024AllOfficeResults.csv`) can be converted into the
+OpenElections-style precinct CSV schema:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\convert_alloffice_to_openelections.py Data\2022AllOfficeResults.csv Data\2024AllOfficeResults.csv
+```
+
+Outputs are written to `Data/openelections_generated/` (ignored by git).
+By default the output is votes-only (uses `TotalVotes`); add `--include-vote-breakdown` if you want the extra vote-type columns.
+
 ## Mapbox token
 
 `index.html` reads token from:
