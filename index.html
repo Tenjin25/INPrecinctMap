@@ -6829,14 +6829,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     };
   }
-  const districtLines2024Btn = document.getElementById('district-lines-2024');
-  if (districtLines2024Btn) {
-    districtLines2024Btn.onclick = function() {
-      if (typeof setDistrictLinesMode === 'function') {
-        setDistrictLinesMode(2024).catch(() => {});
-      }
-    };
-  }
+  // 2024 district-lines toggle removed; Indiana uses a single 2022 lineset.
 
   const splitTicketBtn = document.getElementById('split-ticket-toggle');
   if (splitTicketBtn) {
@@ -7201,18 +7194,14 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="control-group" style="margin-bottom:12px;">
                 <span class="section-kicker">Quick Jumps</span>
                 <div class="region-jumps" id="region-jumps">
-                  <button type="button" class="region-jump-btn" data-region-jump="triangle">Triangle</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="triad">Triad</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="charlotte">Charlotte</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="asheville">Asheville</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="mountains">Mountains</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="coast">Coast</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="innerbanks">Inner Banks</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="sandhills">Sandhills</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="fayetteville">Fayetteville</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="capefear">Cape Fear</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="i95">I-95</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="foothills">Foothills</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="indy_metro">Indianapolis Metro</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="nwi">Northwest Indiana</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="fort_wayne">Fort Wayne Region</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="south_bend">South Bend–Elkhart</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="wabash_valley">Wabash Valley</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="evansville">Evansville Tri‑State</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="river_south">Ohio River South</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="college_corridor">College Corridor</button>
                 </div>
             </div>
             <div class="control-group" style="margin-bottom:10px;">
@@ -7228,10 +7217,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span class="section-kicker">District Lines</span>
                 <div class="view-toggle-row" style="display:flex;gap:6px;flex-wrap:wrap;">
                   <button id="district-lines-2022" class="view-toggle-btn active" type="button" data-testid="lines-2022" aria-label="Use 2022 district lines" aria-pressed="true">2022 Lines</button>
-                  <button id="district-lines-2024" class="view-toggle-btn" type="button" data-testid="lines-2024" aria-label="Use 2024 district lines" aria-pressed="false">2024 Lines</button>
                 </div>
                 <div style="margin-top:4px;font-size:11px;color:#6b7280;">
-                  2022 keeps the longer history; 2024 uses the new legislative and congressional boundaries.
+                  Single lineset: 2022 district boundaries.
                 </div>
             </div>
             <div class="control-group viz-inline-group" style="margin-bottom:10px;">
@@ -7614,7 +7602,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-03-27-4';
+    const DATA_CACHE_BUSTER = '2026-03-27-5';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -7658,13 +7646,10 @@ document.addEventListener('DOMContentLoaded', function() {
         precinct_variant_overrides: withBase('./data/mappings/precinct_variant_overrides.json'),
         districts: withBase('./data/tileset/in_cd118_tileset.geojson'),
         districts_2022: withBase('./data/tileset/in_cd118_tileset.geojson'),
-        districts_2024: withBase('./data/tileset/in_cd119_tileset.geojson'),
         state_house: withBase('./data/tileset/in_state_house_2022_lines_tileset.geojson'),
         state_house_2022: withBase('./data/tileset/in_state_house_2022_lines_tileset.geojson'),
-        state_house_2024: withBase('./data/tileset/in_state_house_2024_lines_tileset.geojson'),
         state_senate: withBase('./data/tileset/in_state_senate_2022_lines_tileset.geojson'),
         state_senate_2022: withBase('./data/tileset/in_state_senate_2022_lines_tileset.geojson'),
-        state_senate_2024: withBase('./data/tileset/in_state_senate_2024_lines_tileset.geojson'),
         county_demographics: withBase('./data/county_demographics_2020_dp1.json'),
         precinct_demographics: withBase('./data/precinct_demographics_2020_vap.csv'),
         election: withBase('./data/in_elections_aggregated.json'),
@@ -7672,8 +7657,7 @@ document.addEventListener('DOMContentLoaded', function() {
         district_contests_dir: withBase('./data/district_contests'),
         district_contests_2020_2024_dir: withBase('./data/district_contests'),
         district_contests_dirs: {
-          '2022': withBase('./data/district_contests'),
-          '2024': withBase('./data/district_contests')
+          '2022': withBase('./data/district_contests')
         },
         districts_info: withBase('./data/in_congressional_districts.csv'),
         state_house_info: withBase('./data/in_state_house_districts.csv'),
@@ -7686,9 +7670,7 @@ document.addEventListener('DOMContentLoaded', function() {
           congressional: withBase('./data/crosswalks/precinct_to_cd118.csv'),
           congressional_2022: withBase('./data/crosswalks/precinct_to_cd118.csv'),
           state_house_2022: withBase('./data/crosswalks/precinct_to_2022_state_house.csv'),
-          state_house_2024: withBase('./data/crosswalks/precinct_to_2024_state_house.csv'),
-          state_senate_2022: withBase('./data/crosswalks/precinct_to_2022_state_senate.csv'),
-          state_senate_2024: withBase('./data/crosswalks/precinct_to_2024_state_senate.csv')
+          state_senate_2022: withBase('./data/crosswalks/precinct_to_2022_state_senate.csv')
         }
       },
       center: [-86.126, 39.92],
@@ -7960,12 +7942,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const DEBUG = false;
     const debugLog = (...args) => { if (DEBUG) console.log(...args); };
 
-    let electionDataJSON = null; // New JSON structure from nc_elections_aggregated.json
+    let electionDataJSON = null; // New JSON structure from in_elections_aggregated.json
     let districtElectionDataJSON = null; // Legacy district-results fallback when slices are unavailable
     let electionData = null; // Flattened array for compatibility
     let contestManifest = [];
     let districtManifest = [];
-    let districtManifestByLines = { '2022': [], '2024': [] };
+    let districtManifestByLines = { '2022': [] };
     let currentDistrictLinesYear = 2022;
     const districtGeometryCache = new Map();
     let congressionalData = []; // Optional legacy district-level table
@@ -8280,7 +8262,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function normalizeDistrictLinesYear(raw) {
-      return Number(raw) === 2024 ? 2024 : 2022;
+      return 2022;
     }
 
     function getDistrictLinesLabel(linesYear = currentDistrictLinesYear) {
@@ -8317,21 +8299,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function getDistrictGeometryPath(scope, linesYear = currentDistrictLinesYear) {
-      const y = normalizeDistrictLinesYear(linesYear);
       if (scope === 'congressional') {
-        return y === 2024
-          ? (CONFIG.paths.districts_2024 || CONFIG.paths.districts)
-          : (CONFIG.paths.districts_2022 || CONFIG.paths.districts);
+        return CONFIG.paths.districts_2022 || CONFIG.paths.districts;
       }
       if (scope === 'state_house') {
-        return y === 2024
-          ? (CONFIG.paths.state_house_2024 || CONFIG.paths.state_house)
-          : (CONFIG.paths.state_house_2022 || CONFIG.paths.state_house);
+        return CONFIG.paths.state_house_2022 || CONFIG.paths.state_house;
       }
       if (scope === 'state_senate') {
-        return y === 2024
-          ? (CONFIG.paths.state_senate_2024 || CONFIG.paths.state_senate)
-          : (CONFIG.paths.state_senate_2022 || CONFIG.paths.state_senate);
+        return CONFIG.paths.state_senate_2022 || CONFIG.paths.state_senate;
       }
       return '';
     }
@@ -8344,16 +8319,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateDistrictLinesToggleUI() {
-      const y = normalizeDistrictLinesYear(currentDistrictLinesYear);
+      const y = 2022;
       const btn2022 = document.getElementById('district-lines-2022');
-      const btn2024 = document.getElementById('district-lines-2024');
       if (btn2022) {
         btn2022.classList.toggle('active', y === 2022);
         btn2022.setAttribute('aria-pressed', y === 2022 ? 'true' : 'false');
-      }
-      if (btn2024) {
-        btn2024.classList.toggle('active', y === 2024);
-        btn2024.setAttribute('aria-pressed', y === 2024 ? 'true' : 'false');
       }
     }
 
@@ -8510,7 +8480,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (normalizedView === 'state_senate') {
         return ['state_senate', 'president', 'us_senate', 'governor', 'attorney_general', 'secretary_of_state', 'treasurer', 'auditor', 'superintendent'];
       }
-      return ['president', 'us_senate', 'governor', 'attorney_general', 'secretary_of_state', 'treasurer', 'auditor', 'superintendent', 'labor_commissioner', 'insurance_commissioner', 'agriculture_commissioner'];
+      return ['president', 'us_senate', 'governor', 'attorney_general', 'secretary_of_state', 'treasurer', 'auditor', 'superintendent'];
     }
 
     function preferredInitialContestValue(view = currentView) {
@@ -10632,8 +10602,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	            'presidential': 'president',
 	            'governor': 'governor',
 	            'us_senate': 'us_senate',
-	            'attorney_general': 'attorney_general',
-	            'agriculture_commissioner': 'agriculture_commissioner'
+	            'attorney_general': 'attorney_general'
 	          };
           const mappedOfficeType = officeTypeMap[officeType] || officeType;
           
@@ -10695,7 +10664,6 @@ document.addEventListener('DOMContentLoaded', function() {
         'Governor': 'governor',
         'United States Senator': 'us_senate',
         'Attorney General': 'attorney_general',
-        'Commissioner of Agriculture': 'agriculture_commissioner',
         'Secretary of State': 'secretary_of_state',
         'Treasurer': 'treasurer'
       };
@@ -10771,15 +10739,11 @@ document.addEventListener('DOMContentLoaded', function() {
 	        'president': 'President of the United States',
 	        'governor': 'Governor',
 	        'us_senate': 'United States Senator',
-	        'lieutenant_governor': 'Governor (Ticket)',
 	        'attorney_general': 'Attorney General',
 	        'auditor': 'State Auditor',
-	        'labor_commissioner': 'Commissioner of Labor',
-	        'insurance_commissioner': 'Commissioner of Insurance',
-	        'superintendent': 'Superintendent of Public Instruction',
-	        'agriculture_commissioner': 'Commissioner of Agriculture',
 	        'secretary_of_state': 'Secretary of State',
 	        'treasurer': 'Treasurer',
+	        'superintendent': 'Superintendent of Public Instruction',
 	        'us_house': 'US House',
 	        'state_senate': 'State Senate',
 	        'state_house': 'State House'
@@ -10791,29 +10755,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	      if (contestType.startsWith('d')) {
 	        return `Judicial Retention ${contestType.toUpperCase()}`;
-	      }
-
-	      if (contestType.startsWith('nc_court_of_appeals_judge_seat_')) {
-	        const seat = contestType.replace('nc_court_of_appeals_judge_seat_', '').replace(/^0+/, '');
-	        return `Indiana Court of Appeals Judge Seat ${seat || contestType}`;
-	      }
-	      if (contestType.startsWith('nc_court_of_appeals_judge_') && contestType.endsWith('_seat')) {
-	        const who = contestType.replace('nc_court_of_appeals_judge_', '').replace(/_seat$/i, '').replace(/_/g, ' ').trim();
-	        const label = who ? (typeof toTitleCaseName === 'function' ? toTitleCaseName(who) : who) : contestType;
-	        return `Indiana Court of Appeals Judge (${label})`;
-	      }
-	      if (contestType.startsWith('nc_supreme_court_associate_justice_seat_')) {
-	        const seat = contestType.replace('nc_supreme_court_associate_justice_seat_', '').replace(/^0+/, '');
-	        return `Indiana Supreme Court Associate Justice Seat ${seat || contestType}`;
-	      }
-	      if (contestType.startsWith('nc_supreme_court_chief_justice_seat_')) {
-	        const seat = contestType.replace('nc_supreme_court_chief_justice_seat_', '').replace(/^0+/, '');
-	        return `Indiana Supreme Court Chief Justice Seat ${seat || contestType}`;
-	      }
-	      if (contestType.startsWith('nc_supreme_court_chief_justice_') && contestType.endsWith('_seat')) {
-	        const who = contestType.replace('nc_supreme_court_chief_justice_', '').replace(/_seat$/i, '').replace(/_/g, ' ').trim();
-	        const label = who ? (typeof toTitleCaseName === 'function' ? toTitleCaseName(who) : who) : contestType;
-	        return `Indiana Supreme Court Chief Justice (${label})`;
 	      }
 
 	      return nameMap[contestType] || contestType.toUpperCase();
@@ -10930,16 +10871,14 @@ document.addEventListener('DOMContentLoaded', function() {
 	      sel.innerHTML = '<option value="">Select a contest...</option>';
 
 	      const contestYearPairs = {};
-        const councilOfStateTypes = new Set([
+        const statewideOfficeTypes = new Set([
+          'president',
+          'us_senate',
           'governor',
-          'lieutenant_governor',
           'attorney_general',
           'auditor',
           'secretary_of_state',
           'treasurer',
-          'labor_commissioner',
-          'insurance_commissioner',
-          'agriculture_commissioner',
           'superintendent'
         ]);
 
@@ -10962,14 +10901,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	        const year = Number(entry.year);
 	        const rows = Number(entry.rows || entry.districts || 0) || 0;
 	        if (!contestType || rows <= 0) return;
-          // Indiana governor + lieutenant governor run on the same ticket.
-          if (contestType === 'lieutenant_governor') return;
+          // Skip any unexpected pseudo-contests (none expected for Indiana statewide slices).
 
-          // Hide older state judicial contests until we have reliable D/R-alignment (endorsement) data.
-          // Indiana appellate judicial races can be nonpartisan in older cycles; without endorsements they read as "OTHER".
-          const isJudicial = contestType.startsWith('nc_supreme_court_') || contestType.startsWith('nc_court_of_appeals_');
-          if (isJudicial && Number.isFinite(year) && year < 2018) return;
-          if (councilOfStateTypes.has(contestType) && !parseMajorPartyContested(entry)) return;
+          if (statewideOfficeTypes.has(contestType) && !parseMajorPartyContested(entry)) return;
 
 	        if (!contestYearPairs[contestType]) contestYearPairs[contestType] = new Set();
 	        contestYearPairs[contestType].add(year);
@@ -10979,17 +10913,11 @@ document.addEventListener('DOMContentLoaded', function() {
 	        if (contestType === 'president') return 'US President';
 	        if (contestType === 'us_senate') return 'US Senate';
 	        if (contestType === 'governor') return 'IN Governor';
-	        if (contestType === 'lieutenant_governor') return 'IN Governor (Ticket)';
 	        if (contestType === 'attorney_general') return 'IN Attorney General';
 	        if (contestType === 'secretary_of_state') return 'IN Secretary of State';
 	        if (contestType === 'treasurer') return 'IN Treasurer';
-	        if (contestType === 'auditor') return 'Auditor';
-	        if (contestType === 'labor_commissioner') return 'Labor Commissioner';
-	        if (contestType === 'insurance_commissioner') return 'Insurance Commissioner';
-	        if (contestType === 'agriculture_commissioner') return 'Agriculture Commissioner';
-	        if (contestType === 'superintendent') return 'Superintendent of Public Instruction';
-	        if (contestType.startsWith('nc_supreme_court_')) return 'Indiana Supreme Court';
-	        if (contestType.startsWith('nc_court_of_appeals_')) return 'Court of Appeals';
+	        if (contestType === 'auditor') return 'IN Auditor';
+	        if (contestType === 'superintendent') return 'IN Superintendent of Public Instruction';
 	        return formatContestName(contestType, '');
 	      }
 
@@ -11005,13 +10933,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	        'IN Attorney General',
 	        'IN Secretary of State',
 	        'IN Treasurer',
-	        'Auditor',
-	        'Labor Commissioner',
-	        'Insurance Commissioner',
-	        'Agriculture Commissioner',
-	        'Superintendent of Public Instruction',
-	        'Indiana Supreme Court',
-	        'Court of Appeals'
+	        'IN Auditor',
+	        'IN Superintendent of Public Instruction'
 	      ];
 
 	      const grouped = new Map(); // label -> Array<{contestType, year}>
@@ -11135,9 +11058,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	        'secretary_of_state',
 	        'treasurer',
 	        'auditor',
-	        'labor_commissioner',
-	        'insurance_commissioner',
-	        'agriculture_commissioner',
 	        'superintendent'
 	      ];
       // Precompute contest/year pairs in a single pass
@@ -11154,15 +11074,11 @@ document.addEventListener('DOMContentLoaded', function() {
 	        if (contestType === 'president') return 'US President';
 	        if (contestType === 'us_senate') return 'US Senate';
 	        if (contestType === 'governor') return 'IN Governor';
-	        if (contestType === 'lieutenant_governor') return 'IN Governor (Ticket)';
 	        if (contestType === 'attorney_general') return 'IN Attorney General';
 	        if (contestType === 'secretary_of_state') return 'IN Secretary of State';
 	        if (contestType === 'treasurer') return 'IN Treasurer';
-	        if (contestType === 'auditor') return 'Auditor';
-	        if (contestType === 'labor_commissioner') return 'Labor Commissioner';
-	        if (contestType === 'insurance_commissioner') return 'Insurance Commissioner';
-	        if (contestType === 'agriculture_commissioner') return 'Agriculture Commissioner';
-	        if (contestType === 'superintendent') return 'Superintendent of Public Instruction';
+	        if (contestType === 'auditor') return 'IN Auditor';
+	        if (contestType === 'superintendent') return 'IN Superintendent of Public Instruction';
 	        return formatContestName(contestType, '');
 	      }
 
@@ -11173,11 +11089,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	        'IN Attorney General',
 	        'IN Secretary of State',
 	        'IN Treasurer',
-	        'Auditor',
-	        'Labor Commissioner',
-	        'Insurance Commissioner',
-	        'Agriculture Commissioner',
-	        'Superintendent of Public Instruction'
+	        'IN Auditor',
+	        'IN Superintendent of Public Instruction'
 	      ];
 
 	      const grouped = new Map(); // label -> Array<{contestType, year}>
@@ -14514,7 +14427,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       const download = document.createElement('a');
       download.href = dataUrl;
-      download.download = `nc-election-atlas-story-${snapshotStoryVariant}-${Date.now()}.png`;
+      download.download = `in-election-atlas-story-${snapshotStoryVariant}-${Date.now()}.png`;
       document.body.appendChild(download);
       download.click();
       download.remove();
@@ -18558,8 +18471,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
       try {
         let loadedAnyDistrictManifest = false;
-        districtManifestByLines = { '2022': [], '2024': [] };
-        for (const linesYear of [2022, 2024]) {
+        districtManifestByLines = { '2022': [] };
+        for (const linesYear of [2022]) {
           const dir = getActiveDistrictContestsDir(linesYear);
           if (!dir) continue;
           try {
@@ -18593,7 +18506,7 @@ document.addEventListener('DOMContentLoaded', function() {
           districtElectionDataJSON = await loadJSON(CONFIG.paths.district_election);
           debugLog('District election data loaded:', districtElectionDataJSON);
           districtSliceCache = new Map();
-          districtManifestByLines = { '2022': [], '2024': [] };
+          districtManifestByLines = { '2022': [] };
           districtManifest = [];
           updateDistrictLinesToggleUI();
         } catch (err) {

@@ -7,17 +7,13 @@ Outputs:
   - Data/in_elections_aggregated.json
   - Data/tileset/in_cd118_tileset.geojson
   - Data/tileset/in_state_house_2022_lines_tileset.geojson
-  - Data/tileset/in_state_house_2024_lines_tileset.geojson
   - Data/tileset/in_state_senate_2022_lines_tileset.geojson
-  - Data/tileset/in_state_senate_2024_lines_tileset.geojson
   - Data/in_congressional_districts.csv
   - Data/in_state_house_districts.csv
   - Data/in_state_senate_districts.csv
   - Data/crosswalks/precinct_to_cd118.csv   (county-keyed carry crosswalk)
   - Data/crosswalks/precinct_to_2022_state_house.csv
-  - Data/crosswalks/precinct_to_2024_state_house.csv
   - Data/crosswalks/precinct_to_2022_state_senate.csv
-  - Data/crosswalks/precinct_to_2024_state_senate.csv
   - Data/crosswalks/county_to_cd118.csv
   - Data/crosswalks/county_to_2022_state_house.csv
   - Data/crosswalks/county_to_2022_state_senate.csv
@@ -62,23 +58,18 @@ OUT_CONTESTS_DIR = DATA_DIR / "contests"
 OUT_DISTRICT_CONTESTS_DIR = DATA_DIR / "district_contests"
 
 OUT_CD118_GEOJSON = OUT_TILESET_DIR / "in_cd118_tileset.geojson"
-OUT_CD119_GEOJSON = OUT_TILESET_DIR / "in_cd119_tileset.geojson"
 OUT_DISTRICTS_INFO_CSV = DATA_DIR / "in_congressional_districts.csv"
 OUT_CROSSWALK_PRECINCT_TO_CD = OUT_CROSSWALKS_DIR / "precinct_to_cd118.csv"
 OUT_CROSSWALK_COUNTY_TO_CD = OUT_CROSSWALKS_DIR / "county_to_cd118.csv"
 
 OUT_STATE_HOUSE_2022_GEOJSON = OUT_TILESET_DIR / "in_state_house_2022_lines_tileset.geojson"
-OUT_STATE_HOUSE_2024_GEOJSON = OUT_TILESET_DIR / "in_state_house_2024_lines_tileset.geojson"
 OUT_STATE_SENATE_2022_GEOJSON = OUT_TILESET_DIR / "in_state_senate_2022_lines_tileset.geojson"
-OUT_STATE_SENATE_2024_GEOJSON = OUT_TILESET_DIR / "in_state_senate_2024_lines_tileset.geojson"
 
 OUT_STATE_HOUSE_INFO_CSV = DATA_DIR / "in_state_house_districts.csv"
 OUT_STATE_SENATE_INFO_CSV = DATA_DIR / "in_state_senate_districts.csv"
 
 OUT_CROSSWALK_PRECINCT_TO_STATE_HOUSE_2022 = OUT_CROSSWALKS_DIR / "precinct_to_2022_state_house.csv"
-OUT_CROSSWALK_PRECINCT_TO_STATE_HOUSE_2024 = OUT_CROSSWALKS_DIR / "precinct_to_2024_state_house.csv"
 OUT_CROSSWALK_PRECINCT_TO_STATE_SENATE_2022 = OUT_CROSSWALKS_DIR / "precinct_to_2022_state_senate.csv"
-OUT_CROSSWALK_PRECINCT_TO_STATE_SENATE_2024 = OUT_CROSSWALKS_DIR / "precinct_to_2024_state_senate.csv"
 OUT_CROSSWALK_COUNTY_TO_STATE_HOUSE_2022 = OUT_CROSSWALKS_DIR / "county_to_2022_state_house.csv"
 OUT_CROSSWALK_COUNTY_TO_STATE_SENATE_2022 = OUT_CROSSWALKS_DIR / "county_to_2022_state_senate.csv"
 OUT_ELECTION_AGG = DATA_DIR / "in_elections_aggregated.json"
@@ -1014,18 +1005,14 @@ def build_scope_assets(
     scope_label: str,
     districts: List[DistrictFeature],
     counties: List[CountyFeature],
-    out_geojson_2022: Path,
-    out_geojson_2024: Path,
+    out_geojson: Path,
     out_info_csv: Path,
     out_county_crosswalk_csv: Path,
-    out_precinct_crosswalk_2022_csv: Path,
-    out_precinct_crosswalk_2024_csv: Path,
+    out_precinct_crosswalk_csv: Path,
 ) -> List[Dict[str, Any]]:
     county_to_district_rows = build_county_to_cd_weights(counties, districts)
 
-    write_cd_geojson(districts, out_geojson_2022)
-    # Reuse 2022 lines for 2024 toggle until separate district shapefiles are provided.
-    write_cd_geojson(districts, out_geojson_2024)
+    write_cd_geojson(districts, out_geojson)
 
     info_rows = []
     for d in sorted(districts, key=lambda x: x.district_num):
@@ -1074,18 +1061,13 @@ def build_scope_assets(
     )
 
     write_csv(
-        out_precinct_crosswalk_2022_csv,
-        ["precinct_key", "district_num", "area_weight", "county", "countyfp20"],
-        precinct_xwalk_rows,
-    )
-    write_csv(
-        out_precinct_crosswalk_2024_csv,
+        out_precinct_crosswalk_csv,
         ["precinct_key", "district_num", "area_weight", "county", "countyfp20"],
         precinct_xwalk_rows,
     )
 
-    print(f"Wrote {scope_label} geometry: {out_geojson_2022}")
-    print(f"Wrote {scope_label} crosswalk: {out_precinct_crosswalk_2022_csv}")
+    print(f"Wrote {scope_label} geometry: {out_geojson}")
+    print(f"Wrote {scope_label} crosswalk: {out_precinct_crosswalk_csv}")
     return county_to_district_rows
 
 
@@ -1128,36 +1110,30 @@ def build_outputs() -> None:
         scope_label="congressional",
         districts=congressional_districts,
         counties=counties,
-        out_geojson_2022=OUT_CD118_GEOJSON,
-        out_geojson_2024=OUT_CD119_GEOJSON,
+        out_geojson=OUT_CD118_GEOJSON,
         out_info_csv=OUT_DISTRICTS_INFO_CSV,
         out_county_crosswalk_csv=OUT_CROSSWALK_COUNTY_TO_CD,
-        out_precinct_crosswalk_2022_csv=OUT_CROSSWALK_PRECINCT_TO_CD,
-        out_precinct_crosswalk_2024_csv=OUT_CROSSWALK_PRECINCT_TO_CD,
+        out_precinct_crosswalk_csv=OUT_CROSSWALK_PRECINCT_TO_CD,
     )
 
     county_to_state_house_rows = build_scope_assets(
         scope_label="state_house",
         districts=state_house_districts,
         counties=counties,
-        out_geojson_2022=OUT_STATE_HOUSE_2022_GEOJSON,
-        out_geojson_2024=OUT_STATE_HOUSE_2024_GEOJSON,
+        out_geojson=OUT_STATE_HOUSE_2022_GEOJSON,
         out_info_csv=OUT_STATE_HOUSE_INFO_CSV,
         out_county_crosswalk_csv=OUT_CROSSWALK_COUNTY_TO_STATE_HOUSE_2022,
-        out_precinct_crosswalk_2022_csv=OUT_CROSSWALK_PRECINCT_TO_STATE_HOUSE_2022,
-        out_precinct_crosswalk_2024_csv=OUT_CROSSWALK_PRECINCT_TO_STATE_HOUSE_2024,
+        out_precinct_crosswalk_csv=OUT_CROSSWALK_PRECINCT_TO_STATE_HOUSE_2022,
     )
 
     county_to_state_senate_rows = build_scope_assets(
         scope_label="state_senate",
         districts=state_senate_districts,
         counties=counties,
-        out_geojson_2022=OUT_STATE_SENATE_2022_GEOJSON,
-        out_geojson_2024=OUT_STATE_SENATE_2024_GEOJSON,
+        out_geojson=OUT_STATE_SENATE_2022_GEOJSON,
         out_info_csv=OUT_STATE_SENATE_INFO_CSV,
         out_county_crosswalk_csv=OUT_CROSSWALK_COUNTY_TO_STATE_SENATE_2022,
-        out_precinct_crosswalk_2022_csv=OUT_CROSSWALK_PRECINCT_TO_STATE_SENATE_2022,
-        out_precinct_crosswalk_2024_csv=OUT_CROSSWALK_PRECINCT_TO_STATE_SENATE_2024,
+        out_precinct_crosswalk_csv=OUT_CROSSWALK_PRECINCT_TO_STATE_SENATE_2022,
     )
 
     shared_seen_statewide_rows: Set[Tuple[Any, ...]] = set()
