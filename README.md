@@ -2,6 +2,13 @@
 
 Indiana election atlas with county, precinct, congressional, and state legislative views.
 
+## UI highlights
+
+- County hover tooltips now use the richer NCMap-style presentation in `index.html`.
+- Desktop county hovers support compact previews that can be clicked to pin and expand.
+- Mobile and touch interactions keep hover shells non-blocking until a tooltip is pinned.
+- Hover cards include contest-aware winner, competitiveness tier, shift/flip summaries, and county detail disclosure.
+
 ## What is in this repo
 
 - Frontend app: `index.html`

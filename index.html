@@ -689,11 +689,61 @@ body { height: var(--app-height); }
   transition: opacity 0.15s ease;
 }
 
+/* UI hierarchy helpers: keep one dominant layer at a time. */
+body.hover-preview-active .main-controls,
+body.hover-preview-active .vote-counter,
+body.hover-preview-active .viz-modes,
+body.hover-preview-active .legend {
+  opacity: 0.94;
+}
+
+body.focus-active.hover-preview-active .vote-counter {
+  opacity: 1;
+}
+
+/* Desktop: keep the classic hover-card feel (no global UI dimming). */
+@media (min-width: 769px) {
+  body.hover-preview-active .main-controls,
+  body.hover-preview-active .vote-counter,
+  body.hover-preview-active .viz-modes,
+  body.hover-preview-active .legend {
+    opacity: 1;
+  }
+}
+
+#hover-tooltip[data-context="preview"] {
+  max-width: 252px;
+  opacity: 0.88;
+  border-color: rgba(148, 163, 184, 0.18);
+}
+
+body.focus-active #hover-tooltip[data-context="preview"] {
+  opacity: 0.82;
+}
+
+.hover-tooltip .tooltip-kicker {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(148, 163, 184, 0.92);
+  margin-bottom: 5px;
+}
+
+.hover-tooltip .tooltip-hint {
+  margin-top: 8px;
+  font-size: 11px;
+  font-weight: 750;
+  color: rgba(226, 232, 240, 0.92);
+  opacity: 0.95;
+}
+
 .hover-tooltip .tooltip-title {
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-weight: 750;
+  margin-bottom: 8px;
   color: #ffffff;
   font-size: 14px;
+  line-height: 1.25;
   letter-spacing: 0.3px;
 }
 .hover-tooltip .tooltip-title-wrap {
@@ -709,11 +759,17 @@ body { height: var(--app-height); }
 .hover-tooltip .tooltip-title-badge {
   display: inline-flex;
   align-items: center;
-  padding: 1px 7px;
+  padding: 2px 8px;
   border-radius: 999px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 800;
+  letter-spacing: 0.01em;
   border: 1px solid transparent;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.hover-tooltip .tooltip-title-badge:hover {
+  transform: translateY(-1px) scale(1.04);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 .hover-tooltip .tooltip-title-badge.rep {
   color: #fecaca;
@@ -734,6 +790,133 @@ body { height: var(--app-height); }
 .hover-tooltip .tooltip-trends {
   font-size: 12px;
   line-height: 1.6;
+}
+
+.hover-tooltip .tooltip-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+
+.hover-tooltip .tooltip-head.is-compact {
+  margin-bottom: 6px;
+}
+
+.hover-tooltip .tooltip-title {
+  margin-bottom: 0;
+}
+
+.hover-tooltip .tooltip-quickline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.28;
+}
+
+.hover-tooltip .tooltip-quickline .rep { color: #fecaca; }
+.hover-tooltip .tooltip-quickline .dem { color: #bfdbfe; }
+.hover-tooltip .tooltip-quickline .tie { color: #e2e8f0; }
+
+.hover-tooltip .tooltip-quickline .tier {
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.92);
+}
+.hover-tooltip .tooltip-quickline .tier::before {
+  content: "";
+  margin: 0;
+}
+.hover-tooltip .tooltip-quickline .tier {
+  margin-left: 4px;
+}
+
+.hover-tooltip .tooltip-insight {
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(226, 232, 240, 0.92);
+}
+
+.hover-tooltip .tooltip-delta {
+  margin-top: 7px;
+  font-size: 11.5px;
+  line-height: 1.35;
+  color: rgba(226, 232, 240, 0.92);
+}
+
+.hover-tooltip .tooltip-delta-line {
+  margin-top: 4px;
+  color: rgba(226, 232, 240, 0.92);
+}
+
+.hover-tooltip .tooltip-body.desktop-collapsed .tooltip-delta {
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.hover-tooltip .tooltip-delta .tooltip-shift {
+  font-weight: 800;
+}
+
+.hover-tooltip .tooltip-delta .tooltip-shift.rep {
+  color: #fecaca;
+}
+
+.hover-tooltip .tooltip-delta .tooltip-shift.dem {
+  color: #bfdbfe;
+}
+
+.hover-tooltip .tooltip-delta .tooltip-shift.tie {
+  color: rgba(226, 232, 240, 0.92);
+}
+
+.hover-tooltip .tooltip-flip {
+  margin-top: 6px;
+  font-size: 11.5px;
+  font-weight: 850;
+  letter-spacing: 0.01em;
+  color: rgba(226, 232, 240, 0.92);
+}
+.hover-tooltip .tooltip-flip.rep { color: #fecaca; }
+.hover-tooltip .tooltip-flip.dem { color: #bfdbfe; }
+
+.hover-tooltip .tooltip-more {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.hover-tooltip .tooltip-more summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(15, 23, 42, 0.18);
+  color: rgba(226, 232, 240, 0.96);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hover-tooltip .tooltip-more summary::-webkit-details-marker {
+  display: none;
+}
+
+.hover-tooltip .tooltip-more-body {
+  margin-top: 10px;
 }
 
 .quick-tooltip {
@@ -1848,7 +2031,7 @@ body { height: var(--app-height); }
     box-shadow: 0 18px 44px rgba(15, 23, 42, 0.25);
     backdrop-filter: blur(14px);
     border-radius: 14px;
-    max-width: 360px;
+    max-width: 280px;
     animation: tooltip-in 140ms ease-out;
   }
 
@@ -1881,6 +2064,12 @@ body { height: var(--app-height); }
   /* Allow interacting with tooltip buttons only when pinned. */
   #hover-tooltip[data-pinned="1"] {
     pointer-events: auto;
+  }
+  @media (pointer: coarse) {
+    /* On touch devices, don't let a non-pinned hover shell block panning/zooming. */
+    #hover-tooltip[data-pinned="0"] {
+      pointer-events: none;
+    }
   }
 
   /* Help modal */
@@ -7857,6 +8046,14 @@ document.addEventListener('DOMContentLoaded', function() {
       try { return !!(window.matchMedia && window.matchMedia('(max-width: 768px)').matches); } catch (_) { return window.innerWidth <= 768; }
     }
 
+    function isMobileTooltipMode() {
+      return isMobileViewportNow();
+    }
+
+    function isDesktopTooltipMode() {
+      return !isMobileTooltipMode();
+    }
+
     function isTouchInteractionMode() {
       try {
         if (IS_COARSE_POINTER) return true;
@@ -7992,6 +8189,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let lastPointerPoint = null;
     let hoverRefreshRaf = null;
     let hoverSuppressedUntil = 0;
+    let desktopHoverExpandState = null; // { kind, x, y, title, expandedInner, copyText }
     let appReady = false;
     let vizShiftCache = null; // { contestType, year, prevYear, prevPrecinctMarginByNorm: Map, prevCountyTotals: Object }
     const vizDistrictShiftCache = new Map(); // key: `${scope}_${contestType}_${year}` -> { prevYear, prevNode }
@@ -12188,6 +12386,15 @@ document.addEventListener('DOMContentLoaded', function() {
       };
     }
 
+    function signedCountyMarginPctDisplayValue(demVotes, repVotes, totalVotes) {
+      const rawSigned = signedMarginPctFromVotes(demVotes, repVotes, totalVotes);
+      const displayAbs = countyMarginPctDisplayValue(repVotes, demVotes, totalVotes);
+      if (!Number.isFinite(Number(rawSigned))) return 0;
+      if (rawSigned > 0) return Math.abs(displayAbs);
+      if (rawSigned < 0) return -Math.abs(displayAbs);
+      return 0;
+    }
+
     function compactCompetitivenessLabel(marginPct, party) {
       const side = party === 'rep' ? 'R' : (party === 'dem' ? 'D' : '');
       if (marginPct >= 40) return side ? `Annihilation ${side}` : 'Annihilation';
@@ -12718,6 +12925,19 @@ document.addEventListener('DOMContentLoaded', function() {
       return `<span class="meta-chip flip ${cls}"><span class="dot"></span>Flip ${labelFrom}\u2192${labelTo}</span>`;
     }
 
+    function flipLineHTML(prevSignedPct, curSignedPct, fromYear = null, toYear = null) {
+      const f = flipInfo(prevSignedPct, curSignedPct);
+      if (!f.flipped) return '';
+      const labelFrom = f.from === 'R' ? 'R' : 'D';
+      const labelTo = f.to === 'R' ? 'R' : 'D';
+      const cls = f.to === 'R' ? 'rep' : 'dem';
+      const fy = Number(fromYear);
+      const ty = Number(toYear);
+      const hasYears = Number.isFinite(fy) && Number.isFinite(ty);
+      const years = hasYears ? ` (${String(fy).slice(-2)}→${String(ty).slice(-2)})` : '';
+      return `<div class="tooltip-flip ${cls}">Flip: ${labelFrom}→${labelTo}${years}</div>`;
+    }
+
     function buildResultCardHTML(title, subtitle, demVotes, repVotes, otherVotes, demCandidate, repCandidate, options = {}) {
       const d = Number(demVotes || 0);
       const r = Number(repVotes || 0);
@@ -13067,6 +13287,25 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .join('');
       return buildTooltipShell(title, lines);
+    }
+
+    function buildStartHereHintText({ hasContest = false } = {}) {
+      const touch = isTouchInteractionMode();
+      if (!hasContest) {
+        return touch
+          ? 'Choose a contest, then tap a county. Tap to pin details.'
+          : 'Choose a contest, then hover a county. Click to pin details.';
+      }
+      return touch
+        ? 'Now tap a county to pin details. Tap another county to switch.'
+        : 'Now hover a county for a quick preview. Click to pin details.';
+    }
+
+    function formatShiftLabel(shiftPct) {
+      const s = Number(shiftPct) || 0;
+      const abs = Math.abs(s);
+      if (abs < 0.01) return 'No change';
+      return `${s > 0 ? 'R' : 'D'}+${abs.toFixed(2)}%`;
     }
 
     function shiftChipHTML(shiftPct, prevYear, year) {
@@ -14666,7 +14905,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
       if (!contestValue || !row) {
         const hoverTitle = buildTooltipTitleWithTier(`${countyDisplay} County`);
-        showHoverTooltip(e.point.x, e.point.y, buildTooltipShell(hoverTitle, '<div style="color:#64748b;">Select a contest to see results</div>'), { force: !!forceTooltip });
+        const pinnedShell = !!(tooltipPinned || (forceTooltip && isTouchInteractionMode()));
+        const copyText = `${countyDisplay} County`;
+        if (isDesktopTooltipMode()) {
+          showHoverTooltip(
+            e.point.x,
+            e.point.y,
+            buildTooltipShell(hoverTitle, '<div style="color:#64748b;">Select a contest to see results</div>', { pinned: pinnedShell, copyText }),
+            { force: !!forceTooltip, pinned: pinnedShell, context: pinnedShell ? 'pinned' : 'detail', copyText }
+          );
+          wireTooltipButtons();
+          return;
+        }
+        showHoverTooltip(
+          e.point.x,
+          e.point.y,
+          buildTooltipShell(
+            hoverTitle,
+            `<div class="tooltip-kicker">Start</div><div style="color:rgba(226,232,240,0.92);font-weight:650;">${escapeHtml(buildStartHereHintText({ hasContest: false }))}</div>`,
+            { pinned: pinnedShell, copyText }
+          ),
+          { force: !!forceTooltip, pinned: pinnedShell, context: pinnedShell ? 'pinned' : 'detail', copyText }
+        );
         wireTooltipButtons();
         return;
       }
@@ -14680,7 +14940,24 @@ document.addEventListener('DOMContentLoaded', function() {
       const totalVotes = Number(row[`${contestType}_total`] || 0);
       if (totalVotes <= 0) {
         const hoverTitle = buildTooltipTitleWithTier(`${countyDisplay} County`);
-        showHoverTooltip(e.point.x, e.point.y, buildTooltipShell(hoverTitle, '<div style="color:#64748b;">No data available</div>'), { force: !!forceTooltip });
+        const pinnedShell = !!(tooltipPinned || (forceTooltip && isTouchInteractionMode()));
+        const copyText = `${countyDisplay} County`;
+        if (isDesktopTooltipMode()) {
+          showHoverTooltip(
+            e.point.x,
+            e.point.y,
+            buildTooltipShell(hoverTitle, '<div style="color:#64748b;">No data available</div>', { pinned: pinnedShell, copyText }),
+            { force: !!forceTooltip, pinned: pinnedShell, context: pinnedShell ? 'pinned' : 'detail', copyText }
+          );
+          wireTooltipButtons();
+          return;
+        }
+        showHoverTooltip(
+          e.point.x,
+          e.point.y,
+          buildTooltipShell(hoverTitle, '<div class="tooltip-kicker">No data</div><div style="color:rgba(226,232,240,0.92);">No results reported for this contest.</div>', { pinned: pinnedShell, copyText }),
+          { force: !!forceTooltip, pinned: pinnedShell, context: pinnedShell ? 'pinned' : 'detail', copyText }
+        );
         wireTooltipButtons();
         return;
       }
@@ -14697,6 +14974,7 @@ document.addEventListener('DOMContentLoaded', function() {
       );
 
       const signedMarginPct = signedMarginPctFromVotes(demVotes, repVotes, totalVotes);
+      const signedDisplayMarginPct = signedCountyMarginPctDisplayValue(demVotes, repVotes, totalVotes);
       const tierMeta = competitivenessTierMetaFromSignedMarginPct(signedMarginPct);
       const winner = signedMarginPct > 0 ? 'R' : (signedMarginPct < 0 ? 'D' : 'T');
       const subtitle = `${formatContestName(contestType, year)} ${year}`;
@@ -14706,6 +14984,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const demo = countyDemographics?.counties?.[norm] || null;
         demoLine = buildCountyDemographicsHoverHTML(demo);
       } catch (_) {}
+      const showDemoLine = (currentVizMode === 'demographics') || tooltipPinned || (forceTooltip && isTouchInteractionMode());
+      if (!showDemoLine) demoLine = '';
 
       const chips = [];
       let prevSignedForFlip = null;
@@ -14714,9 +14994,11 @@ document.addEventListener('DOMContentLoaded', function() {
         prevSignedForFlip = prev ? signedMarginPctFromVotes(prev.dem, prev.rep, prev.total) : 0;
       }
 
+      let shiftDeltaForTooltip = NaN;
       if (currentVizMode === 'shift' && vizShiftCache?.prevYear) {
-        const prevSigned = (prevSignedForFlip !== null) ? prevSignedForFlip : 0;
-        chips.push(shiftChipHTML(signedMarginPct - prevSigned, vizShiftCache.prevYear, vizShiftCache.year));
+        const prevSigned = (prevSignedForFlip !== null) ? Number(prevSignedForFlip) : 0;
+        shiftDeltaForTooltip = signedDisplayMarginPct - prevSigned;
+        chips.push(shiftChipHTML(shiftDeltaForTooltip, vizShiftCache.prevYear, vizShiftCache.year));
       } else {
         chips.push(winnerChipHTML(winner));
       }
@@ -14728,23 +15010,100 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       if (isBellwetherCounty(norm)) {
-        chips.push('<span class="result-chip" style="background:rgba(250,204,21,0.18);color:#7c2d12;border-color:rgba(202,138,4,0.58);">&#9733; Bellwether County</span>');
+        chips.push('<span class="result-chip" style="background:rgba(168,85,247,0.16);color:#581c87;border-color:rgba(216,180,254,0.55);">Barometer County</span>');
       }
 
       const splitInsight = getSplitTicketCountyInsight(norm, contestType, demVotes, repVotes, totalVotes);
       const splitInsightLine = splitInsight
-        ? `<div style="margin-top:8px;padding:8px 10px;border-radius:10px;background:rgba(15,23,42,0.06);border:1px solid rgba(148,163,184,0.38);"><div style="font-size:11px;font-weight:800;letter-spacing:0.01em;color:#334155;">Pres-Gov Lens</div><div style="display:flex;justify-content:space-between;gap:10px;font-size:12px;color:#334155;"><span>President:</span><strong>${splitInsight.presidentLabel}</strong></div><div style="display:flex;justify-content:space-between;gap:10px;font-size:12px;color:#334155;"><span>Governor Overlay:</span><strong>${splitInsight.governorLabel}</strong></div><div style="display:flex;justify-content:space-between;gap:10px;font-size:12px;color:#334155;"><span>Split Shift:</span><strong>${splitInsight.deltaLabel}</strong></div></div>`
+        ? `<div style="margin-top:8px;padding:8px 10px;border-radius:10px;background:rgba(15,23,42,0.06);border:1px solid rgba(148,163,184,0.38);"><div style="font-size:11px;font-weight:800;letter-spacing:0.01em;color:#334155;">Pres-Gov Lens</div><div style="display:flex;justify-content:space-between;gap:10px;font-size:12px;color:#334155;"><span>President:</span><strong>${escapeHtml(splitInsight.presidentLabel)}</strong></div><div style="display:flex;justify-content:space-between;gap:10px;font-size:12px;color:#334155;"><span>Governor Overlay:</span><strong>${escapeHtml(splitInsight.governorLabel)}</strong></div><div style="display:flex;justify-content:space-between;gap:10px;font-size:12px;color:#334155;"><span>Split Shift:</span><strong>${escapeHtml(splitInsight.deltaLabel)}</strong></div></div>`
         : '';
 
-      const inner = `
+      const marginCall = winnerMarginCall(repVotes, demVotes, totalVotes, repCandidate, demCandidate);
+      const tierShort = tierMeta?.shortLabel || tierMeta?.label || '';
+      const tierLong = tierMeta?.label || '';
+      const flipLine = (prevSignedForFlip !== null)
+        ? flipLineHTML(prevSignedForFlip, signedMarginPct, vizPrevCache?.prevYear || null, Number(year))
+        : '';
+      const shiftClass = Number.isFinite(shiftDeltaForTooltip)
+        ? (Math.abs(shiftDeltaForTooltip) < 0.01 ? 'tie' : (shiftDeltaForTooltip > 0 ? 'rep' : 'dem'))
+        : 'tie';
+      const shiftLine = (currentVizMode === 'shift' && Number.isFinite(shiftDeltaForTooltip) && vizShiftCache?.prevYear)
+        ? `<div class="tooltip-delta"><div class="tooltip-delta-line">Shift (${escapeHtml(`${vizShiftCache.prevYear}→${vizShiftCache.year}`)}): <span class="tooltip-shift ${shiftClass}">${escapeHtml(formatShiftLabel(shiftDeltaForTooltip))}</span></div></div>`
+        : '';
+      const tooltipInsight = (() => {
+        if (currentVizMode !== 'shift') return '';
+        const abs = Math.abs(Number(signedMarginPct) || 0);
+        if (abs < 0.5) return 'Tiny changes can flip it.';
+        if (!Number.isFinite(shiftDeltaForTooltip) || Math.abs(shiftDeltaForTooltip) < 1.25) return '';
+        if (signedMarginPct > 0 && shiftDeltaForTooltip < 0) return 'Still Republican, but weakening.';
+        if (signedMarginPct < 0 && shiftDeltaForTooltip > 0) return 'Still Democratic, but slipping.';
+        if (shiftDeltaForTooltip < 0) return 'Democrats gaining ground lately.';
+        if (shiftDeltaForTooltip > 0) return 'Republicans gaining ground lately.';
+        return '';
+      })();
+
+      const classicInner = `
         <div class="hover-meta">${chips.join('')}</div>
         ${buildResultCardHTML('', subtitle, demVotes, repVotes, otherVotes, demCandidate, repCandidate, { precision: 'county' })}
+        ${tooltipInsight ? `<div class="tooltip-insight">${escapeHtml(tooltipInsight)}</div>` : ''}
         ${splitInsightLine}
         ${demoLine}
-      `;
+      `.trim();
+
+      const pinnedShell = !!(tooltipPinned || (forceTooltip && isTouchInteractionMode()));
+      const desktopCollapsed = isDesktopTooltipMode() && !pinnedShell;
+      const desktopCollapsedInner = `
+        <div class="tooltip-quickline">
+          <span class="${escapeHtml(marginCall.party || 'tie')}">${escapeHtml(marginCall.text || '')}</span>
+          ${tierLong ? `<span class="tier">${escapeHtml(tierLong)}</span>` : ''}
+        </div>
+        ${shiftLine}
+        ${flipLine}
+        ${tooltipInsight ? `<div class="tooltip-insight">${escapeHtml(tooltipInsight)}</div>` : ''}
+      `.trim();
+
+      const compactInner = `
+        <div class="tooltip-quickline">
+          <span class="${escapeHtml(marginCall.party || 'tie')}">${escapeHtml(marginCall.text || '')}</span>
+          ${tierShort ? `<span class="tier">${escapeHtml(tierShort)}</span>` : ''}
+        </div>
+        ${shiftLine}
+        ${flipLine}
+        ${tooltipInsight ? `<div class="tooltip-insight">${escapeHtml(tooltipInsight)}</div>` : ''}
+        <details class="tooltip-more" aria-label="More details">
+          <summary>Details</summary>
+          <div class="tooltip-more-body">${classicInner}</div>
+        </details>
+      `.trim();
+
+      const actionHint = isMobileTooltipMode()
+        ? (pinnedShell ? 'Pinned • tap Close to dismiss' : (isTouchInteractionMode() ? 'Tap to pin details' : 'Click to pin details'))
+        : '';
+
+      const inner = isDesktopTooltipMode()
+        ? (desktopCollapsed ? desktopCollapsedInner : classicInner)
+        : `${compactInner}${actionHint ? `<div class="tooltip-hint">${escapeHtml(actionHint)}</div>` : ''}`;
 
       const hoverTitle = buildTooltipTitleWithTier(`${countyDisplay} County`);
-      showHoverTooltip(e.point.x, e.point.y, buildTooltipShell(hoverTitle, inner), { force: !!forceTooltip });
+      const copyText = `${countyDisplay} County`;
+      showHoverTooltip(
+        e.point.x,
+        e.point.y,
+        buildTooltipShell(hoverTitle, inner, { pinned: pinnedShell, showClose: pinnedShell, copyText }),
+        { force: !!forceTooltip, pinned: pinnedShell, context: pinnedShell ? 'pinned' : 'detail', copyText }
+      );
+      if (desktopCollapsed) {
+        desktopHoverExpandState = {
+          kind: 'county',
+          x: e.point.x,
+          y: e.point.y,
+          title: hoverTitle,
+          expandedInner: classicInner,
+          copyText
+        };
+      } else {
+        clearDesktopHoverExpandState();
+      }
       wireTooltipButtons();
     }
 
@@ -17738,15 +18097,81 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
     }
 
+    function clearDesktopHoverExpandState() {
+      desktopHoverExpandState = null;
+    }
+
+    function wireDesktopTooltipExpandOnClick() {
+      const tooltip = document.getElementById('hover-tooltip');
+      if (!tooltip) return;
+      if (tooltip.dataset && tooltip.dataset.expandWired === '1') return;
+      try { tooltip.dataset.expandWired = '1'; } catch (_) {}
+      tooltip.addEventListener('click', (ev) => {
+        try {
+          if (!isDesktopTooltipMode()) return;
+          if (tooltipPinned) return;
+          if (!desktopHoverExpandState || desktopHoverExpandState.kind !== 'county') return;
+          const targetId = String(ev?.target?.id || '');
+          if (targetId === 'tooltip-close-btn' || targetId === 'tooltip-copy-btn') return;
+
+          const state = desktopHoverExpandState;
+          clearDesktopHoverExpandState();
+          setTooltipPinned(true);
+          showHoverTooltip(
+            state.x,
+            state.y,
+            buildTooltipShell(state.title, state.expandedInner, { pinned: true, showClose: true, copyText: state.copyText }),
+            { force: true, pinned: true, context: 'pinned', copyText: state.copyText }
+          );
+          wireTooltipButtons();
+        } catch (_) {}
+      });
+    }
+
     // Hover Tooltip Functions - VoteHub Style
-    function showHoverTooltip(x, y, content, { force = false } = {}) {
+    const hoverTooltipSuppression = { key: '', x: 0, y: 0, until: 0 };
+
+    function suppressHoverTooltip(key, x, y, { ms = 30000 } = {}) {
+      const k = (key || '').toString().trim();
+      if (!k) return;
+      const now = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+      hoverTooltipSuppression.key = k;
+      hoverTooltipSuppression.x = Number(x) || 0;
+      hoverTooltipSuppression.y = Number(y) || 0;
+      hoverTooltipSuppression.until = now + Math.max(0, Number(ms) || 0);
+    }
+
+    function clearHoverTooltipSuppression() {
+      hoverTooltipSuppression.key = '';
+      hoverTooltipSuppression.until = 0;
+    }
+
+    function showHoverTooltip(x, y, content, { force = false, pinned = false, context = '', copyText = '' } = {}) {
       const tooltip = document.getElementById('hover-tooltip');
       if (!tooltip) return;
       if (isTouchInteractionMode() && !force && !tooltipPinned) return;
       if (tooltipPinned && !force) return;
+
+      try {
+        const key = (copyText || '').toString().trim();
+        const now = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+        if (!pinned && !force && key && hoverTooltipSuppression.key === key && now < hoverTooltipSuppression.until) {
+          const dx = (Number(x) || 0) - (Number(hoverTooltipSuppression.x) || 0);
+          const dy = (Number(y) || 0) - (Number(hoverTooltipSuppression.y) || 0);
+          const dist2 = (dx * dx) + (dy * dy);
+          if (dist2 <= (14 * 14)) return;
+          clearHoverTooltipSuppression();
+        } else if (key && hoverTooltipSuppression.key && key !== hoverTooltipSuppression.key) {
+          clearHoverTooltipSuppression();
+        }
+      } catch (_) {}
       
       tooltip.innerHTML = content;
       tooltip.style.display = 'block';
+      tooltip.dataset.context = String(context || '');
+      tooltip.dataset.copyText = (copyText || '').toString();
+      try { document.body.classList.toggle('hover-preview-active', !pinned); } catch (_) {}
+      try { wireDesktopTooltipExpandOnClick(); } catch (_) {}
       
       // Position tooltip near mouse but avoid edges
       const tooltipRect = tooltip.getBoundingClientRect();
@@ -17772,6 +18197,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!tooltip) return;
       if (tooltipPinned) return;
       tooltip.style.display = 'none';
+      clearDesktopHoverExpandState();
+      try { tooltip.dataset.context = ''; } catch (_) {}
+      try { tooltip.dataset.copyText = ''; } catch (_) {}
+      try { document.body.classList.remove('hover-preview-active'); } catch (_) {}
     }
 
     function setTooltipPinned(pinned) {
@@ -17781,13 +18210,18 @@ document.addEventListener('DOMContentLoaded', function() {
       tooltip.setAttribute('data-pinned', tooltipPinned ? '1' : '0');
     }
 
-    function buildTooltipShell(title, innerHtml) {
+    function buildTooltipShell(title, innerHtml, options = {}) {
+      const pinned = options && options.pinned === true;
+      const showClose = !!(pinned || options.showClose === true);
+      const copyText = (options && options.copyText ? String(options.copyText || '') : '').trim();
+      const actionHtml = showClose
+        ? `<div class="tooltip-actions">${(pinned && copyText) ? '<button class="tooltip-btn" id="tooltip-copy-btn" type="button" aria-label="Copy selection label">Copy</button>' : ''}<button class="tooltip-btn" id="tooltip-close-btn" type="button">Close</button></div>`
+        : '';
+      const headClass = pinned ? 'is-pinned' : (showClose ? 'is-classic' : 'is-compact');
       return `
-        <div class="tooltip-head">
+        <div class="tooltip-head ${headClass}">
           <div class="tooltip-title">${title}</div>
-          <div class="tooltip-actions">
-            <button class="tooltip-btn" id="tooltip-close-btn" type="button">Close</button>
-          </div>
+          ${actionHtml}
         </div>
         <div class="tooltip-trends">${innerHtml}</div>
       `;
@@ -17796,12 +18230,62 @@ document.addEventListener('DOMContentLoaded', function() {
     function wireTooltipButtons() {
       const closeBtn = document.getElementById('tooltip-close-btn');
       if (closeBtn) {
-        closeBtn.onclick = () => {
+        closeBtn.onclick = (ev) => {
+          try {
+            const tooltip = document.getElementById('hover-tooltip');
+            const key = (tooltip?.dataset?.copyText || '').toString().trim();
+            if (key) {
+              let sx = 0;
+              let sy = 0;
+              try {
+                const rect = map && typeof map.getContainer === 'function' ? map.getContainer().getBoundingClientRect() : null;
+                const cx = Number(ev?.clientX);
+                const cy = Number(ev?.clientY);
+                if (rect && Number.isFinite(cx) && Number.isFinite(cy)) {
+                  sx = cx - rect.left;
+                  sy = cy - rect.top;
+                } else if (lastPointerPoint) {
+                  sx = Number(lastPointerPoint.x) || 0;
+                  sy = Number(lastPointerPoint.y) || 0;
+                }
+              } catch (_) {}
+              suppressHoverTooltip(key, sx, sy);
+            }
+          } catch (_) {}
           setTooltipPinned(false);
           const tooltip = document.getElementById('hover-tooltip');
           if (tooltip) tooltip.style.display = 'none';
+          try { if (tooltip) tooltip.dataset.context = ''; } catch (_) {}
+          try { if (tooltip) tooltip.dataset.copyText = ''; } catch (_) {}
+          try { document.body.classList.remove('hover-preview-active'); } catch (_) {}
+          clearDesktopHoverExpandState();
           clearHoverOutline();
           clearVoteCounterHoverState();
+        };
+      }
+      const copyBtn = document.getElementById('tooltip-copy-btn');
+      if (copyBtn) {
+        copyBtn.onclick = async () => {
+          const tooltip = document.getElementById('hover-tooltip');
+          const text = (tooltip?.dataset?.copyText || '').toString().trim();
+          if (!text) return;
+          try {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              await navigator.clipboard.writeText(text);
+            } else {
+              const area = document.createElement('textarea');
+              area.value = text;
+              area.style.position = 'fixed';
+              area.style.left = '-9999px';
+              document.body.appendChild(area);
+              area.select();
+              document.execCommand('copy');
+              area.remove();
+            }
+            setStatus('Copied selection label to clipboard.');
+          } catch (_) {
+            setStatus('Copy failed. Your browser may block clipboard access.');
+          }
         };
       }
     }
