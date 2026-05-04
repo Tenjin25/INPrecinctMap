@@ -8,6 +8,8 @@ Indiana election atlas with county, precinct, congressional, and state legislati
 - Desktop county hovers support compact previews that can be clicked to pin and expand.
 - Mobile and touch interactions keep hover shells non-blocking until a tooltip is pinned.
 - Hover cards include contest-aware winner, competitiveness tier, shift/flip summaries, and county detail disclosure.
+- Indiana trend timelines now use NCMap-style displayed margin calculations for year-to-year shift, flip, and summary labels.
+- Timeline and hover candidate labels normalize common `Mc...` surnames such as `McCain` and `McCormick`.
 
 ## What is in this repo
 

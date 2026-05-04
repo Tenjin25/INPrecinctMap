@@ -10004,17 +10004,19 @@ document.addEventListener('DOMContentLoaded', function() {
         .replace(/'/g, '&#39;');
     }
 
+    const TREND_SHIFT_NOISE_PTS = 0.1;
+
     function describeTrendShift(currentSignedPct, prevSignedPct, prevYear) {
       if (!Number.isFinite(Number(prevSignedPct))) {
         return { cls: 'tie', text: 'First available result' };
       }
       const shift = (Number(currentSignedPct) || 0) - (Number(prevSignedPct) || 0);
-      if (Math.abs(shift) < 0.01) {
+      if (Math.abs(shift) < TREND_SHIFT_NOISE_PTS) {
         return { cls: 'tie', text: `Shift: No shift since ${prevYear}` };
       }
       return {
         cls: shift > 0 ? 'rep' : 'dem',
-        text: `Shift: ${shift > 0 ? 'R' : 'D'}+${Math.abs(shift).toFixed(2)} since ${prevYear}`
+        text: `Shift: ${shift > 0 ? 'R' : 'D'}+${Math.abs(shift).toFixed(2)}% since ${prevYear}`
       };
     }
 
@@ -10037,6 +10039,22 @@ document.addEventListener('DOMContentLoaded', function() {
       const sortedSeries = series
         .slice()
         .sort((a, b) => a.year - b.year);
+      const signedTrendDisplayMarginPct = (trendItem) => {
+        const total = Number(trendItem?.total_votes || 0);
+        const dem = Number(trendItem?.dem_votes || 0);
+        const rep = Number(trendItem?.rep_votes || 0);
+        const rawSigned = Number.isFinite(Number(trendItem?.margin_pct))
+          ? Number(trendItem.margin_pct)
+          : signedMarginPctFromVotes(dem, rep, total);
+        if (!(Number.isFinite(total) && total > 0)) return rawSigned;
+        const absDisplay = useCountyMarginPrecision
+          ? countyMarginPctDisplayValue(rep, dem, total)
+          : marginPctDisplayValue(rep, dem, total);
+        if (absDisplay === 0 && rawSigned !== 0) return rawSigned;
+        if (rawSigned > 0) return Math.abs(absDisplay);
+        if (rawSigned < 0) return -Math.abs(absDisplay);
+        return 0;
+      };
       const annotated = sortedSeries.map((item, idx) => {
         const prev = idx > 0 ? sortedSeries[idx - 1] : null;
         const totalVotes = Number(item.total_votes || 0);
@@ -10046,11 +10064,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const demPct = totalVotes > 0 ? (demVotes / totalVotes) * 100 : 0;
         const repPct = totalVotes > 0 ? (repVotes / totalVotes) * 100 : 0;
         const otherPct = totalVotes > 0 ? (otherVotes / totalVotes) * 100 : 0;
-        const signedPct = Number(item.margin_pct || 0);
+        const signedPct = signedTrendDisplayMarginPct(item);
+        const prevSignedPct = prev ? signedTrendDisplayMarginPct(prev) : NaN;
         const winnerMeta = getTrendWinnerMeta(item);
         const leadLabel = leadMarginLabelFn(repVotes, demVotes, totalVotes);
-        const shiftMeta = describeTrendShift(signedPct, prev ? prev.margin_pct : NaN, prev ? prev.year : '');
-        const flip = prev ? flipInfo(prev.margin_pct, signedPct) : { flipped: false, from: 'T', to: 'T' };
+        const shiftMeta = describeTrendShift(signedPct, prevSignedPct, prev ? prev.year : '');
+        const flip = prev ? flipInfo(prevSignedPct, signedPct) : { flipped: false, from: 'T', to: 'T' };
         return {
           item,
           prev,
@@ -10078,13 +10097,23 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!best) return entry;
         return Math.abs(entry.signedPct) < Math.abs(best.signedPct) ? entry : best;
       }, null);
-      const summaryLine = winnerMarginLabelFn(
-        summaryEntry.repVotes,
-        summaryEntry.demVotes,
-        summaryEntry.totalVotes,
-        summaryEntry.item.rep_candidate,
-        summaryEntry.item.dem_candidate
-      );
+      const summaryLine = (() => {
+        if (summaryEntry.winnerMeta.partyClass === 'tie') return 'Tie';
+        const marginAbs = useCountyMarginPrecision
+          ? countyMarginPctDisplayValue(summaryEntry.repVotes, summaryEntry.demVotes, summaryEntry.totalVotes)
+          : marginPctDisplayValue(summaryEntry.repVotes, summaryEntry.demVotes, summaryEntry.totalVotes);
+        const marginLabel = useCountyMarginPrecision
+          ? formatCountyMarginPctForDisplay(marginAbs)
+          : formatMarginPctForDisplay(marginAbs);
+        const winnerLabel = winnerMarginLabelFn(
+          summaryEntry.repVotes,
+          summaryEntry.demVotes,
+          summaryEntry.totalVotes,
+          summaryEntry.item.rep_candidate,
+          summaryEntry.item.dem_candidate
+        );
+        return winnerLabel.replace(/\+.*$/, `+${marginLabel}%`);
+      })();
       const earliest = annotated[0];
       const historyShift = describeTrendShift(summaryEntry.signedPct, earliest ? earliest.signedPct : NaN, earliest ? earliest.item.year : '');
       let streakCount = 0;
@@ -11910,7 +11939,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Prefer the surname in compact labels; ignore trailing suffixes like Jr./III.
       let idx = parts.length - 1;
       while (idx > 0 && isNameSuffixToken(parts[idx])) idx -= 1;
-      return parts[idx];
+      return toTitleCaseName(parts[idx]);
     }
 
     function fullCandidateLabel(name, fallback = '') {
@@ -11925,10 +11954,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function toTitleCaseName(raw) {
       const s = (raw || '').toString().trim();
       if (!s) return '';
+      const normalizeCommonSurnamePrefixes = (value) => value.replace(/\bMc([a-z])([a-z]*)\b/g, (_, first, rest) => `Mc${first.toUpperCase()}${rest}`);
       // If it's already mixed-case, keep it.
       const hasLower = /[a-z]/.test(s);
       const hasUpper = /[A-Z]/.test(s);
-      if (hasLower && hasUpper) return s;
+      if (hasLower && hasUpper) return normalizeCommonSurnamePrefixes(s);
 
       const lower = s.toLowerCase();
       const parts = lower.split(/(\s+|-)/); // keep separators
@@ -11939,7 +11969,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (p.startsWith("o'") && p.length > 2) return "O'" + p[2].toUpperCase() + p.slice(3);
         return p.charAt(0).toUpperCase() + p.slice(1);
       }).join('');
-      return titled;
+      return normalizeCommonSurnamePrefixes(titled);
     }
 
     function displayCountyName(raw) {
@@ -13349,7 +13379,7 @@ document.addEventListener('DOMContentLoaded', function() {
           shiftLabel = `Shift: No shift since ${prevYear}`;
           shiftColor = '#64748b';
         } else {
-          shiftLabel = `Shift: ${delta > 0 ? 'R' : 'D'} +${Math.abs(delta).toFixed(2)} since ${prevYear}`;
+          shiftLabel = `Shift: ${delta > 0 ? 'R' : 'D'} +${Math.abs(delta).toFixed(2)}% since ${prevYear}`;
           shiftColor = delta > 0 ? '#dc2626' : '#2563eb';
         }
       }
