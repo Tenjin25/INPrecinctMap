@@ -1805,6 +1805,7 @@ body.focus-active #hover-tooltip[data-context="preview"] {
 }
 
 .vote-counter-context .context-left {
+  flex: 1 1 auto;
   min-width: 0;
 }
 
@@ -1814,10 +1815,13 @@ body.focus-active #hover-tooltip[data-context="preview"] {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   color: #111827;
-  line-height: 1.1;
-  white-space: nowrap;
+  line-height: 1.15;
   overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .vote-counter-context .context-sub {
@@ -21265,3 +21269,4 @@ document.addEventListener('DOMContentLoaded', function() {
   </script>
 </body>
 </html>
+
