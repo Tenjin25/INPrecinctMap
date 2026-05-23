@@ -7991,7 +7991,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-05-23-1';
+    const DATA_CACHE_BUSTER = '2026-05-23-2';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -10910,8 +10910,41 @@ document.addEventListener('DOMContentLoaded', function() {
 	      const key = `${contestType}_${year}`;
 	      if (contestSliceCache.has(key)) return contestSliceCache.get(key);
 
+        function getContestPathCandidates() {
+          const baseDir = (CONFIG.paths?.contests_dir || '').toString().trim();
+          const paths = [];
+          const add = (p) => { if (p && !paths.includes(p)) paths.push(p); };
+
+          add(`${baseDir}/${key}.json`);
+          const manifestEntry = (contestManifest || []).find(e =>
+            e && String(e.contest_type) === String(contestType) && Number(e.year) === Number(year) && e.file
+          );
+          if (manifestEntry?.file) add(`${baseDir}/${manifestEntry.file}`);
+
+          // Case-variant fallback for hosts/layouts where folder case may differ.
+          for (const p of [...paths]) {
+            if (p.includes('/data/')) add(p.replace('/data/', '/Data/'));
+            if (p.includes('/Data/')) add(p.replace('/Data/', '/data/'));
+          }
+          return paths;
+        }
+
+        async function tryLoadContestPayload() {
+          const candidates = getContestPathCandidates();
+          let lastErr = null;
+          for (const p of candidates) {
+            try {
+              return await loadJSON(p);
+            } catch (err) {
+              lastErr = err;
+            }
+          }
+          if (lastErr) throw lastErr;
+          throw new Error(`No contest path candidates for ${key}`);
+        }
+
 	      try {
-	        const payload = await loadJSON(`${CONFIG.paths.contests_dir}/${key}.json`);
+	        const payload = await tryLoadContestPayload();
 	        const rows = (payload.rows || []).map(r => ({
 	          year: Number(year),
 	          county: r.county,
@@ -10954,7 +10987,23 @@ document.addEventListener('DOMContentLoaded', function() {
         if (contestCandidateCache.has(key)) return contestCandidateCache.get(key);
         const empty = { dem: '', rep: '' };
         try {
-          const payload = await loadJSON(`${CONFIG.paths.contests_dir}/${key}.json`);
+          const baseDir = (CONFIG.paths?.contests_dir || '').toString().trim();
+          const manifestEntry = (contestManifest || []).find(e =>
+            e && String(e.contest_type) === String(contestType) && Number(e.year) === Number(year) && e.file
+          );
+          const candidates = [];
+          const add = (p) => { if (p && !candidates.includes(p)) candidates.push(p); };
+          add(`${baseDir}/${key}.json`);
+          if (manifestEntry?.file) add(`${baseDir}/${manifestEntry.file}`);
+          for (const p of [...candidates]) {
+            if (p.includes('/data/')) add(p.replace('/data/', '/Data/'));
+            if (p.includes('/Data/')) add(p.replace('/Data/', '/data/'));
+          }
+          let payload = null;
+          for (const p of candidates) {
+            try { payload = await loadJSON(p); break; } catch (_) {}
+          }
+          if (!payload) throw new Error(`Contest candidate payload not found: ${key}`);
           const rows = payload?.rows || [];
           let dem = '';
           let rep = '';
@@ -19798,7 +19847,23 @@ document.addEventListener('DOMContentLoaded', function() {
 	    async function tryLoadContestSliceStrict(contestType, year) {
 	      const key = `${contestType}_${year}`;
 	      try {
-	        const payload = await loadJSON(`${CONFIG.paths.contests_dir}/${key}.json`);
+          const baseDir = (CONFIG.paths?.contests_dir || '').toString().trim();
+          const manifestEntry = (contestManifest || []).find(e =>
+            e && String(e.contest_type) === String(contestType) && Number(e.year) === Number(year) && e.file
+          );
+          const candidates = [];
+          const add = (p) => { if (p && !candidates.includes(p)) candidates.push(p); };
+          add(`${baseDir}/${key}.json`);
+          if (manifestEntry?.file) add(`${baseDir}/${manifestEntry.file}`);
+          for (const p of [...candidates]) {
+            if (p.includes('/data/')) add(p.replace('/data/', '/Data/'));
+            if (p.includes('/Data/')) add(p.replace('/Data/', '/data/'));
+          }
+          let payload = null;
+          for (const p of candidates) {
+            try { payload = await loadJSON(p); break; } catch (_) {}
+          }
+          if (!payload) throw new Error(`Strict contest payload not found: ${key}`);
 	        return (payload.rows || []).map(r => ({
 	          year: Number(year),
 	          county: r.county,
