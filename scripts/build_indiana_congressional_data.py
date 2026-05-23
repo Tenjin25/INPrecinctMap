@@ -80,6 +80,7 @@ SOS_2024_OFFICIAL_CONTESTS = DATA_DIR / "sources" / "in_sos_2024_statewide_count
 INDIANA_COUNTY_COUNT = 92
 MIN_STATEWIDE_COUNTY_COVERAGE = 70
 MIN_IMPUTE_OVERLAP_COUNTIES = 40
+MIN_STATEWIDE_MAJOR_PARTY_SHARE_PCT = 1.0
 SUPPORTED_CONTEST_TYPES = {
     "attorney_general",
     "governor",
@@ -220,6 +221,16 @@ def clean_number(value: Any, default: float = 0.0) -> float:
 
 def parse_votes(value: Any) -> int:
     return int(round(clean_number(value, 0.0)))
+
+
+def has_meaningful_major_party_competition(dem_total: int, rep_total: int, total_votes: int) -> bool:
+    dem = max(0, int(dem_total or 0))
+    rep = max(0, int(rep_total or 0))
+    total = max(0, int(total_votes or 0))
+    if total <= 0 or dem <= 0 or rep <= 0:
+        return False
+    min_share_pct = (min(dem, rep) / total) * 100.0
+    return min_share_pct >= MIN_STATEWIDE_MAJOR_PARTY_SHARE_PCT
 
 
 def party_bucket(party_raw: str) -> str:
@@ -1390,6 +1401,7 @@ def build_outputs() -> None:
 
         contest_filename = f"{contest_type}_{year}.json"
         contest_path = OUT_CONTESTS_DIR / contest_filename
+        major_party_contested = has_meaningful_major_party_competition(dem_total, rep_total, dem_total + rep_total + other_total)
         contest_meta: Dict[str, Any] = {
             "contest_type": contest_type,
             "year": year,
@@ -1398,7 +1410,7 @@ def build_outputs() -> None:
             "rep_total": rep_total,
             "other_total": other_total,
             "match_coverage_pct": coverage_pct,
-            "major_party_contested": True,
+            "major_party_contested": major_party_contested,
         }
         if imputed_counties:
             contest_meta["imputed_count"] = len(imputed_counties)
@@ -1421,7 +1433,7 @@ def build_outputs() -> None:
             "rep_total": rep_total,
             "other_total": other_total,
             "match_coverage_pct": coverage_pct,
-            "major_party_contested": True,
+            "major_party_contested": major_party_contested,
         }
         if imputed_counties:
             manifest_entry["imputed_count"] = len(imputed_counties)
@@ -1549,7 +1561,7 @@ def build_outputs() -> None:
                     "dem_total": dem_total,
                     "rep_total": rep_total,
                     "other_total": other_total,
-                    "major_party_contested": True,
+                    "major_party_contested": major_party_contested,
                     "match_coverage_pct": coverage_pct,
                     "imputed_count": len(imputed_counties),
                     "imputed_from_contest": imputed_from_contest,
