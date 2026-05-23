@@ -7977,10 +7977,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // (e.g. `http://localhost:8000/NCPrecinctMap/index.html`) and in file-like previews.
       // Only prefix an explicit GitHub Pages base when detected.
       const cleaned = path.replace(/^\.\//, '').replace(/^\/+/, '');
-      // GitHub Pages is case-sensitive, while local Windows previews are not.
-      // Normalize top-level generated data paths to the on-disk `Data/` directory.
-      const normalized = cleaned.replace(/^data\//i, 'Data/');
-      return base ? `${base}/${normalized}` : normalized;
+      return base ? `${base}/${cleaned}` : cleaned;
     }
 
     function toAbsoluteUrl(path) {
@@ -7991,7 +7988,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-05-23-2';
+    const DATA_CACHE_BUSTER = '2026-05-23-3';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
