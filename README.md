@@ -71,6 +71,24 @@ Crosswalk quality note:
   area weights, and the statewide allocator uses expanded alias matching (township,
   ward, ordinal, and county-code variants) before falling back to county weights.
 
+Apply legislative district calibrations from `Data/Calibration csvs`:
+
+```powershell
+node scripts\calibrate_legislative_jsons.mjs
+```
+
+Notes:
+
+- The calibrator updates `Data/district_contests/state_house_*.json` and
+  `Data/district_contests/state_senate_*.json` slices that have matching CSVs.
+- It also syncs the fallback aggregate file `Data/in_district_results_2022_lines.json`.
+- It writes a coverage summary to `Data/district_calibration_report.json`.
+- When a matching DRA election dataset exists, district turnout totals are
+  derived from DRA VTD votes via the 2022 precinct crosswalk, then calibration
+  shares are applied to produce district-party totals (including previously
+  missing districts).
+- Rerunning is idempotent; unchanged slices are skipped.
+
 Build historical centroid carryover files:
 
 ```powershell
