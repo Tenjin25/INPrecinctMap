@@ -11,7 +11,7 @@ Outputs:
   - Data/in_congressional_districts.csv
   - Data/in_state_house_districts.csv
   - Data/in_state_senate_districts.csv
-  - Data/crosswalks/precinct_to_cd118.csv   (county-keyed carry crosswalk)
+  - Data/crosswalks/precinct_to_cd118.csv   (precinct-keyed area crosswalk)
   - Data/crosswalks/precinct_to_2022_state_house.csv
   - Data/crosswalks/precinct_to_2022_state_senate.csv
   - Data/crosswalks/county_to_cd118.csv
@@ -37,6 +37,7 @@ from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
 
 import shapefile
 from shapely.geometry import shape
+from shapely.ops import unary_union
 from shapely.strtree import STRtree
 
 
@@ -51,6 +52,7 @@ SLDU_ZIP = DATA_DIR / "tl_2022_18_sldu.zip"
 OPENELECTIONS_ROOT = DATA_DIR / "openelections-data-in"
 OPENELECTIONS_GENERATED_ROOT = DATA_DIR / "openelections_generated"
 VTD20_PRECINCTS_GEOJSON = DATA_DIR / "Voting_Precincts.geojson"
+DRA_VTD20_GEOJSON = DATA_DIR / "sources" / "dra" / "in_v07" / "IN_2020_VD_tabblock.vtd.datasets.geojson"
 
 OUT_TILESET_DIR = DATA_DIR / "tileset"
 OUT_CROSSWALKS_DIR = DATA_DIR / "crosswalks"
@@ -91,6 +93,9 @@ SUPPORTED_CONTEST_TYPES = {
     "secretary_of_state",
     "treasurer",
 }
+
+SUMMARY_PRECINCT_LABELS = {"TOTAL", "TOTALS", "COUNTY TOTAL", "COUNTY TOTALS"}
+ADMIN_CANDIDATE_RE = re.compile(r"\b(?:REGIST\w*|BALLOT\w*|CAST|VOTE\w*|TURNOUT|UNDER\w*|OVER\w*)\b")
 
 IMPUTATION_DONOR_PREFERENCE: Dict[str, Tuple[str, ...]] = {
     "attorney_general": ("governor", "us_senate", "president"),
@@ -149,29 +154,178 @@ def normalize_precinct_key(raw: str) -> str:
     Normalize precinct labels so election-result precinct names can match VTD20 NAME20 values.
     Handles prefixes like "01-" and zero-padded numeric suffixes like "DECATUR 01".
     """
-    t = normalize_alnum_token(raw)
-    t = re.sub(r"^\d+\s+", "", t)
-    t = normalize_space(t).replace(" ", "")
+    variants = precinct_key_variants(raw)
+    if not variants:
+        return ""
+    # Prefer the longest normalized variant for maximum specificity.
+    return sorted(variants, key=lambda x: (-len(x), x))[0]
 
-    def _strip_zeros(m: re.Match[str]) -> str:
-        s = m.group(0)
+
+ORDINAL_NUMBER_TOKEN_MAP: Dict[str, str] = {
+    "FIRST": "1",
+    "SECOND": "2",
+    "THIRD": "3",
+    "FOURTH": "4",
+    "FIFTH": "5",
+    "SIXTH": "6",
+    "SEVENTH": "7",
+    "EIGHTH": "8",
+    "NINTH": "9",
+    "TENTH": "10",
+    "ELEVENTH": "11",
+    "TWELFTH": "12",
+    "THIRTEENTH": "13",
+    "FOURTEENTH": "14",
+    "FIFTEENTH": "15",
+    "SIXTEENTH": "16",
+    "SEVENTEENTH": "17",
+    "EIGHTEENTH": "18",
+    "NINETEENTH": "19",
+    "TWENTIETH": "20",
+    "TWENTY FIRST": "21",
+    "TWENTY SECOND": "22",
+    "TWENTY THIRD": "23",
+    "TWENTY FOURTH": "24",
+    "TWENTY FIFTH": "25",
+    "TWENTY SIXTH": "26",
+    "TWENTY SEVENTH": "27",
+    "TWENTY EIGHTH": "28",
+    "TWENTY NINTH": "29",
+    "THIRTIETH": "30",
+    "THIRTY FIRST": "31",
+}
+
+
+def _normalize_numeric_token(token: str) -> str:
+    if token.isdigit():
         try:
-            return str(int(s))
+            return str(int(token))
         except Exception:
-            return s
-
-    t = re.sub(r"\d+", _strip_zeros, t)
-    return t
+            return token
+    return token
 
 
-def load_vtd20_precinct_geoms(counties: List[CountyFeature]) -> Dict[Tuple[str, str], Any]:
+def _normalize_precinct_tokens(raw: str) -> List[str]:
+    t = normalize_alnum_token(raw)
+    if not t:
+        return []
+
+    # Convert ordinal words ("NINTH", "TWENTY FIRST", etc.) into numeric tokens.
+    for phrase in sorted(ORDINAL_NUMBER_TOKEN_MAP.keys(), key=len, reverse=True):
+        repl = ORDINAL_NUMBER_TOKEN_MAP[phrase]
+        t = re.sub(rf"\b{re.escape(phrase)}\b", repl, t)
+
+    # Drop numeric row prefixes in some county exports (e.g., "0103 CENTER ...").
+    t = re.sub(r"^\d+\s+", "", t)
+    return [x for x in normalize_space(t).split(" ") if x]
+
+
+def _join_precinct_tokens(tokens: List[str]) -> str:
+    if not tokens:
+        return ""
+    return "".join(_normalize_numeric_token(t) for t in tokens if t)
+
+
+def canonical_precinct_key(raw: str) -> str:
+    return _join_precinct_tokens(_normalize_precinct_tokens(raw))
+
+
+def precinct_key_variants(raw: str) -> Set[str]:
+    tokens = _normalize_precinct_tokens(raw)
+    if not tokens:
+        return set()
+
+    variants: Set[str] = set()
+    removable = {"PRECINCT", "PCT", "TOWNSHIP", "TWP"}
+    trimmed = [t for t in tokens if t not in removable]
+
+    def _add(ts: List[str]) -> None:
+        key = _join_precinct_tokens(ts)
+        if key:
+            variants.add(key)
+
+    _add(tokens)
+    _add(trimmed)
+
+    if len(tokens) >= 2:
+        _add(tokens[-2:])
+    if len(tokens) >= 3:
+        _add(tokens[-3:])
+    if len(trimmed) >= 2:
+        _add(trimmed[-2:])
+    if len(trimmed) >= 3:
+        _add(trimmed[-3:])
+
+    # Marion-style precinct codes embedded in DRA labels:
+    #   FRA-FR-19  -> FR19
+    #   LAW-27-14  -> 2714
+    if len(tokens) >= 3:
+        if tokens[-2].isalpha() and tokens[-1].isdigit():
+            _add([tokens[-2], tokens[-1]])
+        if tokens[-2].isdigit() and tokens[-1].isdigit():
+            _add([tokens[-2], tokens[-1]])
+
+    # Abbreviated locality code variants (e.g. "CP 19", "MER 04", "SJT 02").
+    alpha_tokens = [t for t in trimmed if t.isalpha()]
+    numeric_tokens = [_normalize_numeric_token(t) for t in trimmed if t.isdigit()]
+    if alpha_tokens and numeric_tokens:
+        last_num = numeric_tokens[-1]
+        prefixes: Set[str] = set()
+        first = alpha_tokens[0]
+        prefixes.add(first[:1])
+        prefixes.add(first[:2])
+        prefixes.add(first[:3])
+        prefixes.add("".join(a[:1] for a in alpha_tokens[:2]))
+        prefixes.add("".join(a[:1] for a in alpha_tokens[:3]))
+        for p in prefixes:
+            p = (p or "").strip()
+            if p:
+                _add([p, last_num])
+
+    return variants
+
+
+def normalize_candidate_key(raw: str) -> str:
+    return normalize_no_space(raw)
+
+
+def is_summary_precinct_label(precinct_raw: str, county_name: str) -> bool:
+    p = normalize_alnum_token(precinct_raw)
+    if not p:
+        return True
+    if p in SUMMARY_PRECINCT_LABELS:
+        return True
+    county = normalize_alnum_token(county_name)
+    if county and p in {county, f"{county} IN", f"{county} COUNTY", f"{county} COUNTY IN"}:
+        return True
+    return False
+
+
+def is_admin_candidate_label(candidate_raw: str) -> bool:
+    candidate = normalize_alnum_token(candidate_raw)
+    if not candidate:
+        return True
+    return bool(ADMIN_CANDIDATE_RE.search(candidate))
+
+
+def _collapse_geom_lists(geom_lists: Dict[Tuple[str, str], List[Any]]) -> Dict[Tuple[str, str], Any]:
+    out: Dict[Tuple[str, str], Any] = {}
+    for key, geoms in geom_lists.items():
+        if not geoms:
+            continue
+        out[key] = geoms[0] if len(geoms) == 1 else unary_union(geoms)
+    return out
+
+
+def load_vtd20_precinct_geoms(counties: List[CountyFeature]) -> Tuple[Dict[Tuple[str, str], Any], Dict[Tuple[str, str], Any]]:
     if not VTD20_PRECINCTS_GEOJSON.exists():
-        return {}
+        return {}, {}
 
     countyfp_to_name = {c.countyfp: c.name for c in counties}
     obj = json.loads(VTD20_PRECINCTS_GEOJSON.read_text(encoding="utf-8"))
     features = obj.get("features", [])
-    out: Dict[Tuple[str, str], Any] = {}
+    canonical_geoms: Dict[Tuple[str, str], List[Any]] = defaultdict(list)
+    alias_geoms: Dict[Tuple[str, str], List[Any]] = defaultdict(list)
 
     for f in features:
         props = f.get("properties") or {}
@@ -182,16 +336,56 @@ def load_vtd20_precinct_geoms(counties: List[CountyFeature]) -> Dict[Tuple[str, 
         precinct = str(props.get("NAME20") or props.get("NAMELSAD20") or "").strip()
         if not precinct:
             continue
-        key = (normalize_alnum_token(county_name), normalize_precinct_key(precinct))
         try:
             geom = shape(f.get("geometry"))
         except Exception:
             continue
         if geom.is_empty:
             continue
-        out[key] = geom
+        county_key = normalize_alnum_token(county_name)
+        canonical = canonical_precinct_key(precinct)
+        if canonical:
+            canonical_geoms[(county_key, canonical)].append(geom)
+        for variant in precinct_key_variants(precinct):
+            alias_geoms[(county_key, variant)].append(geom)
 
-    return out
+    return _collapse_geom_lists(canonical_geoms), _collapse_geom_lists(alias_geoms)
+
+
+def load_dra_vtd20_precinct_geoms(counties: List[CountyFeature]) -> Tuple[Dict[Tuple[str, str], Any], Dict[Tuple[str, str], Any]]:
+    if not DRA_VTD20_GEOJSON.exists():
+        return {}, {}
+
+    countyfp_to_name = {c.countyfp: c.name for c in counties}
+    obj = json.loads(DRA_VTD20_GEOJSON.read_text(encoding="utf-8"))
+    features = obj.get("features", [])
+    canonical_geoms: Dict[Tuple[str, str], List[Any]] = defaultdict(list)
+    alias_geoms: Dict[Tuple[str, str], List[Any]] = defaultdict(list)
+
+    for f in features:
+        props = f.get("properties") or {}
+        geoid = str(props.get("id") or "").strip()
+        countyfp = geoid[2:5] if len(geoid) >= 5 else ""
+        county_name = countyfp_to_name.get(countyfp)
+        if not county_name:
+            continue
+        precinct = str(props.get("name") or "").strip()
+        if not precinct:
+            continue
+        try:
+            geom = shape(f.get("geometry"))
+        except Exception:
+            continue
+        if geom.is_empty:
+            continue
+        county_key = normalize_alnum_token(county_name)
+        canonical = canonical_precinct_key(precinct)
+        if canonical:
+            canonical_geoms[(county_key, canonical)].append(geom)
+        for variant in precinct_key_variants(precinct):
+            alias_geoms[(county_key, variant)].append(geom)
+
+    return _collapse_geom_lists(canonical_geoms), _collapse_geom_lists(alias_geoms)
 
 
 def title_case_county(name: str) -> str:
@@ -732,6 +926,8 @@ def collect_statewide_contests(
     precinct_votes: Dict[Tuple[int, str, str, str], Dict[str, int]] = defaultdict(lambda: {"dem": 0, "rep": 0, "other": 0})
 
     seen_rows = shared_seen_rows if shared_seen_rows is not None else set()
+    # (year, contest_type, candidate_key) -> {"dem"} / {"rep"} / {"dem","rep"}
+    candidate_party_hints: Dict[Tuple[int, str, str], Set[str]] = defaultdict(set)
 
     for path in iter_general_precinct_files(root, allow_flat=allow_flat):
         m = re.match(r"^(\d{4})", path.name)
@@ -764,11 +960,24 @@ def collect_statewide_contests(
                     continue
 
                 precinct = normalize_space((row.get("precinct") or "").upper())
+                if is_summary_precinct_label(precinct, county_name):
+                    continue
+
                 party = party_bucket(row.get("party") or "")
                 candidate = normalize_space(row.get("candidate") or "")
+                candidate_key = normalize_candidate_key(candidate)
+
+                if party in {"dem", "rep"} and candidate_key:
+                    candidate_party_hints[(year, contest_type, candidate_key)].add(party)
+                elif party == "other":
+                    if is_admin_candidate_label(candidate):
+                        continue
+                    hinted = candidate_party_hints.get((year, contest_type, candidate_key))
+                    if hinted and len(hinted) == 1:
+                        party = next(iter(hinted))
 
                 # Deduplicate row-level duplicates appearing in some year folders.
-                row_key = (year, contest_type, county_name, precinct, party, candidate.upper(), votes)
+                row_key = (year, contest_type, county_name, precinct, candidate_key, votes)
                 if row_key in seen_rows:
                     continue
                 seen_rows.add(row_key)
@@ -817,8 +1026,18 @@ def collect_statewide_contests(
 
                 party = party_bucket(row.get("party") or "")
                 candidate = normalize_space(row.get("candidate") or "")
+                candidate_key = normalize_candidate_key(candidate)
 
-                row_key = (year, contest_type, county_name, party, candidate.upper(), votes)
+                if party in {"dem", "rep"} and candidate_key:
+                    candidate_party_hints[(year, contest_type, candidate_key)].add(party)
+                elif party == "other":
+                    if is_admin_candidate_label(candidate):
+                        continue
+                    hinted = candidate_party_hints.get((year, contest_type, candidate_key))
+                    if hinted and len(hinted) == 1:
+                        party = next(iter(hinted))
+
+                row_key = (year, contest_type, county_name, candidate_key, votes)
                 if row_key in seen_county_rows:
                     continue
                 seen_county_rows.add(row_key)
@@ -978,13 +1197,42 @@ def apportion_integer_votes(float_votes_by_district: Dict[int, float], target_to
         for _rem, d in sorted(remainders, key=lambda x: (-x[0], x[1]))[:diff]:
             floors[d] += 1
     elif diff < 0:
+        # When the float totals overshoot the target (often due to noisy fallback allocation),
+        # remove votes in smallest-remainder order until the exact target is reached.
         remaining = -diff
-        for _rem, d in sorted(remainders, key=lambda x: (x[0], x[1])):
-            if remaining <= 0:
+        removal_order = [d for _rem, d in sorted(remainders, key=lambda x: (x[0], x[1]))]
+        while remaining > 0:
+            progressed = False
+            for d in removal_order:
+                if remaining <= 0:
+                    break
+                if floors[d] > 0:
+                    floors[d] -= 1
+                    remaining -= 1
+                    progressed = True
+            if not progressed:
                 break
-            if floors[d] > 0:
-                floors[d] -= 1
-                remaining -= 1
+
+    # Final guardrail: ensure exact total after any clipping/rounding edge cases.
+    current_total = sum(floors.values())
+    if current_total != int(target_total):
+        if current_total < int(target_total):
+            add_order = [d for _rem, d in sorted(remainders, key=lambda x: (-x[0], x[1]))]
+            i = 0
+            while current_total < int(target_total) and add_order:
+                d = add_order[i % len(add_order)]
+                floors[d] += 1
+                current_total += 1
+                i += 1
+        else:
+            remove_order = [d for _rem, d in sorted(remainders, key=lambda x: (x[0], x[1]))]
+            i = 0
+            while current_total > int(target_total) and remove_order:
+                d = remove_order[i % len(remove_order)]
+                if floors[d] > 0:
+                    floors[d] -= 1
+                    current_total -= 1
+                i += 1
 
     return floors
 
@@ -1020,6 +1268,8 @@ def build_scope_assets(
     out_info_csv: Path,
     out_county_crosswalk_csv: Path,
     out_precinct_crosswalk_csv: Path,
+    precinct_geoms: Dict[Tuple[str, str], Any],
+    district_index: DistrictIndex,
 ) -> List[Dict[str, Any]]:
     county_to_district_rows = build_county_to_cd_weights(counties, districts)
 
@@ -1044,6 +1294,37 @@ def build_scope_assets(
 
     county_xwalk_rows = []
     precinct_xwalk_rows = []
+    if precinct_geoms:
+        for (county_key, precinct_key), geom in sorted(precinct_geoms.items(), key=lambda x: (x[0][0], x[0][1])):
+            weights = precinct_to_district_area_weights(geom, district_index)
+            if not weights:
+                continue
+            county_name = next((c.name for c in counties if c.norm_key == county_key), county_key)
+            countyfp20 = next((c.countyfp for c in counties if c.norm_key == county_key), "")
+            for district_num, area_weight in weights:
+                precinct_xwalk_rows.append(
+                    {
+                        "precinct_key": f"{county_key}|{precinct_key}",
+                        "district_num": district_num,
+                        "area_weight": f"{float(area_weight):.12f}",
+                        "county": county_name,
+                        "countyfp20": countyfp20,
+                    }
+                )
+
+    if not precinct_xwalk_rows:
+        # Backward-compatible fallback if precinct geometries are unavailable.
+        for r in sorted(county_to_district_rows, key=lambda x: (x["county"], x["district_num"])):
+            precinct_xwalk_rows.append(
+                {
+                    "precinct_key": r["county"].upper(),
+                    "district_num": r["district_num"],
+                    "area_weight": f"{float(r['area_weight']):.12f}",
+                    "county": r["county"],
+                    "countyfp20": r["countyfp20"],
+                }
+            )
+
     for r in sorted(county_to_district_rows, key=lambda x: (x["county"], x["district_num"])):
         county_xwalk_rows.append(
             {
@@ -1054,17 +1335,6 @@ def build_scope_assets(
                 "area_weight": f"{float(r['area_weight']):.12f}",
             }
         )
-        # App carryover logic expects precinct_key rows.
-        precinct_xwalk_rows.append(
-            {
-                "precinct_key": r["county"].upper(),
-                "district_num": r["district_num"],
-                "area_weight": f"{float(r['area_weight']):.12f}",
-                "county": r["county"],
-                "countyfp20": r["countyfp20"],
-            }
-        )
-
     write_csv(
         out_county_crosswalk_csv,
         ["county", "countyfp20", "district_num", "district_geoid", "area_weight"],
@@ -1099,7 +1369,14 @@ def build_outputs() -> None:
     clear_json_outputs(OUT_DISTRICT_CONTESTS_DIR)
 
     counties, county_alias_map, _county_name_to_fp = load_counties()
-    vtd20_precinct_geoms = load_vtd20_precinct_geoms(counties)
+    dra_precinct_geoms, dra_precinct_alias_geoms = load_dra_vtd20_precinct_geoms(counties)
+    base_precinct_geoms, base_precinct_alias_geoms = load_vtd20_precinct_geoms(counties)
+    # Precinct geometries for emitted crosswalk files: one canonical row per precinct.
+    canonical_precinct_geoms = dict(base_precinct_geoms)
+    canonical_precinct_geoms.update(dra_precinct_geoms)
+    # Alias geometries for election-row matching: many-key index with conservative aliases.
+    vtd20_precinct_geoms = dict(base_precinct_alias_geoms)
+    vtd20_precinct_geoms.update(dra_precinct_alias_geoms)
 
     congressional_districts = load_congressional_districts(CD118_ZIP, TMP_DIR / "cd118")
     state_house_districts = load_state_house_districts(SLDL_ZIP, TMP_DIR / "sldl")
@@ -1125,6 +1402,8 @@ def build_outputs() -> None:
         out_info_csv=OUT_DISTRICTS_INFO_CSV,
         out_county_crosswalk_csv=OUT_CROSSWALK_COUNTY_TO_CD,
         out_precinct_crosswalk_csv=OUT_CROSSWALK_PRECINCT_TO_CD,
+        precinct_geoms=canonical_precinct_geoms,
+        district_index=scope_district_indexes["congressional"],
     )
 
     county_to_state_house_rows = build_scope_assets(
@@ -1135,6 +1414,8 @@ def build_outputs() -> None:
         out_info_csv=OUT_STATE_HOUSE_INFO_CSV,
         out_county_crosswalk_csv=OUT_CROSSWALK_COUNTY_TO_STATE_HOUSE_2022,
         out_precinct_crosswalk_csv=OUT_CROSSWALK_PRECINCT_TO_STATE_HOUSE_2022,
+        precinct_geoms=canonical_precinct_geoms,
+        district_index=scope_district_indexes["state_house"],
     )
 
     county_to_state_senate_rows = build_scope_assets(
@@ -1145,6 +1426,8 @@ def build_outputs() -> None:
         out_info_csv=OUT_STATE_SENATE_INFO_CSV,
         out_county_crosswalk_csv=OUT_CROSSWALK_COUNTY_TO_STATE_SENATE_2022,
         out_precinct_crosswalk_csv=OUT_CROSSWALK_PRECINCT_TO_STATE_SENATE_2022,
+        precinct_geoms=canonical_precinct_geoms,
+        district_index=scope_district_indexes["state_senate"],
     )
 
     shared_seen_statewide_rows: Set[Tuple[Any, ...]] = set()

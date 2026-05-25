@@ -12,14 +12,14 @@
   "general": {
     "results": {
       "1": {
-        "dem_votes": 170955,
+        "dem_votes": 170956,
         "rep_votes": 102529,
         "other_votes": 4950,
-        "total_votes": 278434,
+        "total_votes": 278435,
         "dem_candidate": "Jill Long Thompson",
         "rep_candidate": "Mitchell E Daniels",
-        "margin": -68426,
-        "margin_pct": -24.5753,
+        "margin": -68427,
+        "margin_pct": -24.5756,
         "winner": "DEM",
         "color": "#2563eb"
       },
@@ -60,14 +60,14 @@
         "color": "#dc2626"
       },
       "5": {
-        "dem_votes": 87211,
-        "rep_votes": 212660,
+        "dem_votes": 87210,
+        "rep_votes": 212659,
         "other_votes": 5284,
-        "total_votes": 305155,
+        "total_votes": 305153,
         "dem_candidate": "Jill Long Thompson",
         "rep_candidate": "Mitchell E Daniels",
         "margin": 125449,
-        "margin_pct": 41.1099,
+        "margin_pct": 41.1102,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -85,13 +85,13 @@
       },
       "7": {
         "dem_votes": 112586,
-        "rep_votes": 147445,
+        "rep_votes": 147446,
         "other_votes": 5181,
-        "total_votes": 265212,
+        "total_votes": 265213,
         "dem_candidate": "Jill Long Thompson",
         "rep_candidate": "Mitchell E Daniels",
-        "margin": 34859,
-        "margin_pct": 13.1438,
+        "margin": 34860,
+        "margin_pct": 13.1442,
         "winner": "REP",
         "color": "#dc2626"
       },

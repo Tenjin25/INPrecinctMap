@@ -1,0 +1,98 @@
+This package contains vtd-level demographic and election data, in a geojson, as used in Dave's Redistricting App.
+It also contains a file {state}_2020_graph.json, which describes the VTD adjacency matrix.
+Created 2026-03-17
+
+The fields 'id' and 'name' are the GEOID20 and Name of the VTD. 'labelx' and 'labely' represent a good interior point of the VTD.
+Each dataset collection contains the dataset name in the form <category>_<year>_<dataset>[_<optional modifier>], plus the dataset's <field>/value pairs.
+
+Categories
+	-- T = Total Population
+	-- V = Voting Age Population
+	-- E = Election
+
+Demographic Datasets, including Modifiers (Persons)
+	-- CENS = Total Population from the decennial census
+	-- CENS_ADJ = Total Population from the decennial census, Adjusted for incarcerated persons
+	-- ACS = Total Population from the 5-year American Community Survey estimate
+	-- VAP = Voting Age Population with Race Combination categories from the decennial census
+	-- VAP_NH = Voting Age Population with Non-Hispanic Race Alone categories from the decennial census
+	-- CVAP = Citizen Voting Age Population based on the 5-year American Community Survey estimate
+
+Demographic Field Names
+	-- Total = Total persons
+	-- White = White alone, not Hispanic
+	-- Hispanic = All Hispanics regardless of race
+	-- Black = Black alone or in combination with other races, including Hispanic
+	-- Asian = Asian alone or in combination with other races, including Hispanic
+	-- Native = American Indian and Alaska Native alone or in combination with other races, including Hispanic
+	-- Pacific = Native Hawaiian and Pacific Islander alone or in combination with other races, including Hispanic
+	-- BlackAlone = Black alone, not Hispanic
+	-- AsianAlone = Asian alone, not Hispanic
+	-- NativeAlone = American Indian and Alaska Native alone, not Hispanic
+	-- PacificAlone = Native Hawaiian and Pacific Islander alone, not Hispanic
+	-- OtherAlone = Other race alone, not Hispanic
+	-- TwoOrMore = Two or more races, not Hispanic
+	-- RemTwoOrMore = Remainder of two or more races, not Hispanic (for CVAP only because it does not include some race combinations already included other fields)
+
+Election Datasets (Votes)
+	-- COMP = DRA's Composite
+	-- PRES = President
+	-- SEN = U.S. Senator
+	-- GOV = Governor
+	-- AG = Attorney General
+	-- AUD = Auditor
+	-- LTG = Lieutenant Governor
+	-- SOS = Secretary of State
+	-- TREAS = Treasurer
+	-- CMPTR = Comptroller
+	-- PUBLND = Public Lands Commissioner
+	-- SC* = State Supreme Court (with seat designation)
+	-- CONG = U.S. Congress
+
+Modifiers
+	-- ROFF = Runoff election
+	-- SPEC = Special election
+	-- SPECROFF = Special Runoff election
+
+Election Field Names
+	-- Total = Total votes
+	-- Dem = Democratic votes
+	-- Rep = Republican votes
+
+
+Datasets included in this package:
+	-- T_10_CENS
+	-- T_18_ACS
+	-- T_19_ACS
+	-- T_20_CENS
+	-- T_20_ACS
+	-- T_22_ACS
+	-- V_10_VAP
+	-- V_18_CVAP
+	-- V_19_CVAP
+	-- V_20_VAP
+	-- V_20_VAP_NH
+	-- V_20_CVAP
+	-- V_22_CVAP
+	-- V_24_CVAP
+	-- E_08_PRES
+	-- E_12_PRES
+	-- E_16_PRES
+	-- E_16_SEN
+	-- E_16_GOV
+	-- E_16_AG
+	-- E_18_SEN
+	-- E_16-20_COMP
+	-- E_20_PRES
+	-- E_20_GOV
+	-- E_20_AG
+	-- E_16-22_COMP
+	-- E_22_SEN
+	-- E_22_AUD
+	-- E_22_SOS
+	-- E_22_TREAS
+	-- E_20-24_COMP
+	-- E_24_PRES
+	-- E_24_SEN
+	-- E_24_GOV
+	-- E_24_AG

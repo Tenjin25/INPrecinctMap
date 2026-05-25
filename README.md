@@ -61,6 +61,16 @@ Build Indiana geometry, contests, district layers, and crosswalks:
 .\.venv\Scripts\python.exe scripts\build_indiana_congressional_data.py
 ```
 
+Crosswalk quality note:
+
+- The build now prefers DRA Indiana 2020 VTD geometry at
+  `Data/sources/dra/in_v07/IN_2020_VD_tabblock.vtd.datasets.geojson`
+  when generating precinct-to-district crosswalks.
+- If that file is missing, the script falls back to `Data/Voting_Precincts.geojson`.
+- Precinct crosswalk rows are emitted as normalized `COUNTY|PRECINCT` keys with
+  area weights, and the statewide allocator uses expanded alias matching (township,
+  ward, ordinal, and county-code variants) before falling back to county weights.
+
 Build historical centroid carryover files:
 
 ```powershell

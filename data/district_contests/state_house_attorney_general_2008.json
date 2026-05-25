@@ -348,14 +348,14 @@
         "color": "#dc2626"
       },
       "29": {
-        "dem_votes": 7680,
-        "rep_votes": 17538,
+        "dem_votes": 7679,
+        "rep_votes": 17537,
         "other_votes": 0,
-        "total_votes": 25218,
+        "total_votes": 25216,
         "dem_candidate": "Linda Pence",
         "rep_candidate": "Greg Zoeller",
         "margin": 9858,
-        "margin_pct": 39.0911,
+        "margin_pct": 39.0942,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -444,14 +444,14 @@
         "color": "#2563eb"
       },
       "37": {
-        "dem_votes": 7767,
-        "rep_votes": 16533,
+        "dem_votes": 7770,
+        "rep_votes": 16540,
         "other_votes": 0,
-        "total_votes": 24300,
+        "total_votes": 24310,
         "dem_candidate": "Linda Pence",
         "rep_candidate": "Greg Zoeller",
-        "margin": 8766,
-        "margin_pct": 36.0741,
+        "margin": 8770,
+        "margin_pct": 36.0757,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -469,13 +469,13 @@
       },
       "39": {
         "dem_votes": 7179,
-        "rep_votes": 18827,
+        "rep_votes": 18826,
         "other_votes": 0,
-        "total_votes": 26006,
+        "total_votes": 26005,
         "dem_candidate": "Linda Pence",
         "rep_candidate": "Greg Zoeller",
-        "margin": 11648,
-        "margin_pct": 44.7897,
+        "margin": 11647,
+        "margin_pct": 44.7875,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -1056,14 +1056,14 @@
         "color": "#2563eb"
       },
       "88": {
-        "dem_votes": 10417,
-        "rep_votes": 14619,
+        "dem_votes": 10415,
+        "rep_votes": 14614,
         "other_votes": 0,
-        "total_votes": 25036,
+        "total_votes": 25029,
         "dem_candidate": "Linda Pence",
         "rep_candidate": "Greg Zoeller",
-        "margin": 4202,
-        "margin_pct": 16.7838,
+        "margin": 4199,
+        "margin_pct": 16.7765,
         "winner": "REP",
         "color": "#dc2626"
       },

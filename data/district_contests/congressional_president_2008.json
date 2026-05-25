@@ -13,13 +13,13 @@
     "results": {
       "1": {
         "dem_votes": 187590,
-        "rep_votes": 107376,
+        "rep_votes": 107377,
         "other_votes": 2835,
-        "total_votes": 297801,
+        "total_votes": 297802,
         "dem_candidate": "Barack Obama",
         "rep_candidate": "John Mccain",
-        "margin": -80214,
-        "margin_pct": -26.9354,
+        "margin": -80213,
+        "margin_pct": -26.935,
         "winner": "DEM",
         "color": "#2563eb"
       },
@@ -60,14 +60,14 @@
         "color": "#dc2626"
       },
       "5": {
-        "dem_votes": 139965,
-        "rep_votes": 164373,
+        "dem_votes": 139964,
+        "rep_votes": 164372,
         "other_votes": 3404,
-        "total_votes": 307742,
+        "total_votes": 307740,
         "dem_candidate": "Barack Obama",
         "rep_candidate": "John Mccain",
         "margin": 24408,
-        "margin_pct": 7.9313,
+        "margin_pct": 7.9314,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -108,14 +108,14 @@
         "color": "#dc2626"
       },
       "9": {
-        "dem_votes": 150839,
+        "dem_votes": 150840,
         "rep_votes": 170448,
         "other_votes": 4208,
-        "total_votes": 325495,
+        "total_votes": 325496,
         "dem_candidate": "Barack Obama",
         "rep_candidate": "John Mccain",
-        "margin": 19609,
-        "margin_pct": 6.0244,
+        "margin": 19608,
+        "margin_pct": 6.024,
         "winner": "REP",
         "color": "#dc2626"
       }

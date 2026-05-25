@@ -1,0 +1,26 @@
+Copyright (c) 2026 Social Good Fund for Dave's Redistricting.
+
+This data was packaged, and may have been disaggregated and/or aggregated, by Dave's Redistricting. The data itself came from other sources as noted.
+
+***************************************************
+Use of this data is subject to the Creative Commons Attribution-ShareAlike 4.0 International License. Specific datasets may be subject to additional restrictions. (https://creativecommons.org/licenses/by-sa/4.0/)
+
+YOU AGREE NOT TO SELL ANY OF THIS DATA UNDER ANY CIRCUMSTANCES.
+***************************************************
+
+All census data is originally from the U.S. Census Bureau. (https://www.census.gov/about.html).
+
+2020 CVAP data was disaggregated to census blocks by Redistricting Data Hub. (https://redistrictingdatahub.org/data/about-our-data/american-community-survey/#cvap). License: https://redistrictingdatahub.org/terms-and-conditions/.
+
+Election Dataset Info
+	2008 data: Stephen Ansolabehere, Jonathan Rodden
+	2012 data: Ryne Rohla/Decision Desk HQ
+	2016 data: Voting and Election Science Team (VEST)
+	2018 data: Voting and Election Science Team (VEST)
+	2020 data: Voting and Election Science Team (VEST)
+	2022 data: Voting and Election Science Team (VEST)
+	2024 data: Voting and Election Science Team (VEST)
+
+License Info
+	Stephen Ansolabehere, Jonathan Rodden: https://dataverse.harvard.edu/dataverse/eda 
+	VEST: https://election.lab.ufl.edu/precinct-data/ (https://dataverse.harvard.edu/dataverse/electionscience) (https://creativecommons.org/licenses/by/4.0/)
