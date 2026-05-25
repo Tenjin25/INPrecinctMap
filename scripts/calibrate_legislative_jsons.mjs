@@ -15,6 +15,7 @@ const COUNTIES_GEOJSON_PATH = path.join(DATA_DIR, "census", "tl_2020_18_county20
 const CROSSWALK_BY_SCOPE = {
   state_house: path.join(DATA_DIR, "crosswalks", "precinct_to_2022_state_house.csv"),
   state_senate: path.join(DATA_DIR, "crosswalks", "precinct_to_2022_state_senate.csv"),
+  congressional: path.join(DATA_DIR, "crosswalks", "precinct_to_cd118.csv"),
 };
 
 const ORDINAL_NUMBER_TOKEN_MAP = {
@@ -389,6 +390,24 @@ function getDraDistrictTurnout(scope, contestType, year) {
   return turnoutNode;
 }
 
+function buildSharesFromDistrictTotals(districtTotalsById) {
+  if (!districtTotalsById || !(districtTotalsById instanceof Map)) return new Map();
+  const shares = new Map();
+  for (const [districtId, totals] of districtTotalsById.entries()) {
+    const total = Number(totals?.total_votes || 0);
+    if (!Number.isFinite(total) || total <= 0) continue;
+    const dem = Number(totals?.dem_votes || 0);
+    const rep = Number(totals?.rep_votes || 0);
+    const oth = Number(totals?.other_votes || 0);
+    shares.set(String(districtId), {
+      dem: dem / total,
+      rep: rep / total,
+      oth: oth / total,
+    });
+  }
+  return shares;
+}
+
 function calibrateSliceJson(slice, sharesByDistrictId, calibrationMeta, options = {}) {
   const districtTotalsById = options?.districtTotalsById || null;
   const results =
@@ -494,6 +513,7 @@ function mapCsvScopeToJsonScope(rawScope) {
   const s = rawScope.trim().toLowerCase();
   if (s === "state house") return "state_house";
   if (s === "state senate") return "state_senate";
+  if (s === "congressional" || s === "congress") return "congressional";
   return null;
 }
 
@@ -512,6 +532,7 @@ function main() {
   const touched = [];
   const skippedUnchanged = [];
   const reportRows = [];
+  const processedSliceKeys = new Set();
 
   const aggregateBefore = fs.existsSync(DISTRICT_AGG_PATH)
     ? fs.readFileSync(DISTRICT_AGG_PATH, "utf8")
@@ -519,7 +540,7 @@ function main() {
   const aggregateObj = aggregateBefore ? JSON.parse(aggregateBefore) : null;
 
   for (const csvName of csvFiles) {
-    const m = /^district-statistics (state house|state senate) (\d{4}) (.+)\.csv$/i.exec(csvName);
+    const m = /^district-statistics (state house|state senate|congress(?:ional)?) (\d{4}) (.+)\.csv$/i.exec(csvName);
     if (!m) continue;
 
     const scope = mapCsvScopeToJsonScope(m[1]);
@@ -545,6 +566,7 @@ function main() {
         ? slice.meta.calibration.generated_on
         : null) || null;
     const baseMeta = {
+      method: "vote_share_from_calibration_csv_rescaled_to_total_votes",
       calibration_csv: path.posix.join("Data", "Calibration csvs", csvName),
       calibration_scope: scope,
       calibration_year: year,
@@ -588,13 +610,96 @@ function main() {
 
     if (afterText !== beforeText) {
       fs.writeFileSync(jsonPath, afterText, "utf8");
-      touched.push({ jsonName, csvName, calibrated, updated, created, missing });
+      touched.push({ jsonName, source: csvName, calibrated, updated, created, missing });
       reportRow.wrote_file = true;
     } else if (calibrated > 0) {
-      skippedUnchanged.push({ jsonName, csvName, calibrated, updated, created, missing });
+      skippedUnchanged.push({ jsonName, source: csvName, calibrated, updated, created, missing });
     }
     if (calibrated > 0) {
       reportRows.push(reportRow);
+      processedSliceKeys.add(`${scope}|${year}|${contestType}`);
+    }
+  }
+
+  const congressionalFiles = fs
+    .readdirSync(DISTRICT_CONTESTS_DIR, { withFileTypes: true })
+    .filter((e) => e.isFile() && /^congressional_.+_\d{4}\.json$/i.test(e.name))
+    .map((e) => e.name);
+
+  for (const jsonName of congressionalFiles) {
+    const m = /^congressional_(.+)_(\d{4})\.json$/i.exec(jsonName);
+    if (!m) continue;
+    const scope = "congressional";
+    const contestType = String(m[1] || "").toLowerCase();
+    const year = Number(m[2]);
+    const sliceKey = `${scope}|${year}|${contestType}`;
+    if (processedSliceKeys.has(sliceKey)) continue;
+
+    const draTurnout = getDraDistrictTurnout(scope, contestType, year);
+    if (!draTurnout?.datasetKey || !draTurnout?.byDistrict) continue;
+    const sharesById = buildSharesFromDistrictTotals(draTurnout.byDistrict);
+    if (!sharesById.size) continue;
+
+    const jsonPath = path.join(DISTRICT_CONTESTS_DIR, jsonName);
+    const beforeText = fs.readFileSync(jsonPath, "utf8");
+    const slice = JSON.parse(beforeText);
+    const priorGeneratedOn =
+      (slice?.meta?.calibration && typeof slice.meta.calibration === "object"
+        ? slice.meta.calibration.generated_on
+        : null) || null;
+    const baseMeta = {
+      method: "dra_dataset_votes_crosswalked_to_cd118_districts",
+      calibration_csv: null,
+      calibration_scope: scope,
+      calibration_year: year,
+      calibration_contest_type: contestType,
+      generated_on: priorGeneratedOn || new Date().toISOString().slice(0, 10),
+      districts_with_shares: sharesById.size,
+      turnout_source: "dra_vtd_dataset_crosswalked_to_2022_lines",
+      turnout_dataset_key: draTurnout.datasetKey,
+    };
+    const { calibrated, updated, missing, created } = calibrateSliceJson(slice, sharesById, baseMeta, {
+      districtTotalsById: draTurnout.byDistrict,
+    });
+    if (slice?.meta?.calibration && typeof slice.meta.calibration === "object") {
+      slice.meta.calibration.districts_calibrated = calibrated;
+      slice.meta.calibration.districts_updated = updated;
+      slice.meta.calibration.districts_created = created;
+      slice.meta.calibration.districts_missing_shares = missing;
+    }
+
+    if (calibrated > 0 && aggregateObj?.results_by_year?.[String(year)]?.[scope]) {
+      aggregateObj.results_by_year[String(year)][scope][contestType] = slice;
+    }
+
+    const afterText = JSON.stringify(slice, null, 2) + "\n";
+    const reportRow = {
+      scope,
+      year,
+      contest_type: contestType,
+      json_file: jsonName,
+      calibration_csv: null,
+      districts_with_shares: sharesById.size,
+      districts_calibrated: calibrated,
+      districts_updated: updated,
+      districts_created: created,
+      districts_missing_shares: missing,
+      districts_without_results: Math.max(0, sharesById.size - calibrated),
+      turnout_source: baseMeta.turnout_source,
+      turnout_dataset_key: baseMeta.turnout_dataset_key,
+      wrote_file: false,
+    };
+
+    if (afterText !== beforeText) {
+      fs.writeFileSync(jsonPath, afterText, "utf8");
+      touched.push({ jsonName, source: `DRA ${draTurnout.datasetKey}`, calibrated, updated, created, missing });
+      reportRow.wrote_file = true;
+    } else if (calibrated > 0) {
+      skippedUnchanged.push({ jsonName, source: `DRA ${draTurnout.datasetKey}`, calibrated, updated, created, missing });
+    }
+    if (calibrated > 0) {
+      reportRows.push(reportRow);
+      processedSliceKeys.add(sliceKey);
     }
   }
 
@@ -615,7 +720,7 @@ function main() {
 
   for (const t of touched) {
     console.log(
-      `${t.jsonName}: calibrated ${t.calibrated} districts, updated ${t.updated}, created ${t.created}, missing shares: ${t.missing} from ${t.csvName}`
+      `${t.jsonName}: calibrated ${t.calibrated} districts, updated ${t.updated}, created ${t.created}, missing shares: ${t.missing} from ${t.source}`
     );
   }
   if (skippedUnchanged.length > 0) {

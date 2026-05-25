@@ -81,6 +81,9 @@ Notes:
 
 - The calibrator updates `Data/district_contests/state_house_*.json` and
   `Data/district_contests/state_senate_*.json` slices that have matching CSVs.
+- It also calibrates `Data/district_contests/congressional_*.json` slices
+  when a matching DRA election dataset is available (using the CD118
+  precinct crosswalk).
 - It also syncs the fallback aggregate file `Data/in_district_results_2022_lines.json`.
 - It writes a coverage summary to `Data/district_calibration_report.json`.
 - When a matching DRA election dataset exists, district turnout totals are
