@@ -47903,14 +47903,14 @@
         "attorney_general": {
           "results": {
             "Adams": {
-              "dem_votes": 7768,
-              "rep_votes": 20865,
+              "dem_votes": 3439,
+              "rep_votes": 10433,
               "other_votes": 0,
-              "total_votes": 28633,
+              "total_votes": 13872,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 13097,
-              "margin_pct": 45.7409,
+              "margin": 6994,
+              "margin_pct": 50.4181,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -47931,13 +47931,13 @@
               }
             },
             "Bartholomew": {
-              "dem_votes": 24302,
-              "rep_votes": 45428,
+              "dem_votes": 12151,
+              "rep_votes": 22714,
               "other_votes": 0,
-              "total_votes": 69730,
+              "total_votes": 34865,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 21126,
+              "margin": 10563,
               "margin_pct": 30.2969,
               "winner": "REP",
               "competitiveness": {
@@ -48014,6 +48014,20 @@
                 "color": "#dc2626"
               }
             },
+            "Cass": {
+              "dem_votes": 4478,
+              "rep_votes": 10506,
+              "other_votes": 0,
+              "total_votes": 14984,
+              "dem_candidate": "Jonathan Weinzapfel",
+              "rep_candidate": "Todd Rokita",
+              "margin": 6028,
+              "margin_pct": 40.2296,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Clark": {
               "dem_votes": 22416,
               "rep_votes": 32918,
@@ -48043,14 +48057,14 @@
               }
             },
             "Clinton": {
-              "dem_votes": 4026,
-              "rep_votes": 10408,
+              "dem_votes": 3451,
+              "rep_votes": 9269,
               "other_votes": 0,
-              "total_votes": 14434,
+              "total_votes": 12720,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 6382,
-              "margin_pct": 44.215,
+              "margin": 5818,
+              "margin_pct": 45.739,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -48113,14 +48127,14 @@
               }
             },
             "Decatur": {
-              "dem_votes": 4160,
-              "rep_votes": 16202,
+              "dem_votes": 2665,
+              "rep_votes": 9118,
               "other_votes": 0,
-              "total_votes": 20362,
+              "total_votes": 11783,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 12042,
-              "margin_pct": 59.1396,
+              "margin": 6453,
+              "margin_pct": 54.7653,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -48224,6 +48238,20 @@
                 "color": "#dc2626"
               }
             },
+            "Fulton": {
+              "dem_votes": 2401,
+              "rep_votes": 6561,
+              "other_votes": 0,
+              "total_votes": 8962,
+              "dem_candidate": "Jonathan Weinzapfel",
+              "rep_candidate": "Todd Rokita",
+              "margin": 4160,
+              "margin_pct": 46.4182,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Gibson": {
               "dem_votes": 6122,
               "rep_votes": 9811,
@@ -48303,6 +48331,20 @@
               "rep_candidate": "Todd Rokita",
               "margin": 8744,
               "margin_pct": 44.3183,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hendricks": {
+              "dem_votes": 30711,
+              "rep_votes": 55159,
+              "other_votes": 0,
+              "total_votes": 85870,
+              "dem_candidate": "Jonathan Weinzapfel",
+              "rep_candidate": "Todd Rokita",
+              "margin": 24448,
+              "margin_pct": 28.4709,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -48393,14 +48435,14 @@
               }
             },
             "Jefferson": {
-              "dem_votes": 6926,
-              "rep_votes": 12992,
+              "dem_votes": 4591,
+              "rep_votes": 9291,
               "other_votes": 0,
-              "total_votes": 19918,
+              "total_votes": 13882,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 6066,
-              "margin_pct": 30.4549,
+              "margin": 4700,
+              "margin_pct": 33.8568,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -48435,14 +48477,14 @@
               }
             },
             "Knox": {
-              "dem_votes": 7759,
-              "rep_votes": 16598,
+              "dem_votes": 4881,
+              "rep_votes": 10541,
               "other_votes": 0,
-              "total_votes": 24357,
+              "total_votes": 15422,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 8839,
-              "margin_pct": 36.2894,
+              "margin": 5660,
+              "margin_pct": 36.7008,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -48575,14 +48617,14 @@
               }
             },
             "Miami": {
-              "dem_votes": 4265,
-              "rep_votes": 12929,
+              "dem_votes": 3297,
+              "rep_votes": 10594,
               "other_votes": 0,
-              "total_votes": 17194,
+              "total_votes": 13891,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 8664,
-              "margin_pct": 50.3897,
+              "margin": 7297,
+              "margin_pct": 52.5304,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -48714,6 +48756,20 @@
                 "color": "#dc2626"
               }
             },
+            "Perry": {
+              "dem_votes": 3763,
+              "rep_votes": 4663,
+              "other_votes": 0,
+              "total_votes": 8426,
+              "dem_candidate": "Jonathan Weinzapfel",
+              "rep_candidate": "Todd Rokita",
+              "margin": 900,
+              "margin_pct": 10.6812,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Pike": {
               "dem_votes": 2043,
               "rep_votes": 3948,
@@ -48800,13 +48856,13 @@
             },
             "Ripley": {
               "dem_votes": 2841,
-              "rep_votes": 10621,
+              "rep_votes": 11071,
               "other_votes": 0,
-              "total_votes": 13462,
+              "total_votes": 13912,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 7780,
-              "margin_pct": 57.7923,
+              "margin": 8230,
+              "margin_pct": 59.1576,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -48841,14 +48897,14 @@
               }
             },
             "Shelby": {
-              "dem_votes": 8656,
-              "rep_votes": 22184,
+              "dem_votes": 5207,
+              "rep_votes": 13889,
               "other_votes": 0,
-              "total_votes": 30840,
+              "total_votes": 19096,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 13528,
-              "margin_pct": 43.8651,
+              "margin": 8682,
+              "margin_pct": 45.465,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -48912,13 +48968,13 @@
             },
             "Sullivan": {
               "dem_votes": 2609,
-              "rep_votes": 7002,
+              "rep_votes": 6082,
               "other_votes": 0,
-              "total_votes": 9611,
+              "total_votes": 8691,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 4393,
-              "margin_pct": 45.708,
+              "margin": 3473,
+              "margin_pct": 39.9609,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -48939,14 +48995,14 @@
               }
             },
             "Tippecanoe": {
-              "dem_votes": 33500,
-              "rep_votes": 36821,
+              "dem_votes": 33612,
+              "rep_votes": 36834,
               "other_votes": 0,
-              "total_votes": 70321,
+              "total_votes": 70446,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 3321,
-              "margin_pct": 4.7226,
+              "margin": 3222,
+              "margin_pct": 4.5737,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -48967,17 +49023,31 @@
               }
             },
             "Union": {
-              "dem_votes": 620,
-              "rep_votes": 2281,
+              "dem_votes": 711,
+              "rep_votes": 2625,
               "other_votes": 0,
-              "total_votes": 2901,
+              "total_votes": 3336,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 1661,
-              "margin_pct": 57.2561,
+              "margin": 1914,
+              "margin_pct": 57.3741,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
+              }
+            },
+            "Vanderburgh": {
+              "dem_votes": 40531,
+              "rep_votes": 36681,
+              "other_votes": 0,
+              "total_votes": 77212,
+              "dem_candidate": "Jonathan Weinzapfel",
+              "rep_candidate": "Todd Rokita",
+              "margin": -3850,
+              "margin_pct": -4.9863,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
               }
             },
             "Vermillion": {
@@ -49023,14 +49093,14 @@
               }
             },
             "Warren": {
-              "dem_votes": 934,
-              "rep_votes": 3109,
+              "dem_votes": 1019,
+              "rep_votes": 3397,
               "other_votes": 0,
-              "total_votes": 4043,
+              "total_votes": 4416,
               "dem_candidate": "Jonathan Weinzapfel",
               "rep_candidate": "Todd Rokita",
-              "margin": 2175,
-              "margin_pct": 53.7967,
+              "margin": 2378,
+              "margin_pct": 53.8496,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -49123,18 +49193,38 @@
           }
         }
       },
+      "auditor": {
+        "auditor": {
+          "results": {
+            "Vermillion": {
+              "dem_votes": 3453,
+              "rep_votes": 3818,
+              "other_votes": 0,
+              "total_votes": 7271,
+              "dem_candidate": "Amy L. Tolbert",
+              "rep_candidate": "Brenda Furry",
+              "margin": 365,
+              "margin_pct": 5.0199,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            }
+          }
+        }
+      },
       "governor": {
         "governor": {
           "results": {
             "Adams": {
-              "dem_votes": 4286,
-              "rep_votes": 18881,
-              "other_votes": 5140,
-              "total_votes": 28307,
+              "dem_votes": 2143,
+              "rep_votes": 9441,
+              "other_votes": 2570,
+              "total_votes": 14154,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 14595,
-              "margin_pct": 51.5597,
+              "margin": 7298,
+              "margin_pct": 51.5614,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -49155,13 +49245,13 @@
               }
             },
             "Bartholomew": {
-              "dem_votes": 18026,
-              "rep_votes": 43918,
-              "other_votes": 10130,
-              "total_votes": 72074,
+              "dem_votes": 9013,
+              "rep_votes": 21959,
+              "other_votes": 5065,
+              "total_votes": 36037,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 25892,
+              "margin": 12946,
               "margin_pct": 35.9242,
               "winner": "REP",
               "competitiveness": {
@@ -49183,13 +49273,13 @@
               }
             },
             "Blackford": {
-              "dem_votes": 1866,
-              "rep_votes": 6666,
-              "other_votes": 2034,
-              "total_votes": 10566,
+              "dem_votes": 933,
+              "rep_votes": 3333,
+              "other_votes": 1017,
+              "total_votes": 5283,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 4800,
+              "margin": 2400,
               "margin_pct": 45.4287,
               "winner": "REP",
               "competitiveness": {
@@ -49197,13 +49287,13 @@
               }
             },
             "Boone": {
-              "dem_votes": 19322,
-              "rep_votes": 47474,
-              "other_votes": 10188,
-              "total_votes": 76984,
+              "dem_votes": 9661,
+              "rep_votes": 23737,
+              "other_votes": 5094,
+              "total_votes": 38492,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 28152,
+              "margin": 14076,
               "margin_pct": 36.5686,
               "winner": "REP",
               "competitiveness": {
@@ -49238,6 +49328,20 @@
                 "color": "#dc2626"
               }
             },
+            "Cass": {
+              "dem_votes": 3373,
+              "rep_votes": 8833,
+              "other_votes": 2940,
+              "total_votes": 15146,
+              "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+              "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+              "margin": 5460,
+              "margin_pct": 36.0491,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Clark": {
               "dem_votes": 19077,
               "rep_votes": 34669,
@@ -49267,13 +49371,13 @@
               }
             },
             "Clinton": {
-              "dem_votes": 4812,
-              "rep_votes": 15942,
-              "other_votes": 5028,
-              "total_votes": 25782,
+              "dem_votes": 2406,
+              "rep_votes": 7971,
+              "other_votes": 2514,
+              "total_votes": 12891,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 11130,
+              "margin": 5565,
               "margin_pct": 43.1697,
               "winner": "REP",
               "competitiveness": {
@@ -49282,13 +49386,13 @@
             },
             "Crawford": {
               "dem_votes": 1242,
-              "rep_votes": 3063,
+              "rep_votes": 3064,
               "other_votes": 553,
-              "total_votes": 4858,
+              "total_votes": 4859,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 1821,
-              "margin_pct": 37.4846,
+              "margin": 1822,
+              "margin_pct": 37.4974,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -49309,13 +49413,13 @@
               }
             },
             "DeKalb": {
-              "dem_votes": 6586,
-              "rep_votes": 26084,
-              "other_votes": 6316,
-              "total_votes": 38986,
+              "dem_votes": 3293,
+              "rep_votes": 13042,
+              "other_votes": 3158,
+              "total_votes": 19493,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 19498,
+              "margin": 9749,
               "margin_pct": 50.0128,
               "winner": "REP",
               "competitiveness": {
@@ -49324,27 +49428,27 @@
             },
             "Dearborn": {
               "dem_votes": 4559,
-              "rep_votes": 18354,
+              "rep_votes": 18353,
               "other_votes": 2383,
-              "total_votes": 25296,
+              "total_votes": 25295,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 13795,
-              "margin_pct": 54.5343,
+              "margin": 13794,
+              "margin_pct": 54.5325,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Decatur": {
-              "dem_votes": 3122,
-              "rep_votes": 15816,
-              "other_votes": 5574,
-              "total_votes": 24512,
+              "dem_votes": 1562,
+              "rep_votes": 7911,
+              "other_votes": 2787,
+              "total_votes": 12260,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 12694,
-              "margin_pct": 51.7869,
+              "margin": 6349,
+              "margin_pct": 51.7863,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -49435,14 +49539,28 @@
               }
             },
             "Franklin": {
-              "dem_votes": 3380,
-              "rep_votes": 17266,
-              "other_votes": 2998,
-              "total_votes": 23644,
+              "dem_votes": 1690,
+              "rep_votes": 8633,
+              "other_votes": 1499,
+              "total_votes": 11822,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 13886,
+              "margin": 6943,
               "margin_pct": 58.7295,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fulton": {
+              "dem_votes": 1603,
+              "rep_votes": 5436,
+              "other_votes": 2084,
+              "total_votes": 9123,
+              "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+              "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+              "margin": 3833,
+              "margin_pct": 42.0147,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -49527,6 +49645,20 @@
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
               "margin": 9569,
               "margin_pct": 47.3736,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hendricks": {
+              "dem_votes": 23179,
+              "rep_votes": 50697,
+              "other_votes": 14246,
+              "total_votes": 88122,
+              "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+              "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+              "margin": 27518,
+              "margin_pct": 31.2272,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -49617,14 +49749,14 @@
               }
             },
             "Jefferson": {
-              "dem_votes": 7421,
-              "rep_votes": 18150,
-              "other_votes": 3538,
-              "total_votes": 29109,
+              "dem_votes": 3711,
+              "rep_votes": 9076,
+              "other_votes": 1750,
+              "total_votes": 14537,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 10729,
-              "margin_pct": 36.858,
+              "margin": 5365,
+              "margin_pct": 36.9058,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -49659,14 +49791,14 @@
               }
             },
             "Knox": {
-              "dem_votes": 5618,
-              "rep_votes": 22419,
-              "other_votes": 3642,
-              "total_votes": 31679,
+              "dem_votes": 2809,
+              "rep_votes": 11210,
+              "other_votes": 1821,
+              "total_votes": 15840,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 16801,
-              "margin_pct": 53.0351,
+              "margin": 8401,
+              "margin_pct": 53.0366,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -49687,13 +49819,13 @@
               }
             },
             "LaGrange": {
-              "dem_votes": 3380,
-              "rep_votes": 15040,
-              "other_votes": 2730,
-              "total_votes": 21150,
+              "dem_votes": 1690,
+              "rep_votes": 7520,
+              "other_votes": 1365,
+              "total_votes": 10575,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 11660,
+              "margin": 5830,
               "margin_pct": 55.13,
               "winner": "REP",
               "competitiveness": {
@@ -49799,13 +49931,13 @@
               }
             },
             "Miami": {
-              "dem_votes": 4878,
-              "rep_votes": 18416,
-              "other_votes": 5428,
-              "total_votes": 28722,
+              "dem_votes": 2439,
+              "rep_votes": 9208,
+              "other_votes": 2714,
+              "total_votes": 14361,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 13538,
+              "margin": 6769,
               "margin_pct": 47.1346,
               "winner": "REP",
               "competitiveness": {
@@ -49938,6 +50070,20 @@
                 "color": "#dc2626"
               }
             },
+            "Perry": {
+              "dem_votes": 2518,
+              "rep_votes": 5523,
+              "other_votes": 607,
+              "total_votes": 8648,
+              "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+              "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+              "margin": 3005,
+              "margin_pct": 34.7479,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Pike": {
               "dem_votes": 1092,
               "rep_votes": 4199,
@@ -50024,13 +50170,13 @@
             },
             "Ripley": {
               "dem_votes": 2231,
-              "rep_votes": 9515,
+              "rep_votes": 9518,
               "other_votes": 2458,
-              "total_votes": 14204,
+              "total_votes": 14207,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 7284,
-              "margin_pct": 51.2813,
+              "margin": 7287,
+              "margin_pct": 51.2916,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50065,13 +50211,13 @@
               }
             },
             "Shelby": {
-              "dem_votes": 6998,
-              "rep_votes": 24538,
-              "other_votes": 8198,
-              "total_votes": 39734,
+              "dem_votes": 3499,
+              "rep_votes": 12269,
+              "other_votes": 4099,
+              "total_votes": 19867,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 17540,
+              "margin": 8770,
               "margin_pct": 44.1436,
               "winner": "REP",
               "competitiveness": {
@@ -50109,12 +50255,12 @@
             "Starke": {
               "dem_votes": 2026,
               "rep_votes": 6730,
-              "other_votes": 1429,
-              "total_votes": 10185,
+              "other_votes": 1427,
+              "total_votes": 10183,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
               "margin": 4704,
-              "margin_pct": 46.1856,
+              "margin_pct": 46.1946,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50135,14 +50281,14 @@
               }
             },
             "Sullivan": {
-              "dem_votes": 3100,
-              "rep_votes": 12944,
-              "other_votes": 2714,
-              "total_votes": 18758,
+              "dem_votes": 1550,
+              "rep_votes": 6009,
+              "other_votes": 1357,
+              "total_votes": 8916,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 9844,
-              "margin_pct": 52.4789,
+              "margin": 4459,
+              "margin_pct": 50.0112,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50164,13 +50310,13 @@
             },
             "Tippecanoe": {
               "dem_votes": 26179,
-              "rep_votes": 37749,
+              "rep_votes": 37979,
               "other_votes": 7057,
-              "total_votes": 70985,
+              "total_votes": 71215,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 11570,
-              "margin_pct": 16.2992,
+              "margin": 11800,
+              "margin_pct": 16.5695,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50191,27 +50337,41 @@
               }
             },
             "Union": {
-              "dem_votes": 532,
-              "rep_votes": 2173,
-              "other_votes": 293,
-              "total_votes": 2998,
+              "dem_votes": 603,
+              "rep_votes": 2533,
+              "other_votes": 323,
+              "total_votes": 3459,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 1641,
-              "margin_pct": 54.7365,
+              "margin": 1930,
+              "margin_pct": 55.7965,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vanderburgh": {
+              "dem_votes": 27242,
+              "rep_votes": 46490,
+              "other_votes": 3658,
+              "total_votes": 77390,
+              "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
+              "rep_candidate": "Eric Holcomb & Suzanne Crouch",
+              "margin": 19248,
+              "margin_pct": 24.8714,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Vermillion": {
-              "dem_votes": 3062,
-              "rep_votes": 9876,
-              "other_votes": 1834,
-              "total_votes": 14772,
+              "dem_votes": 1531,
+              "rep_votes": 4938,
+              "other_votes": 917,
+              "total_votes": 7386,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 6814,
+              "margin": 3407,
               "margin_pct": 46.1278,
               "winner": "REP",
               "competitiveness": {
@@ -50221,12 +50381,12 @@
             "Vigo": {
               "dem_votes": 13999,
               "rep_votes": 25917,
-              "other_votes": 3420,
-              "total_votes": 43336,
+              "other_votes": 3419,
+              "total_votes": 43335,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
               "margin": 11918,
-              "margin_pct": 27.5014,
+              "margin_pct": 27.502,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50247,14 +50407,14 @@
               }
             },
             "Warren": {
-              "dem_votes": 617,
-              "rep_votes": 2757,
-              "other_votes": 713,
-              "total_votes": 4087,
+              "dem_votes": 672,
+              "rep_votes": 3009,
+              "other_votes": 777,
+              "total_votes": 4458,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 2140,
-              "margin_pct": 52.3611,
+              "margin": 2337,
+              "margin_pct": 52.4226,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50317,13 +50477,13 @@
               }
             },
             "White": {
-              "dem_votes": 3956,
-              "rep_votes": 14668,
-              "other_votes": 3652,
-              "total_votes": 22276,
+              "dem_votes": 1978,
+              "rep_votes": 7334,
+              "other_votes": 1826,
+              "total_votes": 11138,
               "dem_candidate": "Woodrow (Woody) Myers & Linda C Lawson",
               "rep_candidate": "Eric Holcomb & Suzanne Crouch",
-              "margin": 10712,
+              "margin": 5356,
               "margin_pct": 48.0876,
               "winner": "REP",
               "competitiveness": {
@@ -50351,14 +50511,14 @@
         "president": {
           "results": {
             "Adams": {
-              "dem_votes": 6472,
-              "rep_votes": 21371,
-              "other_votes": 604,
-              "total_votes": 28447,
+              "dem_votes": 3236,
+              "rep_votes": 10686,
+              "other_votes": 287,
+              "total_votes": 14209,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 14899,
-              "margin_pct": 52.3746,
+              "margin": 7450,
+              "margin_pct": 52.4316,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50379,14 +50539,14 @@
               }
             },
             "Bartholomew": {
-              "dem_votes": 25868,
-              "rep_votes": 44820,
-              "other_votes": 1838,
-              "total_votes": 72526,
+              "dem_votes": 12934,
+              "rep_votes": 22410,
+              "other_votes": 891,
+              "total_votes": 36235,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 18952,
-              "margin_pct": 26.1313,
+              "margin": 9476,
+              "margin_pct": 26.1515,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50395,40 +50555,40 @@
             "Benton": {
               "dem_votes": 1009,
               "rep_votes": 3007,
-              "other_votes": 92,
-              "total_votes": 4108,
+              "other_votes": 98,
+              "total_votes": 4114,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 1998,
-              "margin_pct": 48.6368,
+              "margin_pct": 48.5659,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Blackford": {
-              "dem_votes": 2752,
-              "rep_votes": 7682,
-              "other_votes": 275,
-              "total_votes": 10709,
+              "dem_votes": 1376,
+              "rep_votes": 3841,
+              "other_votes": 134,
+              "total_votes": 5351,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 4930,
-              "margin_pct": 46.036,
+              "margin": 2465,
+              "margin_pct": 46.0662,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Boone": {
-              "dem_votes": 30488,
-              "rep_votes": 44702,
-              "other_votes": 1998,
-              "total_votes": 77188,
+              "dem_votes": 15244,
+              "rep_votes": 22351,
+              "other_votes": 925,
+              "total_votes": 38520,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 14214,
-              "margin_pct": 18.4148,
+              "margin": 7107,
+              "margin_pct": 18.4502,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50451,12 +50611,26 @@
             "Carroll": {
               "dem_votes": 2224,
               "rep_votes": 7086,
-              "other_votes": 204,
-              "total_votes": 9514,
+              "other_votes": 185,
+              "total_votes": 9495,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 4862,
-              "margin_pct": 51.1036,
+              "margin_pct": 51.2059,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Cass": {
+              "dem_votes": 4304,
+              "rep_votes": 10552,
+              "other_votes": 342,
+              "total_votes": 15198,
+              "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
+              "rep_candidate": "Donald J. Trump & Michael R. Pence",
+              "margin": 6248,
+              "margin_pct": 41.1107,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50465,12 +50639,12 @@
             "Clark": {
               "dem_votes": 23093,
               "rep_votes": 33668,
-              "other_votes": 1296,
-              "total_votes": 58057,
+              "other_votes": 1108,
+              "total_votes": 57869,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 10575,
-              "margin_pct": 18.2149,
+              "margin_pct": 18.274,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50479,40 +50653,40 @@
             "Clay": {
               "dem_votes": 2552,
               "rep_votes": 9499,
-              "other_votes": 230,
-              "total_votes": 12281,
+              "other_votes": 216,
+              "total_votes": 12267,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 6947,
-              "margin_pct": 56.5671,
+              "margin_pct": 56.6316,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Clinton": {
-              "dem_votes": 6722,
-              "rep_votes": 18668,
-              "other_votes": 520,
-              "total_votes": 25910,
+              "dem_votes": 3361,
+              "rep_votes": 9334,
+              "other_votes": 254,
+              "total_votes": 12949,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 11946,
-              "margin_pct": 46.1058,
+              "margin": 5973,
+              "margin_pct": 46.1271,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Crawford": {
-              "dem_votes": 1354,
+              "dem_votes": 1355,
               "rep_votes": 3483,
-              "other_votes": 110,
-              "total_votes": 4947,
+              "other_votes": 106,
+              "total_votes": 4944,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 2129,
-              "margin_pct": 43.0362,
+              "margin": 2128,
+              "margin_pct": 43.0421,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50521,54 +50695,54 @@
             "Daviess": {
               "dem_votes": 2169,
               "rep_votes": 9576,
-              "other_votes": 226,
-              "total_votes": 11971,
+              "other_votes": 209,
+              "total_votes": 11954,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 7407,
-              "margin_pct": 61.8745,
+              "margin_pct": 61.9625,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "DeKalb": {
-              "dem_votes": 9932,
-              "rep_votes": 28474,
-              "other_votes": 878,
-              "total_votes": 39284,
+              "dem_votes": 4966,
+              "rep_votes": 14237,
+              "other_votes": 425,
+              "total_votes": 19628,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 18542,
-              "margin_pct": 47.1999,
+              "margin": 9271,
+              "margin_pct": 47.2335,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Dearborn": {
-              "dem_votes": 5445,
+              "dem_votes": 5446,
               "rep_votes": 19528,
-              "other_votes": 459,
-              "total_votes": 25432,
+              "other_votes": 409,
+              "total_votes": 25383,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 14083,
-              "margin_pct": 55.3751,
+              "margin": 14082,
+              "margin_pct": 55.4781,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Decatur": {
-              "dem_votes": 4875,
-              "rep_votes": 19145,
-              "other_votes": 563,
-              "total_votes": 24583,
+              "dem_votes": 2439,
+              "rep_votes": 9575,
+              "other_votes": 273,
+              "total_votes": 12287,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 14270,
-              "margin_pct": 58.0482,
+              "margin": 7136,
+              "margin_pct": 58.0776,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50591,12 +50765,12 @@
             "Dubois": {
               "dem_votes": 6292,
               "rep_votes": 15033,
-              "other_votes": 481,
-              "total_votes": 21806,
+              "other_votes": 445,
+              "total_votes": 21770,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 8741,
-              "margin_pct": 40.0853,
+              "margin_pct": 40.1516,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50619,12 +50793,12 @@
             "Fayette": {
               "dem_votes": 2237,
               "rep_votes": 7755,
-              "other_votes": 154,
-              "total_votes": 10146,
+              "other_votes": 144,
+              "total_votes": 10136,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 5518,
-              "margin_pct": 54.386,
+              "margin_pct": 54.4396,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50633,12 +50807,12 @@
             "Floyd": {
               "dem_votes": 17511,
               "rep_votes": 23400,
-              "other_votes": 979,
-              "total_votes": 41890,
+              "other_votes": 891,
+              "total_votes": 41802,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 5889,
-              "margin_pct": 14.0582,
+              "margin_pct": 14.0878,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50659,14 +50833,28 @@
               }
             },
             "Franklin": {
-              "dem_votes": 4274,
-              "rep_votes": 19382,
-              "other_votes": 362,
-              "total_votes": 24018,
+              "dem_votes": 2137,
+              "rep_votes": 9691,
+              "other_votes": 172,
+              "total_votes": 12000,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 15108,
-              "margin_pct": 62.9028,
+              "margin": 7554,
+              "margin_pct": 62.95,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fulton": {
+              "dem_votes": 2280,
+              "rep_votes": 6694,
+              "other_votes": 173,
+              "total_votes": 9147,
+              "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
+              "rep_candidate": "Donald J. Trump & Michael R. Pence",
+              "margin": 4414,
+              "margin_pct": 48.2563,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50702,13 +50890,13 @@
             },
             "Greene": {
               "dem_votes": 3389,
-              "rep_votes": 11305,
-              "other_votes": 315,
-              "total_votes": 15009,
+              "rep_votes": 11103,
+              "other_votes": 292,
+              "total_votes": 14784,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 7916,
-              "margin_pct": 52.7417,
+              "margin": 7714,
+              "margin_pct": 52.178,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50731,12 +50919,12 @@
             "Hancock": {
               "dem_votes": 12895,
               "rep_votes": 28996,
-              "other_votes": 1129,
-              "total_votes": 43020,
+              "other_votes": 1020,
+              "total_votes": 42911,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 16101,
-              "margin_pct": 37.4268,
+              "margin_pct": 37.5218,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50751,6 +50939,20 @@
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 9222,
               "margin_pct": 45.5722,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hendricks": {
+              "dem_votes": 32604,
+              "rep_votes": 53802,
+              "other_votes": 2099,
+              "total_votes": 88505,
+              "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
+              "rep_candidate": "Donald J. Trump & Michael R. Pence",
+              "margin": 21198,
+              "margin_pct": 23.9512,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50815,12 +51017,12 @@
             "Jasper": {
               "dem_votes": 3798,
               "rep_votes": 11383,
-              "other_votes": 314,
-              "total_votes": 15495,
+              "other_votes": 294,
+              "total_votes": 15475,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 7585,
-              "margin_pct": 48.9513,
+              "margin_pct": 49.0145,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50829,26 +51031,26 @@
             "Jay": {
               "dem_votes": 1926,
               "rep_votes": 6361,
-              "other_votes": 179,
-              "total_votes": 8466,
+              "other_votes": 174,
+              "total_votes": 8461,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 4435,
-              "margin_pct": 52.386,
+              "margin_pct": 52.417,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Jefferson": {
-              "dem_votes": 9462,
-              "rep_votes": 19322,
-              "other_votes": 598,
-              "total_votes": 29382,
+              "dem_votes": 4731,
+              "rep_votes": 9663,
+              "other_votes": 303,
+              "total_votes": 14697,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 9860,
-              "margin_pct": 33.558,
+              "margin": 4932,
+              "margin_pct": 33.5579,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50857,12 +51059,12 @@
             "Jennings": {
               "dem_votes": 2523,
               "rep_votes": 9490,
-              "other_votes": 265,
-              "total_votes": 12278,
+              "other_votes": 238,
+              "total_votes": 12251,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 6967,
-              "margin_pct": 56.7438,
+              "margin_pct": 56.8688,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50883,14 +51085,14 @@
               }
             },
             "Knox": {
-              "dem_votes": 8134,
-              "rep_votes": 23309,
-              "other_votes": 595,
-              "total_votes": 32038,
+              "dem_votes": 4067,
+              "rep_votes": 11655,
+              "other_votes": 289,
+              "total_votes": 16011,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 15175,
-              "margin_pct": 47.3656,
+              "margin": 7588,
+              "margin_pct": 47.3924,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50911,14 +51113,14 @@
               }
             },
             "LaGrange": {
-              "dem_votes": 4710,
-              "rep_votes": 16220,
-              "other_votes": 355,
-              "total_votes": 21285,
+              "dem_votes": 2355,
+              "rep_votes": 8110,
+              "other_votes": 168,
+              "total_votes": 10633,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 11510,
-              "margin_pct": 54.0756,
+              "margin": 5755,
+              "margin_pct": 54.124,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50927,12 +51129,12 @@
             "LaPorte": {
               "dem_votes": 22427,
               "rep_votes": 25997,
-              "other_votes": 1059,
-              "total_votes": 49483,
+              "other_votes": 968,
+              "total_votes": 49392,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 3570,
-              "margin_pct": 7.2146,
+              "margin_pct": 7.2279,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50955,12 +51157,12 @@
             "Lawrence": {
               "dem_votes": 4961,
               "rep_votes": 15601,
-              "other_votes": 509,
-              "total_votes": 21071,
+              "other_votes": 463,
+              "total_votes": 21025,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 10640,
-              "margin_pct": 50.4959,
+              "margin_pct": 50.6064,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -50997,12 +51199,12 @@
             "Marshall": {
               "dem_votes": 5712,
               "rep_votes": 13844,
-              "other_votes": 397,
-              "total_votes": 19953,
+              "other_votes": 371,
+              "total_votes": 19927,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 8132,
-              "margin_pct": 40.7558,
+              "margin_pct": 40.809,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51023,14 +51225,14 @@
               }
             },
             "Miami": {
-              "dem_votes": 6470,
-              "rep_votes": 21850,
-              "other_votes": 646,
-              "total_votes": 28966,
+              "dem_votes": 3235,
+              "rep_votes": 10925,
+              "other_votes": 313,
+              "total_votes": 14473,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 15380,
-              "margin_pct": 53.0967,
+              "margin": 7690,
+              "margin_pct": 53.1334,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51067,12 +51269,12 @@
             "Morgan": {
               "dem_votes": 7781,
               "rep_votes": 27512,
-              "other_votes": 926,
-              "total_votes": 36219,
+              "other_votes": 866,
+              "total_votes": 36159,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 19731,
-              "margin_pct": 54.4769,
+              "margin_pct": 54.5673,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51095,12 +51297,12 @@
             "Noble": {
               "dem_votes": 4660,
               "rep_votes": 14195,
-              "other_votes": 360,
-              "total_votes": 19215,
+              "other_votes": 335,
+              "total_votes": 19190,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 9535,
-              "margin_pct": 49.6227,
+              "margin_pct": 49.6873,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51123,12 +51325,12 @@
             "Orange": {
               "dem_votes": 2224,
               "rep_votes": 6432,
-              "other_votes": 188,
-              "total_votes": 8844,
+              "other_votes": 176,
+              "total_votes": 8832,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 4208,
-              "margin_pct": 47.5803,
+              "margin_pct": 47.6449,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51137,12 +51339,12 @@
             "Owen": {
               "dem_votes": 2420,
               "rep_votes": 7286,
-              "other_votes": 211,
-              "total_votes": 9917,
+              "other_votes": 198,
+              "total_votes": 9904,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 4866,
-              "margin_pct": 49.0673,
+              "margin_pct": 49.1317,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51151,12 +51353,26 @@
             "Parke": {
               "dem_votes": 1503,
               "rep_votes": 5400,
-              "other_votes": 119,
-              "total_votes": 7022,
+              "other_votes": 110,
+              "total_votes": 7013,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 3897,
-              "margin_pct": 55.497,
+              "margin_pct": 55.5682,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Perry": {
+              "dem_votes": 3203,
+              "rep_votes": 5345,
+              "other_votes": 174,
+              "total_votes": 8722,
+              "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
+              "rep_candidate": "Donald J. Trump & Michael R. Pence",
+              "margin": 2142,
+              "margin_pct": 24.5586,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51207,12 +51423,12 @@
             "Pulaski": {
               "dem_votes": 1463,
               "rep_votes": 4246,
-              "other_votes": 104,
-              "total_votes": 5813,
+              "other_votes": 97,
+              "total_votes": 5806,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 2783,
-              "margin_pct": 47.8755,
+              "margin_pct": 47.9332,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51235,12 +51451,12 @@
             "Randolph": {
               "dem_votes": 2513,
               "rep_votes": 8312,
-              "other_votes": 254,
-              "total_votes": 11079,
+              "other_votes": 245,
+              "total_votes": 11070,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 5799,
-              "margin_pct": 52.3423,
+              "margin_pct": 52.3848,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51249,12 +51465,12 @@
             "Ripley": {
               "dem_votes": 2774,
               "rep_votes": 11261,
-              "other_votes": 257,
-              "total_votes": 14292,
+              "other_votes": 236,
+              "total_votes": 14271,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 8487,
-              "margin_pct": 59.3829,
+              "margin_pct": 59.4703,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51277,26 +51493,26 @@
             "Scott": {
               "dem_votes": 2701,
               "rep_votes": 7331,
-              "other_votes": 150,
-              "total_votes": 10182,
+              "other_votes": 135,
+              "total_votes": 10167,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 4630,
-              "margin_pct": 45.4724,
+              "margin_pct": 45.5395,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Shelby": {
-              "dem_votes": 10046,
-              "rep_votes": 29136,
-              "other_votes": 826,
-              "total_votes": 40008,
+              "dem_votes": 5023,
+              "rep_votes": 14568,
+              "other_votes": 400,
+              "total_votes": 19991,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 19090,
-              "margin_pct": 47.7155,
+              "margin": 9545,
+              "margin_pct": 47.7465,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51305,12 +51521,12 @@
             "Spencer": {
               "dem_votes": 3213,
               "rep_votes": 7357,
-              "other_votes": 219,
-              "total_votes": 10789,
+              "other_votes": 199,
+              "total_votes": 10769,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 4144,
-              "margin_pct": 38.4095,
+              "margin_pct": 38.4808,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51333,12 +51549,12 @@
             "Starke": {
               "dem_votes": 2650,
               "rep_votes": 7466,
-              "other_votes": 193,
-              "total_votes": 10309,
+              "other_votes": 174,
+              "total_votes": 10290,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 4816,
-              "margin_pct": 46.7165,
+              "margin_pct": 46.8027,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51347,26 +51563,26 @@
             "Steuben": {
               "dem_votes": 4513,
               "rep_votes": 11327,
-              "other_votes": 344,
-              "total_votes": 16184,
+              "other_votes": 322,
+              "total_votes": 16162,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 6814,
-              "margin_pct": 42.1033,
+              "margin_pct": 42.1606,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Sullivan": {
-              "dem_votes": 4306,
-              "rep_votes": 14379,
-              "other_votes": 314,
-              "total_votes": 18999,
+              "dem_votes": 2153,
+              "rep_votes": 6691,
+              "other_votes": 150,
+              "total_votes": 8994,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 10073,
-              "margin_pct": 53.0186,
+              "margin": 4538,
+              "margin_pct": 50.4559,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51375,12 +51591,12 @@
             "Switzerland": {
               "dem_votes": 964,
               "rep_votes": 3133,
-              "other_votes": 62,
-              "total_votes": 4159,
+              "other_votes": 57,
+              "total_votes": 4154,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 2169,
-              "margin_pct": 52.152,
+              "margin_pct": 52.2147,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51389,12 +51605,12 @@
             "Tippecanoe": {
               "dem_votes": 35017,
               "rep_votes": 34581,
-              "other_votes": 2226,
-              "total_votes": 71824,
+              "other_votes": 1850,
+              "total_votes": 71448,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": -436,
-              "margin_pct": -0.607,
+              "margin_pct": -0.6102,
               "winner": "DEM",
               "competitiveness": {
                 "color": "#2563eb"
@@ -51403,40 +51619,54 @@
             "Tipton": {
               "dem_votes": 1834,
               "rep_votes": 6110,
-              "other_votes": 180,
-              "total_votes": 8124,
+              "other_votes": 172,
+              "total_votes": 8116,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 4276,
-              "margin_pct": 52.6342,
+              "margin_pct": 52.6861,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Union": {
-              "dem_votes": 645,
-              "rep_votes": 2324,
-              "other_votes": 53,
-              "total_votes": 3022,
+              "dem_votes": 736,
+              "rep_votes": 2688,
+              "other_votes": 59,
+              "total_votes": 3483,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 1679,
-              "margin_pct": 55.5592,
+              "margin": 1952,
+              "margin_pct": 56.0436,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vanderburgh": {
+              "dem_votes": 34415,
+              "rep_votes": 41844,
+              "other_votes": 1403,
+              "total_votes": 77662,
+              "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
+              "rep_candidate": "Donald J. Trump & Michael R. Pence",
+              "margin": 7429,
+              "margin_pct": 9.5658,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Vermillion": {
-              "dem_votes": 4290,
-              "rep_votes": 10368,
-              "other_votes": 313,
-              "total_votes": 14971,
+              "dem_votes": 2145,
+              "rep_votes": 5184,
+              "other_votes": 152,
+              "total_votes": 7481,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 6078,
-              "margin_pct": 40.5985,
+              "margin": 3039,
+              "margin_pct": 40.6229,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51445,12 +51675,12 @@
             "Vigo": {
               "dem_votes": 18123,
               "rep_votes": 24545,
-              "other_votes": 1030,
-              "total_votes": 43698,
+              "other_votes": 926,
+              "total_votes": 43594,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 6422,
-              "margin_pct": 14.6963,
+              "margin_pct": 14.7314,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51459,26 +51689,26 @@
             "Wabash": {
               "dem_votes": 3494,
               "rep_votes": 10762,
-              "other_votes": 317,
-              "total_votes": 14573,
+              "other_votes": 320,
+              "total_votes": 14576,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 7268,
-              "margin_pct": 49.8731,
+              "margin_pct": 49.8628,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
               }
             },
             "Warren": {
-              "dem_votes": 896,
-              "rep_votes": 3111,
-              "other_votes": 94,
-              "total_votes": 4101,
+              "dem_votes": 974,
+              "rep_votes": 3401,
+              "other_votes": 97,
+              "total_votes": 4472,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 2215,
-              "margin_pct": 54.0112,
+              "margin": 2427,
+              "margin_pct": 54.271,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51487,12 +51717,12 @@
             "Warrick": {
               "dem_votes": 11923,
               "rep_votes": 21326,
-              "other_votes": 641,
-              "total_votes": 33890,
+              "other_votes": 580,
+              "total_votes": 33829,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
               "margin": 9403,
-              "margin_pct": 27.7456,
+              "margin_pct": 27.7957,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51500,13 +51730,13 @@
             },
             "Washington": {
               "dem_votes": 2784,
-              "rep_votes": 9094,
+              "rep_votes": 9114,
               "other_votes": 241,
-              "total_votes": 12119,
+              "total_votes": 12139,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 6310,
-              "margin_pct": 52.067,
+              "margin": 6330,
+              "margin_pct": 52.146,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51541,14 +51771,14 @@
               }
             },
             "White": {
-              "dem_votes": 6064,
-              "rep_votes": 15914,
-              "other_votes": 375,
-              "total_votes": 22353,
+              "dem_votes": 3032,
+              "rep_votes": 7957,
+              "other_votes": 177,
+              "total_votes": 11166,
               "dem_candidate": "Joseph R. Biden & Kamala D. Harris",
               "rep_candidate": "Donald J. Trump & Michael R. Pence",
-              "margin": 9850,
-              "margin_pct": 44.0657,
+              "margin": 4925,
+              "margin_pct": 44.1071,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51590,6 +51820,20 @@
                 "color": "#dc2626"
               }
             },
+            "Allen": {
+              "dem_votes": 36957,
+              "rep_votes": 61104,
+              "other_votes": 2794,
+              "total_votes": 100855,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 24147,
+              "margin_pct": 23.9423,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Bartholomew": {
               "dem_votes": 7259,
               "rep_votes": 14200,
@@ -51599,6 +51843,90 @@
               "rep_candidate": "Tera K. Klutz",
               "margin": 6941,
               "margin_pct": 31.1032,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Benton": {
+              "dem_votes": 445,
+              "rep_votes": 1938,
+              "other_votes": 81,
+              "total_votes": 2464,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 1493,
+              "margin_pct": 60.5925,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Blackford": {
+              "dem_votes": 740,
+              "rep_votes": 2432,
+              "other_votes": 189,
+              "total_votes": 3361,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 1692,
+              "margin_pct": 50.3422,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Boone": {
+              "dem_votes": 8539,
+              "rep_votes": 15057,
+              "other_votes": 1037,
+              "total_votes": 24633,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 6518,
+              "margin_pct": 26.4604,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Brown": {
+              "dem_votes": 2019,
+              "rep_votes": 8621,
+              "other_votes": 365,
+              "total_votes": 11005,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 6602,
+              "margin_pct": 59.9909,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Carroll": {
+              "dem_votes": 1197,
+              "rep_votes": 4707,
+              "other_votes": 296,
+              "total_votes": 6200,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 3510,
+              "margin_pct": 56.6129,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Cass": {
+              "dem_votes": 2024,
+              "rep_votes": 6227,
+              "other_votes": 308,
+              "total_votes": 8559,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 4203,
+              "margin_pct": 49.1062,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51618,6 +51946,20 @@
                 "color": "#dc2626"
               }
             },
+            "Clay": {
+              "dem_votes": 1512,
+              "rep_votes": 5783,
+              "other_votes": 277,
+              "total_votes": 7572,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 4271,
+              "margin_pct": 56.4052,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Clinton": {
               "dem_votes": 1512,
               "rep_votes": 11580,
@@ -51627,6 +51969,34 @@
               "rep_candidate": "Tera K. Klutz",
               "margin": 10068,
               "margin_pct": 75.3029,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Crawford": {
+              "dem_votes": 1006,
+              "rep_votes": 2435,
+              "other_votes": 138,
+              "total_votes": 3579,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 1429,
+              "margin_pct": 39.9274,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Daviess": {
+              "dem_votes": 1014,
+              "rep_votes": 5734,
+              "other_votes": 188,
+              "total_votes": 6936,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 4720,
+              "margin_pct": 68.0507,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51688,6 +52058,76 @@
                 "color": "#dc2626"
               }
             },
+            "Dubois": {
+              "dem_votes": 3486,
+              "rep_votes": 9544,
+              "other_votes": 392,
+              "total_votes": 13422,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 6058,
+              "margin_pct": 45.1349,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Elkhart": {
+              "dem_votes": 12298,
+              "rep_votes": 31078,
+              "other_votes": 1149,
+              "total_votes": 44525,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 18780,
+              "margin_pct": 42.1786,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fayette": {
+              "dem_votes": 1245,
+              "rep_votes": 4674,
+              "other_votes": 201,
+              "total_votes": 6120,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 3429,
+              "margin_pct": 56.0294,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Floyd": {
+              "dem_votes": 10091,
+              "rep_votes": 15708,
+              "other_votes": 821,
+              "total_votes": 26620,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 5617,
+              "margin_pct": 21.1007,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fountain": {
+              "dem_votes": 886,
+              "rep_votes": 3917,
+              "other_votes": 173,
+              "total_votes": 4976,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 3031,
+              "margin_pct": 60.9124,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Franklin": {
               "dem_votes": 1179,
               "rep_votes": 5912,
@@ -51697,6 +52137,34 @@
               "rep_candidate": "Tera K. Klutz",
               "margin": 4733,
               "margin_pct": 64.7292,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fulton": {
+              "dem_votes": 1163,
+              "rep_votes": 4174,
+              "other_votes": 147,
+              "total_votes": 5484,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 3011,
+              "margin_pct": 54.9052,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Gibson": {
+              "dem_votes": 2272,
+              "rep_votes": 7525,
+              "other_votes": 273,
+              "total_votes": 10070,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 5253,
+              "margin_pct": 52.1648,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51716,6 +52184,20 @@
                 "color": "#dc2626"
               }
             },
+            "Greene": {
+              "dem_votes": 2074,
+              "rep_votes": 6898,
+              "other_votes": 348,
+              "total_votes": 9320,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 4824,
+              "margin_pct": 51.7597,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Hamilton": {
               "dem_votes": 49243,
               "rep_votes": 74515,
@@ -51725,6 +52207,20 @@
               "rep_candidate": "Tera K. Klutz",
               "margin": 25272,
               "margin_pct": 19.7137,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hancock": {
+              "dem_votes": 6172,
+              "rep_votes": 16331,
+              "other_votes": 1273,
+              "total_votes": 23776,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 10159,
+              "margin_pct": 42.728,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51795,6 +52291,48 @@
               "rep_candidate": "Tera K. Klutz",
               "margin": 6085,
               "margin_pct": 54.1033,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jackson": {
+              "dem_votes": 2234,
+              "rep_votes": 8543,
+              "other_votes": 353,
+              "total_votes": 11130,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 6309,
+              "margin_pct": 56.6846,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jasper": {
+              "dem_votes": 1847,
+              "rep_votes": 7118,
+              "other_votes": 248,
+              "total_votes": 9213,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 5271,
+              "margin_pct": 57.2126,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jay": {
+              "dem_votes": 1148,
+              "rep_votes": 4002,
+              "other_votes": 206,
+              "total_votes": 5356,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 2854,
+              "margin_pct": 53.286,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51884,6 +52422,20 @@
                 "color": "#dc2626"
               }
             },
+            "LaPorte": {
+              "dem_votes": 12943,
+              "rep_votes": 17473,
+              "other_votes": 1293,
+              "total_votes": 31709,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 4530,
+              "margin_pct": 14.2862,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Lake": {
               "dem_votes": 68706,
               "rep_votes": 60037,
@@ -51898,6 +52450,20 @@
                 "color": "#2563eb"
               }
             },
+            "Lawrence": {
+              "dem_votes": 2554,
+              "rep_votes": 9573,
+              "other_votes": 494,
+              "total_votes": 12621,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 7019,
+              "margin_pct": 55.6137,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Madison": {
               "dem_votes": 11988,
               "rep_votes": 22098,
@@ -51907,6 +52473,34 @@
               "rep_candidate": "Tera K. Klutz",
               "margin": 10110,
               "margin_pct": 28.3782,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Marion": {
+              "dem_votes": 132320,
+              "rep_votes": 82951,
+              "other_votes": 7544,
+              "total_votes": 222815,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": -49369,
+              "margin_pct": -22.1569,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Marshall": {
+              "dem_votes": 2905,
+              "rep_votes": 9375,
+              "other_votes": 378,
+              "total_votes": 12658,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 6470,
+              "margin_pct": 51.1139,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51940,6 +52534,34 @@
                 "color": "#dc2626"
               }
             },
+            "Monroe": {
+              "dem_votes": 23853,
+              "rep_votes": 14503,
+              "other_votes": 1357,
+              "total_votes": 39713,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": -9350,
+              "margin_pct": -23.5439,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Montgomery": {
+              "dem_votes": 1995,
+              "rep_votes": 7270,
+              "other_votes": 425,
+              "total_votes": 9690,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 5275,
+              "margin_pct": 54.4376,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Morgan": {
               "dem_votes": 4102,
               "rep_votes": 15726,
@@ -51949,6 +52571,104 @@
               "rep_candidate": "Tera K. Klutz",
               "margin": 11624,
               "margin_pct": 53.5594,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Newton": {
+              "dem_votes": 752,
+              "rep_votes": 3053,
+              "other_votes": 161,
+              "total_votes": 3966,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 2301,
+              "margin_pct": 58.0182,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Noble": {
+              "dem_votes": 2293,
+              "rep_votes": 8815,
+              "other_votes": 315,
+              "total_votes": 11423,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 6522,
+              "margin_pct": 57.0953,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ohio": {
+              "dem_votes": 436,
+              "rep_votes": 1474,
+              "other_votes": 52,
+              "total_votes": 1962,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 1038,
+              "margin_pct": 52.9052,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Orange": {
+              "dem_votes": 1136,
+              "rep_votes": 4059,
+              "other_votes": 150,
+              "total_votes": 5345,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 2923,
+              "margin_pct": 54.6866,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Owen": {
+              "dem_votes": 1439,
+              "rep_votes": 4277,
+              "other_votes": 397,
+              "total_votes": 6113,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 2838,
+              "margin_pct": 46.4257,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Parke": {
+              "dem_votes": 848,
+              "rep_votes": 3425,
+              "other_votes": 172,
+              "total_votes": 4445,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 2577,
+              "margin_pct": 57.9753,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Perry": {
+              "dem_votes": 2299,
+              "rep_votes": 3662,
+              "other_votes": 193,
+              "total_votes": 6154,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 1363,
+              "margin_pct": 22.1482,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51968,6 +52688,20 @@
                 "color": "#dc2626"
               }
             },
+            "Porter": {
+              "dem_votes": 24555,
+              "rep_votes": 31371,
+              "other_votes": 1758,
+              "total_votes": 57684,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 6816,
+              "margin_pct": 11.8161,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Posey": {
               "dem_votes": 2154,
               "rep_votes": 6188,
@@ -51977,6 +52711,62 @@
               "rep_candidate": "Tera K. Klutz",
               "margin": 4034,
               "margin_pct": 46.8797,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Pulaski": {
+              "dem_votes": 738,
+              "rep_votes": 2846,
+              "other_votes": 102,
+              "total_votes": 3686,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 2108,
+              "margin_pct": 57.1894,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Putnam": {
+              "dem_votes": 2140,
+              "rep_votes": 7241,
+              "other_votes": 491,
+              "total_votes": 9872,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 5101,
+              "margin_pct": 51.6714,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Randolph": {
+              "dem_votes": 1333,
+              "rep_votes": 11222,
+              "other_votes": 242,
+              "total_votes": 12797,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 9889,
+              "margin_pct": 77.2759,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ripley": {
+              "dem_votes": 1435,
+              "rep_votes": 13865,
+              "other_votes": 267,
+              "total_votes": 15567,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 12430,
+              "margin_pct": 79.8484,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -51996,6 +52786,90 @@
                 "color": "#dc2626"
               }
             },
+            "Scott": {
+              "dem_votes": 1931,
+              "rep_votes": 4481,
+              "other_votes": 252,
+              "total_votes": 6664,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 2550,
+              "margin_pct": 38.2653,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Shelby": {
+              "dem_votes": 2535,
+              "rep_votes": 8346,
+              "other_votes": 559,
+              "total_votes": 11440,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 5811,
+              "margin_pct": 50.7955,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Spencer": {
+              "dem_votes": 2086,
+              "rep_votes": 5221,
+              "other_votes": 212,
+              "total_votes": 7519,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 3135,
+              "margin_pct": 41.6944,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "St. Joseph": {
+              "dem_votes": 32336,
+              "rep_votes": 36810,
+              "other_votes": 1909,
+              "total_votes": 71055,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 4474,
+              "margin_pct": 6.2965,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Starke": {
+              "dem_votes": 1666,
+              "rep_votes": 4824,
+              "other_votes": 273,
+              "total_votes": 6763,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 3158,
+              "margin_pct": 46.6953,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Steuben": {
+              "dem_votes": 2347,
+              "rep_votes": 7003,
+              "other_votes": 266,
+              "total_votes": 9616,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 4656,
+              "margin_pct": 48.4193,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Sullivan": {
               "dem_votes": 1614,
               "rep_votes": 4303,
@@ -52010,15 +52884,99 @@
                 "color": "#dc2626"
               }
             },
-            "Union": {
-              "dem_votes": 403,
-              "rep_votes": 1651,
-              "other_votes": 79,
-              "total_votes": 2133,
+            "Switzerland": {
+              "dem_votes": 589,
+              "rep_votes": 1937,
+              "other_votes": 93,
+              "total_votes": 2619,
               "dem_candidate": "Zenai Brooks",
               "rep_candidate": "Tera K. Klutz",
-              "margin": 1248,
-              "margin_pct": 58.5091,
+              "margin": 1348,
+              "margin_pct": 51.47,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Tippecanoe": {
+              "dem_votes": 17108,
+              "rep_votes": 20013,
+              "other_votes": 1241,
+              "total_votes": 38362,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 2905,
+              "margin_pct": 7.5726,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Tipton": {
+              "dem_votes": 1081,
+              "rep_votes": 3871,
+              "other_votes": 234,
+              "total_votes": 5186,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 2790,
+              "margin_pct": 53.7987,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Union": {
+              "dem_votes": 454,
+              "rep_votes": 1903,
+              "other_votes": 86,
+              "total_votes": 2443,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 1449,
+              "margin_pct": 59.3123,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vanderburgh": {
+              "dem_votes": 18299,
+              "rep_votes": 26850,
+              "other_votes": 1340,
+              "total_votes": 46489,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 8551,
+              "margin_pct": 18.3936,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vermillion": {
+              "dem_votes": 1534,
+              "rep_votes": 3230,
+              "other_votes": 205,
+              "total_votes": 4969,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 1696,
+              "margin_pct": 34.1316,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vigo": {
+              "dem_votes": 10400,
+              "rep_votes": 14870,
+              "other_votes": 1080,
+              "total_votes": 26350,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 4470,
+              "margin_pct": 16.9639,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52038,6 +52996,62 @@
                 "color": "#dc2626"
               }
             },
+            "Warren": {
+              "dem_votes": 526,
+              "rep_votes": 2177,
+              "other_votes": 90,
+              "total_votes": 2793,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 1651,
+              "margin_pct": 59.1121,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Warrick": {
+              "dem_votes": 6116,
+              "rep_votes": 13318,
+              "other_votes": 471,
+              "total_votes": 19905,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 7202,
+              "margin_pct": 36.1819,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Washington": {
+              "dem_votes": 1620,
+              "rep_votes": 6047,
+              "other_votes": 268,
+              "total_votes": 7935,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 4427,
+              "margin_pct": 55.7908,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Wayne": {
+              "dem_votes": 4949,
+              "rep_votes": 10914,
+              "other_votes": 646,
+              "total_votes": 16509,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 5965,
+              "margin_pct": 36.1318,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Wells": {
               "dem_votes": 1509,
               "rep_votes": 7257,
@@ -52047,6 +53061,20 @@
               "rep_candidate": "Tera K. Klutz",
               "margin": 5748,
               "margin_pct": 63.3668,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "White": {
+              "dem_votes": 1503,
+              "rep_votes": 4999,
+              "other_votes": 196,
+              "total_votes": 6698,
+              "dem_candidate": "Zenai Brooks",
+              "rep_candidate": "Tera K. Klutz",
+              "margin": 3496,
+              "margin_pct": 52.1947,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52086,6 +53114,20 @@
                 "color": "#dc2626"
               }
             },
+            "Allen": {
+              "dem_votes": 41911,
+              "rep_votes": 55203,
+              "other_votes": 3885,
+              "total_votes": 100999,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 13292,
+              "margin_pct": 13.1605,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Bartholomew": {
               "dem_votes": 8180,
               "rep_votes": 12544,
@@ -52095,6 +53137,90 @@
               "rep_candidate": "Diego Morales",
               "margin": 4364,
               "margin_pct": 19.4917,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Benton": {
+              "dem_votes": 498,
+              "rep_votes": 1884,
+              "other_votes": 85,
+              "total_votes": 2467,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 1386,
+              "margin_pct": 56.1816,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Blackford": {
+              "dem_votes": 896,
+              "rep_votes": 2221,
+              "other_votes": 231,
+              "total_votes": 3348,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 1325,
+              "margin_pct": 39.5759,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Boone": {
+              "dem_votes": 9953,
+              "rep_votes": 12293,
+              "other_votes": 2395,
+              "total_votes": 24641,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2340,
+              "margin_pct": 9.4964,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Brown": {
+              "dem_votes": 2276,
+              "rep_votes": 3329,
+              "other_votes": 692,
+              "total_votes": 6297,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 1053,
+              "margin_pct": 16.7222,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Carroll": {
+              "dem_votes": 1431,
+              "rep_votes": 4353,
+              "other_votes": 411,
+              "total_votes": 6195,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2922,
+              "margin_pct": 47.1671,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Cass": {
+              "dem_votes": 2504,
+              "rep_votes": 5611,
+              "other_votes": 419,
+              "total_votes": 8534,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 3107,
+              "margin_pct": 36.4073,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52114,6 +53240,20 @@
                 "color": "#dc2626"
               }
             },
+            "Clay": {
+              "dem_votes": 1692,
+              "rep_votes": 5393,
+              "other_votes": 485,
+              "total_votes": 7570,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 3701,
+              "margin_pct": 48.8904,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Clinton": {
               "dem_votes": 1820,
               "rep_votes": 4904,
@@ -52123,6 +53263,34 @@
               "rep_candidate": "Diego Morales",
               "margin": 3084,
               "margin_pct": 42.7799,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Crawford": {
+              "dem_votes": 1129,
+              "rep_votes": 2296,
+              "other_votes": 154,
+              "total_votes": 3579,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 1167,
+              "margin_pct": 32.6069,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Daviess": {
+              "dem_votes": 1190,
+              "rep_votes": 5509,
+              "other_votes": 242,
+              "total_votes": 6941,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 4319,
+              "margin_pct": 62.2245,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52184,6 +53352,76 @@
                 "color": "#dc2626"
               }
             },
+            "Dubois": {
+              "dem_votes": 3945,
+              "rep_votes": 8956,
+              "other_votes": 526,
+              "total_votes": 13427,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 5011,
+              "margin_pct": 37.3203,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Elkhart": {
+              "dem_votes": 13515,
+              "rep_votes": 29354,
+              "other_votes": 1703,
+              "total_votes": 44572,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 15839,
+              "margin_pct": 35.5358,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fayette": {
+              "dem_votes": 1484,
+              "rep_votes": 4330,
+              "other_votes": 296,
+              "total_votes": 6110,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2846,
+              "margin_pct": 46.5794,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Floyd": {
+              "dem_votes": 10891,
+              "rep_votes": 14926,
+              "other_votes": 855,
+              "total_votes": 26672,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 4035,
+              "margin_pct": 15.1282,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fountain": {
+              "dem_votes": 1039,
+              "rep_votes": 3680,
+              "other_votes": 231,
+              "total_votes": 4950,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2641,
+              "margin_pct": 53.3535,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Franklin": {
               "dem_votes": 1326,
               "rep_votes": 5638,
@@ -52193,6 +53431,34 @@
               "rep_candidate": "Diego Morales",
               "margin": 4312,
               "margin_pct": 59.0361,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fulton": {
+              "dem_votes": 1522,
+              "rep_votes": 3797,
+              "other_votes": 180,
+              "total_votes": 5499,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2275,
+              "margin_pct": 41.3712,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Gibson": {
+              "dem_votes": 2522,
+              "rep_votes": 7162,
+              "other_votes": 410,
+              "total_votes": 10094,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 4640,
+              "margin_pct": 45.9679,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52212,6 +53478,20 @@
                 "color": "#dc2626"
               }
             },
+            "Greene": {
+              "dem_votes": 2270,
+              "rep_votes": 6554,
+              "other_votes": 505,
+              "total_votes": 9329,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 4284,
+              "margin_pct": 45.9213,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Hamilton": {
               "dem_votes": 56160,
               "rep_votes": 61478,
@@ -52221,6 +53501,20 @@
               "rep_candidate": "Diego Morales",
               "margin": 5318,
               "margin_pct": 4.1431,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hancock": {
+              "dem_votes": 7378,
+              "rep_votes": 13599,
+              "other_votes": 2808,
+              "total_votes": 23785,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 6221,
+              "margin_pct": 26.1551,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52291,6 +53585,48 @@
               "rep_candidate": "Diego Morales",
               "margin": 5129,
               "margin_pct": 45.656,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jackson": {
+              "dem_votes": 2550,
+              "rep_votes": 7974,
+              "other_votes": 646,
+              "total_votes": 11170,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 5424,
+              "margin_pct": 48.5586,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jasper": {
+              "dem_votes": 2019,
+              "rep_votes": 6920,
+              "other_votes": 285,
+              "total_votes": 9224,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 4901,
+              "margin_pct": 53.1331,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jay": {
+              "dem_votes": 1366,
+              "rep_votes": 3740,
+              "other_votes": 255,
+              "total_votes": 5361,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2374,
+              "margin_pct": 44.2828,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52380,6 +53716,20 @@
                 "color": "#dc2626"
               }
             },
+            "LaPorte": {
+              "dem_votes": 13833,
+              "rep_votes": 16486,
+              "other_votes": 1405,
+              "total_votes": 31724,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2653,
+              "margin_pct": 8.3628,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Lake": {
               "dem_votes": 70412,
               "rep_votes": 58356,
@@ -52394,6 +53744,20 @@
                 "color": "#2563eb"
               }
             },
+            "Lawrence": {
+              "dem_votes": 2896,
+              "rep_votes": 9030,
+              "other_votes": 703,
+              "total_votes": 12629,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 6134,
+              "margin_pct": 48.5707,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Madison": {
               "dem_votes": 14140,
               "rep_votes": 18740,
@@ -52403,6 +53767,34 @@
               "rep_candidate": "Diego Morales",
               "margin": 4600,
               "margin_pct": 12.9308,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Marion": {
+              "dem_votes": 141777,
+              "rep_votes": 66021,
+              "other_votes": 15199,
+              "total_votes": 222997,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": -75756,
+              "margin_pct": -33.9718,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Marshall": {
+              "dem_votes": 3378,
+              "rep_votes": 8743,
+              "other_votes": 540,
+              "total_votes": 12661,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 5365,
+              "margin_pct": 42.3742,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52436,6 +53828,34 @@
                 "color": "#dc2626"
               }
             },
+            "Monroe": {
+              "dem_votes": 25280,
+              "rep_votes": 12706,
+              "other_votes": 1898,
+              "total_votes": 39884,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": -12574,
+              "margin_pct": -31.5264,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Montgomery": {
+              "dem_votes": 2496,
+              "rep_votes": 6443,
+              "other_votes": 758,
+              "total_votes": 9697,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 3947,
+              "margin_pct": 40.7033,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Morgan": {
               "dem_votes": 5096,
               "rep_votes": 13522,
@@ -52445,6 +53865,104 @@
               "rep_candidate": "Diego Morales",
               "margin": 8426,
               "margin_pct": 39.8826,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Newton": {
+              "dem_votes": 825,
+              "rep_votes": 2946,
+              "other_votes": 174,
+              "total_votes": 3945,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2121,
+              "margin_pct": 53.7643,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Noble": {
+              "dem_votes": 2696,
+              "rep_votes": 8227,
+              "other_votes": 503,
+              "total_votes": 11426,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 5531,
+              "margin_pct": 48.4071,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ohio": {
+              "dem_votes": 463,
+              "rep_votes": 1448,
+              "other_votes": 50,
+              "total_votes": 1961,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 985,
+              "margin_pct": 50.2295,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Orange": {
+              "dem_votes": 1292,
+              "rep_votes": 3896,
+              "other_votes": 160,
+              "total_votes": 5348,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2604,
+              "margin_pct": 48.6911,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Owen": {
+              "dem_votes": 1680,
+              "rep_votes": 3849,
+              "other_votes": 587,
+              "total_votes": 6116,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2169,
+              "margin_pct": 35.4644,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Parke": {
+              "dem_votes": 992,
+              "rep_votes": 3212,
+              "other_votes": 226,
+              "total_votes": 4430,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2220,
+              "margin_pct": 50.1129,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Perry": {
+              "dem_votes": 2516,
+              "rep_votes": 3424,
+              "other_votes": 219,
+              "total_votes": 6159,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 908,
+              "margin_pct": 14.7427,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52464,6 +53982,20 @@
                 "color": "#dc2626"
               }
             },
+            "Porter": {
+              "dem_votes": 25916,
+              "rep_votes": 29969,
+              "other_votes": 1891,
+              "total_votes": 57776,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 4053,
+              "margin_pct": 7.015,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Posey": {
               "dem_votes": 2414,
               "rep_votes": 5854,
@@ -52473,6 +54005,62 @@
               "rep_candidate": "Diego Morales",
               "margin": 3440,
               "margin_pct": 39.8286,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Pulaski": {
+              "dem_votes": 903,
+              "rep_votes": 2633,
+              "other_votes": 151,
+              "total_votes": 3687,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 1730,
+              "margin_pct": 46.9216,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Putnam": {
+              "dem_votes": 2583,
+              "rep_votes": 6257,
+              "other_votes": 1023,
+              "total_votes": 9863,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 3674,
+              "margin_pct": 37.2503,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Randolph": {
+              "dem_votes": 1619,
+              "rep_votes": 4830,
+              "other_votes": 371,
+              "total_votes": 6820,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 3211,
+              "margin_pct": 47.0821,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ripley": {
+              "dem_votes": 1573,
+              "rep_votes": 6326,
+              "other_votes": 420,
+              "total_votes": 8319,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 4753,
+              "margin_pct": 57.1343,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52492,6 +54080,90 @@
                 "color": "#dc2626"
               }
             },
+            "Scott": {
+              "dem_votes": 2236,
+              "rep_votes": 4155,
+              "other_votes": 287,
+              "total_votes": 6678,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 1919,
+              "margin_pct": 28.7361,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Shelby": {
+              "dem_votes": 3109,
+              "rep_votes": 7067,
+              "other_votes": 1280,
+              "total_votes": 11456,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 3958,
+              "margin_pct": 34.5496,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Spencer": {
+              "dem_votes": 2381,
+              "rep_votes": 4900,
+              "other_votes": 246,
+              "total_votes": 7527,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2519,
+              "margin_pct": 33.4662,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "St. Joseph": {
+              "dem_votes": 34746,
+              "rep_votes": 33748,
+              "other_votes": 2659,
+              "total_votes": 71153,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": -998,
+              "margin_pct": -1.4026,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Starke": {
+              "dem_votes": 1885,
+              "rep_votes": 4579,
+              "other_votes": 317,
+              "total_votes": 6781,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2694,
+              "margin_pct": 39.7287,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Steuben": {
+              "dem_votes": 2692,
+              "rep_votes": 6559,
+              "other_votes": 392,
+              "total_votes": 9643,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 3867,
+              "margin_pct": 40.1016,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Sullivan": {
               "dem_votes": 1837,
               "rep_votes": 3987,
@@ -52506,15 +54178,99 @@
                 "color": "#dc2626"
               }
             },
-            "Union": {
-              "dem_votes": 475,
-              "rep_votes": 1511,
-              "other_votes": 127,
-              "total_votes": 2113,
+            "Switzerland": {
+              "dem_votes": 666,
+              "rep_votes": 1849,
+              "other_votes": 101,
+              "total_votes": 2616,
               "dem_candidate": "Destiny Wells",
               "rep_candidate": "Diego Morales",
-              "margin": 1036,
-              "margin_pct": 49.0298,
+              "margin": 1183,
+              "margin_pct": 45.2217,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Tippecanoe": {
+              "dem_votes": 18485,
+              "rep_votes": 18324,
+              "other_votes": 1618,
+              "total_votes": 38427,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": -161,
+              "margin_pct": -0.419,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Tipton": {
+              "dem_votes": 1386,
+              "rep_votes": 3331,
+              "other_votes": 462,
+              "total_votes": 5179,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 1945,
+              "margin_pct": 37.5555,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Union": {
+              "dem_votes": 532,
+              "rep_votes": 1742,
+              "other_votes": 144,
+              "total_votes": 2418,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 1210,
+              "margin_pct": 50.0414,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vanderburgh": {
+              "dem_votes": 19899,
+              "rep_votes": 25221,
+              "other_votes": 1633,
+              "total_votes": 46753,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 5322,
+              "margin_pct": 11.3832,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vermillion": {
+              "dem_votes": 1705,
+              "rep_votes": 3012,
+              "other_votes": 243,
+              "total_votes": 4960,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 1307,
+              "margin_pct": 26.3508,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vigo": {
+              "dem_votes": 11773,
+              "rep_votes": 13444,
+              "other_votes": 1209,
+              "total_votes": 26426,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 1671,
+              "margin_pct": 6.3233,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52534,6 +54290,62 @@
                 "color": "#dc2626"
               }
             },
+            "Warren": {
+              "dem_votes": 596,
+              "rep_votes": 2077,
+              "other_votes": 117,
+              "total_votes": 2790,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 1481,
+              "margin_pct": 53.0824,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Warrick": {
+              "dem_votes": 6605,
+              "rep_votes": 12722,
+              "other_votes": 637,
+              "total_votes": 19964,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 6117,
+              "margin_pct": 30.6402,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Washington": {
+              "dem_votes": 1880,
+              "rep_votes": 5739,
+              "other_votes": 309,
+              "total_votes": 7928,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 3859,
+              "margin_pct": 48.6756,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Wayne": {
+              "dem_votes": 5465,
+              "rep_votes": 10091,
+              "other_votes": 993,
+              "total_votes": 16549,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 4626,
+              "margin_pct": 27.9534,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Wells": {
               "dem_votes": 1882,
               "rep_votes": 6797,
@@ -52543,6 +54355,20 @@
               "rep_candidate": "Diego Morales",
               "margin": 4915,
               "margin_pct": 54.2016,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "White": {
+              "dem_votes": 1778,
+              "rep_votes": 4626,
+              "other_votes": 282,
+              "total_votes": 6686,
+              "dem_candidate": "Destiny Wells",
+              "rep_candidate": "Diego Morales",
+              "margin": 2848,
+              "margin_pct": 42.5965,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52582,6 +54408,20 @@
                 "color": "#dc2626"
               }
             },
+            "Allen": {
+              "dem_votes": 40594,
+              "rep_votes": 59986,
+              "other_votes": 0,
+              "total_votes": 100580,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 19392,
+              "margin_pct": 19.2802,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Bartholomew": {
               "dem_votes": 7771,
               "rep_votes": 14502,
@@ -52591,6 +54431,90 @@
               "rep_candidate": "Daniel Elliott",
               "margin": 6731,
               "margin_pct": 30.2204,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Benton": {
+              "dem_votes": 493,
+              "rep_votes": 1972,
+              "other_votes": 0,
+              "total_votes": 2465,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1479,
+              "margin_pct": 60.0,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Blackford": {
+              "dem_votes": 860,
+              "rep_votes": 2487,
+              "other_votes": 0,
+              "total_votes": 3347,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1627,
+              "margin_pct": 48.6107,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Boone": {
+              "dem_votes": 9141,
+              "rep_votes": 15426,
+              "other_votes": 0,
+              "total_votes": 24567,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 6285,
+              "margin_pct": 25.5831,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Brown": {
+              "dem_votes": 2209,
+              "rep_votes": 4040,
+              "other_votes": 0,
+              "total_votes": 6249,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1831,
+              "margin_pct": 29.3007,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Carroll": {
+              "dem_votes": 1424,
+              "rep_votes": 4778,
+              "other_votes": 0,
+              "total_votes": 6202,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3354,
+              "margin_pct": 54.0793,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Cass": {
+              "dem_votes": 2318,
+              "rep_votes": 6251,
+              "other_votes": 0,
+              "total_votes": 8569,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3933,
+              "margin_pct": 45.898,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52610,6 +54534,20 @@
                 "color": "#dc2626"
               }
             },
+            "Clay": {
+              "dem_votes": 1677,
+              "rep_votes": 5888,
+              "other_votes": 0,
+              "total_votes": 7565,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4211,
+              "margin_pct": 55.6642,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Clinton": {
               "dem_votes": 1669,
               "rep_votes": 5567,
@@ -52619,6 +54557,34 @@
               "rep_candidate": "Daniel Elliott",
               "margin": 3898,
               "margin_pct": 53.8695,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Crawford": {
+              "dem_votes": 1094,
+              "rep_votes": 2469,
+              "other_votes": 0,
+              "total_votes": 3563,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1375,
+              "margin_pct": 38.5911,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Daviess": {
+              "dem_votes": 1135,
+              "rep_votes": 5779,
+              "other_votes": 0,
+              "total_votes": 6914,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4644,
+              "margin_pct": 67.1681,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52680,6 +54646,76 @@
                 "color": "#dc2626"
               }
             },
+            "Dubois": {
+              "dem_votes": 3855,
+              "rep_votes": 9615,
+              "other_votes": 0,
+              "total_votes": 13470,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 5760,
+              "margin_pct": 42.7617,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Elkhart": {
+              "dem_votes": 13074,
+              "rep_votes": 31457,
+              "other_votes": 0,
+              "total_votes": 44531,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 18383,
+              "margin_pct": 41.2814,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fayette": {
+              "dem_votes": 1392,
+              "rep_votes": 4729,
+              "other_votes": 0,
+              "total_votes": 6121,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3337,
+              "margin_pct": 54.5172,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Floyd": {
+              "dem_votes": 10885,
+              "rep_votes": 15806,
+              "other_votes": 0,
+              "total_votes": 26691,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4921,
+              "margin_pct": 18.4369,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fountain": {
+              "dem_votes": 976,
+              "rep_votes": 3999,
+              "other_votes": 0,
+              "total_votes": 4975,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3023,
+              "margin_pct": 60.7638,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Franklin": {
               "dem_votes": 1322,
               "rep_votes": 5994,
@@ -52689,6 +54725,34 @@
               "rep_candidate": "Daniel Elliott",
               "margin": 4672,
               "margin_pct": 63.86,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fulton": {
+              "dem_votes": 1297,
+              "rep_votes": 4188,
+              "other_votes": 0,
+              "total_votes": 5485,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2891,
+              "margin_pct": 52.7074,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Gibson": {
+              "dem_votes": 2519,
+              "rep_votes": 7508,
+              "other_votes": 0,
+              "total_votes": 10027,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4989,
+              "margin_pct": 49.7557,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52708,6 +54772,20 @@
                 "color": "#dc2626"
               }
             },
+            "Greene": {
+              "dem_votes": 2292,
+              "rep_votes": 7045,
+              "other_votes": 0,
+              "total_votes": 9337,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4753,
+              "margin_pct": 50.905,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Hamilton": {
               "dem_votes": 52363,
               "rep_votes": 75561,
@@ -52717,6 +54795,20 @@
               "rep_candidate": "Daniel Elliott",
               "margin": 23198,
               "margin_pct": 18.1342,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hancock": {
+              "dem_votes": 6787,
+              "rep_votes": 16888,
+              "other_votes": 0,
+              "total_votes": 23675,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 10101,
+              "margin_pct": 42.6653,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52787,6 +54879,48 @@
               "rep_candidate": "Daniel Elliott",
               "margin": 5866,
               "margin_pct": 52.1515,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jackson": {
+              "dem_votes": 2454,
+              "rep_votes": 8642,
+              "other_votes": 0,
+              "total_votes": 11096,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 6188,
+              "margin_pct": 55.7678,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jasper": {
+              "dem_votes": 1980,
+              "rep_votes": 7229,
+              "other_votes": 0,
+              "total_votes": 9209,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 5249,
+              "margin_pct": 56.9986,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jay": {
+              "dem_votes": 1304,
+              "rep_votes": 4063,
+              "other_votes": 0,
+              "total_votes": 5367,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2759,
+              "margin_pct": 51.4067,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52876,6 +55010,20 @@
                 "color": "#dc2626"
               }
             },
+            "LaPorte": {
+              "dem_votes": 13965,
+              "rep_votes": 17667,
+              "other_votes": 0,
+              "total_votes": 31632,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3702,
+              "margin_pct": 11.7033,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Lake": {
               "dem_votes": 71475,
               "rep_votes": 60489,
@@ -52890,6 +55038,20 @@
                 "color": "#2563eb"
               }
             },
+            "Lawrence": {
+              "dem_votes": 2778,
+              "rep_votes": 9820,
+              "other_votes": 0,
+              "total_votes": 12598,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 7042,
+              "margin_pct": 55.8978,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Madison": {
               "dem_votes": 13186,
               "rep_votes": 22412,
@@ -52899,6 +55061,34 @@
               "rep_candidate": "Daniel Elliott",
               "margin": 9226,
               "margin_pct": 25.9172,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Marion": {
+              "dem_votes": 137724,
+              "rep_votes": 84799,
+              "other_votes": 0,
+              "total_votes": 222523,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -52925,
+              "margin_pct": -23.7841,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Marshall": {
+              "dem_votes": 3199,
+              "rep_votes": 9452,
+              "other_votes": 0,
+              "total_votes": 12651,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 6253,
+              "margin_pct": 49.4269,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52932,6 +55122,34 @@
                 "color": "#dc2626"
               }
             },
+            "Monroe": {
+              "dem_votes": 25038,
+              "rep_votes": 14633,
+              "other_votes": 0,
+              "total_votes": 39671,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -10405,
+              "margin_pct": -26.2282,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Montgomery": {
+              "dem_votes": 2206,
+              "rep_votes": 7419,
+              "other_votes": 0,
+              "total_votes": 9625,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 5213,
+              "margin_pct": 54.161,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Morgan": {
               "dem_votes": 4584,
               "rep_votes": 16467,
@@ -52941,6 +55159,104 @@
               "rep_candidate": "Daniel Elliott",
               "margin": 11883,
               "margin_pct": 56.4486,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Newton": {
+              "dem_votes": 860,
+              "rep_votes": 3104,
+              "other_votes": 0,
+              "total_votes": 3964,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2244,
+              "margin_pct": 56.6095,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Noble": {
+              "dem_votes": 2583,
+              "rep_votes": 8823,
+              "other_votes": 0,
+              "total_votes": 11406,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 6240,
+              "margin_pct": 54.708,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ohio": {
+              "dem_votes": 450,
+              "rep_votes": 1495,
+              "other_votes": 0,
+              "total_votes": 1945,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1045,
+              "margin_pct": 53.7275,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Orange": {
+              "dem_votes": 1255,
+              "rep_votes": 4098,
+              "other_votes": 0,
+              "total_votes": 5353,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2843,
+              "margin_pct": 53.1104,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Owen": {
+              "dem_votes": 1580,
+              "rep_votes": 4518,
+              "other_votes": 0,
+              "total_votes": 6098,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2938,
+              "margin_pct": 48.1797,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Parke": {
+              "dem_votes": 974,
+              "rep_votes": 3471,
+              "other_votes": 0,
+              "total_votes": 4445,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2497,
+              "margin_pct": 56.1755,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Perry": {
+              "dem_votes": 2492,
+              "rep_votes": 3664,
+              "other_votes": 0,
+              "total_votes": 6156,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1172,
+              "margin_pct": 19.0383,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52960,6 +55276,20 @@
                 "color": "#dc2626"
               }
             },
+            "Porter": {
+              "dem_votes": 26190,
+              "rep_votes": 31559,
+              "other_votes": 0,
+              "total_votes": 57749,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 5369,
+              "margin_pct": 9.2971,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Posey": {
               "dem_votes": 2352,
               "rep_votes": 6102,
@@ -52969,6 +55299,62 @@
               "rep_candidate": "Daniel Elliott",
               "margin": 3750,
               "margin_pct": 44.3577,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Pulaski": {
+              "dem_votes": 831,
+              "rep_votes": 2856,
+              "other_votes": 0,
+              "total_votes": 3687,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2025,
+              "margin_pct": 54.9227,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Putnam": {
+              "dem_votes": 2359,
+              "rep_votes": 7499,
+              "other_votes": 0,
+              "total_votes": 9858,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 5140,
+              "margin_pct": 52.1404,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Randolph": {
+              "dem_votes": 1530,
+              "rep_votes": 11169,
+              "other_votes": 0,
+              "total_votes": 12699,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 9639,
+              "margin_pct": 75.9036,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ripley": {
+              "dem_votes": 1600,
+              "rep_votes": 6731,
+              "other_votes": 0,
+              "total_votes": 8331,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 5131,
+              "margin_pct": 61.5892,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -52988,6 +55374,90 @@
                 "color": "#dc2626"
               }
             },
+            "Scott": {
+              "dem_votes": 2226,
+              "rep_votes": 4468,
+              "other_votes": 0,
+              "total_votes": 6694,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2242,
+              "margin_pct": 33.4927,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Shelby": {
+              "dem_votes": 2799,
+              "rep_votes": 8621,
+              "other_votes": 0,
+              "total_votes": 11420,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 5822,
+              "margin_pct": 50.9807,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Spencer": {
+              "dem_votes": 2307,
+              "rep_votes": 5210,
+              "other_votes": 0,
+              "total_votes": 7517,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2903,
+              "margin_pct": 38.6191,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "St. Joseph": {
+              "dem_votes": 34451,
+              "rep_votes": 36474,
+              "other_votes": 0,
+              "total_votes": 70925,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2023,
+              "margin_pct": 2.8523,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Starke": {
+              "dem_votes": 1870,
+              "rep_votes": 4908,
+              "other_votes": 0,
+              "total_votes": 6778,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3038,
+              "margin_pct": 44.8215,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Steuben": {
+              "dem_votes": 2576,
+              "rep_votes": 7004,
+              "other_votes": 0,
+              "total_votes": 9580,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4428,
+              "margin_pct": 46.2213,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Sullivan": {
               "dem_votes": 1814,
               "rep_votes": 4386,
@@ -53002,15 +55472,99 @@
                 "color": "#dc2626"
               }
             },
-            "Union": {
-              "dem_votes": 481,
-              "rep_votes": 1652,
+            "Switzerland": {
+              "dem_votes": 685,
+              "rep_votes": 1941,
               "other_votes": 0,
-              "total_votes": 2133,
+              "total_votes": 2626,
               "dem_candidate": "Jessica Mcclellan",
               "rep_candidate": "Daniel Elliott",
-              "margin": 1171,
-              "margin_pct": 54.8992,
+              "margin": 1256,
+              "margin_pct": 47.8294,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Tippecanoe": {
+              "dem_votes": 18210,
+              "rep_votes": 20105,
+              "other_votes": 0,
+              "total_votes": 38315,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1895,
+              "margin_pct": 4.9458,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Tipton": {
+              "dem_votes": 1274,
+              "rep_votes": 3892,
+              "other_votes": 0,
+              "total_votes": 5166,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2618,
+              "margin_pct": 50.6775,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Union": {
+              "dem_votes": 540,
+              "rep_votes": 1905,
+              "other_votes": 0,
+              "total_votes": 2445,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1365,
+              "margin_pct": 55.8282,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vanderburgh": {
+              "dem_votes": 19417,
+              "rep_votes": 26391,
+              "other_votes": 0,
+              "total_votes": 45808,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 6974,
+              "margin_pct": 15.2244,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vermillion": {
+              "dem_votes": 1728,
+              "rep_votes": 3247,
+              "other_votes": 0,
+              "total_votes": 4975,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1519,
+              "margin_pct": 30.5327,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vigo": {
+              "dem_votes": 11689,
+              "rep_votes": 14780,
+              "other_votes": 0,
+              "total_votes": 26469,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3091,
+              "margin_pct": 11.6778,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -53030,6 +55584,62 @@
                 "color": "#dc2626"
               }
             },
+            "Warren": {
+              "dem_votes": 569,
+              "rep_votes": 2225,
+              "other_votes": 0,
+              "total_votes": 2794,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1656,
+              "margin_pct": 59.2699,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Warrick": {
+              "dem_votes": 6499,
+              "rep_votes": 13435,
+              "other_votes": 0,
+              "total_votes": 19934,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 6936,
+              "margin_pct": 34.7948,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Washington": {
+              "dem_votes": 1830,
+              "rep_votes": 6062,
+              "other_votes": 0,
+              "total_votes": 7892,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4232,
+              "margin_pct": 53.6239,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Wayne": {
+              "dem_votes": 5355,
+              "rep_votes": 11088,
+              "other_votes": 0,
+              "total_votes": 16443,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 5733,
+              "margin_pct": 34.8659,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Wells": {
               "dem_votes": 1741,
               "rep_votes": 7309,
@@ -53039,6 +55649,20 @@
               "rep_candidate": "Daniel Elliott",
               "margin": 5568,
               "margin_pct": 61.5249,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "White": {
+              "dem_votes": 1658,
+              "rep_votes": 5047,
+              "other_votes": 0,
+              "total_votes": 6705,
+              "dem_candidate": "Jessica Mcclellan",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3389,
+              "margin_pct": 50.5444,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -53078,6 +55702,20 @@
                 "color": "#dc2626"
               }
             },
+            "Allen": {
+              "dem_votes": 39913,
+              "rep_votes": 59128,
+              "other_votes": 2656,
+              "total_votes": 101697,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 19215,
+              "margin_pct": 18.8944,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Bartholomew": {
               "dem_votes": 7623,
               "rep_votes": 13827,
@@ -53087,6 +55725,90 @@
               "rep_candidate": "Todd Young",
               "margin": 6204,
               "margin_pct": 27.5684,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Benton": {
+              "dem_votes": 469,
+              "rep_votes": 1938,
+              "other_votes": 60,
+              "total_votes": 2467,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 1469,
+              "margin_pct": 59.546,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Blackford": {
+              "dem_votes": 740,
+              "rep_votes": 2500,
+              "other_votes": 154,
+              "total_votes": 3394,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 1760,
+              "margin_pct": 51.8562,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Boone": {
+              "dem_votes": 9159,
+              "rep_votes": 14178,
+              "other_votes": 1469,
+              "total_votes": 24806,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 5019,
+              "margin_pct": 20.233,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Brown": {
+              "dem_votes": 2113,
+              "rep_votes": 3796,
+              "other_votes": 446,
+              "total_votes": 6355,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 1683,
+              "margin_pct": 26.4831,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Carroll": {
+              "dem_votes": 1267,
+              "rep_votes": 4644,
+              "other_votes": 270,
+              "total_votes": 6181,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 3377,
+              "margin_pct": 54.6352,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Cass": {
+              "dem_votes": 2081,
+              "rep_votes": 6250,
+              "other_votes": 257,
+              "total_votes": 8588,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 4169,
+              "margin_pct": 48.5445,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -53106,6 +55828,20 @@
                 "color": "#dc2626"
               }
             },
+            "Clay": {
+              "dem_votes": 1507,
+              "rep_votes": 5885,
+              "other_votes": 250,
+              "total_votes": 7642,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 4378,
+              "margin_pct": 57.2887,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Clinton": {
               "dem_votes": 1606,
               "rep_votes": 5362,
@@ -53115,6 +55851,34 @@
               "rep_candidate": "Todd Young",
               "margin": 3756,
               "margin_pct": 51.5014,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Crawford": {
+              "dem_votes": 983,
+              "rep_votes": 2630,
+              "other_votes": 92,
+              "total_votes": 3705,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 1647,
+              "margin_pct": 44.4534,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Daviess": {
+              "dem_votes": 1059,
+              "rep_votes": 5754,
+              "other_votes": 174,
+              "total_votes": 6987,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 4695,
+              "margin_pct": 67.1962,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -53176,6 +55940,76 @@
                 "color": "#dc2626"
               }
             },
+            "Dubois": {
+              "dem_votes": 3502,
+              "rep_votes": 9906,
+              "other_votes": 307,
+              "total_votes": 13715,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 6404,
+              "margin_pct": 46.6934,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Elkhart": {
+              "dem_votes": 12635,
+              "rep_votes": 30852,
+              "other_votes": 1165,
+              "total_votes": 44652,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 18217,
+              "margin_pct": 40.7977,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fayette": {
+              "dem_votes": 1274,
+              "rep_votes": 4720,
+              "other_votes": 170,
+              "total_votes": 6164,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 3446,
+              "margin_pct": 55.9053,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Floyd": {
+              "dem_votes": 10313,
+              "rep_votes": 15948,
+              "other_votes": 651,
+              "total_votes": 26912,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 5635,
+              "margin_pct": 20.9386,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fountain": {
+              "dem_votes": 945,
+              "rep_votes": 3891,
+              "other_votes": 147,
+              "total_votes": 4983,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 2946,
+              "margin_pct": 59.121,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Franklin": {
               "dem_votes": 1236,
               "rep_votes": 5923,
@@ -53185,6 +56019,34 @@
               "rep_candidate": "Todd Young",
               "margin": 4687,
               "margin_pct": 63.6216,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fulton": {
+              "dem_votes": 1162,
+              "rep_votes": 4224,
+              "other_votes": 134,
+              "total_votes": 5520,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 3062,
+              "margin_pct": 55.471,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Gibson": {
+              "dem_votes": 2205,
+              "rep_votes": 7612,
+              "other_votes": 181,
+              "total_votes": 9998,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 5407,
+              "margin_pct": 54.0808,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -53204,6 +56066,20 @@
                 "color": "#dc2626"
               }
             },
+            "Greene": {
+              "dem_votes": 2098,
+              "rep_votes": 7033,
+              "other_votes": 315,
+              "total_votes": 9446,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 4935,
+              "margin_pct": 52.2443,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Hamilton": {
               "dem_votes": 52873,
               "rep_votes": 70412,
@@ -53213,6 +56089,20 @@
               "rep_candidate": "Todd Young",
               "margin": 17539,
               "margin_pct": 13.5723,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hancock": {
+              "dem_votes": 6685,
+              "rep_votes": 15455,
+              "other_votes": 1805,
+              "total_votes": 23945,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 8770,
+              "margin_pct": 36.6256,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -53283,6 +56173,48 @@
               "rep_candidate": "Todd Young",
               "margin": 5957,
               "margin_pct": 52.6842,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jackson": {
+              "dem_votes": 2219,
+              "rep_votes": 8612,
+              "other_votes": 409,
+              "total_votes": 11240,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 6393,
+              "margin_pct": 56.8772,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jasper": {
+              "dem_votes": 1982,
+              "rep_votes": 7050,
+              "other_votes": 206,
+              "total_votes": 9238,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 5068,
+              "margin_pct": 54.8604,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jay": {
+              "dem_votes": 1182,
+              "rep_votes": 4084,
+              "other_votes": 144,
+              "total_votes": 5410,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 2902,
+              "margin_pct": 53.6414,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -53372,6 +56304,20 @@
                 "color": "#dc2626"
               }
             },
+            "LaPorte": {
+              "dem_votes": 13920,
+              "rep_votes": 17279,
+              "other_votes": 763,
+              "total_votes": 31962,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 3359,
+              "margin_pct": 10.5094,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Lake": {
               "dem_votes": 73866,
               "rep_votes": 57426,
@@ -53386,6 +56332,20 @@
                 "color": "#2563eb"
               }
             },
+            "Lawrence": {
+              "dem_votes": 2622,
+              "rep_votes": 9700,
+              "other_votes": 450,
+              "total_votes": 12772,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 7078,
+              "margin_pct": 55.4181,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Madison": {
               "dem_votes": 12470,
               "rep_votes": 21536,
@@ -53395,6 +56355,34 @@
               "rep_candidate": "Todd Young",
               "margin": 9066,
               "margin_pct": 25.2986,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Marion": {
+              "dem_votes": 136473,
+              "rep_votes": 78138,
+              "other_votes": 9095,
+              "total_votes": 223706,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": -58335,
+              "margin_pct": -26.0766,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Marshall": {
+              "dem_votes": 2979,
+              "rep_votes": 9471,
+              "other_votes": 331,
+              "total_votes": 12781,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 6492,
+              "margin_pct": 50.7941,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -53428,6 +56416,34 @@
                 "color": "#dc2626"
               }
             },
+            "Monroe": {
+              "dem_votes": 24777,
+              "rep_votes": 14286,
+              "other_votes": 1173,
+              "total_votes": 40236,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": -10491,
+              "margin_pct": -26.0737,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Montgomery": {
+              "dem_votes": 2219,
+              "rep_votes": 7063,
+              "other_votes": 471,
+              "total_votes": 9753,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 4844,
+              "margin_pct": 49.6668,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Morgan": {
               "dem_votes": 4366,
               "rep_votes": 15004,
@@ -53437,6 +56453,104 @@
               "rep_candidate": "Todd Young",
               "margin": 10638,
               "margin_pct": 50.0259,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Newton": {
+              "dem_votes": 837,
+              "rep_votes": 3032,
+              "other_votes": 113,
+              "total_votes": 3982,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 2195,
+              "margin_pct": 55.1231,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Noble": {
+              "dem_votes": 2425,
+              "rep_votes": 8696,
+              "other_votes": 355,
+              "total_votes": 11476,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 6271,
+              "margin_pct": 54.6445,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ohio": {
+              "dem_votes": 422,
+              "rep_votes": 1458,
+              "other_votes": 41,
+              "total_votes": 1921,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 1036,
+              "margin_pct": 53.9302,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Orange": {
+              "dem_votes": 1132,
+              "rep_votes": 4083,
+              "other_votes": 167,
+              "total_votes": 5382,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 2951,
+              "margin_pct": 54.8309,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Owen": {
+              "dem_votes": 1518,
+              "rep_votes": 4230,
+              "other_votes": 425,
+              "total_votes": 6173,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 2712,
+              "margin_pct": 43.9333,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Parke": {
+              "dem_votes": 873,
+              "rep_votes": 3469,
+              "other_votes": 139,
+              "total_votes": 4481,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 2596,
+              "margin_pct": 57.9335,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Perry": {
+              "dem_votes": 2233,
+              "rep_votes": 3838,
+              "other_votes": 152,
+              "total_votes": 6223,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 1605,
+              "margin_pct": 25.7914,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -53456,6 +56570,20 @@
                 "color": "#dc2626"
               }
             },
+            "Porter": {
+              "dem_votes": 26643,
+              "rep_votes": 30158,
+              "other_votes": 1180,
+              "total_votes": 57981,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 3515,
+              "margin_pct": 6.0623,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Posey": {
               "dem_votes": 2224,
               "rep_votes": 6316,
@@ -53465,6 +56593,62 @@
               "rep_candidate": "Todd Young",
               "margin": 4092,
               "margin_pct": 46.889,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Pulaski": {
+              "dem_votes": 784,
+              "rep_votes": 2847,
+              "other_votes": 104,
+              "total_votes": 3735,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 2063,
+              "margin_pct": 55.2343,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Putnam": {
+              "dem_votes": 2254,
+              "rep_votes": 6954,
+              "other_votes": 720,
+              "total_votes": 9928,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 4700,
+              "margin_pct": 47.3409,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Randolph": {
+              "dem_votes": 1426,
+              "rep_votes": 5235,
+              "other_votes": 225,
+              "total_votes": 6886,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 3809,
+              "margin_pct": 55.3151,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ripley": {
+              "dem_votes": 1475,
+              "rep_votes": 6608,
+              "other_votes": 249,
+              "total_votes": 8332,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 5133,
+              "margin_pct": 61.6059,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -53484,6 +56668,90 @@
                 "color": "#dc2626"
               }
             },
+            "Scott": {
+              "dem_votes": 1864,
+              "rep_votes": 4782,
+              "other_votes": 186,
+              "total_votes": 6832,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 2918,
+              "margin_pct": 42.7108,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Shelby": {
+              "dem_votes": 2704,
+              "rep_votes": 7991,
+              "other_votes": 815,
+              "total_votes": 11510,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 5287,
+              "margin_pct": 45.934,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Spencer": {
+              "dem_votes": 2087,
+              "rep_votes": 5347,
+              "other_votes": 164,
+              "total_votes": 7598,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 3260,
+              "margin_pct": 42.906,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "St. Joseph": {
+              "dem_votes": 33013,
+              "rep_votes": 37276,
+              "other_votes": 1382,
+              "total_votes": 71671,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 4263,
+              "margin_pct": 5.948,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Starke": {
+              "dem_votes": 1724,
+              "rep_votes": 4955,
+              "other_votes": 191,
+              "total_votes": 6870,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 3231,
+              "margin_pct": 47.0306,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Steuben": {
+              "dem_votes": 2479,
+              "rep_votes": 6921,
+              "other_votes": 276,
+              "total_votes": 9676,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 4442,
+              "margin_pct": 45.9074,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Sullivan": {
               "dem_votes": 1564,
               "rep_votes": 4544,
@@ -53498,15 +56766,99 @@
                 "color": "#dc2626"
               }
             },
-            "Union": {
-              "dem_votes": 417,
-              "rep_votes": 1689,
-              "other_votes": 60,
-              "total_votes": 2166,
+            "Switzerland": {
+              "dem_votes": 608,
+              "rep_votes": 1956,
+              "other_votes": 79,
+              "total_votes": 2643,
               "dem_candidate": "Thomas M. Mcdermott, Jr.",
               "rep_candidate": "Todd Young",
-              "margin": 1272,
-              "margin_pct": 58.7258,
+              "margin": 1348,
+              "margin_pct": 51.0026,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Tippecanoe": {
+              "dem_votes": 17984,
+              "rep_votes": 19616,
+              "other_votes": 1058,
+              "total_votes": 38658,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 1632,
+              "margin_pct": 4.2216,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Tipton": {
+              "dem_votes": 1148,
+              "rep_votes": 3822,
+              "other_votes": 290,
+              "total_votes": 5260,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 2674,
+              "margin_pct": 50.8365,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Union": {
+              "dem_votes": 472,
+              "rep_votes": 1946,
+              "other_votes": 68,
+              "total_votes": 2486,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 1474,
+              "margin_pct": 59.292,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vanderburgh": {
+              "dem_votes": 18886,
+              "rep_votes": 27255,
+              "other_votes": 975,
+              "total_votes": 47116,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 8369,
+              "margin_pct": 17.7625,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vermillion": {
+              "dem_votes": 1541,
+              "rep_votes": 3386,
+              "other_votes": 133,
+              "total_votes": 5060,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 1845,
+              "margin_pct": 36.4625,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vigo": {
+              "dem_votes": 10639,
+              "rep_votes": 15559,
+              "other_votes": 663,
+              "total_votes": 26861,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 4920,
+              "margin_pct": 18.3165,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -53526,6 +56878,62 @@
                 "color": "#dc2626"
               }
             },
+            "Warren": {
+              "dem_votes": 544,
+              "rep_votes": 2187,
+              "other_votes": 83,
+              "total_votes": 2814,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 1643,
+              "margin_pct": 58.3866,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Warrick": {
+              "dem_votes": 6251,
+              "rep_votes": 13456,
+              "other_votes": 399,
+              "total_votes": 20106,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 7205,
+              "margin_pct": 35.8351,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Washington": {
+              "dem_votes": 1615,
+              "rep_votes": 6119,
+              "other_votes": 244,
+              "total_votes": 7978,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 4504,
+              "margin_pct": 56.4553,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Wayne": {
+              "dem_votes": 5176,
+              "rep_votes": 10875,
+              "other_votes": 539,
+              "total_votes": 16590,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 5699,
+              "margin_pct": 34.352,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
             "Wells": {
               "dem_votes": 1576,
               "rep_votes": 7317,
@@ -53535,6 +56943,20 @@
               "rep_candidate": "Todd Young",
               "margin": 5741,
               "margin_pct": 62.7706,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "White": {
+              "dem_votes": 1601,
+              "rep_votes": 4972,
+              "other_votes": 156,
+              "total_votes": 6729,
+              "dem_candidate": "Thomas M. Mcdermott, Jr.",
+              "rep_candidate": "Todd Young",
+              "margin": 3371,
+              "margin_pct": 50.0966,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"

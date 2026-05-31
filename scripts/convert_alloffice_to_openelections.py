@@ -242,15 +242,44 @@ def convert_file(
         if missing:
             raise ValueError(f"{input_csv}: missing required columns (canonicalized): {', '.join(missing)}")
 
-        for row in reader:
-            canon_row = {canonicalize_header(k or ""): (v if v is not None else "") for k, v in (row or {}).items()}
+        rows = [{canonicalize_header(k or ""): (v if v is not None else "") for k, v in (row or {}).items()} for row in reader]
 
-            if (canon_row.get("dataentrylevelname") or "").strip().lower() != "precinct":
+        # Identify counties that already have precinct-level detail per election.
+        precinct_counties_by_election: dict[str, set[str]] = defaultdict(set)
+        for canon_row in rows:
+            level = (canon_row.get("dataentrylevelname") or "").strip().lower()
+            if level != "precinct":
+                continue
+            election_label = (canon_row.get("election") or "").strip()
+            county_name = (canon_row.get("reportingcountyname") or "").strip()
+            try:
+                precinct_votes = int((canon_row.get("totalvotes") or "0").strip().replace(",", "") or "0")
+            except ValueError:
+                precinct_votes = 0
+            if election_label and county_name and precinct_votes > 0:
+                precinct_counties_by_election[election_label].add(county_name)
+
+        for canon_row in rows:
+            level = (canon_row.get("dataentrylevelname") or "").strip().lower()
+            if not level:
+                continue
+
+            election_label = (canon_row.get("election") or "").strip()
+            county = (canon_row.get("reportingcountyname") or "").strip()
+            if not election_label or not county:
+                continue
+
+            # Non-precinct rows are used only as fallback for counties with no precinct rows.
+            if level != "precinct" and county in precinct_counties_by_election.get(election_label, set()):
                 continue
 
             election_info = parse_election_info(canon_row["election"])
-            county = (canon_row.get("reportingcountyname") or "").strip()
             precinct = (canon_row.get("dataentryjurisdictionname") or "").strip()
+            if level != "precinct":
+                if not precinct:
+                    precinct = "County Total"
+                # Keep fallback non-precinct rows from being treated as summary totals downstream.
+                precinct = f"{precinct} ({level.title()})"
 
             office, district = normalize_office_and_district(canon_row.get("office"), canon_row.get("officecategory"))
             candidate, is_write_in = normalize_candidate(canon_row.get("nameonballot"))

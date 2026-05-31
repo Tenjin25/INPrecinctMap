@@ -4610,6 +4610,19 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     line-height: 1;
   }
 
+  .controls-title-pill-short {
+    display: none;
+  }
+
+  @media (max-width: 640px) {
+    .controls-title-pill-long {
+      display: none;
+    }
+    .controls-title-pill-short {
+      display: inline;
+    }
+  }
+
   .controls-title-pill::before {
     content: '';
     width: 8px;
@@ -7528,7 +7541,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="controls-header">
             <div class="controls-heading">
               <span class="controls-kicker">Atlas controls</span>
-              <h3 class="controls-title-pill">Hoosier Crossroads: Indiana Election Atlas</h3>
+              <h3 class="controls-title-pill"><span class="controls-title-pill-long">Hoosier Crossroads: Indiana Election Atlas</span><span class="controls-title-pill-short">IN Election Atlas</span></h3>
               <p class="controls-subtitle">Switch layers, jump to major regions, and compare contests without leaving the map.</p>
             </div>
             <div class="controls-actions">

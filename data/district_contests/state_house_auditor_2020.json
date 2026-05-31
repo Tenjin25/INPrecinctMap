@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "scope": "state_house",
+    "contest_type": "auditor",
+    "year": 2020,
+    "districts": 1,
+    "match_coverage_pct": 1.09,
+    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "precinct_rows": 17,
+    "precinct_geom_match_pct": 82.35
+  },
+  "general": {
+    "results": {
+      "42": {
+        "dem_votes": 3453,
+        "rep_votes": 3818,
+        "other_votes": 0,
+        "total_votes": 7271,
+        "dem_candidate": "Amy L. Tolbert",
+        "rep_candidate": "Brenda Furry",
+        "margin": 365,
+        "margin_pct": 5.0199,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

@@ -116,6 +116,16 @@ OpenElections-style precinct CSV schema:
 Outputs are written to `Data/openelections_generated/` (ignored by git).
 By default the output is votes-only (uses `TotalVotes`); add `--include-vote-breakdown` if you want the extra vote-type columns.
 
+For Indiana 2020/2022 exports, some counties publish real totals at `Locality`/county-like levels while
+precinct rows may be zero-vote placeholders. The converter now backfills from non-precinct rows when a
+county has no positive-vote precinct rows for that election.
+
+After regenerating OpenElections files, rebuild aggregates:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\build_indiana_congressional_data.py
+```
+
 ## Mapbox token
 
 `index.html` reads token from:

@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "contest_type": "auditor",
+    "year": 2020,
+    "rows": 1,
+    "dem_total": 3453,
+    "rep_total": 3818,
+    "other_total": 0,
+    "match_coverage_pct": 1.09,
+    "major_party_contested": true
+  },
+  "rows": [
+    {
+      "county": "Vermillion",
+      "dem_votes": 3453,
+      "rep_votes": 3818,
+      "other_votes": 0,
+      "total_votes": 7271,
+      "dem_candidate": "Amy L. Tolbert",
+      "rep_candidate": "Brenda Furry",
+      "margin": 365,
+      "margin_pct": 5.0199,
+      "winner": "REP",
+      "color": "#dc2626"
+    }
+  ]
+}

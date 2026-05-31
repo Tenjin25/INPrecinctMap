@@ -910,6 +910,7 @@ def collect_statewide_contests(
     allow_flat: bool = False,
     years: Optional[Set[int]] = None,
     shared_seen_rows: Optional[Set[Tuple[Any, ...]]] = None,
+    drop_summary_precinct_rows: bool = True,
 ) -> Tuple[
     Dict[Tuple[int, str, str], Dict[str, int]],
     Dict[Tuple[int, str, str], Dict[str, int]],
@@ -960,7 +961,7 @@ def collect_statewide_contests(
                     continue
 
                 precinct = normalize_space((row.get("precinct") or "").upper())
-                if is_summary_precinct_label(precinct, county_name):
+                if drop_summary_precinct_rows and is_summary_precinct_label(precinct, county_name):
                     continue
 
                 party = party_bucket(row.get("party") or "")
@@ -1437,7 +1438,31 @@ def build_outputs() -> None:
         allow_flat=False,
         years=None,
         shared_seen_rows=shared_seen_statewide_rows,
+        drop_summary_precinct_rows=True,
     )
+    # Secondary pass without summary-precinct filtering to rescue counties where the source
+    # labels county totals in the precinct column.
+    county_votes_root_loose, _cand_root_loose, coverage_root_loose, precinct_votes_root_loose = collect_statewide_contests(
+        OPENELECTIONS_ROOT,
+        county_alias_map,
+        allow_flat=False,
+        years=None,
+        shared_seen_rows=None,
+        drop_summary_precinct_rows=False,
+    )
+    for (year, contest_type, county), votes in county_votes_root_loose.items():
+        key = (year, contest_type, county)
+        if key in county_votes:
+            continue
+        if (votes.get("dem", 0) + votes.get("rep", 0) + votes.get("other", 0)) <= 0:
+            continue
+        county_votes[key] = dict(votes)
+        coverage[(year, contest_type)].add(county)
+    for (year, contest_type, county, precinct), votes in precinct_votes_root_loose.items():
+        key = (year, contest_type, county, precinct)
+        if key in precinct_votes:
+            continue
+        precinct_votes[key] = dict(votes)
     generated_contests: Set[Tuple[int, str]] = set()
     if OPENELECTIONS_GENERATED_ROOT.exists():
         county_votes_generated, candidate_votes_generated, coverage_generated, precinct_votes_generated = collect_statewide_contests(
@@ -1445,7 +1470,8 @@ def build_outputs() -> None:
             county_alias_map,
             allow_flat=True,
             years={2016, 2018, 2020, 2022, 2024},
-            shared_seen_rows=shared_seen_statewide_rows,
+            shared_seen_rows=None,
+            drop_summary_precinct_rows=False,
         )
         # Only override OpenElections data when the generated dataset is not strictly worse in
         # county coverage. This avoids replacing full statewide years with a partial county export.
@@ -1491,6 +1517,24 @@ def build_outputs() -> None:
             if (year, contest_type) not in generated_contests:
                 continue
             precinct_votes[(year, contest_type, county, precinct)] = votes
+
+        # Always backfill missing county-contest entries from generated data, even when the
+        # generated source does not win full contest override by coverage.
+        for (year, contest_type, county), votes in county_votes_generated.items():
+            key = (year, contest_type, county)
+            if key in county_votes:
+                continue
+            if (votes.get("dem", 0) + votes.get("rep", 0) + votes.get("other", 0)) <= 0:
+                continue
+            county_votes[key] = dict(votes)
+            coverage[(year, contest_type)].add(county)
+
+        for (year, contest_type, county, precinct), votes in precinct_votes_generated.items():
+            key = (year, contest_type, county, precinct)
+            if key in precinct_votes:
+                continue
+            precinct_votes[key] = dict(votes)
+
     official_2024_by_contest, official_2024_candidates = load_sos_2024_official_contests(county_alias_map)
     official_2024_contests = set(official_2024_by_contest.keys())
 
