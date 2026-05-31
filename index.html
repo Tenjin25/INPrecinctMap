@@ -4614,11 +4614,21 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     display: none;
   }
 
+  .badge-atlas-name-short {
+    display: none;
+  }
+
   @media (max-width: 640px) {
     .controls-title-pill-long {
       display: none;
     }
     .controls-title-pill-short {
+      display: inline;
+    }
+    .badge-atlas-name-long {
+      display: none;
+    }
+    .badge-atlas-name-short {
       display: inline;
     }
   }
@@ -7429,7 +7439,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="desktop-ui-left">
   <div class="map-topbar" id="map-topbar">
     <div class="map-topbar-meta">
-      <div class="map-topbar-badge"><span class="badge-state-name">Indiana</span> <span class="badge-atlas-name">Hoosier Crossroads Atlas</span></div>
+      <div class="map-topbar-badge"><span class="badge-state-name">Indiana</span> <span class="badge-atlas-name"><span class="badge-atlas-name-long">Hoosier Crossroads Atlas</span><span class="badge-atlas-name-short">IN Atlas</span></span></div>
       <div class="map-topbar-copy">
         <strong>Fly to a county, district, or precinct</strong>
         <span>Try Marion, CD 5, HD 87, SD 32, or Allen 01.</span>
