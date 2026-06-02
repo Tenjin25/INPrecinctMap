@@ -12360,7 +12360,7 @@ document.addEventListener('DOMContentLoaded', function() {
           ${vap > 0 ? `<div class="demo-hover-metric">VAP (18+): ${vap.toLocaleString()}</div>` : ''}
           ${pop2025 !== null ? `<div class="demo-hover-metric">Population (2025 est): ${pop2025.toLocaleString()}</div>` : ''}
           ${(popDelta !== null && popDeltaPct !== null)
-            ? `<div class="demo-hover-metric">2020→2025 change: ${popDelta >= 0 ? '+' : ''}${popDelta.toLocaleString()} (${popDelta >= 0 ? '+' : ''}${popDeltaPct.toFixed(2)}%)</div>`
+            ? `<div class="demo-hover-metric"><span style="font-weight:700;color:${popDelta > 0 ? '#166534' : (popDelta < 0 ? '#7f1d1d' : '#64748b')};">${popDelta > 0 ? 'Growth' : (popDelta < 0 ? 'Decline' : 'Flat')}</span> <span style="color:${popDelta > 0 ? '#166534' : (popDelta < 0 ? '#7f1d1d' : '#64748b')};">${popDelta >= 0 ? '+' : ''}${popDelta.toLocaleString()}</span> (${popDelta >= 0 ? '+' : ''}${popDeltaPct.toFixed(2)}%)</div>`
             : ''}
           ${races}
           <div class="demo-hover-note">Race/ethnicity reflects total population (DP1), not VAP-by-race. Population estimate series comes from county estimates through 2025.</div>
@@ -12973,11 +12973,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function buildPopulationGrowthLegendHTML() {
       return `
         <div class="legend-swatch-grid">
-          <div class="legend-swatch-card"><span class="legend-color" style="background:#7f1d1d;"></span><span>Decline 5%+</span></div>
-          <div class="legend-swatch-card"><span class="legend-color" style="background:#ef4444;"></span><span>Decline 1% to 5%</span></div>
-          <div class="legend-swatch-card"><span class="legend-color" style="background:#e5e7eb;"></span><span>Flat (-1% to +1%)</span></div>
-          <div class="legend-swatch-card"><span class="legend-color" style="background:#22c55e;"></span><span>Growth 1% to 5%</span></div>
-          <div class="legend-swatch-card"><span class="legend-color" style="background:#166534;"></span><span>Growth 5%+</span></div>
+          <div class="legend-swatch-card"><span class="legend-color" style="background:#7f1d1d;"></span><span>Decline</span></div>
+          <div class="legend-swatch-card"><span class="legend-color" style="background:#e5e7eb;"></span><span>Flat</span></div>
+          <div class="legend-swatch-card"><span class="legend-color" style="background:#22c55e;"></span><span>Growth</span></div>
           <div class="legend-swatch-card"><span class="legend-color" style="background:#cbd5e1;"></span><span>No growth data</span></div>
         </div>
       `;
@@ -13032,9 +13030,9 @@ document.addEventListener('DOMContentLoaded', function() {
         content.innerHTML = buildDemographicsLegendHTML();
       } else if (mode === 'popgrowth') {
         if (header) header.textContent = 'Population Growth';
-        if (subtitle) subtitle.textContent = 'County shading uses 2020 to 2025 Census population estimate change.';
+        if (subtitle) subtitle.textContent = 'County population change from 2020 to 2025 Census estimates.';
         if (badge) badge.textContent = 'Pop Growth';
-        if (footer) footer.textContent = 'Available in county view. District views fall back to margins.';
+        if (footer) footer.textContent = '';
         content.innerHTML = buildPopulationGrowthLegendHTML();
       } else {
         if (header) header.textContent = 'Political Categories';
@@ -16908,7 +16906,9 @@ document.addEventListener('DOMContentLoaded', function() {
         sidebarContent += `<p class="sidebar-breakdown"><b>Population (2025 est):</b> ${Number(pop2025).toLocaleString()}</p>`;
       }
       if (popDelta !== null && popDeltaPct !== null) {
-        sidebarContent += `<p class="sidebar-breakdown"><b>2020→2025 Change:</b> ${popDelta >= 0 ? '+' : ''}${Number(popDelta).toLocaleString()} (${popDelta >= 0 ? '+' : ''}${Number(popDeltaPct).toFixed(2)}%)</p>`;
+        const deltaTone = popDelta > 0 ? '#166534' : (popDelta < 0 ? '#7f1d1d' : '#64748b');
+        const deltaLabel = popDelta > 0 ? 'Growth' : (popDelta < 0 ? 'Decline' : 'Flat');
+        sidebarContent += `<p class="sidebar-breakdown"><b style="color:${deltaTone};">${deltaLabel}</b> <span style="color:${deltaTone};">${popDelta >= 0 ? '+' : ''}${Number(popDelta).toLocaleString()}</span> (${popDelta >= 0 ? '+' : ''}${Number(popDeltaPct).toFixed(2)}%)</p>`;
       }
       sidebarContent += `<p class="sidebar-margin-details" style="margin-top:6px;">Race/ethnicity shown is total population (DP1), not VAP-by-race.</p>`;
       if (demoRaceChips) sidebarContent += demoRaceChips;
