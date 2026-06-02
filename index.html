@@ -19575,6 +19575,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // Optional county demographics (DP1-derived) for sidebar/tooltips.
       try {
         countyDemographics = await loadJSON(CONFIG.paths.county_demographics);
+        if (currentVizMode === 'popgrowth' && document.getElementById('contestSelect')?.value) {
+          await applyContest(document.getElementById('contestSelect').value);
+        }
       } catch (err) {
         countyDemographics = null;
         if (!isMissingOptionalDataError(err)) {
@@ -19927,6 +19930,25 @@ document.addEventListener('DOMContentLoaded', function() {
       if (p <= 1) return '#e5e7eb';
       if (p < 5) return '#22c55e';
       return '#166534';
+    }
+
+    function buildCountyPopulationGrowthFillExpression() {
+      const expr = ['case'];
+      const countyDemoRows = countyDemographics?.counties || null;
+      if (countyDemoRows) {
+        Object.keys(countyDemoRows).forEach(countyNorm => {
+          const demo = countyDemoRows[countyNorm] || {};
+          const color = colorForPopulationGrowthMode(demo.pop_change_pct_2020_2025);
+          expr.push([
+            '==',
+            ['upcase', ['coalesce', ['get', 'NAME20'], ['get', 'CountyName'], ['get', 'COUNTYNAME'], ['get', 'county_nam'], ['get', 'NAME']]],
+            countyNorm
+          ]);
+          expr.push(color);
+        });
+      }
+      expr.push('#cbd5e1');
+      return expr;
     }
 
 	    async function tryLoadContestSliceStrict(contestType, year) {
@@ -20690,21 +20712,15 @@ document.addEventListener('DOMContentLoaded', function() {
         vizShiftCache = null;
         if (staleCheck()) return;
 
-        const countyExpr = ['case'];
-        const countyDemoRows = countyDemographics?.counties || null;
-        if (countyDemoRows) {
-          Object.keys(countyDemoRows).forEach(countyNorm => {
-            const demo = countyDemoRows[countyNorm] || {};
-            const color = colorForPopulationGrowthMode(demo.pop_change_pct_2020_2025);
-            countyExpr.push([
-              '==',
-              ['upcase', ['coalesce', ['get', 'NAME20'], ['get', 'CountyName'], ['get', 'COUNTYNAME'], ['get', 'county_nam'], ['get', 'NAME']]],
-              countyNorm
-            ]);
-            countyExpr.push(color);
-          });
+        if (currentView === 'counties' && precinctsEnabled) {
+          precinctsEnabled = false;
+          updatePrecinctVisibility();
+          clearSelectedPrecinctNorm();
+          clearHoverOutline();
+          try { setBellwetherFeatures(new Set()); updateBellwetherLayerVisibility(); } catch (_) {}
+          try { applyLayerOpacityTuning(); } catch (_) {}
         }
-        countyExpr.push('#cbd5e1');
+        const countyExpr = buildCountyPopulationGrowthFillExpression();
         if (staleCheck()) return;
         if (map.getLayer('county-fill')) {
           map.setPaintProperty('county-fill', 'fill-color', countyExpr);
