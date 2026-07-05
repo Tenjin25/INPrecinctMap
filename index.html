@@ -12,7 +12,7 @@
       right: 8px !important;
       z-index: 10002 !important;
       font-size: 20px !important;
-      background: #2563eb !important;
+      background: #8f2433 !important;
       color: #fff !important;
       border-radius: 8px !important;
       min-width: 44px !important;
@@ -548,12 +548,12 @@
   <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <meta charset='utf-8'>
-    <title>Hoosier Crossroads: Indiana Election Atlas (2000-2024)</title>
+    <title>Indiana Vote Atlas (2000-2024)</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover'>
     <meta name="author" content="Shamar Davis">
     <meta name="copyright" content="© 2026 Shamar Does Elections. All Rights Reserved.">
     <!-- Watermark: SDE Creator Attribution | Created by Shamar Davis | Copyright 2026 Shamar Does Elections -->
-    <meta property="og:title" content="Hoosier Crossroads: Indiana Election Atlas">
+    <meta property="og:title" content="Indiana Vote Atlas">
     <meta property="og:description" content="Interactive visualization of Indiana election trends, with county, precinct, and district views.">
     <meta property="og:image" content="preview.png">
     <meta name="twitter:card" content="summary_large_image">
@@ -904,6 +904,72 @@ body.focus-active.hover-preview-active .vote-counter {
   color: #cbd5e1;
 }
 
+#hover-tooltip[data-context="votehub-results"] .vhr-popchange {
+  margin-bottom: 8px;
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-popchange-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: start;
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-popchange-main {
+  font-size: 12.5px;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-popchange-main.gain,
+#hover-tooltip[data-context="votehub-results"] .vhr-popchange-values.gain {
+  color: #166534;
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-popchange-main.loss,
+#hover-tooltip[data-context="votehub-results"] .vhr-popchange-values.loss {
+  color: #92400e;
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-popchange-main.flat,
+#hover-tooltip[data-context="votehub-results"] .vhr-popchange-values.flat {
+  color: #94a3b8;
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-popchange-values {
+  text-align: right;
+  font-size: 12.5px;
+  line-height: 1.4;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-popchange-tone {
+  display: block;
+  margin-top: 2px;
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-popchange-divider {
+  margin: 12px 0 0;
+  border-top: 1px solid rgba(148,163,184,0.22);
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-footer {
+  margin-top: 10px;
+  padding: 14px 18px 0;
+  border-top: 1px solid rgba(148,163,184,0.22);
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-footer .tooltip-more {
+  margin-top: 0;
+  padding-top: 12px;
+  border-top: none;
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-footer .tooltip-more summary {
+  width: 100%;
+}
+
 body.focus-active #hover-tooltip[data-context="preview"] {
   opacity: 0.82;
 }
@@ -1134,8 +1200,8 @@ body.focus-active #hover-tooltip[data-context="preview"] {
 }
 
 .minimize-btn {
-  background: #2563eb;
-  border: 1px solid #1d4ed8;
+  background: #8f2433;
+  border: 1px solid #6f1d28;
   border-radius: 6px;
   width: 30px;
   height: 30px;
@@ -1149,8 +1215,8 @@ body.focus-active #hover-tooltip[data-context="preview"] {
   transition: all 0.2s ease;
 }
 .minimize-btn:hover {
-  background: #1d4ed8;
-  border-color: #2563eb;
+  background: #6f1d28;
+  border-color: #a7343c;
   transform: scale(1.05);
 }
 
@@ -8823,22 +8889,22 @@ body.focus-active #hover-tooltip[data-context="preview"] {
 
   /* Ribbon + UI aesthetic polish */
   :root {
-    --state-ribbon: linear-gradient(92deg, #8f2433 0%, #cd4a44 24%, #f6f4ef 50%, #3b67a6 76%, #1b3d74 100%);
-    --state-accent-gradient: linear-gradient(136deg, #8f2433 0%, #305f98 100%);
+    --state-ribbon: linear-gradient(92deg, #7a1f2d 0%, #b13a3a 30%, #f7f1e8 58%, #d4a55a 100%);
+    --state-accent-gradient: linear-gradient(136deg, #7a1f2d 0%, #b85c38 58%, #d2a24c 100%);
     --ui-bg: rgba(255, 255, 255, 0.95);
-    --ui-border: rgba(18, 33, 52, 0.15);
-    --ui-shadow: 0 18px 42px rgba(16, 30, 49, 0.2);
-    --ui-text: #122236;
-    --ui-muted: #4a5f77;
-    --ui-accent: #2f5f98;
-    --ui-accent-2: #204672;
+    --ui-border: rgba(74, 39, 31, 0.16);
+    --ui-shadow: 0 18px 42px rgba(53, 26, 20, 0.18);
+    --ui-text: #261c1a;
+    --ui-muted: #6f564d;
+    --ui-accent: #8f2433;
+    --ui-accent-2: #6f1d28;
   }
 
   body {
     background:
-      radial-gradient(circle at 16% 10%, rgba(48, 95, 152, 0.17) 0%, rgba(48, 95, 152, 0) 44%),
-      radial-gradient(circle at 86% 9%, rgba(143, 36, 51, 0.14) 0%, rgba(143, 36, 51, 0) 40%),
-      #f3f6fb;
+      radial-gradient(circle at 16% 10%, rgba(143, 36, 51, 0.16) 0%, rgba(143, 36, 51, 0) 44%),
+      radial-gradient(circle at 86% 9%, rgba(212, 165, 90, 0.16) 0%, rgba(212, 165, 90, 0) 42%),
+      #f6f1eb;
   }
 
   @media (min-width: 769px) {
@@ -8846,9 +8912,9 @@ body.focus-active #hover-tooltip[data-context="preview"] {
       position: relative;
       overflow: hidden;
       background:
-        radial-gradient(circle at 14% 12%, rgba(120, 164, 216, 0.22) 0%, rgba(120, 164, 216, 0) 50%),
-        linear-gradient(145deg, rgba(13, 31, 52, 0.95) 0%, rgba(35, 76, 121, 0.84) 58%, rgba(120, 42, 54, 0.76) 100%);
-      border: 1px solid rgba(199, 217, 241, 0.3);
+        radial-gradient(circle at 18% 14%, rgba(212, 165, 90, 0.18) 0%, rgba(212, 165, 90, 0) 48%),
+        linear-gradient(145deg, rgba(36, 20, 18, 0.97) 0%, rgba(94, 31, 39, 0.9) 54%, rgba(148, 77, 47, 0.78) 100%);
+      border: 1px solid rgba(228, 203, 176, 0.28);
       box-shadow: 0 20px 52px rgba(15, 26, 41, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.18);
     }
 
@@ -8868,13 +8934,13 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     .map-topbar-badge {
       border: 1px solid rgba(206, 226, 247, 0.32);
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 8px 18px rgba(15, 23, 42, 0.24);
-      background: linear-gradient(130deg, rgba(205, 74, 68, 0.3) 0%, rgba(59, 103, 166, 0.3) 100%);
+      background: linear-gradient(130deg, rgba(143, 36, 51, 0.34) 0%, rgba(212, 165, 90, 0.28) 100%);
     }
 
     .fly-search-submit {
-      border: 1px solid rgba(213, 174, 128, 0.34);
+      border: 1px solid rgba(227, 193, 137, 0.44);
       background: var(--state-accent-gradient);
-      box-shadow: 0 10px 22px rgba(32, 70, 114, 0.3), 0 8px 18px rgba(122, 41, 54, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      box-shadow: 0 10px 22px rgba(111, 29, 40, 0.28), 0 8px 18px rgba(148, 77, 47, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.2);
       text-shadow: 0 1px 0 rgba(15, 23, 42, 0.28);
     }
 
@@ -8885,12 +8951,12 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     .fly-search-chip,
     .mobile-topbar-toggle {
       background: rgba(255, 255, 255, 0.13);
-      border-color: rgba(206, 226, 247, 0.32);
-      color: #e6edf7;
+      border-color: rgba(230, 209, 181, 0.32);
+      color: #f8f1e8;
     }
 
     .context-banner-item {
-      border: 1px solid rgba(206, 226, 247, 0.24);
+      border: 1px solid rgba(230, 209, 181, 0.22);
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.11) 0%, rgba(255, 255, 255, 0.07) 100%);
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
     }
@@ -8899,49 +8965,49 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     .legend,
     .vote-counter,
     #status-panel {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.97) 0%, rgba(246, 249, 253, 0.95) 100%);
-      border-color: rgba(73, 96, 127, 0.26);
+      background: linear-gradient(180deg, rgba(255, 251, 247, 0.98) 0%, rgba(247, 241, 234, 0.95) 100%);
+      border-color: rgba(124, 87, 74, 0.24);
       box-shadow: 0 18px 40px rgba(17, 32, 50, 0.2);
     }
 
     .main-controls .control-group {
-      border-color: rgba(96, 123, 157, 0.2);
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(244, 248, 253, 0.9) 100%);
+      border-color: rgba(137, 101, 88, 0.18);
+      background: linear-gradient(180deg, rgba(255, 250, 245, 0.96) 0%, rgba(247, 241, 234, 0.9) 100%);
     }
 
     .controls-title-pill,
     .legend-badge {
-      background: linear-gradient(125deg, #8f2433 0%, #305f98 100%);
+      background: linear-gradient(125deg, #7a1f2d 0%, #b85c38 60%, #d2a24c 100%);
       border-color: rgba(234, 220, 197, 0.62);
       color: #f8fafc;
-      box-shadow: 0 10px 22px rgba(23, 45, 70, 0.28);
+      box-shadow: 0 10px 22px rgba(83, 34, 29, 0.22);
       text-shadow: 0 1px 0 rgba(15, 23, 42, 0.24);
     }
 
     .view-toggle-btn.active,
     .viz-mode-btn.active,
     .mode-toggle.active {
-      background: linear-gradient(180deg, #295a92 0%, #1e426b 100%);
+      background: linear-gradient(180deg, #8f2433 0%, #6f1d28 100%);
       border-color: rgba(224, 190, 142, 0.78);
       color: #ffffff;
-      box-shadow: 0 10px 22px rgba(19, 42, 68, 0.28);
+      box-shadow: 0 10px 22px rgba(83, 34, 29, 0.24);
     }
 
     .view-toggle-btn:not(.active),
     .viz-mode-btn:not(.active),
     .region-jump-btn {
-      border-color: rgba(97, 126, 161, 0.34);
+      border-color: rgba(137, 101, 88, 0.3);
       background: rgba(255, 255, 255, 0.88);
-      color: #1e3350;
+      color: #372723;
     }
 
     #contestSearch,
     #contestSelect,
     #scenario-scope,
     #overlay-opacity-preset {
-      border-color: rgba(97, 126, 161, 0.44) !important;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(246, 249, 253, 0.98) 100%) !important;
-      color: #14263c !important;
+      border-color: rgba(137, 101, 88, 0.42) !important;
+      background: linear-gradient(180deg, rgba(255, 251, 247, 0.98) 0%, rgba(247, 241, 234, 0.98) 100%) !important;
+      color: #2f211e !important;
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.84), 0 1px 2px rgba(17, 34, 54, 0.05);
     }
 
@@ -8949,8 +9015,8 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     #contestSelect:focus,
     #scenario-scope:focus,
     #overlay-opacity-preset:focus {
-      border-color: rgba(47, 95, 152, 0.78) !important;
-      box-shadow: 0 0 0 3px rgba(70, 120, 186, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+      border-color: rgba(143, 36, 51, 0.78) !important;
+      box-shadow: 0 0 0 3px rgba(143, 36, 51, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
       outline: none;
     }
   }
@@ -9010,13 +9076,13 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     .main-controls input[type="text"],
     .main-controls select {
       border-radius: 12px;
-      border-color: rgba(97, 126, 161, 0.40) !important;
+      border-color: rgba(137, 101, 88, 0.34) !important;
     }
 
     .main-controls input[type="search"]:focus,
     .main-controls input[type="text"]:focus,
     .main-controls select:focus {
-      box-shadow: 0 0 0 3px rgba(70, 120, 186, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+      box-shadow: 0 0 0 3px rgba(143, 36, 51, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
     }
 
     .view-toggle-btn,
@@ -9034,7 +9100,7 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     .tool-chip-btn:focus-visible,
     .minimize-btn:focus-visible {
       outline: none;
-      box-shadow: 0 0 0 3px rgba(70, 120, 186, 0.18);
+      box-shadow: 0 0 0 3px rgba(143, 36, 51, 0.16);
     }
 
     .vote-counter,
@@ -9518,7 +9584,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="desktop-ui-left">
   <div class="map-topbar" id="map-topbar">
     <div class="map-topbar-meta">
-      <div class="map-topbar-badge"><span class="badge-state-name">Indiana</span> <span class="badge-atlas-name"><span class="badge-atlas-name-long">Hoosier Crossroads Atlas</span><span class="badge-atlas-name-short">IN Atlas</span></span></div>
+      <div class="map-topbar-badge"><span class="badge-state-name">Indiana</span> <span class="badge-atlas-name"><span class="badge-atlas-name-long">Indiana Vote Atlas</span><span class="badge-atlas-name-short">IN Votes</span></span></div>
       <div class="map-topbar-copy">
         <strong>Fly to a county, district, or precinct</strong>
         <span>Try Marion, CD 5, HD 87, SD 32, or Allen 01.</span>
@@ -9601,11 +9667,11 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="controls-header">
             <div class="controls-heading">
               <span class="controls-kicker">Atlas controls</span>
-              <h3 class="controls-title-pill"><span class="controls-title-pill-long">Hoosier Crossroads: Indiana Election Atlas</span><span class="controls-title-pill-short">IN Election Atlas</span></h3>
+              <h3 class="controls-title-pill"><span class="controls-title-pill-long">Indiana Vote Atlas</span><span class="controls-title-pill-short">IN Vote Atlas</span></h3>
               <p class="controls-subtitle">Track Indiana statewide, congressional, and legislative results without leaving the map.</p>
             </div>
             <div class="controls-actions">
-              <span class="controls-collapsed-label">Hoosier Crossroads Atlas</span>
+              <span class="controls-collapsed-label">Indiana Vote Atlas</span>
               <button id="help-btn" title="Help" type="button">?</button>
               <button class="minimize-btn" onclick="toggleMainControls()" id="controls-minimize-btn" title="Minimize controls">-</button>
             </div>
@@ -10093,7 +10159,7 @@ document.addEventListener('DOMContentLoaded', function() {
       creator: 'Shamar Davis',
       studio: 'Shamar Does Elections',
       year: 2026,
-      project: 'Hoosier Crossroads: Indiana Election Atlas',
+      project: 'Indiana Vote Atlas',
       signature: 'SDE-HCIA-2026-SD'
     });
     try {
@@ -10867,6 +10933,23 @@ document.addEventListener('DOMContentLoaded', function() {
       return true;
     }
 
+    function isContestRowMajorPartyContested(row, contestType) {
+      const ct = String(contestType || '').trim();
+      if (!row || !ct) return false;
+      const demVotes = Number(row?.[`${ct}_dem`] ?? row?.dem_votes ?? 0);
+      const repVotes = Number(row?.[`${ct}_rep`] ?? row?.rep_votes ?? 0);
+      const totalVotes = Number(row?.[`${ct}_total`] ?? row?.total_votes ?? 0);
+      const demCandidate = String(row?.[`${ct}_dem_candidate`] ?? row?.dem_candidate ?? '').trim();
+      const repCandidate = String(row?.[`${ct}_rep_candidate`] ?? row?.rep_candidate ?? '').trim();
+      const demMissingName = !demCandidate || /no\s+democratic\s+candidate/i.test(demCandidate);
+      const repMissingName = !repCandidate || /no\s+republican\s+candidate/i.test(repCandidate);
+
+      if (demVotes > 0 || repVotes > 0) return demVotes > 0 && repVotes > 0;
+      if (totalVotes > 0) return !demMissingName && !repMissingName;
+      if (demCandidate || repCandidate) return !demMissingName && !repMissingName;
+      return true;
+    }
+
     function shouldIncludeManifestEntry(entry) {
       if (!entry) return false;
       const contestType = String(entry.contest_type || '').trim();
@@ -10875,7 +10958,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!contestType || rows <= 0) return false;
       const isJudicial = contestType.startsWith('nc_supreme_court_') || contestType.startsWith('nc_court_of_appeals_');
       if (isJudicial && Number.isFinite(year) && year < 2018) return false;
-      if (COUNCIL_OF_STATE_CONTEST_TYPES.has(contestType) && !parseMajorPartyContested(entry)) return false;
+      if (!parseMajorPartyContested(entry)) return false;
       return true;
     }
 
@@ -19098,11 +19181,11 @@ document.addEventListener('DOMContentLoaded', function() {
           if (modeledDef?.groupLabel) return modeledDef.groupLabel;
 	        if (contestType === 'president') return 'US President';
 	        if (contestType === 'us_senate') return 'US Senate';
-	        if (contestType === 'governor') return 'IN Governor';
-	        if (contestType === 'lieutenant_governor') return 'IN Lieutenant Governor';
-	        if (contestType === 'attorney_general') return 'IN Attorney General';
-	        if (contestType === 'secretary_of_state') return 'IN Secretary of State';
-	        if (contestType === 'treasurer') return 'IN Treasurer';
+	        if (contestType === 'governor') return 'Governor';
+	        if (contestType === 'lieutenant_governor') return 'Lieutenant Governor';
+	        if (contestType === 'attorney_general') return 'Attorney General';
+	        if (contestType === 'secretary_of_state') return 'Secretary of State';
+	        if (contestType === 'treasurer') return 'Treasurer';
 	        if (contestType === 'auditor') return 'Auditor';
 	        if (contestType === 'labor_commissioner') return 'Labor Commissioner';
 	        if (contestType === 'insurance_commissioner') return 'Insurance Commissioner';
@@ -19121,11 +19204,11 @@ document.addEventListener('DOMContentLoaded', function() {
 	      const groupOrder = [
 	        'US President',
 	        'US Senate',
-	        'IN Governor',
-	        'IN Lieutenant Governor',
-	        'IN Attorney General',
-	        'IN Secretary of State',
-	        'IN Treasurer',
+	        'Governor',
+	        'Lieutenant Governor',
+	        'Attorney General',
+	        'Secretary of State',
+	        'Treasurer',
 	        'Auditor',
 	        'Labor Commissioner',
 	        'Insurance Commissioner',
@@ -19273,7 +19356,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const contestYearPairs = {};
       csvData.forEach(row => {
         contestTypes.forEach(contestType => {
-          if (row[`${contestType}_total`] > 0) {
+          if (row[`${contestType}_total`] > 0 && isContestRowMajorPartyContested(row, contestType)) {
             if (!contestYearPairs[contestType]) contestYearPairs[contestType] = new Set();
             contestYearPairs[contestType].add(row.year);
           }
@@ -19282,11 +19365,11 @@ document.addEventListener('DOMContentLoaded', function() {
 	      function groupLabelForContestType(contestType) {
 	        if (contestType === 'president') return 'US President';
 	        if (contestType === 'us_senate') return 'US Senate';
-	        if (contestType === 'governor') return 'IN Governor';
-	        if (contestType === 'lieutenant_governor') return 'IN Lieutenant Governor';
-	        if (contestType === 'attorney_general') return 'IN Attorney General';
-	        if (contestType === 'secretary_of_state') return 'IN Secretary of State';
-	        if (contestType === 'treasurer') return 'IN Treasurer';
+	        if (contestType === 'governor') return 'Governor';
+	        if (contestType === 'lieutenant_governor') return 'Lieutenant Governor';
+	        if (contestType === 'attorney_general') return 'Attorney General';
+	        if (contestType === 'secretary_of_state') return 'Secretary of State';
+	        if (contestType === 'treasurer') return 'Treasurer';
 	        if (contestType === 'auditor') return 'Auditor';
 	        if (contestType === 'labor_commissioner') return 'Labor Commissioner';
 	        if (contestType === 'insurance_commissioner') return 'Insurance Commissioner';
@@ -19298,11 +19381,11 @@ document.addEventListener('DOMContentLoaded', function() {
 	      const groupOrder = [
 	        'US President',
 	        'US Senate',
-	        'IN Governor',
-	        'IN Lieutenant Governor',
-	        'IN Attorney General',
-	        'IN Secretary of State',
-	        'IN Treasurer',
+	        'Governor',
+	        'Lieutenant Governor',
+	        'Attorney General',
+	        'Secretary of State',
+	        'Treasurer',
 	        'Auditor',
 	        'Labor Commissioner',
 	        'Insurance Commissioner',
@@ -19355,7 +19438,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       years.forEach(year => {
         const hasData = csvData.some(row => 
-          row.year == year && row.state_house_total > 0
+          row.year == year && row.state_house_total > 0 && isContestRowMajorPartyContested(row, 'state_house')
         );
         
         if (hasData) {
@@ -19374,7 +19457,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       years.forEach(year => {
         const hasData = csvData.some(row => 
-          row.year == year && row.state_senate_total > 0
+          row.year == year && row.state_senate_total > 0 && isContestRowMajorPartyContested(row, 'state_senate')
         );
         
         if (hasData) {
@@ -19393,7 +19476,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       years.forEach(year => {
         const hasData = csvData.some(row => 
-          row.year == year && row.us_house_total > 0
+          row.year == year && row.us_house_total > 0 && isContestRowMajorPartyContested(row, 'us_house')
         );
         
         if (hasData) {
@@ -25465,7 +25548,7 @@ document.addEventListener('DOMContentLoaded', function() {
       ctx.textBaseline = 'alphabetic';
       ctx.fillStyle = '#f8fafc';
       ctx.font = '800 34px "Manrope", "Segoe UI", Arial, sans-serif';
-      ctx.fillText('Hoosier Crossroads Atlas', 54, variant.brandY);
+      ctx.fillText('Indiana Vote Atlas', 54, variant.brandY);
 
       ctx.font = `800 ${variant.headlineFont}px "Manrope", "Segoe UI", Arial, sans-serif`;
       ctx.fillStyle = '#ffffff';
@@ -26030,7 +26113,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ? shortCandidateLabel(repCandidate, 'Republican')
         : (winner === 'D' ? shortCandidateLabel(demCandidate, 'Democratic') : 'Tie');
       const winnerParty = winner === 'R' ? 'rep' : (winner === 'D' ? 'dem' : 'tie');
-      const votehubCore = buildVotehubResultsTooltip({
+      const defaultVotehubCore = buildVotehubResultsTooltip({
         title: `${countyDisplay} County`,
         subtitle: String(currentVizMode || '') === 'population_change'
           ? 'Population change'
@@ -26059,26 +26142,66 @@ document.addEventListener('DOMContentLoaded', function() {
         shiftYearLabel: (vizShiftCache?.prevYear && vizShiftCache?.year) ? `${vizShiftCache.prevYear}→${vizShiftCache.year}` : '',
         showShiftLine: currentVizMode === 'shift' && Number.isFinite(shiftDelta) && !!vizShiftCache?.prevYear
       });
-      const detailLines = `
-        ${finalInsight ? `<div class="tooltip-insight">${escapeHtml(finalInsight)}</div>` : ''}
-        ${censusDetailLine}
-        ${popChangeDetailLine}
-        ${(currentVizMode === 'population_change' && popChangeHeaderMeta?.label) ? `<div class="tooltip-insight" style="color:${popChangeToneColor};font-weight:700;">${escapeHtml(popChangeHeaderMeta.label)}</div>` : ''}
-        ${(currentVizMode === 'shift' && Number.isFinite(shiftDelta) && vizShiftCache?.prevYear) ? '' : shiftLine}
-        ${flipLine}
-        ${deltaBlock}
-        ${splitInsightLine}
-        ${demoLine}
-      `.trim();
-      const inner = `
-        ${popChangeTopLineDesktop}
-        ${popChangeTopLineMobile}
-        ${votehubCore}
-        <details class="tooltip-more" aria-label="More details">
-          <summary>More details</summary>
-          <div class="tooltip-more-body">${detailLines}</div>
-        </details>
-      `.trim();
+      const popChangeVotehubCore = popChangeHeaderMeta
+        ? buildVotehubResultsTooltip({
+            title: `${countyDisplay} County`,
+            subtitle: 'Population change',
+            demName: demCandidate,
+            repName: repCandidate,
+            otherName: 'Other',
+            demVotes,
+            repVotes,
+            otherVotes,
+            totalVotes,
+            winnerName,
+            winnerParty,
+            marginPct: Math.abs(signedMarginPct),
+            winnerLineText: '',
+            winnerRawLeadText: '',
+            winnerLineToneClass: '',
+            winnerRawLeadToneClass: '',
+            prevSignedMarginPct: prevSignedForFlip,
+            currentSignedMarginPct: signedMarginPct,
+            flipYearLabel: vizPrevCache?.prevYear || null,
+            districtType: 'County',
+            showWinnerLine: false,
+            shiftLineText: '',
+            shiftToneClass: '',
+            shiftYearLabel: '',
+            showShiftLine: false,
+            popChangeLine: popChangeHeaderMeta.line,
+            popChangeRaw: popChangeHeaderMeta.raw,
+            popChangeToneLabel: popChangeHeaderMeta.label,
+            popChangeToneClass: popChangeHeaderMeta.tone
+          })
+        : '';
+      const votehubCore = (currentVizMode === 'population_change' && popChangeVotehubCore)
+        ? popChangeVotehubCore
+        : defaultVotehubCore;
+      const detailLines = isDesktopTooltipMode()
+        ? ''
+        : `
+            ${finalInsight ? `<div class="tooltip-insight">${escapeHtml(finalInsight)}</div>` : ''}
+            ${censusDetailLine}
+            ${popChangeDetailLine}
+            ${(currentVizMode === 'population_change' && popChangeHeaderMeta?.label) ? `<div class="tooltip-insight" style="color:${popChangeToneColor};font-weight:700;">${escapeHtml(popChangeHeaderMeta.label)}</div>` : ''}
+            ${(currentVizMode === 'shift' && Number.isFinite(shiftDelta) && vizShiftCache?.prevYear) ? '' : shiftLine}
+            ${flipLine}
+            ${deltaBlock}
+            ${splitInsightLine}
+            ${demoLine}
+          `.trim();
+      const inner = isDesktopTooltipMode()
+        ? `${votehubCore}`.trim()
+        : `
+            ${votehubCore}
+            <div class="vhr-footer">
+              <details class="tooltip-more" aria-label="More details">
+                <summary>More details</summary>
+                <div class="tooltip-more-body">${detailLines}</div>
+              </details>
+            </div>
+          `.trim();
 
       const copyText = `${countyDisplay} County`;
       showHoverTooltip(
@@ -28491,7 +28614,11 @@ document.addEventListener('DOMContentLoaded', function() {
       showShiftLine,
       winnerLineToneClass,
       winnerRawLeadToneClass,
-      marginPrecision
+      marginPrecision,
+      popChangeLine,
+      popChangeRaw,
+      popChangeToneLabel,
+      popChangeToneClass
     } = {}) {
       const dVotes = Number(demVotes || 0);
       const rVotes = Number(repVotes || 0);
@@ -28565,10 +28692,23 @@ document.addEventListener('DOMContentLoaded', function() {
         ? `<div class="vhr-shift"><span class="vhr-shift-label">Shift${shiftYears ? ` (${escapeHtml(shiftYears)})` : ''}</span><span class="vhr-shift-value ${shiftToneSafe}">${escapeHtml(shiftText)}</span></div>`
         : '';
 
+      const popChangeBlock = popChangeLine
+        ? `
+          <div class="vhr-popchange">
+            <div class="vhr-popchange-grid">
+              <div class="vhr-popchange-main ${escapeHtml(String(popChangeToneClass || 'flat'))}">${escapeHtml(String(popChangeLine || ''))}<span class="vhr-popchange-tone">${escapeHtml(String(popChangeToneLabel || ''))}</span></div>
+              <div class="vhr-popchange-values ${escapeHtml(String(popChangeToneClass || 'flat'))}">${escapeHtml(String(popChangeRaw || ''))}</div>
+            </div>
+            <div class="vhr-popchange-divider"></div>
+          </div>
+        `.trim()
+        : '';
+
       return `
         <div class="votehub-results-card">
           <div class="vhr-title">${escapeHtml((title || '').toString())}</div>
           ${(subtitle || districtType) ? `<div class="vhr-subtitle">${escapeHtml(String(subtitle || districtType || ''))}</div>` : ''}
+          ${popChangeBlock}
           ${winnerLine}
           ${flipLine}
           ${shiftLine}
@@ -33397,7 +33537,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setStatus(`Applied demographic mode for Congressional districts.`);
       } else {
         setStatewideContestTitle(`US House (${year})`);
-        setStatus(`Applied contest: IN US House ${year}`);
+        setStatus(`Applied contest: US House ${year}`);
       }
     }
 
