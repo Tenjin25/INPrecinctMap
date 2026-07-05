@@ -9584,7 +9584,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="desktop-ui-left">
   <div class="map-topbar" id="map-topbar">
     <div class="map-topbar-meta">
-      <div class="map-topbar-badge"><span class="badge-state-name">Indiana</span> <span class="badge-atlas-name"><span class="badge-atlas-name-long">Indiana Vote Atlas</span><span class="badge-atlas-name-short">IN Votes</span></span></div>
+      <div class="map-topbar-badge"><span class="badge-state-name">Indiana</span> <span class="badge-atlas-name"><span class="badge-atlas-name-long">Indiana Vote Atlas</span></span></div>
       <div class="map-topbar-copy">
         <strong>Fly to a county, district, or precinct</strong>
         <span>Try Marion, CD 5, HD 87, SD 32, or Allen 01.</span>
@@ -9599,7 +9599,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <path d="M16 16L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
           </svg>
         </span>
-        <input type="search" id="county-search" placeholder="Fly to Marion, CD 5, HD 87..." autocomplete="off" spellcheck="false" />
+        <input type="search" id="county-search" placeholder="Fly to Marion, CD 5, HD 71..." autocomplete="off" spellcheck="false" />
         <button type="button" class="fly-search-clear" id="fly-search-clear" aria-label="Clear search">x</button>
       </div>
       <button type="submit" class="fly-search-submit" data-testid="fly-submit">Fly to</button>
@@ -9609,10 +9609,10 @@ document.addEventListener('DOMContentLoaded', function() {
     <button type="button" class="mobile-topbar-toggle" id="mobile-topbar-toggle" aria-controls="map-topbar-details" aria-expanded="false">Show details</button>
     <div class="map-topbar-details" id="map-topbar-details">
       <div class="map-topbar-hints" aria-label="Search examples">
-        <button type="button" class="fly-search-chip" data-search-example="Marion">Marion</button>
+        <button type="button" class="fly-search-chip" data-search-example="Monroe">Monroe</button>
         <button type="button" class="fly-search-chip" data-search-example="CD 5">CD 5</button>
-        <button type="button" class="fly-search-chip" data-search-example="HD 87">HD 87</button>
-        <button type="button" class="fly-search-chip" data-search-example="SD 32">SD 32</button>
+        <button type="button" class="fly-search-chip" data-search-example="HD 71">HD 71</button>
+        <button type="button" class="fly-search-chip" data-search-example="SD 15">SD 15</button>
         <button type="button" class="fly-search-chip" data-search-example="Allen 01">Allen 01</button>
       </div>
       <div class="context-banner" id="context-banner" aria-label="Current map state">
@@ -9667,7 +9667,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="controls-header">
             <div class="controls-heading">
               <span class="controls-kicker">Atlas controls</span>
-              <h3 class="controls-title-pill"><span class="controls-title-pill-long">Indiana Vote Atlas</span><span class="controls-title-pill-short">IN Vote Atlas</span></h3>
+              <h3 class="controls-title-pill"><span class="controls-title-pill-long">Indiana Vote Atlas</span></h3>
               <p class="controls-subtitle">Track Indiana statewide, congressional, and legislative results without leaving the map.</p>
             </div>
             <div class="controls-actions">
@@ -9681,17 +9681,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 <label class="control-section-label" for="desktop-fly-search">Fly to</label>
                 <div class="desktop-fly-search-wrap">
                   <div class="desktop-fly-search-field fly-search-field">
-                    <input id="desktop-fly-search" type="search" placeholder="Marion County, CD 5, HD 87, SD 32, Allen 01" autocomplete="off" spellcheck="false" inputmode="search" />
+                    <input id="desktop-fly-search" type="search" placeholder="Marion County, CD 5, HD 71, SD 15, Allen 01" autocomplete="off" spellcheck="false" inputmode="search" />
                   </div>
                   <button id="desktop-fly-submit" class="desktop-fly-submit" type="button">Go</button>
                 </div>
                 <div class="desktop-fly-helper">Jump to counties, districts, or precincts without changing the selected contest.</div>
                 <div class="desktop-quick-stats" data-viewport-precinct-count>Viewing precincts...</div>
                 <div class="desktop-fly-chip-row" aria-label="Fly-to examples">
-                  <button class="desktop-fly-chip" type="button" data-search-example="Marion">Marion</button>
+                  <button class="desktop-fly-chip" type="button" data-search-example="Monroe">Monroe</button>
                   <button class="desktop-fly-chip" type="button" data-search-example="CD 5">CD 5</button>
-                  <button class="desktop-fly-chip" type="button" data-search-example="HD 87">HD 87</button>
-                  <button class="desktop-fly-chip" type="button" data-search-example="SD 32">SD 32</button>
+                  <button class="desktop-fly-chip" type="button" data-search-example="HD 71">HD 71</button>
+                  <button class="desktop-fly-chip" type="button" data-search-example="SD 15">SD 15</button>
                   <button class="desktop-fly-chip" type="button" data-search-example="Allen 01">Allen 01</button>
                 </div>
             </div>
@@ -10197,8 +10197,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-07-05-1';
-    const APP_BUILD_ID = '2026-07-05-1';
+    const DATA_CACHE_BUSTER = '2026-07-05-2';
+    const APP_BUILD_ID = '2026-07-05-2';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -34015,4 +34015,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
-
