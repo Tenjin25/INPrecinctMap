@@ -9926,16 +9926,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span class="legend-segment legend-color" style="background: #67000d;"></span>
                 <span class="legend-segment legend-color" style="background: #a50f15;"></span>
                 <span class="legend-segment legend-color" style="background: #cb181d;"></span>
-                <span class="legend-segment legend-color" style="background: #ef3b2c;"></span>
-                <span class="legend-segment legend-color" style="background: #fb6a4a;"></span>
-                <span class="legend-segment legend-color" style="background: #fcae91;"></span>
-                <span class="legend-segment legend-color" style="background: #fee8c8;"></span>
+                <span class="legend-segment legend-color" style="background: #db3830;"></span>
+                <span class="legend-segment legend-color" style="background: #eb544c;"></span>
+                <span class="legend-segment legend-color" style="background: #fa9983;"></span>
+                <span class="legend-segment legend-color" style="background: #f4c9c5;"></span>
                 <span class="legend-segment legend-color" style="background: #f7f7f7; border-left: 1px solid rgba(15,23,42,0.12); border-right: 1px solid rgba(15,23,42,0.12);"></span>
-                <span class="legend-segment legend-color" style="background: #e1f5fe;"></span>
-                <span class="legend-segment legend-color" style="background: #c6dbef;"></span>
-                <span class="legend-segment legend-color" style="background: #9ecae1;"></span>
+                <span class="legend-segment legend-color" style="background: #c7ddf0;"></span>
+                <span class="legend-segment legend-color" style="background: #8bbde0;"></span>
                 <span class="legend-segment legend-color" style="background: #6baed6;"></span>
-                <span class="legend-segment legend-color" style="background: #3182bd;"></span>
+                <span class="legend-segment legend-color" style="background: #4795d2;"></span>
+                <span class="legend-segment legend-color" style="background: #2876b5;"></span>
                 <span class="legend-segment legend-color" style="background: #08519c;"></span>
                 <span class="legend-segment legend-color" style="background: #08306b;"></span>
               </div>
@@ -10197,8 +10197,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-07-05-2';
-    const APP_BUILD_ID = '2026-07-05-2';
+    const DATA_CACHE_BUSTER = '2026-07-21-1';
+    const APP_BUILD_ID = '2026-07-21-1';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -31921,15 +31921,15 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (marginPct >= 30) {
         return winner === 'R' ? '#a50f15' : '#08519c';
       } else if (marginPct >= 20) {
-        return winner === 'R' ? '#cb181d' : '#3182bd';
+        return winner === 'R' ? '#cb181d' : '#2876b5';
       } else if (marginPct >= 10) {
-        return winner === 'R' ? '#ef3b2c' : '#6baed6';
+        return winner === 'R' ? '#db3830' : '#4795d2';
       } else if (marginPct >= 5.5) {
-        return winner === 'R' ? '#fb6a4a' : '#9ecae1';
+        return winner === 'R' ? '#eb544c' : '#6baed6';
       } else if (marginPct >= 1.0) {
-        return winner === 'R' ? '#fcae91' : '#c6dbef';
+        return winner === 'R' ? '#fa9983' : '#8bbde0';
       } else if (marginPct >= 0.5) {
-        return winner === 'R' ? '#fee8c8' : '#e1f5fe';
+        return winner === 'R' ? '#f4c9c5' : '#c7ddf0';
       } else {
         return '#f7f7f7';
       }
