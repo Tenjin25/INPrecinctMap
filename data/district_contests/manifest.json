@@ -1149,10 +1149,10 @@
       "other_total": 0,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 100,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_house",
@@ -1165,10 +1165,10 @@
       "other_total": 87341,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 100,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_house",
@@ -1181,10 +1181,10 @@
       "other_total": 170121,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 100,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_house",
@@ -1291,10 +1291,10 @@
       "other_total": 88567,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 100,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_house",
@@ -1307,10 +1307,10 @@
       "other_total": 0,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 100,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_house",
@@ -1337,10 +1337,10 @@
       "other_total": 345482,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 100,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_house",
@@ -1353,10 +1353,10 @@
       "other_total": 58901,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 100,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_house",
@@ -1909,10 +1909,10 @@
       "other_total": 0,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 50,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_senate",
@@ -1925,10 +1925,10 @@
       "other_total": 87345,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 50,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_senate",
@@ -1941,10 +1941,10 @@
       "other_total": 170124,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 50,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_senate",
@@ -2051,10 +2051,10 @@
       "other_total": 88563,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 50,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_senate",
@@ -2067,10 +2067,10 @@
       "other_total": 0,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 50,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_senate",
@@ -2097,10 +2097,10 @@
       "other_total": 345480,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 50,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_senate",
@@ -2113,10 +2113,10 @@
       "other_total": 58898,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
-      "imputed_count": 0,
-      "imputed_from_contest": "",
+      "allocation": "tabblock_crosswalk",
       "rows": 50,
-      "allocation": "tabblock_crosswalk"
+      "imputed_count": 0,
+      "imputed_from_contest": ""
     },
     {
       "scope": "state_senate",
