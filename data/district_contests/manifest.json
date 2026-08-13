@@ -1376,13 +1376,14 @@
       "contest_type": "auditor",
       "file": "state_house_auditor_2022.json",
       "districts": 100,
-      "dem_total": 672468,
-      "rep_total": 1132429,
-      "other_total": 64481,
+      "dem_total": 672466,
+      "rep_total": 1108374,
+      "other_total": 64478,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
       "imputed_count": 0,
-      "imputed_from_contest": ""
+      "imputed_from_contest": "",
+      "allocation": "2022_precinct_or_locality_to_2020_tabblocks_then_legislative_crosswalk"
     },
     {
       "scope": "state_house",
@@ -1390,13 +1391,14 @@
       "contest_type": "secretary_of_state",
       "file": "state_house_secretary_of_state_2022.json",
       "districts": 100,
-      "dem_total": 742554,
-      "rep_total": 999679,
+      "dem_total": 742552,
+      "rep_total": 999680,
       "other_total": 104646,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
       "imputed_count": 0,
-      "imputed_from_contest": ""
+      "imputed_from_contest": "",
+      "allocation": "2022_precinct_or_locality_to_2020_tabblocks_then_legislative_crosswalk"
     },
     {
       "scope": "state_house",
@@ -1416,13 +1418,14 @@
       "contest_type": "treasurer",
       "file": "state_house_treasurer_2022.json",
       "districts": 100,
-      "dem_total": 720701,
-      "rep_total": 1126802,
+      "dem_total": 720702,
+      "rep_total": 1120933,
       "other_total": 0,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
       "imputed_count": 0,
-      "imputed_from_contest": ""
+      "imputed_from_contest": "",
+      "allocation": "2022_precinct_or_locality_to_2020_tabblocks_then_legislative_crosswalk"
     },
     {
       "scope": "state_house",
@@ -1430,13 +1433,14 @@
       "contest_type": "us_senate",
       "file": "state_house_us_senate_2022.json",
       "districts": 100,
-      "dem_total": 704411,
-      "rep_total": 1090165,
-      "other_total": 65275,
+      "dem_total": 704412,
+      "rep_total": 1090163,
+      "other_total": 65277,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
       "imputed_count": 0,
-      "imputed_from_contest": ""
+      "imputed_from_contest": "",
+      "allocation": "2022_precinct_or_locality_to_2020_tabblocks_then_legislative_crosswalk"
     },
     {
       "scope": "state_house",
@@ -2136,13 +2140,14 @@
       "contest_type": "auditor",
       "file": "state_senate_auditor_2022.json",
       "districts": 50,
-      "dem_total": 672468,
-      "rep_total": 1132429,
-      "other_total": 64481,
+      "dem_total": 672467,
+      "rep_total": 1108376,
+      "other_total": 64485,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
       "imputed_count": 0,
-      "imputed_from_contest": ""
+      "imputed_from_contest": "",
+      "allocation": "2022_precinct_or_locality_to_2020_tabblocks_then_legislative_crosswalk"
     },
     {
       "scope": "state_senate",
@@ -2150,13 +2155,14 @@
       "contest_type": "secretary_of_state",
       "file": "state_senate_secretary_of_state_2022.json",
       "districts": 50,
-      "dem_total": 742554,
-      "rep_total": 999679,
-      "other_total": 104646,
+      "dem_total": 742553,
+      "rep_total": 999681,
+      "other_total": 104649,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
       "imputed_count": 0,
-      "imputed_from_contest": ""
+      "imputed_from_contest": "",
+      "allocation": "2022_precinct_or_locality_to_2020_tabblocks_then_legislative_crosswalk"
     },
     {
       "scope": "state_senate",
@@ -2176,13 +2182,14 @@
       "contest_type": "treasurer",
       "file": "state_senate_treasurer_2022.json",
       "districts": 50,
-      "dem_total": 720701,
-      "rep_total": 1126802,
+      "dem_total": 720700,
+      "rep_total": 1120933,
       "other_total": 0,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
       "imputed_count": 0,
-      "imputed_from_contest": ""
+      "imputed_from_contest": "",
+      "allocation": "2022_precinct_or_locality_to_2020_tabblocks_then_legislative_crosswalk"
     },
     {
       "scope": "state_senate",
@@ -2191,12 +2198,13 @@
       "file": "state_senate_us_senate_2022.json",
       "districts": 50,
       "dem_total": 704411,
-      "rep_total": 1090165,
+      "rep_total": 1090163,
       "other_total": 65275,
       "major_party_contested": true,
       "match_coverage_pct": 100.0,
       "imputed_count": 0,
-      "imputed_from_contest": ""
+      "imputed_from_contest": "",
+      "allocation": "2022_precinct_or_locality_to_2020_tabblocks_then_legislative_crosswalk"
     },
     {
       "scope": "state_senate",
