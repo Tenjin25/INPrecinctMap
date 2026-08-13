@@ -35,6 +35,32 @@ def norm(value: str) -> str:
     return re.sub(r"[^A-Z0-9]", "", value.upper())
 
 
+LAKE_PREFIXES = {
+    "CAL": "CALUMETTOWNSHIPPRECINCT", "CCT": "CEDARCREEKTOWNSHIPPRECINCT",
+    "CL": "CEDARLAKEPRECINCT", "CP": "CROWNPOINTPRECINCT", "CT": "CENTERTOWNSHIPPRECINCT",
+    "D": "DYERPRECINCT", "EC": "EASTCHICAGOPRECINCT", "ECT": "EASTCHICAGOPRECINCT",
+    "G": "GARYPRECINCT", "GR": "GRIFFITHPRECINCT", "H": "HAMMONDPRECINCT",
+    "HL": "HIGHLANDPRECINCT", "HO": "HOBARTPRECINCT", "HOT": "HOBARTTOWNSHIP",
+    "LS": "LAKESTATIONPRECINCT", "M": "MUNSTERPRECINCT", "MER": "MERRILLVILLEPRECINCT",
+    "RT": "ROSSTOWNSHIPPRECINCT", "SCH": "SCHERERVILLEPRECINCT", "SJ": "STJOHNTOWNPRECINCT",
+    "SJT": "STJOHNTOWNSHIPPRECINCT", "WCT": "WESTCREEKTOWNSHIPPRECINCT", "WT": "WINFIELDTOWNSHIPPRECINCT",
+}
+
+
+def source_precinct_key(county: str, raw: str) -> str:
+    value = norm(raw)
+    if county != "LAKE":
+        return value
+    match = re.match(r"([A-Z]+?)(\d+)(NV|A)?$", value)
+    if not match:
+        return value
+    prefix, number, suffix = match.groups()
+    base = LAKE_PREFIXES.get(prefix)
+    if not base:
+        return value
+    return f"{base}{int(number)}{suffix or ''}"
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--scope", choices=["state_house", "state_senate"], required=True)
@@ -56,8 +82,9 @@ def main() -> None:
             if bucket in candidates and row["NameonBallot"]:
                 candidates[bucket] = row["NameonBallot"].replace(" (W/I)", "")
             county = norm(row["ReportingCountyName"])
+            precinct_key = source_precinct_key(county, row["DataEntryJurisdictionName"])
             if row["DataEntryLevelName"] == "Precinct":
-                precinct_votes[(county, norm(row["DataEntryJurisdictionName"]))][bucket] += value
+                precinct_votes[(county, precinct_key)][bucket] += value
             elif row["DataEntryLevelName"] == "Locality":
                 locality_votes[county][bucket] += value
 

@@ -7,7 +7,8 @@
     "match_coverage_pct": 100.0,
     "allocation": "precinct_area_weighted_from_vtd20_precincts",
     "precinct_rows": 2064,
-    "precinct_geom_match_pct": 81.64
+    "precinct_geom_match_pct": 81.64,
+    "marion_allocation": "2022_dra_precinct_scaled_to_official_locality_totals"
   },
   "general": {
     "results": {
@@ -72,26 +73,26 @@
         "color": "#dc2626"
       },
       "6": {
-        "dem_votes": 78569,
-        "rep_votes": 129195,
-        "other_votes": 8669,
-        "total_votes": 216433,
+        "dem_votes": 61662,
+        "rep_votes": 136719,
+        "other_votes": 9042,
+        "total_votes": 207423,
         "dem_candidate": "Zenai Brooks",
         "rep_candidate": "Tera K. Klutz",
-        "margin": 50626,
-        "margin_pct": 23.3911,
+        "margin": 75057,
+        "margin_pct": 36.1855,
         "winner": "REP",
         "color": "#dc2626"
       },
       "7": {
-        "dem_votes": 92925,
-        "rep_votes": 58255,
-        "other_votes": 5298,
-        "total_votes": 156478,
+        "dem_votes": 109832,
+        "rep_votes": 50731,
+        "other_votes": 4925,
+        "total_votes": 165488,
         "dem_candidate": "Zenai Brooks",
         "rep_candidate": "Tera K. Klutz",
-        "margin": -34670,
-        "margin_pct": -22.1565,
+        "margin": -59101,
+        "margin_pct": -35.7132,
         "winner": "DEM",
         "color": "#2563eb"
       },

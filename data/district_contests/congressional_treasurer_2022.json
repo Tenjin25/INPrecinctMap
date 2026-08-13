@@ -7,7 +7,8 @@
     "match_coverage_pct": 100.0,
     "allocation": "precinct_area_weighted_from_vtd20_precincts",
     "precinct_rows": 2064,
-    "precinct_geom_match_pct": 81.64
+    "precinct_geom_match_pct": 81.64,
+    "marion_allocation": "2022_dra_precinct_scaled_to_official_locality_totals"
   },
   "general": {
     "results": {
@@ -72,26 +73,26 @@
         "color": "#dc2626"
       },
       "6": {
-        "dem_votes": 83769,
-        "rep_votes": 132153,
+        "dem_votes": 67093,
+        "rep_votes": 139889,
         "other_votes": 0,
-        "total_votes": 215922,
+        "total_votes": 206982,
         "dem_candidate": "Jessica McClellan",
         "rep_candidate": "Daniel Elliott",
-        "margin": 48384,
-        "margin_pct": 22.4081,
+        "margin": 72796,
+        "margin_pct": 35.1702,
         "winner": "REP",
         "color": "#dc2626"
       },
       "7": {
-        "dem_votes": 96720,
-        "rep_votes": 59552,
+        "dem_votes": 113396,
+        "rep_votes": 51816,
         "other_votes": 0,
-        "total_votes": 156272,
+        "total_votes": 165212,
         "dem_candidate": "Jessica McClellan",
         "rep_candidate": "Daniel Elliott",
-        "margin": -37168,
-        "margin_pct": -23.7842,
+        "margin": -61580,
+        "margin_pct": -37.2733,
         "winner": "DEM",
         "color": "#2563eb"
       },
