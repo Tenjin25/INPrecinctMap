@@ -7,7 +7,8 @@
     "match_coverage_pct": 100.0,
     "allocation": "precinct_area_weighted_from_vtd20_precincts",
     "precinct_rows": 2064,
-    "precinct_geom_match_pct": 81.64
+    "precinct_geom_match_pct": 81.64,
+    "marion_allocation": "2022_dra_precinct_scaled_to_official_locality_totals"
   },
   "general": {
     "results": {
@@ -72,26 +73,26 @@
         "color": "#dc2626"
       },
       "6": {
-        "dem_votes": 82245,
-        "rep_votes": 121234,
-        "other_votes": 10881,
-        "total_votes": 214360,
+        "dem_votes": 65564,
+        "rep_votes": 128412,
+        "other_votes": 11475,
+        "total_votes": 205451,
         "dem_candidate": "Thomas M. McDermott, Jr.",
         "rep_candidate": "Todd Young",
-        "margin": 38989,
-        "margin_pct": 18.1886,
+        "margin": 62848,
+        "margin_pct": 30.5903,
         "winner": "REP",
         "color": "#dc2626"
       },
       "7": {
-        "dem_votes": 95841,
-        "rep_votes": 54875,
-        "other_votes": 6387,
-        "total_votes": 157103,
+        "dem_votes": 112522,
+        "rep_votes": 47697,
+        "other_votes": 5793,
+        "total_votes": 166012,
         "dem_candidate": "Thomas M. McDermott, Jr.",
         "rep_candidate": "Todd Young",
-        "margin": -40966,
-        "margin_pct": -26.0759,
+        "margin": -64825,
+        "margin_pct": -39.0484,
         "winner": "DEM",
         "color": "#2563eb"
       },
