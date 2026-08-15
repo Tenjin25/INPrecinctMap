@@ -9946,7 +9946,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span class="legend-segment legend-color" style="background: #9ecae1;"></span>
                 <span class="legend-segment legend-color" style="background: #5b9fd0;"></span>
                 <span class="legend-segment legend-color" style="background: #3f8fc9;"></span>
-                <span class="legend-segment legend-color" style="background: #2876b5;"></span>
+                <span class="legend-segment legend-color" style="background: #3388c5;"></span>
                 <span class="legend-segment legend-color" style="background: #08519c;"></span>
                 <span class="legend-segment legend-color" style="background: #08306b;"></span>
               </div>
@@ -25612,8 +25612,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       const download = document.createElement('a');
       download.href = dataUrl;
-      download.download = 
-c-election-atlas-story-${snapshotStoryVariant}-${Date.now()}.png`;
+            download.download = `nc-election-atlas-story-${snapshotStoryVariant}-${Date.now()}.png`;
       document.body.appendChild(download);
       download.click();
       download.remove();
@@ -26250,8 +26249,7 @@ c-election-atlas-story-${snapshotStoryVariant}-${Date.now()}.png`;
       // Avoid rebuilding the same tooltip repeatedly while the mouse moves within one precinct.
       // Also throttle rapid transitions between precincts to keep hover responsive.
       try {
-        const featKey = (feature?.id !== null && feature?.id !== undefined) ? `id:${feature.id}` : 
-orm:${precinctNorm}`;
+        const featKey = (feature?.id !== null && feature?.id !== undefined) ? `id:${feature.id}` : `norm:${precinctNorm}`;
         const hoverKey = `${featKey}|${contestValue}`;
         const tooltip = document.getElementById('hover-tooltip');
         const tooltipVisible = !!tooltip && tooltip.style.display !== 'none' && (tooltip.innerHTML || '').trim().length > 0;
@@ -31934,7 +31932,7 @@ orm:${precinctNorm}`;
       } else if (marginPct >= 30) {
         return winner === 'R' ? '#a50f15' : '#08519c';
       } else if (marginPct >= 20) {
-        return winner === 'R' ? '#cb181d' : '#2876b5';
+        return winner === 'R' ? '#cb181d' : '#3388c5';
       } else if (marginPct >= 10) {
         return winner === 'R' ? '#e93a2d' : '#3f8fc9';
       } else if (marginPct >= 5.5) {
