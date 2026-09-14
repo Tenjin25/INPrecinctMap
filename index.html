@@ -10286,8 +10286,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-09-14-plan-cvap-demographics-v5';
-    const APP_BUILD_ID = '2026-09-14-plan-cvap-demographics-v5';
+    const DATA_CACHE_BUSTER = '2026-09-14-county-demo-aliases-v7';
+    const APP_BUILD_ID = '2026-09-14-county-demo-aliases-v7';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -13404,6 +13404,18 @@ document.addEventListener('DOMContentLoaded', function() {
         .replace(/\s+/g, ' ')
         .trim()
         .toUpperCase();
+    }
+
+    function addCountyDemographicAliases(payload) {
+      const counties = payload?.counties;
+      if (!counties || typeof counties !== 'object') return payload;
+      Object.entries(counties).forEach(([rawKey, row]) => {
+        const full = normalizeCountyToken(rawKey);
+        const short = full.replace(/\s+(COUNTY|PARISH|BOROUGH|CENSUS AREA|MUNICIPALITY)$/i, '').trim();
+        if (full && !counties[full]) counties[full] = row;
+        if (short && !counties[short]) counties[short] = row;
+      });
+      return payload;
     }
 
     function backfillHistoricalPrecinctResultsWithCountyFallback(precinctResultsByNorm, countyAgg, contestType, year) {
@@ -31835,7 +31847,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Optional county demographics (DP1-derived) for sidebar/tooltips.
       try {
-        countyDemographics = await loadJSON(CONFIG.paths.county_demographics);
+          countyDemographics = addCountyDemographicAliases(await loadJSON(CONFIG.paths.county_demographics));
       } catch (err) {
         countyDemographics = null;
         console.warn('County demographics not loaded:', err?.message || err);
