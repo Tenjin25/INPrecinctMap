@@ -5,8 +5,27 @@
     "year": 2004,
     "districts": 9,
     "match_coverage_pct": 100.0,
-    "allocation": "county_area_weighted_from_statewide_contest",
-    "precinct_rows": 0
+    "allocation": "county_constrained_whole_county_exact_split_precinct_weighted",
+    "precinct_rows": 0,
+    "whole_county_threshold": 0.999,
+    "split_county_sliver_threshold": 0.001,
+    "whole_counties": 84,
+    "split_counties": 8,
+    "split_precinct_rows": 0,
+    "split_precinct_geom_matches": 0,
+    "split_precinct_votes": 0,
+    "split_precinct_matched_votes": 0,
+    "split_counties_without_precinct_votes": [
+      "Bartholomew",
+      "Cass",
+      "Fountain",
+      "Howard",
+      "Kosciusko",
+      "LaPorte",
+      "Marion",
+      "Randolph"
+    ],
+    "split_counties_dra_weighted": []
   },
   "general": {
     "results": {
@@ -24,13 +43,13 @@
       },
       "2": {
         "dem_votes": 113964,
-        "rep_votes": 181681,
+        "rep_votes": 181682,
         "other_votes": 2445,
-        "total_votes": 298090,
+        "total_votes": 298091,
         "dem_candidate": "John F Kerry",
         "rep_candidate": "George Walker Bush",
-        "margin": 67717,
-        "margin_pct": 22.717,
+        "margin": 67718,
+        "margin_pct": 22.7172,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -48,13 +67,13 @@
       },
       "4": {
         "dem_votes": 75250,
-        "rep_votes": 171192,
+        "rep_votes": 171191,
         "other_votes": 2224,
-        "total_votes": 248666,
+        "total_votes": 248665,
         "dem_candidate": "John F Kerry",
         "rep_candidate": "George Walker Bush",
-        "margin": 95942,
-        "margin_pct": 38.5827,
+        "margin": 95941,
+        "margin_pct": 38.5824,
         "winner": "REP",
         "color": "#dc2626"
       },

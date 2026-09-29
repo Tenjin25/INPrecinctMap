@@ -5,8 +5,27 @@
     "year": 2004,
     "districts": 9,
     "match_coverage_pct": 100.0,
-    "allocation": "county_area_weighted_from_statewide_contest",
-    "precinct_rows": 0
+    "allocation": "county_constrained_whole_county_exact_split_precinct_weighted",
+    "precinct_rows": 0,
+    "whole_county_threshold": 0.999,
+    "split_county_sliver_threshold": 0.001,
+    "whole_counties": 84,
+    "split_counties": 8,
+    "split_precinct_rows": 0,
+    "split_precinct_geom_matches": 0,
+    "split_precinct_votes": 0,
+    "split_precinct_matched_votes": 0,
+    "split_counties_without_precinct_votes": [
+      "Bartholomew",
+      "Cass",
+      "Fountain",
+      "Howard",
+      "Kosciusko",
+      "LaPorte",
+      "Marion",
+      "Randolph"
+    ],
+    "split_counties_dra_weighted": []
   },
   "general": {
     "results": {
@@ -23,22 +42,22 @@
         "color": "#2563eb"
       },
       "2": {
-        "dem_votes": 179730,
+        "dem_votes": 179729,
         "rep_votes": 111480,
-        "other_votes": 3142,
-        "total_votes": 294352,
+        "other_votes": 3141,
+        "total_votes": 294350,
         "dem_candidate": "Evan Bayh",
         "rep_candidate": "Marvin Scott",
-        "margin": -68250,
-        "margin_pct": -23.1865,
+        "margin": -68249,
+        "margin_pct": -23.1863,
         "winner": "DEM",
         "color": "#2563eb"
       },
       "3": {
         "dem_votes": 147512,
         "rep_votes": 107913,
-        "other_votes": 2478,
-        "total_votes": 257903,
+        "other_votes": 2479,
+        "total_votes": 257904,
         "dem_candidate": "Evan Bayh",
         "rep_candidate": "Marvin Scott",
         "margin": -39599,
@@ -48,13 +67,13 @@
       },
       "4": {
         "dem_votes": 136268,
-        "rep_votes": 106516,
+        "rep_votes": 106517,
         "other_votes": 2932,
-        "total_votes": 245716,
+        "total_votes": 245717,
         "dem_candidate": "Evan Bayh",
         "rep_candidate": "Marvin Scott",
-        "margin": -29752,
-        "margin_pct": -12.1083,
+        "margin": -29751,
+        "margin_pct": -12.1078,
         "winner": "DEM",
         "color": "#2563eb"
       },
@@ -71,14 +90,14 @@
         "color": "#2563eb"
       },
       "6": {
-        "dem_votes": 169732,
-        "rep_votes": 110426,
+        "dem_votes": 169733,
+        "rep_votes": 110425,
         "other_votes": 3275,
         "total_votes": 283433,
         "dem_candidate": "Evan Bayh",
         "rep_candidate": "Marvin Scott",
-        "margin": -59306,
-        "margin_pct": -20.9242,
+        "margin": -59308,
+        "margin_pct": -20.9249,
         "winner": "DEM",
         "color": "#2563eb"
       },

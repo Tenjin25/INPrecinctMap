@@ -1,0 +1,1392 @@
+{
+  "schema": "in_2020_county_totals_anchor.v1",
+  "description": "Established 2020 county contest totals used to prevent duplicated OpenElections precinct rows from changing county and congressional totals on rebuild.",
+  "contests": {
+    "president": {
+      "Adams": {
+        "dem": 3236,
+        "rep": 10686,
+        "other": 287
+      },
+      "Allen": {
+        "dem": 73189,
+        "rep": 92083,
+        "other": 3810
+      },
+      "Bartholomew": {
+        "dem": 12934,
+        "rep": 22410,
+        "other": 891
+      },
+      "Benton": {
+        "dem": 1009,
+        "rep": 3007,
+        "other": 98
+      },
+      "Blackford": {
+        "dem": 1376,
+        "rep": 3841,
+        "other": 134
+      },
+      "Boone": {
+        "dem": 15244,
+        "rep": 22351,
+        "other": 925
+      },
+      "Brown": {
+        "dem": 3036,
+        "rep": 5777,
+        "other": 168
+      },
+      "Carroll": {
+        "dem": 2224,
+        "rep": 7086,
+        "other": 185
+      },
+      "Cass": {
+        "dem": 4304,
+        "rep": 10552,
+        "other": 342
+      },
+      "Clark": {
+        "dem": 23093,
+        "rep": 33668,
+        "other": 1108
+      },
+      "Clay": {
+        "dem": 2552,
+        "rep": 9499,
+        "other": 216
+      },
+      "Clinton": {
+        "dem": 3361,
+        "rep": 9334,
+        "other": 254
+      },
+      "Crawford": {
+        "dem": 1355,
+        "rep": 3483,
+        "other": 106
+      },
+      "Daviess": {
+        "dem": 2169,
+        "rep": 9576,
+        "other": 209
+      },
+      "DeKalb": {
+        "dem": 4966,
+        "rep": 14237,
+        "other": 425
+      },
+      "Dearborn": {
+        "dem": 5446,
+        "rep": 19528,
+        "other": 409
+      },
+      "Decatur": {
+        "dem": 2439,
+        "rep": 9575,
+        "other": 273
+      },
+      "Delaware": {
+        "dem": 20474,
+        "rep": 26827,
+        "other": 890
+      },
+      "Dubois": {
+        "dem": 6292,
+        "rep": 15033,
+        "other": 445
+      },
+      "Elkhart": {
+        "dem": 26108,
+        "rep": 46972,
+        "other": 1307
+      },
+      "Fayette": {
+        "dem": 2237,
+        "rep": 7755,
+        "other": 144
+      },
+      "Floyd": {
+        "dem": 17511,
+        "rep": 23400,
+        "other": 891
+      },
+      "Fountain": {
+        "dem": 1629,
+        "rep": 6154,
+        "other": 203
+      },
+      "Franklin": {
+        "dem": 2137,
+        "rep": 9691,
+        "other": 172
+      },
+      "Fulton": {
+        "dem": 2280,
+        "rep": 6694,
+        "other": 173
+      },
+      "Gibson": {
+        "dem": 4023,
+        "rep": 11817,
+        "other": 321
+      },
+      "Grant": {
+        "dem": 8015,
+        "rep": 18543,
+        "other": 601
+      },
+      "Greene": {
+        "dem": 3389,
+        "rep": 11103,
+        "other": 292
+      },
+      "Hamilton": {
+        "dem": 88390,
+        "rep": 101587,
+        "other": 4022
+      },
+      "Hancock": {
+        "dem": 12895,
+        "rep": 28996,
+        "other": 1020
+      },
+      "Harrison": {
+        "dem": 5343,
+        "rep": 14565,
+        "other": 328
+      },
+      "Hendricks": {
+        "dem": 32604,
+        "rep": 53802,
+        "other": 2099
+      },
+      "Henry": {
+        "dem": 5544,
+        "rep": 15043,
+        "other": 443
+      },
+      "Howard": {
+        "dem": 13303,
+        "rep": 26449,
+        "other": 878
+      },
+      "Huntington": {
+        "dem": 4255,
+        "rep": 13147,
+        "other": 427
+      },
+      "Jackson": {
+        "dem": 4302,
+        "rep": 14555,
+        "other": 381
+      },
+      "Jasper": {
+        "dem": 3798,
+        "rep": 11383,
+        "other": 294
+      },
+      "Jay": {
+        "dem": 1926,
+        "rep": 6361,
+        "other": 174
+      },
+      "Jefferson": {
+        "dem": 4731,
+        "rep": 9663,
+        "other": 303
+      },
+      "Jennings": {
+        "dem": 2523,
+        "rep": 9490,
+        "other": 238
+      },
+      "Johnson": {
+        "dem": 24736,
+        "rep": 51219,
+        "other": 1663
+      },
+      "Knox": {
+        "dem": 4067,
+        "rep": 11655,
+        "other": 289
+      },
+      "Kosciusko": {
+        "dem": 8364,
+        "rep": 26499,
+        "other": 924
+      },
+      "LaGrange": {
+        "dem": 2355,
+        "rep": 8110,
+        "other": 168
+      },
+      "LaPorte": {
+        "dem": 22427,
+        "rep": 25997,
+        "other": 968
+      },
+      "Lake": {
+        "dem": 124870,
+        "rep": 91760,
+        "other": 3326
+      },
+      "Lawrence": {
+        "dem": 4961,
+        "rep": 15601,
+        "other": 463
+      },
+      "Madison": {
+        "dem": 19524,
+        "rep": 31215,
+        "other": 1054
+      },
+      "Marion": {
+        "dem": 247772,
+        "rep": 134175,
+        "other": 7672
+      },
+      "Marshall": {
+        "dem": 5712,
+        "rep": 13844,
+        "other": 371
+      },
+      "Martin": {
+        "dem": 1011,
+        "rep": 4029,
+        "other": 104
+      },
+      "Miami": {
+        "dem": 3235,
+        "rep": 10925,
+        "other": 313
+      },
+      "Monroe": {
+        "dem": 39861,
+        "rep": 22071,
+        "other": 1219
+      },
+      "Montgomery": {
+        "dem": 4213,
+        "rep": 12659,
+        "other": 326
+      },
+      "Morgan": {
+        "dem": 7781,
+        "rep": 27512,
+        "other": 866
+      },
+      "Newton": {
+        "dem": 1509,
+        "rep": 4942,
+        "other": 140
+      },
+      "Noble": {
+        "dem": 4660,
+        "rep": 14195,
+        "other": 335
+      },
+      "Ohio": {
+        "dem": 668,
+        "rep": 2054,
+        "other": 353
+      },
+      "Orange": {
+        "dem": 2224,
+        "rep": 6432,
+        "other": 176
+      },
+      "Owen": {
+        "dem": 2420,
+        "rep": 7286,
+        "other": 198
+      },
+      "Parke": {
+        "dem": 1503,
+        "rep": 5400,
+        "other": 110
+      },
+      "Perry": {
+        "dem": 3203,
+        "rep": 5345,
+        "other": 174
+      },
+      "Pike": {
+        "dem": 1415,
+        "rep": 4692,
+        "other": 113
+      },
+      "Porter": {
+        "dem": 39746,
+        "rep": 45008,
+        "other": 1755
+      },
+      "Posey": {
+        "dem": 3811,
+        "rep": 9206,
+        "other": 219
+      },
+      "Pulaski": {
+        "dem": 1463,
+        "rep": 4246,
+        "other": 97
+      },
+      "Putnam": {
+        "dem": 3946,
+        "rep": 12278,
+        "other": 373
+      },
+      "Randolph": {
+        "dem": 2513,
+        "rep": 8312,
+        "other": 245
+      },
+      "Ripley": {
+        "dem": 2774,
+        "rep": 11261,
+        "other": 236
+      },
+      "Rush": {
+        "dem": 1754,
+        "rep": 6035,
+        "other": 143
+      },
+      "Scott": {
+        "dem": 2701,
+        "rep": 7331,
+        "other": 135
+      },
+      "Shelby": {
+        "dem": 5023,
+        "rep": 14568,
+        "other": 400
+      },
+      "Spencer": {
+        "dem": 3213,
+        "rep": 7357,
+        "other": 199
+      },
+      "St. Joseph": {
+        "dem": 59896,
+        "rep": 53164,
+        "other": 2178
+      },
+      "Starke": {
+        "dem": 2650,
+        "rep": 7466,
+        "other": 174
+      },
+      "Steuben": {
+        "dem": 4513,
+        "rep": 11327,
+        "other": 322
+      },
+      "Sullivan": {
+        "dem": 2153,
+        "rep": 6691,
+        "other": 150
+      },
+      "Switzerland": {
+        "dem": 964,
+        "rep": 3133,
+        "other": 57
+      },
+      "Tippecanoe": {
+        "dem": 35017,
+        "rep": 34581,
+        "other": 1850
+      },
+      "Tipton": {
+        "dem": 1834,
+        "rep": 6110,
+        "other": 172
+      },
+      "Union": {
+        "dem": 736,
+        "rep": 2688,
+        "other": 59
+      },
+      "Vanderburgh": {
+        "dem": 34415,
+        "rep": 41844,
+        "other": 1403
+      },
+      "Vermillion": {
+        "dem": 2145,
+        "rep": 5184,
+        "other": 152
+      },
+      "Vigo": {
+        "dem": 18123,
+        "rep": 24545,
+        "other": 926
+      },
+      "Wabash": {
+        "dem": 3494,
+        "rep": 10762,
+        "other": 320
+      },
+      "Warren": {
+        "dem": 974,
+        "rep": 3401,
+        "other": 97
+      },
+      "Warrick": {
+        "dem": 11923,
+        "rep": 21326,
+        "other": 580
+      },
+      "Washington": {
+        "dem": 2784,
+        "rep": 9114,
+        "other": 241
+      },
+      "Wayne": {
+        "dem": 9524,
+        "rep": 17567,
+        "other": 588
+      },
+      "Wells": {
+        "dem": 2928,
+        "rep": 10855,
+        "other": 267
+      },
+      "White": {
+        "dem": 3032,
+        "rep": 7957,
+        "other": 177
+      },
+      "Whitley": {
+        "dem": 4234,
+        "rep": 12862,
+        "other": 460
+      }
+    },
+    "governor": {
+      "Adams": {
+        "dem": 2143,
+        "rep": 9441,
+        "other": 2570
+      },
+      "Allen": {
+        "dem": 53895,
+        "rep": 98406,
+        "other": 16011
+      },
+      "Bartholomew": {
+        "dem": 9013,
+        "rep": 21959,
+        "other": 5065
+      },
+      "Benton": {
+        "dem": 671,
+        "rep": 2815,
+        "other": 614
+      },
+      "Blackford": {
+        "dem": 933,
+        "rep": 3333,
+        "other": 1017
+      },
+      "Boone": {
+        "dem": 9661,
+        "rep": 23737,
+        "other": 5094
+      },
+      "Brown": {
+        "dem": 2381,
+        "rep": 4953,
+        "other": 1623
+      },
+      "Carroll": {
+        "dem": 1569,
+        "rep": 6077,
+        "other": 1864
+      },
+      "Cass": {
+        "dem": 3373,
+        "rep": 8833,
+        "other": 2940
+      },
+      "Clark": {
+        "dem": 19077,
+        "rep": 34669,
+        "other": 3680
+      },
+      "Clay": {
+        "dem": 1780,
+        "rep": 8164,
+        "other": 2242
+      },
+      "Clinton": {
+        "dem": 2406,
+        "rep": 7971,
+        "other": 2514
+      },
+      "Crawford": {
+        "dem": 1242,
+        "rep": 3064,
+        "other": 553
+      },
+      "Daviess": {
+        "dem": 1531,
+        "rep": 8313,
+        "other": 2016
+      },
+      "DeKalb": {
+        "dem": 3293,
+        "rep": 13042,
+        "other": 3158
+      },
+      "Dearborn": {
+        "dem": 4559,
+        "rep": 18353,
+        "other": 2383
+      },
+      "Decatur": {
+        "dem": 1562,
+        "rep": 7911,
+        "other": 2787
+      },
+      "Delaware": {
+        "dem": 15638,
+        "rep": 26829,
+        "other": 5482
+      },
+      "Dubois": {
+        "dem": 4586,
+        "rep": 14403,
+        "other": 2599
+      },
+      "Elkhart": {
+        "dem": 20512,
+        "rep": 46223,
+        "other": 7690
+      },
+      "Fayette": {
+        "dem": 1707,
+        "rep": 6933,
+        "other": 1414
+      },
+      "Floyd": {
+        "dem": 14948,
+        "rep": 24972,
+        "other": 1669
+      },
+      "Fountain": {
+        "dem": 1150,
+        "rep": 5189,
+        "other": 1613
+      },
+      "Franklin": {
+        "dem": 1690,
+        "rep": 8633,
+        "other": 1499
+      },
+      "Fulton": {
+        "dem": 1603,
+        "rep": 5436,
+        "other": 2084
+      },
+      "Gibson": {
+        "dem": 2990,
+        "rep": 11607,
+        "other": 1533
+      },
+      "Grant": {
+        "dem": 5849,
+        "rep": 16847,
+        "other": 4325
+      },
+      "Greene": {
+        "dem": 2511,
+        "rep": 9579,
+        "other": 2604
+      },
+      "Hamilton": {
+        "dem": 58714,
+        "rep": 117749,
+        "other": 17121
+      },
+      "Hancock": {
+        "dem": 8538,
+        "rep": 25647,
+        "other": 8624
+      },
+      "Harrison": {
+        "dem": 4514,
+        "rep": 14083,
+        "other": 1602
+      },
+      "Hendricks": {
+        "dem": 23179,
+        "rep": 50697,
+        "other": 14246
+      },
+      "Henry": {
+        "dem": 4128,
+        "rep": 12491,
+        "other": 4442
+      },
+      "Howard": {
+        "dem": 9871,
+        "rep": 24359,
+        "other": 6317
+      },
+      "Huntington": {
+        "dem": 2804,
+        "rep": 11759,
+        "other": 3168
+      },
+      "Jackson": {
+        "dem": 3234,
+        "rep": 11714,
+        "other": 4188
+      },
+      "Jasper": {
+        "dem": 2904,
+        "rep": 10378,
+        "other": 2089
+      },
+      "Jay": {
+        "dem": 1240,
+        "rep": 5227,
+        "other": 1938
+      },
+      "Jefferson": {
+        "dem": 3711,
+        "rep": 9076,
+        "other": 1750
+      },
+      "Jennings": {
+        "dem": 1930,
+        "rep": 7547,
+        "other": 2676
+      },
+      "Johnson": {
+        "dem": 17630,
+        "rep": 47467,
+        "other": 12177
+      },
+      "Knox": {
+        "dem": 2809,
+        "rep": 11210,
+        "other": 1821
+      },
+      "Kosciusko": {
+        "dem": 5784,
+        "rep": 23029,
+        "other": 6845
+      },
+      "LaGrange": {
+        "dem": 1690,
+        "rep": 7520,
+        "other": 1365
+      },
+      "LaPorte": {
+        "dem": 18133,
+        "rep": 26129,
+        "other": 4356
+      },
+      "Lake": {
+        "dem": 112352,
+        "rep": 94841,
+        "other": 10039
+      },
+      "Lawrence": {
+        "dem": 3616,
+        "rep": 13371,
+        "other": 3881
+      },
+      "Madison": {
+        "dem": 14254,
+        "rep": 29434,
+        "other": 8118
+      },
+      "Marion": {
+        "dem": 203475,
+        "rep": 152405,
+        "other": 34974
+      },
+      "Marshall": {
+        "dem": 4025,
+        "rep": 13145,
+        "other": 2634
+      },
+      "Martin": {
+        "dem": 709,
+        "rep": 3232,
+        "other": 1177
+      },
+      "Miami": {
+        "dem": 2439,
+        "rep": 9208,
+        "other": 2714
+      },
+      "Monroe": {
+        "dem": 33033,
+        "rep": 24605,
+        "other": 4885
+      },
+      "Montgomery": {
+        "dem": 2812,
+        "rep": 10587,
+        "other": 3785
+      },
+      "Morgan": {
+        "dem": 5602,
+        "rep": 22161,
+        "other": 8184
+      },
+      "Newton": {
+        "dem": 1148,
+        "rep": 4358,
+        "other": 1050
+      },
+      "Noble": {
+        "dem": 3237,
+        "rep": 12498,
+        "other": 3353
+      },
+      "Ohio": {
+        "dem": 641,
+        "rep": 2210,
+        "other": 335
+      },
+      "Orange": {
+        "dem": 1952,
+        "rep": 5591,
+        "other": 1216
+      },
+      "Owen": {
+        "dem": 1852,
+        "rep": 5857,
+        "other": 2137
+      },
+      "Parke": {
+        "dem": 1127,
+        "rep": 4766,
+        "other": 1079
+      },
+      "Perry": {
+        "dem": 2518,
+        "rep": 5523,
+        "other": 607
+      },
+      "Pike": {
+        "dem": 1092,
+        "rep": 4199,
+        "other": 850
+      },
+      "Porter": {
+        "dem": 33397,
+        "rep": 45996,
+        "other": 7131
+      },
+      "Posey": {
+        "dem": 2773,
+        "rep": 9648,
+        "other": 809
+      },
+      "Pulaski": {
+        "dem": 1019,
+        "rep": 3874,
+        "other": 875
+      },
+      "Putnam": {
+        "dem": 2876,
+        "rep": 9375,
+        "other": 4269
+      },
+      "Randolph": {
+        "dem": 1863,
+        "rep": 7399,
+        "other": 1732
+      },
+      "Ripley": {
+        "dem": 2231,
+        "rep": 9518,
+        "other": 2458
+      },
+      "Rush": {
+        "dem": 1215,
+        "rep": 4949,
+        "other": 1716
+      },
+      "Scott": {
+        "dem": 2297,
+        "rep": 6065,
+        "other": 1613
+      },
+      "Shelby": {
+        "dem": 3499,
+        "rep": 12269,
+        "other": 4099
+      },
+      "Spencer": {
+        "dem": 2461,
+        "rep": 7272,
+        "other": 926
+      },
+      "St. Joseph": {
+        "dem": 48610,
+        "rep": 60696,
+        "other": 5387
+      },
+      "Starke": {
+        "dem": 2026,
+        "rep": 6730,
+        "other": 1427
+      },
+      "Steuben": {
+        "dem": 2939,
+        "rep": 11407,
+        "other": 1739
+      },
+      "Sullivan": {
+        "dem": 1550,
+        "rep": 6009,
+        "other": 1357
+      },
+      "Switzerland": {
+        "dem": 822,
+        "rep": 2846,
+        "other": 412
+      },
+      "Tippecanoe": {
+        "dem": 26179,
+        "rep": 37979,
+        "other": 7057
+      },
+      "Tipton": {
+        "dem": 1200,
+        "rep": 5169,
+        "other": 1707
+      },
+      "Union": {
+        "dem": 603,
+        "rep": 2533,
+        "other": 323
+      },
+      "Vanderburgh": {
+        "dem": 27242,
+        "rep": 46490,
+        "other": 3658
+      },
+      "Vermillion": {
+        "dem": 1531,
+        "rep": 4938,
+        "other": 917
+      },
+      "Vigo": {
+        "dem": 13999,
+        "rep": 25917,
+        "other": 3419
+      },
+      "Wabash": {
+        "dem": 2421,
+        "rep": 9111,
+        "other": 2979
+      },
+      "Warren": {
+        "dem": 672,
+        "rep": 3009,
+        "other": 777
+      },
+      "Warrick": {
+        "dem": 9074,
+        "rep": 22703,
+        "other": 1747
+      },
+      "Washington": {
+        "dem": 2408,
+        "rep": 7919,
+        "other": 1746
+      },
+      "Wayne": {
+        "dem": 7534,
+        "rep": 16914,
+        "other": 3172
+      },
+      "Wells": {
+        "dem": 1967,
+        "rep": 9371,
+        "other": 2712
+      },
+      "White": {
+        "dem": 1978,
+        "rep": 7334,
+        "other": 1826
+      },
+      "Whitley": {
+        "dem": 2738,
+        "rep": 11522,
+        "other": 3191
+      }
+    },
+    "attorney_general": {
+      "Adams": {
+        "dem": 3439,
+        "rep": 10433,
+        "other": 0
+      },
+      "Allen": {
+        "dem": 69691,
+        "rep": 95651,
+        "other": 0
+      },
+      "Bartholomew": {
+        "dem": 12151,
+        "rep": 22714,
+        "other": 0
+      },
+      "Benton": {
+        "dem": 1111,
+        "rep": 2937,
+        "other": 0
+      },
+      "Blackford": {
+        "dem": 1413,
+        "rep": 3766,
+        "other": 0
+      },
+      "Boone": {
+        "dem": 13506,
+        "rep": 23915,
+        "other": 0
+      },
+      "Brown": {
+        "dem": 3141,
+        "rep": 5625,
+        "other": 0
+      },
+      "Carroll": {
+        "dem": 2399,
+        "rep": 7067,
+        "other": 0
+      },
+      "Cass": {
+        "dem": 4478,
+        "rep": 10506,
+        "other": 0
+      },
+      "Clark": {
+        "dem": 22416,
+        "rep": 32918,
+        "other": 0
+      },
+      "Clay": {
+        "dem": 2765,
+        "rep": 8982,
+        "other": 0
+      },
+      "Clinton": {
+        "dem": 3451,
+        "rep": 9269,
+        "other": 0
+      },
+      "Crawford": {
+        "dem": 1494,
+        "rep": 3089,
+        "other": 0
+      },
+      "Daviess": {
+        "dem": 2473,
+        "rep": 8931,
+        "other": 0
+      },
+      "DeKalb": {
+        "dem": 5002,
+        "rep": 13704,
+        "other": 0
+      },
+      "Dearborn": {
+        "dem": 5401,
+        "rep": 19565,
+        "other": 0
+      },
+      "Decatur": {
+        "dem": 2665,
+        "rep": 9118,
+        "other": 0
+      },
+      "Delaware": {
+        "dem": 20242,
+        "rep": 26834,
+        "other": 0
+      },
+      "Dubois": {
+        "dem": 8084,
+        "rep": 13032,
+        "other": 0
+      },
+      "Elkhart": {
+        "dem": 25171,
+        "rep": 48604,
+        "other": 0
+      },
+      "Fayette": {
+        "dem": 2343,
+        "rep": 7354,
+        "other": 0
+      },
+      "Floyd": {
+        "dem": 16894,
+        "rep": 23932,
+        "other": 0
+      },
+      "Fountain": {
+        "dem": 1811,
+        "rep": 6050,
+        "other": 0
+      },
+      "Franklin": {
+        "dem": 2120,
+        "rep": 9144,
+        "other": 0
+      },
+      "Fulton": {
+        "dem": 2401,
+        "rep": 6561,
+        "other": 0
+      },
+      "Gibson": {
+        "dem": 6122,
+        "rep": 9811,
+        "other": 0
+      },
+      "Grant": {
+        "dem": 7872,
+        "rep": 18266,
+        "other": 0
+      },
+      "Greene": {
+        "dem": 3859,
+        "rep": 10578,
+        "other": 0
+      },
+      "Hamilton": {
+        "dem": 77549,
+        "rep": 109798,
+        "other": 0
+      },
+      "Hancock": {
+        "dem": 12324,
+        "rep": 29571,
+        "other": 0
+      },
+      "Harrison": {
+        "dem": 5493,
+        "rep": 14237,
+        "other": 0
+      },
+      "Hendricks": {
+        "dem": 30711,
+        "rep": 55159,
+        "other": 0
+      },
+      "Henry": {
+        "dem": 6084,
+        "rep": 14689,
+        "other": 0
+      },
+      "Howard": {
+        "dem": 13369,
+        "rep": 26399,
+        "other": 0
+      },
+      "Huntington": {
+        "dem": 4258,
+        "rep": 12806,
+        "other": 0
+      },
+      "Jackson": {
+        "dem": 4374,
+        "rep": 13884,
+        "other": 0
+      },
+      "Jasper": {
+        "dem": 3658,
+        "rep": 11265,
+        "other": 0
+      },
+      "Jay": {
+        "dem": 2051,
+        "rep": 6202,
+        "other": 0
+      },
+      "Jefferson": {
+        "dem": 4591,
+        "rep": 9291,
+        "other": 0
+      },
+      "Jennings": {
+        "dem": 2731,
+        "rep": 9016,
+        "other": 0
+      },
+      "Johnson": {
+        "dem": 23159,
+        "rep": 51302,
+        "other": 0
+      },
+      "Knox": {
+        "dem": 4881,
+        "rep": 10541,
+        "other": 0
+      },
+      "Kosciusko": {
+        "dem": 8144,
+        "rep": 26329,
+        "other": 0
+      },
+      "LaGrange": {
+        "dem": 2294,
+        "rep": 7971,
+        "other": 0
+      },
+      "LaPorte": {
+        "dem": 22163,
+        "rep": 25095,
+        "other": 0
+      },
+      "Lake": {
+        "dem": 121406,
+        "rep": 91316,
+        "other": 0
+      },
+      "Lawrence": {
+        "dem": 4975,
+        "rep": 15164,
+        "other": 0
+      },
+      "Madison": {
+        "dem": 20511,
+        "rep": 30596,
+        "other": 0
+      },
+      "Marion": {
+        "dem": 246140,
+        "rep": 141939,
+        "other": 0
+      },
+      "Marshall": {
+        "dem": 5474,
+        "rep": 13706,
+        "other": 0
+      },
+      "Martin": {
+        "dem": 1290,
+        "rep": 3645,
+        "other": 0
+      },
+      "Miami": {
+        "dem": 3297,
+        "rep": 10594,
+        "other": 0
+      },
+      "Monroe": {
+        "dem": 38405,
+        "rep": 23187,
+        "other": 0
+      },
+      "Montgomery": {
+        "dem": 4011,
+        "rep": 12403,
+        "other": 0
+      },
+      "Morgan": {
+        "dem": 7826,
+        "rep": 27058,
+        "other": 0
+      },
+      "Newton": {
+        "dem": 1496,
+        "rep": 4942,
+        "other": 0
+      },
+      "Noble": {
+        "dem": 4753,
+        "rep": 13717,
+        "other": 0
+      },
+      "Ohio": {
+        "dem": 734,
+        "rep": 2315,
+        "other": 0
+      },
+      "Orange": {
+        "dem": 2192,
+        "rep": 6213,
+        "other": 0
+      },
+      "Owen": {
+        "dem": 2597,
+        "rep": 6921,
+        "other": 0
+      },
+      "Parke": {
+        "dem": 1667,
+        "rep": 5058,
+        "other": 0
+      },
+      "Perry": {
+        "dem": 3763,
+        "rep": 4663,
+        "other": 0
+      },
+      "Pike": {
+        "dem": 2043,
+        "rep": 3948,
+        "other": 0
+      },
+      "Porter": {
+        "dem": 39256,
+        "rep": 46276,
+        "other": 0
+      },
+      "Posey": {
+        "dem": 5595,
+        "rep": 7605,
+        "other": 0
+      },
+      "Pulaski": {
+        "dem": 1454,
+        "rep": 4098,
+        "other": 0
+      },
+      "Putnam": {
+        "dem": 4099,
+        "rep": 12186,
+        "other": 0
+      },
+      "Randolph": {
+        "dem": 2589,
+        "rep": 7994,
+        "other": 0
+      },
+      "Ripley": {
+        "dem": 2841,
+        "rep": 11071,
+        "other": 0
+      },
+      "Rush": {
+        "dem": 1871,
+        "rep": 5762,
+        "other": 0
+      },
+      "Scott": {
+        "dem": 2915,
+        "rep": 6496,
+        "other": 0
+      },
+      "Shelby": {
+        "dem": 5207,
+        "rep": 13889,
+        "other": 0
+      },
+      "Spencer": {
+        "dem": 4314,
+        "rep": 6138,
+        "other": 0
+      },
+      "St. Joseph": {
+        "dem": 56536,
+        "rep": 53530,
+        "other": 0
+      },
+      "Starke": {
+        "dem": 2877,
+        "rep": 6861,
+        "other": 0
+      },
+      "Steuben": {
+        "dem": 4413,
+        "rep": 11432,
+        "other": 0
+      },
+      "Sullivan": {
+        "dem": 2609,
+        "rep": 6082,
+        "other": 0
+      },
+      "Switzerland": {
+        "dem": 984,
+        "rep": 2967,
+        "other": 0
+      },
+      "Tippecanoe": {
+        "dem": 33612,
+        "rep": 36834,
+        "other": 0
+      },
+      "Tipton": {
+        "dem": 1987,
+        "rep": 5824,
+        "other": 0
+      },
+      "Union": {
+        "dem": 711,
+        "rep": 2625,
+        "other": 0
+      },
+      "Vanderburgh": {
+        "dem": 40531,
+        "rep": 36681,
+        "other": 0
+      },
+      "Vermillion": {
+        "dem": 2428,
+        "rep": 4727,
+        "other": 0
+      },
+      "Vigo": {
+        "dem": 17474,
+        "rep": 22772,
+        "other": 0
+      },
+      "Wabash": {
+        "dem": 3402,
+        "rep": 10628,
+        "other": 0
+      },
+      "Warren": {
+        "dem": 1019,
+        "rep": 3397,
+        "other": 0
+      },
+      "Warrick": {
+        "dem": 14194,
+        "rep": 18735,
+        "other": 0
+      },
+      "Washington": {
+        "dem": 2829,
+        "rep": 8980,
+        "other": 0
+      },
+      "Wayne": {
+        "dem": 9319,
+        "rep": 17845,
+        "other": 0
+      },
+      "Wells": {
+        "dem": 3029,
+        "rep": 10799,
+        "other": 0
+      },
+      "White": {
+        "dem": 2902,
+        "rep": 7940,
+        "other": 0
+      },
+      "Whitley": {
+        "dem": 4300,
+        "rep": 12528,
+        "other": 0
+      }
+    }
+  }
+}
