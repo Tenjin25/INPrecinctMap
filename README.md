@@ -70,6 +70,18 @@ Crosswalk quality note:
 - Precinct crosswalk rows are emitted as normalized `COUNTY|PRECINCT` keys with
   area weights, and the statewide allocator uses expanded alias matching (township,
   ward, ordinal, and county-code variants) before falling back to county weights.
+- For congressional statewide slices with complete, non-imputed county coverage,
+  counties at least 99.9% in one district contribute their exact county totals.
+  Split counties are allocated separately by party, using DRA VTD vote patterns
+  when at least 95% of the county's DRA votes match the district geometry;
+  otherwise precinct votes and county-area fallback establish the shares. Each
+  county's district allocation is rounded back to its official county total.
+  District overlaps of 0.1% or less within split counties are treated as
+  geometry slivers before allocation.
+  Partial-coverage slices retain the existing allocation and calibration path.
+- The established 2020 county totals for president, governor, and attorney
+  general are pinned in `Data/sources/in_2020_county_totals_anchor.json`; some
+  current OpenElections inputs duplicate precinct votes for those contests.
 
 Apply legislative district calibrations from `Data/Calibration csvs`:
 
@@ -83,7 +95,8 @@ Notes:
   `Data/district_contests/state_senate_*.json` slices that have matching CSVs.
 - It also calibrates `Data/district_contests/congressional_*.json` slices
   when a matching DRA election dataset is available (using the CD118
-  precinct crosswalk).
+  precinct crosswalk), except for county-constrained slices whose exact
+  county totals would be undone by district-wide calibration.
 - It also syncs the fallback aggregate file `Data/in_district_results_2022_lines.json`.
 - It writes a coverage summary to `Data/district_calibration_report.json`.
 - When a matching DRA election dataset exists, district turnout totals are

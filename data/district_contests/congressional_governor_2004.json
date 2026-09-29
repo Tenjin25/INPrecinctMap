@@ -5,8 +5,27 @@
     "year": 2004,
     "districts": 9,
     "match_coverage_pct": 100.0,
-    "allocation": "county_area_weighted_from_statewide_contest",
-    "precinct_rows": 0
+    "allocation": "county_constrained_whole_county_exact_split_precinct_weighted",
+    "precinct_rows": 0,
+    "whole_county_threshold": 0.999,
+    "split_county_sliver_threshold": 0.001,
+    "whole_counties": 84,
+    "split_counties": 8,
+    "split_precinct_rows": 0,
+    "split_precinct_geom_matches": 0,
+    "split_precinct_votes": 0,
+    "split_precinct_matched_votes": 0,
+    "split_counties_without_precinct_votes": [
+      "Bartholomew",
+      "Cass",
+      "Fountain",
+      "Howard",
+      "Kosciusko",
+      "LaPorte",
+      "Marion",
+      "Randolph"
+    ],
+    "split_counties_dra_weighted": []
   },
   "general": {
     "results": {
@@ -35,26 +54,26 @@
         "color": "#dc2626"
       },
       "3": {
-        "dem_votes": 101977,
+        "dem_votes": 101976,
         "rep_votes": 155109,
-        "other_votes": 2601,
+        "other_votes": 2602,
         "total_votes": 259687,
         "dem_candidate": "Joseph E Kernan",
         "rep_candidate": "Mitchell E Daniels, Jr.",
-        "margin": 53132,
-        "margin_pct": 20.46,
+        "margin": 53133,
+        "margin_pct": 20.4604,
         "winner": "REP",
         "color": "#dc2626"
       },
       "4": {
-        "dem_votes": 89553,
+        "dem_votes": 89554,
         "rep_votes": 154265,
-        "other_votes": 3612,
+        "other_votes": 3611,
         "total_votes": 247430,
         "dem_candidate": "Joseph E Kernan",
         "rep_candidate": "Mitchell E Daniels, Jr.",
-        "margin": 64712,
-        "margin_pct": 26.1537,
+        "margin": 64711,
+        "margin_pct": 26.1533,
         "winner": "REP",
         "color": "#dc2626"
       },

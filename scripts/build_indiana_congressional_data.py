@@ -77,12 +77,35 @@ OUT_CROSSWALK_COUNTY_TO_STATE_SENATE_2022 = OUT_CROSSWALKS_DIR / "county_to_2022
 OUT_ELECTION_AGG = DATA_DIR / "in_elections_aggregated.json"
 OUT_DISTRICT_AGG = DATA_DIR / "in_district_results_2022_lines.json"
 SOS_2024_OFFICIAL_CONTESTS = DATA_DIR / "sources" / "in_sos_2024_statewide_county_totals.json"
+COUNTY_TOTALS_2020_ANCHOR = DATA_DIR / "sources" / "in_2020_county_totals_anchor.json"
 
 
 INDIANA_COUNTY_COUNT = 92
 MIN_STATEWIDE_COUNTY_COVERAGE = 70
 MIN_IMPUTE_OVERLAP_COUNTIES = 40
 MIN_STATEWIDE_MAJOR_PARTY_SHARE_PCT = 1.0
+CONGRESSIONAL_WHOLE_COUNTY_THRESHOLD = 0.999
+CONGRESSIONAL_SLIVER_THRESHOLD = 0.001
+DRA_CONGRESSIONAL_DATASETS: Dict[Tuple[int, str], str] = {
+    (2008, "president"): "E_08_PRES",
+    (2012, "president"): "E_12_PRES",
+    (2016, "president"): "E_16_PRES",
+    (2016, "us_senate"): "E_16_SEN",
+    (2016, "governor"): "E_16_GOV",
+    (2016, "attorney_general"): "E_16_AG",
+    (2018, "us_senate"): "E_18_SEN",
+    (2020, "president"): "E_20_PRES",
+    (2020, "governor"): "E_20_GOV",
+    (2020, "attorney_general"): "E_20_AG",
+    (2022, "us_senate"): "E_22_SEN",
+    (2022, "auditor"): "E_22_AUD",
+    (2022, "secretary_of_state"): "E_22_SOS",
+    (2022, "treasurer"): "E_22_TREAS",
+    (2024, "president"): "E_24_PRES",
+    (2024, "us_senate"): "E_24_SEN",
+    (2024, "governor"): "E_24_GOV",
+    (2024, "attorney_general"): "E_24_AG",
+}
 SUPPORTED_CONTEST_TYPES = {
     "attorney_general",
     "governor",
@@ -1238,6 +1261,98 @@ def apportion_integer_votes(float_votes_by_district: Dict[int, float], target_to
     return floors
 
 
+def allocate_congressional_county_votes(
+    county_votes: Dict[str, Dict[str, int]],
+    precinct_rows: List[Tuple[str, str, Dict[str, int]]],
+    county_weights: Dict[str, List[Tuple[int, float]]],
+    precinct_weights_for: Any,
+    dra_split_patterns: Optional[Dict[str, Dict[int, Dict[str, float]]]] = None,
+) -> Tuple[Dict[int, Dict[str, int]], Dict[str, Any]]:
+    """Conserve official totals within each county before summing districts.
+
+    Whole counties contribute their exact totals. In split counties, matched
+    precinct votes establish each party's district shares; unmatched rows use
+    county area shares, and the resulting shares are scaled to the county total.
+    """
+    parties = ("dem", "rep", "other")
+    district_votes: Dict[int, Dict[str, int]] = defaultdict(lambda: {p: 0 for p in parties})
+    rows_by_county: Dict[str, List[Tuple[str, Dict[str, int]]]] = defaultdict(list)
+    for county, precinct, votes in precinct_rows:
+        rows_by_county[county].append((precinct, votes))
+
+    diagnostics: Dict[str, Any] = {
+        "whole_counties": 0,
+        "split_counties": 0,
+        "split_precinct_rows": 0,
+        "split_precinct_geom_matches": 0,
+        "split_precinct_votes": 0,
+        "split_precinct_matched_votes": 0,
+        "split_counties_without_precinct_votes": [],
+        "split_counties_dra_weighted": [],
+    }
+    for county, official in sorted(county_votes.items()):
+        weights = county_weights.get(county, [])
+        if not weights:
+            raise ValueError(f"No congressional county crosswalk for {county}")
+        top_district, top_weight = max(weights, key=lambda item: item[1])
+        if top_weight >= CONGRESSIONAL_WHOLE_COUNTY_THRESHOLD:
+            diagnostics["whole_counties"] += 1
+            for party in parties:
+                district_votes[top_district][party] += int(official.get(party, 0))
+            continue
+
+        diagnostics["split_counties"] += 1
+        # Drop topology noise before allocating a genuinely split county.
+        weights = [(district, weight) for district, weight in weights if weight > CONGRESSIONAL_SLIVER_THRESHOLD]
+        weight_total = sum(weight for _district, weight in weights)
+        weights = [(district, weight / weight_total) for district, weight in weights]
+        raw: Dict[int, Dict[str, float]] = defaultdict(lambda: {p: 0.0 for p in parties})
+        for precinct, votes in rows_by_county.get(county, []):
+            diagnostics["split_precinct_rows"] += 1
+            vote_total = sum(int(votes.get(p, 0)) for p in parties)
+            diagnostics["split_precinct_votes"] += vote_total
+            allowed = {district for district, _weight in weights}
+            row_weights = [
+                (district, weight)
+                for district, weight in precinct_weights_for(county, precinct)
+                if district in allowed and weight > 0
+            ]
+            row_weight_total = sum(weight for _district, weight in row_weights)
+            if row_weights:
+                row_weights = [(district, weight / row_weight_total) for district, weight in row_weights]
+                diagnostics["split_precinct_geom_matches"] += 1
+                diagnostics["split_precinct_matched_votes"] += vote_total
+            else:
+                row_weights = weights
+            for district, weight in row_weights:
+                for party in parties:
+                    raw[district][party] += int(votes.get(party, 0)) * float(weight)
+
+        if not raw:
+            diagnostics["split_counties_without_precinct_votes"].append(county)
+        dra_pattern = (dra_split_patterns or {}).get(county)
+        if dra_pattern:
+            diagnostics["split_counties_dra_weighted"].append(county)
+        for party in parties:
+            target = int(official.get(party, 0))
+            pattern = dra_pattern if dra_pattern and sum(dra_pattern.get(d, {}).get(party, 0) for d, _w in weights) > 0 else raw
+            source_total = sum(pattern.get(d, {}).get(party, 0) for d, _weight in weights)
+            if source_total > 0:
+                shares = {d: pattern.get(d, {}).get(party, 0) / source_total for d, _weight in weights}
+            else:
+                shares = {d: weight for d, weight in weights}
+            allocated = apportion_integer_votes({d: target * share for d, share in shares.items()}, target)
+            for district, votes in allocated.items():
+                district_votes[district][party] += votes
+
+    for party in parties:
+        expected = sum(int(v.get(party, 0)) for v in county_votes.values())
+        actual = sum(v[party] for v in district_votes.values())
+        if actual != expected:
+            raise AssertionError(f"Congressional {party} votes do not conserve: {actual} != {expected}")
+    return district_votes, diagnostics
+
+
 def write_json(path: Path, data: Dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -1584,6 +1699,20 @@ def build_outputs() -> None:
             if rep_name:
                 candidate_votes[(2024, contest_type, "rep")][rep_name] = rep_total
 
+    # The current OpenElections inputs contain duplicate 2020 precinct totals
+    # for some counties. Preserve the established county contest totals as the
+    # 2020 county authority before building any district allocation.
+    if COUNTY_TOTALS_2020_ANCHOR.exists():
+        anchor = json.loads(COUNTY_TOTALS_2020_ANCHOR.read_text(encoding="utf-8"))
+        for contest_type, by_county in (anchor.get("contests") or {}).items():
+            if set(by_county) != {c.name for c in counties}:
+                raise ValueError(f"Incomplete 2020 county totals anchor: {contest_type}")
+            for county, votes in by_county.items():
+                county_votes[(2020, contest_type, county)] = {
+                    party: int(votes.get(party, 0)) for party in ("dem", "rep", "other")
+                }
+            coverage[(2020, contest_type)] = set(by_county)
+
     # Build contest slices + manifests + aggregated fallback JSON.
     contest_manifest_files: List[Dict[str, Any]] = []
     district_manifest_files: List[Dict[str, Any]] = []
@@ -1634,6 +1763,65 @@ def build_outputs() -> None:
         weights = precinct_to_district_area_weights(geom, district_index)
         cache[key] = weights
         return weights
+
+    # DRA VTD vote patterns cover many recent contests more completely than the
+    # OpenElections precinct rows. Use them only for a split county when at least
+    # 95% of that county's DRA votes match a congressional precinct geometry.
+    dra_split_patterns: Dict[Tuple[int, str], Dict[str, Dict[int, Dict[str, float]]]] = defaultdict(dict)
+    if DRA_VTD20_GEOJSON.exists():
+        county_name_by_fp = {c.countyfp: c.name for c in counties}
+        split_counties = {
+            county for county, weights in county_weights_by_scope["congressional"].items()
+            if max(weight for _district, weight in weights) < CONGRESSIONAL_WHOLE_COUNTY_THRESHOLD
+        }
+        dra_raw: Dict[Tuple[int, str, str], Dict[int, Dict[str, float]]] = defaultdict(
+            lambda: defaultdict(lambda: {"dem": 0.0, "rep": 0.0, "other": 0.0})
+        )
+        dra_total: Dict[Tuple[int, str, str], float] = defaultdict(float)
+        dra_matched: Dict[Tuple[int, str, str], float] = defaultdict(float)
+        dra_features = json.loads(DRA_VTD20_GEOJSON.read_text(encoding="utf-8")).get("features", [])
+        for feature in dra_features:
+            props = feature.get("properties") or {}
+            geoid = str(props.get("id") or "")
+            county = county_name_by_fp.get(geoid[2:5]) if len(geoid) >= 5 else None
+            if county not in split_counties:
+                continue
+            name = str(props.get("name") or "")
+            allowed = {
+                district for district, weight in county_weights_by_scope["congressional"][county]
+                if weight > CONGRESSIONAL_SLIVER_THRESHOLD
+            }
+            row_weights = [
+                (district, weight)
+                for district, weight in lookup_precinct_scope_weights("congressional", county, name)
+                if district in allowed and weight > 0
+            ]
+            row_weight_total = sum(weight for _district, weight in row_weights)
+            for (year, contest_type), dataset_key in DRA_CONGRESSIONAL_DATASETS.items():
+                dataset = (props.get("datasets") or {}).get(dataset_key)
+                if not isinstance(dataset, dict):
+                    continue
+                dem = max(0.0, float(dataset.get("Dem") or 0))
+                rep = max(0.0, float(dataset.get("Rep") or 0))
+                total = max(0.0, float(dataset.get("Total") or (dem + rep)))
+                if total <= 0:
+                    continue
+                other = max(0.0, total - dem - rep)
+                key = (year, contest_type, county)
+                dra_total[key] += total
+                if not row_weights:
+                    continue
+                dra_matched[key] += total
+                for district, weight in row_weights:
+                    row = dra_raw[key][district]
+                    share = weight / row_weight_total
+                    row["dem"] += dem * share
+                    row["rep"] += rep * share
+                    row["other"] += other * share
+        for (year, contest_type, county), total in dra_total.items():
+            if total > 0 and dra_matched[(year, contest_type, county)] / total >= 0.95:
+                dra_split_patterns[(year, contest_type)][county] = dra_raw[(year, contest_type, county)]
+        del dra_features
 
     for (year, contest_type), by_county in sorted(grouped.items()):
         coverage_counties = len(coverage.get((year, contest_type), set()))
@@ -1818,12 +2006,29 @@ def build_outputs() -> None:
                     for p in parties:
                         district_float[district_num][p] += float(leftover[p]) * float(w)
 
-            if not district_float:
-                continue
-
-            dem_int = apportion_integer_votes({d: v["dem"] for d, v in district_float.items()}, dem_total)
-            rep_int = apportion_integer_votes({d: v["rep"] for d, v in district_float.items()}, rep_total)
-            oth_int = apportion_integer_votes({d: v["other"] for d, v in district_float.items()}, other_total)
+            congressional_diagnostics: Dict[str, Any] = {}
+            county_constrained = (
+                scope == "congressional"
+                and coverage_counties == INDIANA_COUNTY_COUNT
+                and not imputed_counties
+            )
+            if county_constrained:
+                constrained_votes, congressional_diagnostics = allocate_congressional_county_votes(
+                    by_county,
+                    precinct_rows,
+                    scope_weights,
+                    lambda county, precinct: lookup_precinct_scope_weights(scope, county, precinct),
+                    dra_split_patterns.get((year, contest_type)),
+                )
+                dem_int = {d: v["dem"] for d, v in constrained_votes.items()}
+                rep_int = {d: v["rep"] for d, v in constrained_votes.items()}
+                oth_int = {d: v["other"] for d, v in constrained_votes.items()}
+            else:
+                if not district_float:
+                    continue
+                dem_int = apportion_integer_votes({d: v["dem"] for d, v in district_float.items()}, dem_total)
+                rep_int = apportion_integer_votes({d: v["rep"] for d, v in district_float.items()}, rep_total)
+                oth_int = apportion_integer_votes({d: v["other"] for d, v in district_float.items()}, other_total)
 
             district_results = {}
             for d in sorted(set(dem_int.keys()) | set(rep_int.keys()) | set(oth_int.keys())):
@@ -1852,6 +2057,8 @@ def build_outputs() -> None:
             allocation = "county_area_weighted_from_statewide_contest"
             if precinct_geom_match > 0:
                 allocation = "precinct_area_weighted_from_vtd20_precincts"
+            if county_constrained:
+                allocation = "county_constrained_whole_county_exact_split_precinct_weighted"
 
             district_meta: Dict[str, Any] = {
                 "scope": scope,
@@ -1862,7 +2069,16 @@ def build_outputs() -> None:
                 "allocation": allocation,
                 "precinct_rows": precinct_row_count,
             }
-            if precinct_row_count:
+            if county_constrained:
+                district_meta["whole_county_threshold"] = CONGRESSIONAL_WHOLE_COUNTY_THRESHOLD
+                district_meta["split_county_sliver_threshold"] = CONGRESSIONAL_SLIVER_THRESHOLD
+                district_meta.update(congressional_diagnostics)
+                split_votes = congressional_diagnostics["split_precinct_votes"]
+                if split_votes:
+                    district_meta["split_precinct_geom_match_vote_pct"] = round(
+                        100.0 * congressional_diagnostics["split_precinct_matched_votes"] / split_votes, 2
+                    )
+            elif precinct_row_count:
                 district_meta["precinct_geom_match_pct"] = round((precinct_geom_match / precinct_row_count) * 100.0, 2)
             if imputed_counties:
                 district_meta["imputed_count"] = len(imputed_counties)

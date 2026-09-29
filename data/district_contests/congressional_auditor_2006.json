@@ -5,8 +5,27 @@
     "year": 2006,
     "districts": 9,
     "match_coverage_pct": 100.0,
-    "allocation": "county_area_weighted_from_statewide_contest",
-    "precinct_rows": 0
+    "allocation": "county_constrained_whole_county_exact_split_precinct_weighted",
+    "precinct_rows": 0,
+    "whole_county_threshold": 0.999,
+    "split_county_sliver_threshold": 0.001,
+    "whole_counties": 84,
+    "split_counties": 8,
+    "split_precinct_rows": 0,
+    "split_precinct_geom_matches": 0,
+    "split_precinct_votes": 0,
+    "split_precinct_matched_votes": 0,
+    "split_counties_without_precinct_votes": [
+      "Bartholomew",
+      "Cass",
+      "Fountain",
+      "Howard",
+      "Kosciusko",
+      "LaPorte",
+      "Marion",
+      "Randolph"
+    ],
+    "split_counties_dra_weighted": []
   },
   "general": {
     "results": {
@@ -47,14 +66,14 @@
         "color": "#dc2626"
       },
       "4": {
-        "dem_votes": 61581,
+        "dem_votes": 61582,
         "rep_votes": 95081,
         "other_votes": 0,
-        "total_votes": 156662,
+        "total_votes": 156663,
         "dem_candidate": "Judy Anderson",
         "rep_candidate": "Tim Berry",
-        "margin": 33500,
-        "margin_pct": 21.3836,
+        "margin": 33499,
+        "margin_pct": 21.3828,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -71,14 +90,14 @@
         "color": "#dc2626"
       },
       "6": {
-        "dem_votes": 81075,
+        "dem_votes": 81074,
         "rep_votes": 100046,
         "other_votes": 0,
-        "total_votes": 181121,
+        "total_votes": 181120,
         "dem_candidate": "Judy Anderson",
         "rep_candidate": "Tim Berry",
-        "margin": 18971,
-        "margin_pct": 10.4742,
+        "margin": 18972,
+        "margin_pct": 10.4748,
         "winner": "REP",
         "color": "#dc2626"
       },

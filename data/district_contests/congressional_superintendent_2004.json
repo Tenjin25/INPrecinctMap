@@ -5,8 +5,27 @@
     "year": 2004,
     "districts": 9,
     "match_coverage_pct": 100.0,
-    "allocation": "county_area_weighted_from_statewide_contest",
-    "precinct_rows": 0
+    "allocation": "county_constrained_whole_county_exact_split_precinct_weighted",
+    "precinct_rows": 0,
+    "whole_county_threshold": 0.999,
+    "split_county_sliver_threshold": 0.001,
+    "whole_counties": 84,
+    "split_counties": 8,
+    "split_precinct_rows": 0,
+    "split_precinct_geom_matches": 0,
+    "split_precinct_votes": 0,
+    "split_precinct_matched_votes": 0,
+    "split_counties_without_precinct_votes": [
+      "Bartholomew",
+      "Cass",
+      "Fountain",
+      "Howard",
+      "Kosciusko",
+      "LaPorte",
+      "Marion",
+      "Randolph"
+    ],
+    "split_counties_dra_weighted": []
   },
   "general": {
     "results": {
@@ -23,14 +42,14 @@
         "color": "#2563eb"
       },
       "2": {
-        "dem_votes": 113887,
-        "rep_votes": 160737,
+        "dem_votes": 113888,
+        "rep_votes": 160736,
         "other_votes": 8224,
         "total_votes": 282848,
         "dem_candidate": "Susan Williams",
         "rep_candidate": "Suellen Reed",
-        "margin": 46850,
-        "margin_pct": 16.5637,
+        "margin": 46848,
+        "margin_pct": 16.563,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -49,12 +68,12 @@
       "4": {
         "dem_votes": 73074,
         "rep_votes": 156737,
-        "other_votes": 8508,
-        "total_votes": 238319,
+        "other_votes": 8507,
+        "total_votes": 238318,
         "dem_candidate": "Susan Williams",
         "rep_candidate": "Suellen Reed",
         "margin": 83663,
-        "margin_pct": 35.1055,
+        "margin_pct": 35.1056,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -71,14 +90,14 @@
         "color": "#dc2626"
       },
       "6": {
-        "dem_votes": 103168,
-        "rep_votes": 165255,
-        "other_votes": 8577,
-        "total_votes": 277000,
+        "dem_votes": 103167,
+        "rep_votes": 165256,
+        "other_votes": 8578,
+        "total_votes": 277001,
         "dem_candidate": "Susan Williams",
         "rep_candidate": "Suellen Reed",
-        "margin": 62087,
-        "margin_pct": 22.4141,
+        "margin": 62089,
+        "margin_pct": 22.4147,
         "winner": "REP",
         "color": "#dc2626"
       },
