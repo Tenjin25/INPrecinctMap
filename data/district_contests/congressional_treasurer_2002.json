@@ -5,8 +5,27 @@
     "year": 2002,
     "districts": 9,
     "match_coverage_pct": 100.0,
-    "allocation": "county_area_weighted_from_statewide_contest",
-    "precinct_rows": 0
+    "allocation": "county_constrained_whole_county_exact_split_precinct_weighted",
+    "precinct_rows": 0,
+    "whole_county_threshold": 0.999,
+    "split_county_sliver_threshold": 0.001,
+    "whole_counties": 84,
+    "split_counties": 8,
+    "split_precinct_rows": 0,
+    "split_precinct_geom_matches": 0,
+    "split_precinct_votes": 0,
+    "split_precinct_matched_votes": 0,
+    "split_counties_without_precinct_votes": [
+      "Bartholomew",
+      "Cass",
+      "Fountain",
+      "Howard",
+      "Kosciusko",
+      "LaPorte",
+      "Marion",
+      "Randolph"
+    ],
+    "split_counties_dra_weighted": []
   },
   "general": {
     "results": {
@@ -37,24 +56,24 @@
       "3": {
         "dem_votes": 41658,
         "rep_votes": 101479,
-        "other_votes": 6474,
-        "total_votes": 149611,
+        "other_votes": 6473,
+        "total_votes": 149610,
         "dem_candidate": "Day Smith",
         "rep_candidate": "Tim Berry",
         "margin": 59821,
-        "margin_pct": 39.9844,
+        "margin_pct": 39.9846,
         "winner": "REP",
         "color": "#dc2626"
       },
       "4": {
-        "dem_votes": 39313,
+        "dem_votes": 39312,
         "rep_votes": 96602,
         "other_votes": 7760,
-        "total_votes": 143675,
+        "total_votes": 143674,
         "dem_candidate": "Day Smith",
         "rep_candidate": "Tim Berry",
-        "margin": 57289,
-        "margin_pct": 39.874,
+        "margin": 57290,
+        "margin_pct": 39.875,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -71,14 +90,14 @@
         "color": "#dc2626"
       },
       "6": {
-        "dem_votes": 58913,
+        "dem_votes": 58914,
         "rep_votes": 102710,
-        "other_votes": 7486,
-        "total_votes": 169109,
+        "other_votes": 7487,
+        "total_votes": 169111,
         "dem_candidate": "Day Smith",
         "rep_candidate": "Tim Berry",
-        "margin": 43797,
-        "margin_pct": 25.8987,
+        "margin": 43796,
+        "margin_pct": 25.8978,
         "winner": "REP",
         "color": "#dc2626"
       },

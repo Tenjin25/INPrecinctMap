@@ -643,6 +643,9 @@ function main() {
     const jsonPath = path.join(DISTRICT_CONTESTS_DIR, jsonName);
     const beforeText = fs.readFileSync(jsonPath, "utf8");
     const slice = JSON.parse(beforeText);
+    // A district-wide calibration would undo the county-level vote conservation
+    // in the congressional builder. Keep its whole/split county allocation.
+    if (slice?.meta?.allocation === "county_constrained_whole_county_exact_split_precinct_weighted") continue;
     const priorGeneratedOn =
       (slice?.meta?.calibration && typeof slice.meta.calibration === "object"
         ? slice.meta.calibration.generated_on

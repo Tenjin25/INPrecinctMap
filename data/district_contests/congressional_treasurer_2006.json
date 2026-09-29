@@ -5,8 +5,27 @@
     "year": 2006,
     "districts": 9,
     "match_coverage_pct": 100.0,
-    "allocation": "county_area_weighted_from_statewide_contest",
-    "precinct_rows": 0
+    "allocation": "county_constrained_whole_county_exact_split_precinct_weighted",
+    "precinct_rows": 0,
+    "whole_county_threshold": 0.999,
+    "split_county_sliver_threshold": 0.001,
+    "whole_counties": 84,
+    "split_counties": 8,
+    "split_precinct_rows": 0,
+    "split_precinct_geom_matches": 0,
+    "split_precinct_votes": 0,
+    "split_precinct_matched_votes": 0,
+    "split_counties_without_precinct_votes": [
+      "Bartholomew",
+      "Cass",
+      "Fountain",
+      "Howard",
+      "Kosciusko",
+      "LaPorte",
+      "Marion",
+      "Randolph"
+    ],
+    "split_counties_dra_weighted": []
   },
   "general": {
     "results": {
@@ -23,14 +42,14 @@
         "color": "#2563eb"
       },
       "2": {
-        "dem_votes": 100302,
-        "rep_votes": 106676,
+        "dem_votes": 100303,
+        "rep_votes": 106677,
         "other_votes": 0,
-        "total_votes": 206978,
+        "total_votes": 206980,
         "dem_candidate": "Michael W Griffin",
         "rep_candidate": "Richard E Mourdock",
         "margin": 6374,
-        "margin_pct": 3.0796,
+        "margin_pct": 3.0795,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -71,14 +90,14 @@
         "color": "#dc2626"
       },
       "6": {
-        "dem_votes": 79407,
-        "rep_votes": 100028,
+        "dem_votes": 79406,
+        "rep_votes": 100027,
         "other_votes": 0,
-        "total_votes": 179435,
+        "total_votes": 179433,
         "dem_candidate": "Michael W Griffin",
         "rep_candidate": "Richard E Mourdock",
         "margin": 20621,
-        "margin_pct": 11.4922,
+        "margin_pct": 11.4923,
         "winner": "REP",
         "color": "#dc2626"
       },

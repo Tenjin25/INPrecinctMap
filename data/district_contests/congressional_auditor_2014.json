@@ -5,9 +5,19 @@
     "year": 2014,
     "districts": 9,
     "match_coverage_pct": 100.0,
-    "allocation": "precinct_area_weighted_from_vtd20_precincts",
+    "allocation": "county_constrained_whole_county_exact_split_precinct_weighted",
     "precinct_rows": 5298,
-    "precinct_geom_match_pct": 66.21
+    "whole_county_threshold": 0.999,
+    "split_county_sliver_threshold": 0.001,
+    "whole_counties": 84,
+    "split_counties": 8,
+    "split_precinct_rows": 964,
+    "split_precinct_geom_matches": 623,
+    "split_precinct_votes": 251221,
+    "split_precinct_matched_votes": 176345,
+    "split_counties_without_precinct_votes": [],
+    "split_counties_dra_weighted": [],
+    "split_precinct_geom_match_vote_pct": 70.2
   },
   "general": {
     "results": {
@@ -24,14 +34,14 @@
         "color": "#2563eb"
       },
       "2": {
-        "dem_votes": 52566,
-        "rep_votes": 95378,
+        "dem_votes": 52565,
+        "rep_votes": 95377,
         "other_votes": 6662,
-        "total_votes": 154606,
+        "total_votes": 154604,
         "dem_candidate": "Michael Claytor",
         "rep_candidate": "Suzanne Crouch",
         "margin": 42812,
-        "margin_pct": 27.691,
+        "margin_pct": 27.6914,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -48,14 +58,14 @@
         "color": "#dc2626"
       },
       "4": {
-        "dem_votes": 34372,
-        "rep_votes": 93055,
+        "dem_votes": 34373,
+        "rep_votes": 93056,
         "other_votes": 6746,
-        "total_votes": 134173,
+        "total_votes": 134175,
         "dem_candidate": "Michael Claytor",
         "rep_candidate": "Suzanne Crouch",
         "margin": 58683,
-        "margin_pct": 43.7368,
+        "margin_pct": 43.7362,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -72,26 +82,26 @@
         "color": "#dc2626"
       },
       "6": {
-        "dem_votes": 39636,
+        "dem_votes": 39635,
         "rep_votes": 89223,
         "other_votes": 6579,
-        "total_votes": 135438,
+        "total_votes": 135437,
         "dem_candidate": "Michael Claytor",
         "rep_candidate": "Suzanne Crouch",
-        "margin": 49587,
-        "margin_pct": 36.6123,
+        "margin": 49588,
+        "margin_pct": 36.6133,
         "winner": "REP",
         "color": "#dc2626"
       },
       "7": {
-        "dem_votes": 65092,
+        "dem_votes": 65093,
         "rep_votes": 46318,
         "other_votes": 3999,
-        "total_votes": 115409,
+        "total_votes": 115410,
         "dem_candidate": "Michael Claytor",
         "rep_candidate": "Suzanne Crouch",
-        "margin": -18774,
-        "margin_pct": -16.2674,
+        "margin": -18775,
+        "margin_pct": -16.2681,
         "winner": "DEM",
         "color": "#2563eb"
       },
