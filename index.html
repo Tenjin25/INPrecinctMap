@@ -11292,9 +11292,8 @@ document.addEventListener('DOMContentLoaded', function() {
         : [];
       if (!years.length) return [];
       if (ct !== 'us_senate') return years.slice().sort((a, b) => b - a);
-      const preferred = [y - 6, y - 12].filter(v => years.includes(v));
-      const rest = years.filter(v => !preferred.includes(v)).sort((a, b) => b - a);
-      return [...preferred, ...rest];
+      // Compare only elections for the same Senate seat, which recurs every six years.
+      return years.filter(v => (y - v) % 6 === 0).sort((a, b) => b - a);
     }
 
     function getVoteDeltaPairsForTooltip(contestType, toYear, maxPairs = 2) {
@@ -11305,43 +11304,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const years = getAvailableContestYearsForType(ct);
       if (Array.isArray(years) && years.length) {
-        let prev = null;
-        // Prefer "last time this contest was up" when a seat/class cadence exists.
-        // US Senate is a special case: the same office repeats every 6 years, so
-        // the generic series contains elections every 2 years. For deltas, prefer same-class y-6
-        // when available, otherwise fall back to the most recent earlier year.
-        if (ct === 'us_senate') {
-          const preferred = y - 6;
-          if (years.includes(preferred)) prev = preferred;
-        }
-        if (!Number.isFinite(prev)) {
-          for (let i = years.length - 1; i >= 0; i -= 1) {
-            const yr = Number(years[i]);
-            if (!Number.isFinite(yr)) continue;
-            if (yr < y) { prev = yr; break; }
-          }
-        }
+        const priorYears = getPriorContestYearsFromAvailableYears(ct, y, years);
+        const prev = priorYears[0];
         if (Number.isFinite(prev)) {
           pairs.push({ from: prev, to: y });
           if (pairs.length >= (Number(maxPairs) || 0)) return pairs;
 
-          let prevPrev = null;
-          if (ct === 'us_senate') {
-            const preferredPrev = prev - 6;
-            if (years.includes(preferredPrev)) prevPrev = preferredPrev;
-          }
-          if (!Number.isFinite(prevPrev)) {
-            for (let i = years.length - 1; i >= 0; i -= 1) {
-              const yr = Number(years[i]);
-              if (!Number.isFinite(yr)) continue;
-              if (yr < prev) { prevPrev = yr; break; }
-            }
-          }
+          const prevPrev = getPriorContestYearsFromAvailableYears(ct, prev, years)[0];
           if (Number.isFinite(prevPrev)) pairs.push({ from: prevPrev, to: prev });
           return pairs.slice(0, Math.max(0, Number(maxPairs) || 0));
         }
       }
 
+      // Do not compare a Senate race with a different seat when no same-seat history exists.
+      if (ct === 'us_senate') return [];
       // Fallback: assume 4-year cycles (presidential / many statewide) and let strict loaders decide availability.
       const fy = y - 4;
       if (fy >= 2000) pairs.push({ from: fy, to: y });
