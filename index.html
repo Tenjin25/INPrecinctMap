@@ -7166,7 +7166,7 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     color: #1d4ed8;
   }
 
-  .legend-scale-shell .legend-tier-list {
+  .legend-tier-list {
     display: grid;
     gap: 4px;
     max-height: min(42vh, 320px);
@@ -7174,7 +7174,7 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     padding-right: 2px;
   }
 
-  .legend-scale-shell .legend-tier-row {
+  .legend-tier-row {
     display: grid;
     grid-template-columns: 16px minmax(0, 1fr) auto;
     align-items: center;
@@ -7185,21 +7185,32 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     background: rgba(255, 255, 255, 0.72);
   }
 
-  .legend-scale-shell .legend-tier-row .legend-color {
+  .legend-tier-row .legend-color {
+    display: block;
     width: 16px;
     height: 16px;
-    border-radius: 5px;
+    border-radius: 4px;
     margin: 0;
   }
 
-  .legend-scale-shell .legend-tier-label,
-  .legend-scale-shell .legend-tier-range {
-    font-size: 11px;
-    font-weight: 700;
+  .legend-tier-label {
+    font-size: 12px;
+    font-weight: 800;
+    color: #334155;
+    letter-spacing: 0.01em;
   }
 
-  .legend-scale-shell .legend-tier-range {
+  .legend-tier-label.rep { color: #b91c1c; }
+  .legend-tier-label.dem { color: #1d4ed8; }
+  .legend-tier-label.tie { color: #64748b; }
+
+  .legend-tier-range {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
     color: #64748b;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
   }
 
   .legend-chip-row {
