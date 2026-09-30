@@ -10408,7 +10408,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-09-29-congressional-senate-names-v1';
+    const DATA_CACHE_BUSTER = '2026-09-30-margin-tier-rounding-v1';
         const APP_BUILD_ID = '2026-09-29-congressional-senate-names-v1';
 
     function withCacheBuster(path) {
@@ -20996,8 +20996,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     function competitivenessMarginValue(marginPct) {
       const pct = Math.abs(Number(marginPct) || 0);
-      // Classify the same rounded value shown to users at tier boundaries.
-      return roundForDisplay(pct, marginDisplayDigits(pct));
+      // Classify the one-decimal margin shown in county-facing summaries.
+      return roundForDisplay(pct, 1);
     }
 
     function marginPctDisplayValue(repVotes, demVotes, totalVotes) {
