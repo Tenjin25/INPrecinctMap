@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "auditor",
+    "year": 2026,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_with_county_area_fallback",
+    "precinct_rows": 4959,
+    "precinct_geom_match_pct": 66.63,
+    "precinct_geom_match_vote_pct": 71.1,
+    "result_status": "unofficial_incomplete",
+    "as_of_date": "2026-11-04",
+    "note": "Election-night snapshot; outstanding mail and overseas ballots may not be included.",
+    "source": "Data/AllOfficeResults2026.json"
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 121800,
+        "rep_votes": 73791,
+        "other_votes": 4241,
+        "total_votes": 199832,
+        "dem_candidate": "Jessica Bailey",
+        "rep_candidate": "Elise Nieshalla",
+        "margin": -48009,
+        "margin_pct": -24.0247,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 84058,
+        "rep_votes": 92976,
+        "other_votes": 4674,
+        "total_votes": 181708,
+        "dem_candidate": "Jessica Bailey",
+        "rep_candidate": "Elise Nieshalla",
+        "margin": 8918,
+        "margin_pct": 4.9079,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 84464,
+        "rep_votes": 108520,
+        "other_votes": 6090,
+        "total_votes": 199074,
+        "dem_candidate": "Jessica Bailey",
+        "rep_candidate": "Elise Nieshalla",
+        "margin": 24056,
+        "margin_pct": 12.0839,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 92592,
+        "rep_votes": 111080,
+        "other_votes": 6999,
+        "total_votes": 210671,
+        "dem_candidate": "Jessica Bailey",
+        "rep_candidate": "Elise Nieshalla",
+        "margin": 18488,
+        "margin_pct": 8.7758,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 124758,
+        "rep_votes": 126304,
+        "other_votes": 8009,
+        "total_votes": 259071,
+        "dem_candidate": "Jessica Bailey",
+        "rep_candidate": "Elise Nieshalla",
+        "margin": 1546,
+        "margin_pct": 0.5967,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 71247,
+        "rep_votes": 88873,
+        "other_votes": 5665,
+        "total_votes": 165785,
+        "dem_candidate": "Jessica Bailey",
+        "rep_candidate": "Elise Nieshalla",
+        "margin": 17626,
+        "margin_pct": 10.6318,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 26531,
+        "rep_votes": 12968,
+        "other_votes": 1302,
+        "total_votes": 40801,
+        "dem_candidate": "Jessica Bailey",
+        "rep_candidate": "Elise Nieshalla",
+        "margin": -13563,
+        "margin_pct": -33.2418,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 86406,
+        "rep_votes": 115091,
+        "other_votes": 6413,
+        "total_votes": 207910,
+        "dem_candidate": "Jessica Bailey",
+        "rep_candidate": "Elise Nieshalla",
+        "margin": 28685,
+        "margin_pct": 13.7968,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 98825,
+        "rep_votes": 116030,
+        "other_votes": 7227,
+        "total_votes": 222082,
+        "dem_candidate": "Jessica Bailey",
+        "rep_candidate": "Elise Nieshalla",
+        "margin": 17205,
+        "margin_pct": 7.7471,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

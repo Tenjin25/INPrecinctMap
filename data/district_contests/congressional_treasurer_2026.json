@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "treasurer",
+    "year": 2026,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_area_weighted_with_county_area_fallback",
+    "precinct_rows": 4879,
+    "precinct_geom_match_pct": 66.1,
+    "precinct_geom_match_vote_pct": 70.69,
+    "result_status": "unofficial_incomplete",
+    "as_of_date": "2026-11-04",
+    "note": "Election-night snapshot; outstanding mail and overseas ballots may not be included.",
+    "source": "Data/AllOfficeResults2026.json"
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 118912,
+        "rep_votes": 79715,
+        "other_votes": 0,
+        "total_votes": 198627,
+        "dem_candidate": "Coumba Kebe",
+        "rep_candidate": "Daniel Elliott",
+        "margin": -39197,
+        "margin_pct": -19.734,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 82357,
+        "rep_votes": 99477,
+        "other_votes": 0,
+        "total_votes": 181834,
+        "dem_candidate": "Coumba Kebe",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 17120,
+        "margin_pct": 9.4152,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 82738,
+        "rep_votes": 115447,
+        "other_votes": 0,
+        "total_votes": 198185,
+        "dem_candidate": "Coumba Kebe",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 32709,
+        "margin_pct": 16.5043,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "4": {
+        "dem_votes": 91557,
+        "rep_votes": 118465,
+        "other_votes": 0,
+        "total_votes": 210022,
+        "dem_candidate": "Coumba Kebe",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 26908,
+        "margin_pct": 12.812,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 122907,
+        "rep_votes": 135740,
+        "other_votes": 0,
+        "total_votes": 258647,
+        "dem_candidate": "Coumba Kebe",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 12833,
+        "margin_pct": 4.9616,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "6": {
+        "dem_votes": 70237,
+        "rep_votes": 95631,
+        "other_votes": 0,
+        "total_votes": 165868,
+        "dem_candidate": "Coumba Kebe",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 25394,
+        "margin_pct": 15.3098,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 26693,
+        "rep_votes": 14118,
+        "other_votes": 0,
+        "total_votes": 40811,
+        "dem_candidate": "Coumba Kebe",
+        "rep_candidate": "Daniel Elliott",
+        "margin": -12575,
+        "margin_pct": -30.8128,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 68954,
+        "rep_votes": 112558,
+        "other_votes": 0,
+        "total_votes": 181512,
+        "dem_candidate": "Coumba Kebe",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 43604,
+        "margin_pct": 24.0227,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 95272,
+        "rep_votes": 125935,
+        "other_votes": 0,
+        "total_votes": 221207,
+        "dem_candidate": "Coumba Kebe",
+        "rep_candidate": "Daniel Elliott",
+        "margin": 30663,
+        "margin_pct": 13.8617,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}

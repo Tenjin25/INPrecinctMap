@@ -73,6 +73,9 @@ def build() -> None:
             meta_out["imputed_from_contest"] = str(meta.get("imputed_from_contest"))
         if isinstance(meta.get("imputed_counties"), list):
             meta_out["imputed_counties"] = [str(x) for x in meta.get("imputed_counties")]
+        for key in ("result_status", "as_of_date", "note", "source"):
+            if meta.get(key):
+                meta_out[key] = str(meta.get(key))
         year_node[contest_type] = {
             "meta": meta_out,
             "rows": rows if isinstance(rows, list) else [],
@@ -91,7 +94,7 @@ def build() -> None:
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUT_PATH.write_text(json.dumps(out, separators=(",", ":")), encoding="utf-8")
+    OUT_PATH.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Wrote {OUT_PATH}")
 
 

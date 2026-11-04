@@ -62157,6 +62157,3848 @@
           }
         }
       }
+    },
+    "2026": {
+      "auditor": {
+        "auditor": {
+          "results": {
+            "Adams": {
+              "dem_votes": 2566,
+              "rep_votes": 5543,
+              "other_votes": 252,
+              "total_votes": 8361,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2977,
+              "margin_pct": 35.6058,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Allen": {
+              "dem_votes": 55052,
+              "rep_votes": 46546,
+              "other_votes": 2862,
+              "total_votes": 104460,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -8506,
+              "margin_pct": -8.1428,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Bartholomew": {
+              "dem_votes": 10173,
+              "rep_votes": 11924,
+              "other_votes": 743,
+              "total_votes": 22840,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1751,
+              "margin_pct": 7.6664,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Benton": {
+              "dem_votes": 753,
+              "rep_votes": 1472,
+              "other_votes": 68,
+              "total_votes": 2293,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 719,
+              "margin_pct": 31.3563,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Blackford": {
+              "dem_votes": 922,
+              "rep_votes": 1913,
+              "other_votes": 185,
+              "total_votes": 3020,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 991,
+              "margin_pct": 32.8146,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Boone": {
+              "dem_votes": 13449,
+              "rep_votes": 13767,
+              "other_votes": 876,
+              "total_votes": 28092,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 318,
+              "margin_pct": 1.132,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Brown": {
+              "dem_votes": 2631,
+              "rep_votes": 3442,
+              "other_votes": 240,
+              "total_votes": 6313,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 811,
+              "margin_pct": 12.8465,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Carroll": {
+              "dem_votes": 1711,
+              "rep_votes": 3566,
+              "other_votes": 167,
+              "total_votes": 5444,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1855,
+              "margin_pct": 34.0742,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Cass": {
+              "dem_votes": 3357,
+              "rep_votes": 5765,
+              "other_votes": 345,
+              "total_votes": 9467,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2408,
+              "margin_pct": 25.4357,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Clark": {
+              "dem_votes": 18973,
+              "rep_votes": 17781,
+              "other_votes": 1289,
+              "total_votes": 38043,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -1192,
+              "margin_pct": -3.1333,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Clay": {
+              "dem_votes": 2063,
+              "rep_votes": 4659,
+              "other_votes": 225,
+              "total_votes": 6947,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2596,
+              "margin_pct": 37.3686,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Clinton": {
+              "dem_votes": 2541,
+              "rep_votes": 4457,
+              "other_votes": 260,
+              "total_votes": 7258,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1916,
+              "margin_pct": 26.3985,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Crawford": {
+              "dem_votes": 591,
+              "rep_votes": 968,
+              "other_votes": 39,
+              "total_votes": 1598,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 377,
+              "margin_pct": 23.592,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Daviess": {
+              "dem_votes": 1630,
+              "rep_votes": 4758,
+              "other_votes": 172,
+              "total_votes": 6560,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3128,
+              "margin_pct": 47.6829,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Dearborn": {
+              "dem_votes": 4031,
+              "rep_votes": 10547,
+              "other_votes": 478,
+              "total_votes": 15056,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 6516,
+              "margin_pct": 43.2784,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Decatur": {
+              "dem_votes": 1951,
+              "rep_votes": 4674,
+              "other_votes": 239,
+              "total_votes": 6864,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2723,
+              "margin_pct": 39.6707,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Dekalb": {
+              "dem_votes": 3848,
+              "rep_votes": 7395,
+              "other_votes": 388,
+              "total_votes": 11631,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3547,
+              "margin_pct": 30.4961,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Delaware": {
+              "dem_votes": 15548,
+              "rep_votes": 13741,
+              "other_votes": 940,
+              "total_votes": 30229,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -1807,
+              "margin_pct": -5.9777,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Dubois": {
+              "dem_votes": 5193,
+              "rep_votes": 8272,
+              "other_votes": 476,
+              "total_votes": 13941,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3079,
+              "margin_pct": 22.0859,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Elkhart": {
+              "dem_votes": 19349,
+              "rep_votes": 24150,
+              "other_votes": 976,
+              "total_votes": 44475,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 4801,
+              "margin_pct": 10.7948,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fayette": {
+              "dem_votes": 1541,
+              "rep_votes": 3527,
+              "other_votes": 150,
+              "total_votes": 5218,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1986,
+              "margin_pct": 38.0606,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Floyd": {
+              "dem_votes": 13942,
+              "rep_votes": 12810,
+              "other_votes": 702,
+              "total_votes": 27454,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -1132,
+              "margin_pct": -4.1233,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Fountain": {
+              "dem_votes": 1283,
+              "rep_votes": 3541,
+              "other_votes": 226,
+              "total_votes": 5050,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2258,
+              "margin_pct": 44.7129,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Franklin": {
+              "dem_votes": 1553,
+              "rep_votes": 4968,
+              "other_votes": 184,
+              "total_votes": 6705,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3415,
+              "margin_pct": 50.9321,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fulton": {
+              "dem_votes": 1687,
+              "rep_votes": 3397,
+              "other_votes": 190,
+              "total_votes": 5274,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1710,
+              "margin_pct": 32.4232,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Gibson": {
+              "dem_votes": 3058,
+              "rep_votes": 5671,
+              "other_votes": 295,
+              "total_votes": 9024,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2613,
+              "margin_pct": 28.9561,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Grant": {
+              "dem_votes": 5721,
+              "rep_votes": 10096,
+              "other_votes": 560,
+              "total_votes": 16377,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 4375,
+              "margin_pct": 26.7143,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Greene": {
+              "dem_votes": 2821,
+              "rep_votes": 5708,
+              "other_votes": 293,
+              "total_votes": 8822,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2887,
+              "margin_pct": 32.725,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hamilton": {
+              "dem_votes": 75183,
+              "rep_votes": 67186,
+              "other_votes": 3856,
+              "total_votes": 146225,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -7997,
+              "margin_pct": -5.469,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Hancock": {
+              "dem_votes": 11604,
+              "rep_votes": 15253,
+              "other_votes": 1114,
+              "total_votes": 27971,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3649,
+              "margin_pct": 13.0457,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Harrison": {
+              "dem_votes": 4673,
+              "rep_votes": 7888,
+              "other_votes": 509,
+              "total_votes": 13070,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3215,
+              "margin_pct": 24.5983,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hendricks": {
+              "dem_votes": 26765,
+              "rep_votes": 26757,
+              "other_votes": 1577,
+              "total_votes": 55099,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -8,
+              "margin_pct": -0.0145,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Henry": {
+              "dem_votes": 4408,
+              "rep_votes": 7875,
+              "other_votes": 473,
+              "total_votes": 12756,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3467,
+              "margin_pct": 27.1794,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Howard": {
+              "dem_votes": 10166,
+              "rep_votes": 13503,
+              "other_votes": 1031,
+              "total_votes": 24700,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3337,
+              "margin_pct": 13.5101,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Huntington": {
+              "dem_votes": 3391,
+              "rep_votes": 6896,
+              "other_votes": 426,
+              "total_votes": 10713,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3505,
+              "margin_pct": 32.7173,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jackson": {
+              "dem_votes": 3417,
+              "rep_votes": 6932,
+              "other_votes": 320,
+              "total_votes": 10669,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3515,
+              "margin_pct": 32.9459,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jasper": {
+              "dem_votes": 2915,
+              "rep_votes": 6110,
+              "other_votes": 261,
+              "total_votes": 9286,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3195,
+              "margin_pct": 34.4066,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jay": {
+              "dem_votes": 1476,
+              "rep_votes": 3112,
+              "other_votes": 173,
+              "total_votes": 4761,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1636,
+              "margin_pct": 34.3625,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jefferson": {
+              "dem_votes": 3719,
+              "rep_votes": 4897,
+              "other_votes": 296,
+              "total_votes": 8912,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1178,
+              "margin_pct": 13.2181,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jennings": {
+              "dem_votes": 2174,
+              "rep_votes": 4693,
+              "other_votes": 362,
+              "total_votes": 7229,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2519,
+              "margin_pct": 34.8458,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Johnson": {
+              "dem_votes": 19658,
+              "rep_votes": 25284,
+              "other_votes": 1379,
+              "total_votes": 46321,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 5626,
+              "margin_pct": 12.1457,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Knox": {
+              "dem_votes": 3086,
+              "rep_votes": 5976,
+              "other_votes": 312,
+              "total_votes": 9374,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2890,
+              "margin_pct": 30.83,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Kosciusko": {
+              "dem_votes": 5907,
+              "rep_votes": 13070,
+              "other_votes": 617,
+              "total_votes": 19594,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 7163,
+              "margin_pct": 36.5571,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Lagrange": {
+              "dem_votes": 1702,
+              "rep_votes": 4413,
+              "other_votes": 200,
+              "total_votes": 6315,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2711,
+              "margin_pct": 42.9295,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Lake": {
+              "dem_votes": 91350,
+              "rep_votes": 49368,
+              "other_votes": 2874,
+              "total_votes": 143592,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -41982,
+              "margin_pct": -29.237,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Lawrence": {
+              "dem_votes": 3936,
+              "rep_votes": 8016,
+              "other_votes": 492,
+              "total_votes": 12444,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 4080,
+              "margin_pct": 32.7869,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Madison": {
+              "dem_votes": 16601,
+              "rep_votes": 18403,
+              "other_votes": 1375,
+              "total_votes": 36379,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1802,
+              "margin_pct": 4.9534,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Marion": {
+              "dem_votes": 37776,
+              "rep_votes": 18463,
+              "other_votes": 1854,
+              "total_votes": 58093,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -19313,
+              "margin_pct": -33.245,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Marshall": {
+              "dem_votes": 4134,
+              "rep_votes": 6850,
+              "other_votes": 315,
+              "total_votes": 11299,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2716,
+              "margin_pct": 24.0375,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Martin": {
+              "dem_votes": 973,
+              "rep_votes": 2229,
+              "other_votes": 161,
+              "total_votes": 3363,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1256,
+              "margin_pct": 37.3476,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Miami": {
+              "dem_votes": 2294,
+              "rep_votes": 4926,
+              "other_votes": 340,
+              "total_votes": 7560,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2632,
+              "margin_pct": 34.8148,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Monroe": {
+              "dem_votes": 29391,
+              "rep_votes": 11261,
+              "other_votes": 1145,
+              "total_votes": 41797,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -18130,
+              "margin_pct": -43.3763,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Montgomery": {
+              "dem_votes": 3363,
+              "rep_votes": 6233,
+              "other_votes": 333,
+              "total_votes": 9929,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2870,
+              "margin_pct": 28.9052,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Morgan": {
+              "dem_votes": 6113,
+              "rep_votes": 12952,
+              "other_votes": 1035,
+              "total_votes": 20100,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 6839,
+              "margin_pct": 34.0249,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Newton": {
+              "dem_votes": 1114,
+              "rep_votes": 2477,
+              "other_votes": 158,
+              "total_votes": 3749,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1363,
+              "margin_pct": 36.3564,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Noble": {
+              "dem_votes": 3443,
+              "rep_votes": 6890,
+              "other_votes": 296,
+              "total_votes": 10629,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3447,
+              "margin_pct": 32.4301,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ohio": {
+              "dem_votes": 510,
+              "rep_votes": 1160,
+              "other_votes": 44,
+              "total_votes": 1714,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 650,
+              "margin_pct": 37.923,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Orange": {
+              "dem_votes": 1583,
+              "rep_votes": 3292,
+              "other_votes": 158,
+              "total_votes": 5033,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1709,
+              "margin_pct": 33.9559,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Owen": {
+              "dem_votes": 1964,
+              "rep_votes": 3706,
+              "other_votes": 207,
+              "total_votes": 5877,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1742,
+              "margin_pct": 29.641,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Parke": {
+              "dem_votes": 1190,
+              "rep_votes": 2945,
+              "other_votes": 151,
+              "total_votes": 4286,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1755,
+              "margin_pct": 40.9473,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Perry": {
+              "dem_votes": 3034,
+              "rep_votes": 3032,
+              "other_votes": 215,
+              "total_votes": 6281,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -2,
+              "margin_pct": -0.0318,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Pike": {
+              "dem_votes": 1124,
+              "rep_votes": 2383,
+              "other_votes": 148,
+              "total_votes": 3655,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1259,
+              "margin_pct": 34.446,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Porter": {
+              "dem_votes": 30450,
+              "rep_votes": 24423,
+              "other_votes": 1367,
+              "total_votes": 56240,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -6027,
+              "margin_pct": -10.7166,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Posey": {
+              "dem_votes": 2881,
+              "rep_votes": 4613,
+              "other_votes": 226,
+              "total_votes": 7720,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1732,
+              "margin_pct": 22.4352,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Pulaski": {
+              "dem_votes": 953,
+              "rep_votes": 2450,
+              "other_votes": 121,
+              "total_votes": 3524,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1497,
+              "margin_pct": 42.4801,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Putnam": {
+              "dem_votes": 3168,
+              "rep_votes": 6153,
+              "other_votes": 356,
+              "total_votes": 9677,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2985,
+              "margin_pct": 30.8463,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Randolph": {
+              "dem_votes": 1777,
+              "rep_votes": 3602,
+              "other_votes": 183,
+              "total_votes": 5562,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1825,
+              "margin_pct": 32.8119,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ripley": {
+              "dem_votes": 1665,
+              "rep_votes": 4807,
+              "other_votes": 187,
+              "total_votes": 6659,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3142,
+              "margin_pct": 47.1843,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Rush": {
+              "dem_votes": 1318,
+              "rep_votes": 2908,
+              "other_votes": 166,
+              "total_votes": 4392,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1590,
+              "margin_pct": 36.2022,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Scott": {
+              "dem_votes": 2233,
+              "rep_votes": 3390,
+              "other_votes": 228,
+              "total_votes": 5851,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1157,
+              "margin_pct": 19.7744,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Shelby": {
+              "dem_votes": 4080,
+              "rep_votes": 7117,
+              "other_votes": 458,
+              "total_votes": 11655,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3037,
+              "margin_pct": 26.0575,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Spencer": {
+              "dem_votes": 2398,
+              "rep_votes": 4008,
+              "other_votes": 206,
+              "total_votes": 6612,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1610,
+              "margin_pct": 24.3497,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "St. Joseph": {
+              "dem_votes": 45019,
+              "rep_votes": 29446,
+              "other_votes": 1637,
+              "total_votes": 76102,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -15573,
+              "margin_pct": -20.4633,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Starke": {
+              "dem_votes": 2064,
+              "rep_votes": 3779,
+              "other_votes": 267,
+              "total_votes": 6110,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1715,
+              "margin_pct": 28.0687,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Steuben": {
+              "dem_votes": 3443,
+              "rep_votes": 6691,
+              "other_votes": 371,
+              "total_votes": 10505,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3248,
+              "margin_pct": 30.9186,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Sullivan": {
+              "dem_votes": 1996,
+              "rep_votes": 3674,
+              "other_votes": 228,
+              "total_votes": 5898,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1678,
+              "margin_pct": 28.4503,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Switzerland": {
+              "dem_votes": 801,
+              "rep_votes": 1631,
+              "other_votes": 71,
+              "total_votes": 2503,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 830,
+              "margin_pct": 33.1602,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Tippecanoe": {
+              "dem_votes": 25519,
+              "rep_votes": 16807,
+              "other_votes": 1330,
+              "total_votes": 43656,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -8712,
+              "margin_pct": -19.956,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Tipton": {
+              "dem_votes": 1714,
+              "rep_votes": 3752,
+              "other_votes": 275,
+              "total_votes": 5741,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2038,
+              "margin_pct": 35.499,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Union": {
+              "dem_votes": 591,
+              "rep_votes": 1301,
+              "other_votes": 89,
+              "total_votes": 1981,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 710,
+              "margin_pct": 35.8405,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vanderburgh": {
+              "dem_votes": 25314,
+              "rep_votes": 21282,
+              "other_votes": 1052,
+              "total_votes": 47648,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -4032,
+              "margin_pct": -8.4621,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Vermillion": {
+              "dem_votes": 1780,
+              "rep_votes": 2435,
+              "other_votes": 148,
+              "total_votes": 4363,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 655,
+              "margin_pct": 15.0126,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vigo": {
+              "dem_votes": 13948,
+              "rep_votes": 12041,
+              "other_votes": 1050,
+              "total_votes": 27039,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -1907,
+              "margin_pct": -7.0528,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Wabash": {
+              "dem_votes": 2577,
+              "rep_votes": 5266,
+              "other_votes": 174,
+              "total_votes": 8017,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2689,
+              "margin_pct": 33.5412,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Warren": {
+              "dem_votes": 729,
+              "rep_votes": 1964,
+              "other_votes": 85,
+              "total_votes": 2778,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1235,
+              "margin_pct": 44.4564,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Warrick": {
+              "dem_votes": 9003,
+              "rep_votes": 11077,
+              "other_votes": 499,
+              "total_votes": 20579,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2074,
+              "margin_pct": 10.0782,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Washington": {
+              "dem_votes": 2484,
+              "rep_votes": 5441,
+              "other_votes": 347,
+              "total_votes": 8272,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2957,
+              "margin_pct": 35.7471,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Wayne": {
+              "dem_votes": 6885,
+              "rep_votes": 8687,
+              "other_votes": 569,
+              "total_votes": 16141,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 1802,
+              "margin_pct": 11.1641,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Wells": {
+              "dem_votes": 2197,
+              "rep_votes": 6020,
+              "other_votes": 259,
+              "total_votes": 8476,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3823,
+              "margin_pct": 45.1038,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "White": {
+              "dem_votes": 2303,
+              "rep_votes": 4335,
+              "other_votes": 238,
+              "total_votes": 6876,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 2032,
+              "margin_pct": 29.5521,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Whitley": {
+              "dem_votes": 3316,
+              "rep_votes": 7044,
+              "other_votes": 406,
+              "total_votes": 10766,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": 3728,
+              "margin_pct": 34.6275,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            }
+          }
+        }
+      },
+      "secretary_of_state": {
+        "secretary_of_state": {
+          "results": {
+            "Adams": {
+              "dem_votes": 2869,
+              "rep_votes": 5188,
+              "other_votes": 443,
+              "total_votes": 8500,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2319,
+              "margin_pct": 27.2824,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Allen": {
+              "dem_votes": 57502,
+              "rep_votes": 42948,
+              "other_votes": 2988,
+              "total_votes": 103438,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -14554,
+              "margin_pct": -14.0703,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Bartholomew": {
+              "dem_votes": 11136,
+              "rep_votes": 10698,
+              "other_votes": 1403,
+              "total_votes": 23237,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -438,
+              "margin_pct": -1.8849,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Benton": {
+              "dem_votes": 888,
+              "rep_votes": 1285,
+              "other_votes": 138,
+              "total_votes": 2311,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 397,
+              "margin_pct": 17.1787,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Blackford": {
+              "dem_votes": 1103,
+              "rep_votes": 1744,
+              "other_votes": 228,
+              "total_votes": 3075,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 641,
+              "margin_pct": 20.8455,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Boone": {
+              "dem_votes": 14732,
+              "rep_votes": 11260,
+              "other_votes": 2548,
+              "total_votes": 28540,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -3472,
+              "margin_pct": -12.1654,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Brown": {
+              "dem_votes": 2825,
+              "rep_votes": 3094,
+              "other_votes": 466,
+              "total_votes": 6385,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 269,
+              "margin_pct": 4.213,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Carroll": {
+              "dem_votes": 1993,
+              "rep_votes": 3197,
+              "other_votes": 279,
+              "total_votes": 5469,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1204,
+              "margin_pct": 22.015,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Cass": {
+              "dem_votes": 3893,
+              "rep_votes": 5153,
+              "other_votes": 488,
+              "total_votes": 9534,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1260,
+              "margin_pct": 13.2159,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Clark": {
+              "dem_votes": 19658,
+              "rep_votes": 17409,
+              "other_votes": 1547,
+              "total_votes": 38614,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -2249,
+              "margin_pct": -5.8243,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Clay": {
+              "dem_votes": 2522,
+              "rep_votes": 4177,
+              "other_votes": 393,
+              "total_votes": 7092,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1655,
+              "margin_pct": 23.3362,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Clinton": {
+              "dem_votes": 3030,
+              "rep_votes": 3857,
+              "other_votes": 540,
+              "total_votes": 7427,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 827,
+              "margin_pct": 11.135,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Crawford": {
+              "dem_votes": 632,
+              "rep_votes": 934,
+              "other_votes": 50,
+              "total_votes": 1616,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 302,
+              "margin_pct": 18.6881,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Daviess": {
+              "dem_votes": 1943,
+              "rep_votes": 4378,
+              "other_votes": 311,
+              "total_votes": 6632,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2435,
+              "margin_pct": 36.7159,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Dearborn": {
+              "dem_votes": 4151,
+              "rep_votes": 10286,
+              "other_votes": 647,
+              "total_votes": 15084,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 6135,
+              "margin_pct": 40.6722,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Decatur": {
+              "dem_votes": 2271,
+              "rep_votes": 4182,
+              "other_votes": 528,
+              "total_votes": 6981,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1911,
+              "margin_pct": 27.3743,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Dekalb": {
+              "dem_votes": 4253,
+              "rep_votes": 6833,
+              "other_votes": 677,
+              "total_votes": 11763,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2580,
+              "margin_pct": 21.9332,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Delaware": {
+              "dem_votes": 16698,
+              "rep_votes": 12533,
+              "other_votes": 1632,
+              "total_votes": 30863,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -4165,
+              "margin_pct": -13.4951,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Dubois": {
+              "dem_votes": 6211,
+              "rep_votes": 7327,
+              "other_votes": 1001,
+              "total_votes": 14539,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1116,
+              "margin_pct": 7.6759,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Elkhart": {
+              "dem_votes": 20271,
+              "rep_votes": 22910,
+              "other_votes": 1667,
+              "total_votes": 44848,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2639,
+              "margin_pct": 5.8843,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fayette": {
+              "dem_votes": 1730,
+              "rep_votes": 3291,
+              "other_votes": 89,
+              "total_votes": 5110,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1561,
+              "margin_pct": 30.5479,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Floyd": {
+              "dem_votes": 14384,
+              "rep_votes": 12331,
+              "other_votes": 871,
+              "total_votes": 27586,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -2053,
+              "margin_pct": -7.4422,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Fountain": {
+              "dem_votes": 1531,
+              "rep_votes": 3250,
+              "other_votes": 321,
+              "total_votes": 5102,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1719,
+              "margin_pct": 33.6927,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Franklin": {
+              "dem_votes": 1757,
+              "rep_votes": 4749,
+              "other_votes": 232,
+              "total_votes": 6738,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2992,
+              "margin_pct": 44.4049,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fulton": {
+              "dem_votes": 1859,
+              "rep_votes": 3148,
+              "other_votes": 283,
+              "total_votes": 5290,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1289,
+              "margin_pct": 24.3667,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Gibson": {
+              "dem_votes": 3304,
+              "rep_votes": 5332,
+              "other_votes": 481,
+              "total_votes": 9117,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2028,
+              "margin_pct": 22.2442,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Grant": {
+              "dem_votes": 6400,
+              "rep_votes": 9217,
+              "other_votes": 1014,
+              "total_votes": 16631,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2817,
+              "margin_pct": 16.9382,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Greene": {
+              "dem_votes": 3261,
+              "rep_votes": 5301,
+              "other_votes": 477,
+              "total_votes": 9039,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2040,
+              "margin_pct": 22.5689,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hamilton": {
+              "dem_votes": 80141,
+              "rep_votes": 58277,
+              "other_votes": 10230,
+              "total_votes": 148648,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -21864,
+              "margin_pct": -14.7086,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Hancock": {
+              "dem_votes": 12615,
+              "rep_votes": 13436,
+              "other_votes": 2277,
+              "total_votes": 28328,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 821,
+              "margin_pct": 2.8982,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Harrison": {
+              "dem_votes": 5086,
+              "rep_votes": 7641,
+              "other_votes": 487,
+              "total_votes": 13214,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2555,
+              "margin_pct": 19.3356,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hendricks": {
+              "dem_votes": 28181,
+              "rep_votes": 23420,
+              "other_votes": 4143,
+              "total_votes": 55744,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -4761,
+              "margin_pct": -8.5408,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Henry": {
+              "dem_votes": 5063,
+              "rep_votes": 6956,
+              "other_votes": 831,
+              "total_votes": 12850,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1893,
+              "margin_pct": 14.7315,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Howard": {
+              "dem_votes": 11135,
+              "rep_votes": 12240,
+              "other_votes": 1466,
+              "total_votes": 24841,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1105,
+              "margin_pct": 4.4483,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Huntington": {
+              "dem_votes": 3833,
+              "rep_votes": 6375,
+              "other_votes": 636,
+              "total_votes": 10844,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2542,
+              "margin_pct": 23.4415,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jackson": {
+              "dem_votes": 3779,
+              "rep_votes": 6638,
+              "other_votes": 415,
+              "total_votes": 10832,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2859,
+              "margin_pct": 26.394,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jasper": {
+              "dem_votes": 3089,
+              "rep_votes": 5871,
+              "other_votes": 365,
+              "total_votes": 9325,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2782,
+              "margin_pct": 29.8338,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jay": {
+              "dem_votes": 1734,
+              "rep_votes": 2803,
+              "other_votes": 284,
+              "total_votes": 4821,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1069,
+              "margin_pct": 22.1738,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jefferson": {
+              "dem_votes": 3961,
+              "rep_votes": 4648,
+              "other_votes": 410,
+              "total_votes": 9019,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 687,
+              "margin_pct": 7.6173,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jennings": {
+              "dem_votes": 2339,
+              "rep_votes": 4546,
+              "other_votes": 406,
+              "total_votes": 7291,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2207,
+              "margin_pct": 30.2702,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Johnson": {
+              "dem_votes": 20888,
+              "rep_votes": 22357,
+              "other_votes": 3442,
+              "total_votes": 46687,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1469,
+              "margin_pct": 3.1465,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Knox": {
+              "dem_votes": 3669,
+              "rep_votes": 5508,
+              "other_votes": 447,
+              "total_votes": 9624,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1839,
+              "margin_pct": 19.1085,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Kosciusko": {
+              "dem_votes": 6456,
+              "rep_votes": 12357,
+              "other_votes": 1069,
+              "total_votes": 19882,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 5901,
+              "margin_pct": 29.6801,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Lagrange": {
+              "dem_votes": 1907,
+              "rep_votes": 4148,
+              "other_votes": 311,
+              "total_votes": 6366,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2241,
+              "margin_pct": 35.2026,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Lake": {
+              "dem_votes": 92149,
+              "rep_votes": 47581,
+              "other_votes": 3947,
+              "total_votes": 143677,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -44568,
+              "margin_pct": -31.0196,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Laporte": {
+              "dem_votes": 10117,
+              "rep_votes": 7836,
+              "other_votes": 781,
+              "total_votes": 18734,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -2281,
+              "margin_pct": -12.1757,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Lawrence": {
+              "dem_votes": 4415,
+              "rep_votes": 7561,
+              "other_votes": 646,
+              "total_votes": 12622,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 3146,
+              "margin_pct": 24.9247,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Madison": {
+              "dem_votes": 17855,
+              "rep_votes": 16485,
+              "other_votes": 2202,
+              "total_votes": 36542,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -1370,
+              "margin_pct": -3.7491,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Marion": {
+              "dem_votes": 37891,
+              "rep_votes": 15286,
+              "other_votes": 5108,
+              "total_votes": 58285,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -22605,
+              "margin_pct": -38.7836,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Marshall": {
+              "dem_votes": 4559,
+              "rep_votes": 6355,
+              "other_votes": 562,
+              "total_votes": 11476,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1796,
+              "margin_pct": 15.6501,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Martin": {
+              "dem_votes": 1160,
+              "rep_votes": 2085,
+              "other_votes": 205,
+              "total_votes": 3450,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 925,
+              "margin_pct": 26.8116,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Miami": {
+              "dem_votes": 2684,
+              "rep_votes": 4469,
+              "other_votes": 543,
+              "total_votes": 7696,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1785,
+              "margin_pct": 23.1939,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Monroe": {
+              "dem_votes": 29852,
+              "rep_votes": 10002,
+              "other_votes": 2303,
+              "total_votes": 42157,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -19850,
+              "margin_pct": -47.0859,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Montgomery": {
+              "dem_votes": 3782,
+              "rep_votes": 5499,
+              "other_votes": 710,
+              "total_votes": 9991,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1717,
+              "margin_pct": 17.1855,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Morgan": {
+              "dem_votes": 7014,
+              "rep_votes": 11625,
+              "other_votes": 1859,
+              "total_votes": 20498,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 4611,
+              "margin_pct": 22.4949,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Newton": {
+              "dem_votes": 1147,
+              "rep_votes": 2436,
+              "other_votes": 193,
+              "total_votes": 3776,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1289,
+              "margin_pct": 34.1367,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Noble": {
+              "dem_votes": 3748,
+              "rep_votes": 6518,
+              "other_votes": 467,
+              "total_votes": 10733,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2770,
+              "margin_pct": 25.8083,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ohio": {
+              "dem_votes": 538,
+              "rep_votes": 1135,
+              "other_votes": 54,
+              "total_votes": 1727,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 597,
+              "margin_pct": 34.5686,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Orange": {
+              "dem_votes": 1792,
+              "rep_votes": 3128,
+              "other_votes": 181,
+              "total_votes": 5101,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1336,
+              "margin_pct": 26.1909,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Owen": {
+              "dem_votes": 2239,
+              "rep_votes": 3365,
+              "other_votes": 352,
+              "total_votes": 5956,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1126,
+              "margin_pct": 18.9053,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Parke": {
+              "dem_votes": 1439,
+              "rep_votes": 2651,
+              "other_votes": 283,
+              "total_votes": 4373,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1212,
+              "margin_pct": 27.7155,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Perry": {
+              "dem_votes": 3327,
+              "rep_votes": 2740,
+              "other_votes": 314,
+              "total_votes": 6381,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -587,
+              "margin_pct": -9.1992,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Pike": {
+              "dem_votes": 1263,
+              "rep_votes": 2251,
+              "other_votes": 222,
+              "total_votes": 3736,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 988,
+              "margin_pct": 26.4454,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Porter": {
+              "dem_votes": 30686,
+              "rep_votes": 23867,
+              "other_votes": 1941,
+              "total_votes": 56494,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -6819,
+              "margin_pct": -12.0703,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Posey": {
+              "dem_votes": 3126,
+              "rep_votes": 4263,
+              "other_votes": 379,
+              "total_votes": 7768,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1137,
+              "margin_pct": 14.637,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Pulaski": {
+              "dem_votes": 1156,
+              "rep_votes": 2238,
+              "other_votes": 205,
+              "total_votes": 3599,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1082,
+              "margin_pct": 30.0639,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Putnam": {
+              "dem_votes": 3612,
+              "rep_votes": 5515,
+              "other_votes": 645,
+              "total_votes": 9772,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1903,
+              "margin_pct": 19.474,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Randolph": {
+              "dem_votes": 2237,
+              "rep_votes": 3649,
+              "other_votes": 371,
+              "total_votes": 6257,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1412,
+              "margin_pct": 22.5667,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ripley": {
+              "dem_votes": 1801,
+              "rep_votes": 4617,
+              "other_votes": 257,
+              "total_votes": 6675,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2816,
+              "margin_pct": 42.1873,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Rush": {
+              "dem_votes": 1595,
+              "rep_votes": 2514,
+              "other_votes": 376,
+              "total_votes": 4485,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 919,
+              "margin_pct": 20.4905,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Scott": {
+              "dem_votes": 2432,
+              "rep_votes": 3240,
+              "other_votes": 272,
+              "total_votes": 5944,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 808,
+              "margin_pct": 13.5935,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Shelby": {
+              "dem_votes": 4650,
+              "rep_votes": 6198,
+              "other_votes": 1030,
+              "total_votes": 11878,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1548,
+              "margin_pct": 13.0325,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Spencer": {
+              "dem_votes": 2630,
+              "rep_votes": 3709,
+              "other_votes": 349,
+              "total_votes": 6688,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1079,
+              "margin_pct": 16.1334,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "St. Joseph": {
+              "dem_votes": 46692,
+              "rep_votes": 27269,
+              "other_votes": 2869,
+              "total_votes": 76830,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -19423,
+              "margin_pct": -25.2805,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Starke": {
+              "dem_votes": 2286,
+              "rep_votes": 3565,
+              "other_votes": 355,
+              "total_votes": 6206,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1279,
+              "margin_pct": 20.6091,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Steuben": {
+              "dem_votes": 3844,
+              "rep_votes": 6281,
+              "other_votes": 577,
+              "total_votes": 10702,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2437,
+              "margin_pct": 22.7714,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Sullivan": {
+              "dem_votes": 2460,
+              "rep_votes": 3337,
+              "other_votes": 321,
+              "total_votes": 6118,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 877,
+              "margin_pct": 14.3347,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Switzerland": {
+              "dem_votes": 873,
+              "rep_votes": 1582,
+              "other_votes": 87,
+              "total_votes": 2542,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 709,
+              "margin_pct": 27.8914,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Tippecanoe": {
+              "dem_votes": 27012,
+              "rep_votes": 14293,
+              "other_votes": 2803,
+              "total_votes": 44108,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -12719,
+              "margin_pct": -28.836,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Tipton": {
+              "dem_votes": 2095,
+              "rep_votes": 3104,
+              "other_votes": 434,
+              "total_votes": 5633,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1009,
+              "margin_pct": 17.9123,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Union": {
+              "dem_votes": 641,
+              "rep_votes": 1254,
+              "other_votes": 88,
+              "total_votes": 1983,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 613,
+              "margin_pct": 30.9128,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vanderburgh": {
+              "dem_votes": 26213,
+              "rep_votes": 19606,
+              "other_votes": 2085,
+              "total_votes": 47904,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -6607,
+              "margin_pct": -13.7922,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Vermillion": {
+              "dem_votes": 2129,
+              "rep_votes": 2153,
+              "other_votes": 236,
+              "total_votes": 4518,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 24,
+              "margin_pct": 0.5312,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vigo": {
+              "dem_votes": 15526,
+              "rep_votes": 10490,
+              "other_votes": 1475,
+              "total_votes": 27491,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": -5036,
+              "margin_pct": -18.3187,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Wabash": {
+              "dem_votes": 2820,
+              "rep_votes": 4931,
+              "other_votes": 375,
+              "total_votes": 8126,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2111,
+              "margin_pct": 25.9783,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Warren": {
+              "dem_votes": 873,
+              "rep_votes": 1794,
+              "other_votes": 135,
+              "total_votes": 2802,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 921,
+              "margin_pct": 32.8694,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Warrick": {
+              "dem_votes": 9542,
+              "rep_votes": 10351,
+              "other_votes": 989,
+              "total_votes": 20882,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 809,
+              "margin_pct": 3.8741,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Washington": {
+              "dem_votes": 2753,
+              "rep_votes": 5264,
+              "other_votes": 376,
+              "total_votes": 8393,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2511,
+              "margin_pct": 29.9178,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Wayne": {
+              "dem_votes": 7380,
+              "rep_votes": 8103,
+              "other_votes": 776,
+              "total_votes": 16259,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 723,
+              "margin_pct": 4.4468,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Wells": {
+              "dem_votes": 2550,
+              "rep_votes": 5561,
+              "other_votes": 484,
+              "total_votes": 8595,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 3011,
+              "margin_pct": 35.032,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "White": {
+              "dem_votes": 2679,
+              "rep_votes": 3857,
+              "other_votes": 420,
+              "total_votes": 6956,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 1178,
+              "margin_pct": 16.935,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Whitley": {
+              "dem_votes": 3691,
+              "rep_votes": 6581,
+              "other_votes": 627,
+              "total_votes": 10899,
+              "dem_candidate": "Beau Bayh",
+              "rep_candidate": "Max Engling",
+              "margin": 2890,
+              "margin_pct": 26.5162,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            }
+          }
+        }
+      },
+      "treasurer": {
+        "treasurer": {
+          "results": {
+            "Adams": {
+              "dem_votes": 2464,
+              "rep_votes": 5890,
+              "other_votes": 0,
+              "total_votes": 8354,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3426,
+              "margin_pct": 41.0103,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Allen": {
+              "dem_votes": 54543,
+              "rep_votes": 49548,
+              "other_votes": 0,
+              "total_votes": 104091,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -4995,
+              "margin_pct": -4.7987,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Bartholomew": {
+              "dem_votes": 9963,
+              "rep_votes": 12782,
+              "other_votes": 0,
+              "total_votes": 22745,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2819,
+              "margin_pct": 12.3939,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Benton": {
+              "dem_votes": 706,
+              "rep_votes": 1577,
+              "other_votes": 0,
+              "total_votes": 2283,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 871,
+              "margin_pct": 38.1516,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Blackford": {
+              "dem_votes": 912,
+              "rep_votes": 2083,
+              "other_votes": 0,
+              "total_votes": 2995,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1171,
+              "margin_pct": 39.0985,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Boone": {
+              "dem_votes": 13460,
+              "rep_votes": 14504,
+              "other_votes": 0,
+              "total_votes": 27964,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1044,
+              "margin_pct": 3.7334,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Brown": {
+              "dem_votes": 2619,
+              "rep_votes": 3674,
+              "other_votes": 0,
+              "total_votes": 6293,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1055,
+              "margin_pct": 16.7647,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Carroll": {
+              "dem_votes": 1649,
+              "rep_votes": 3791,
+              "other_votes": 0,
+              "total_votes": 5440,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2142,
+              "margin_pct": 39.375,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Cass": {
+              "dem_votes": 3192,
+              "rep_votes": 6283,
+              "other_votes": 0,
+              "total_votes": 9475,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3091,
+              "margin_pct": 32.6227,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Clark": {
+              "dem_votes": 18082,
+              "rep_votes": 19799,
+              "other_votes": 0,
+              "total_votes": 37881,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1717,
+              "margin_pct": 4.5326,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Clay": {
+              "dem_votes": 1892,
+              "rep_votes": 5034,
+              "other_votes": 0,
+              "total_votes": 6926,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3142,
+              "margin_pct": 45.3653,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Clinton": {
+              "dem_votes": 2468,
+              "rep_votes": 4788,
+              "other_votes": 0,
+              "total_votes": 7256,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2320,
+              "margin_pct": 31.9735,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Crawford": {
+              "dem_votes": 999,
+              "rep_votes": 1892,
+              "other_votes": 0,
+              "total_votes": 2891,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 893,
+              "margin_pct": 30.889,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Daviess": {
+              "dem_votes": 1520,
+              "rep_votes": 5027,
+              "other_votes": 0,
+              "total_votes": 6547,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3507,
+              "margin_pct": 53.5665,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Dearborn": {
+              "dem_votes": 3824,
+              "rep_votes": 11236,
+              "other_votes": 0,
+              "total_votes": 15060,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 7412,
+              "margin_pct": 49.2165,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Decatur": {
+              "dem_votes": 1847,
+              "rep_votes": 4984,
+              "other_votes": 0,
+              "total_votes": 6831,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3137,
+              "margin_pct": 45.923,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Dekalb": {
+              "dem_votes": 3713,
+              "rep_votes": 7887,
+              "other_votes": 0,
+              "total_votes": 11600,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4174,
+              "margin_pct": 35.9828,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Delaware": {
+              "dem_votes": 15209,
+              "rep_votes": 14975,
+              "other_votes": 0,
+              "total_votes": 30184,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -234,
+              "margin_pct": -0.7752,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Dubois": {
+              "dem_votes": 4660,
+              "rep_votes": 9296,
+              "other_votes": 0,
+              "total_votes": 13956,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4636,
+              "margin_pct": 33.2187,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Elkhart": {
+              "dem_votes": 19256,
+              "rep_votes": 25541,
+              "other_votes": 0,
+              "total_votes": 44797,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 6285,
+              "margin_pct": 14.03,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fayette": {
+              "dem_votes": 1495,
+              "rep_votes": 3721,
+              "other_votes": 0,
+              "total_votes": 5216,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2226,
+              "margin_pct": 42.6764,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Floyd": {
+              "dem_votes": 13525,
+              "rep_votes": 13902,
+              "other_votes": 0,
+              "total_votes": 27427,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 377,
+              "margin_pct": 1.3746,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fountain": {
+              "dem_votes": 1225,
+              "rep_votes": 3829,
+              "other_votes": 0,
+              "total_votes": 5054,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2604,
+              "margin_pct": 51.5235,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Franklin": {
+              "dem_votes": 1465,
+              "rep_votes": 5174,
+              "other_votes": 0,
+              "total_votes": 6639,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3709,
+              "margin_pct": 55.8668,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Fulton": {
+              "dem_votes": 1595,
+              "rep_votes": 3673,
+              "other_votes": 0,
+              "total_votes": 5268,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2078,
+              "margin_pct": 39.4457,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Gibson": {
+              "dem_votes": 2852,
+              "rep_votes": 5895,
+              "other_votes": 0,
+              "total_votes": 8747,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3043,
+              "margin_pct": 34.7891,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Grant": {
+              "dem_votes": 5631,
+              "rep_votes": 10719,
+              "other_votes": 0,
+              "total_votes": 16350,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 5088,
+              "margin_pct": 31.1193,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Greene": {
+              "dem_votes": 2623,
+              "rep_votes": 6139,
+              "other_votes": 0,
+              "total_votes": 8762,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3516,
+              "margin_pct": 40.1278,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hamilton": {
+              "dem_votes": 74281,
+              "rep_votes": 71493,
+              "other_votes": 0,
+              "total_votes": 145774,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -2788,
+              "margin_pct": -1.9125,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Hancock": {
+              "dem_votes": 11428,
+              "rep_votes": 16625,
+              "other_votes": 0,
+              "total_votes": 28053,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 5197,
+              "margin_pct": 18.5256,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Harrison": {
+              "dem_votes": 4364,
+              "rep_votes": 8620,
+              "other_votes": 0,
+              "total_votes": 12984,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4256,
+              "margin_pct": 32.7788,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Hendricks": {
+              "dem_votes": 26549,
+              "rep_votes": 28437,
+              "other_votes": 0,
+              "total_votes": 54986,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1888,
+              "margin_pct": 3.4336,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Henry": {
+              "dem_votes": 4179,
+              "rep_votes": 8603,
+              "other_votes": 0,
+              "total_votes": 12782,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4424,
+              "margin_pct": 34.6112,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Howard": {
+              "dem_votes": 10105,
+              "rep_votes": 14647,
+              "other_votes": 0,
+              "total_votes": 24752,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4542,
+              "margin_pct": 18.35,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Huntington": {
+              "dem_votes": 3307,
+              "rep_votes": 7404,
+              "other_votes": 0,
+              "total_votes": 10711,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4097,
+              "margin_pct": 38.2504,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jackson": {
+              "dem_votes": 3164,
+              "rep_votes": 7420,
+              "other_votes": 0,
+              "total_votes": 10584,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4256,
+              "margin_pct": 40.2116,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jasper": {
+              "dem_votes": 2785,
+              "rep_votes": 6448,
+              "other_votes": 0,
+              "total_votes": 9233,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3663,
+              "margin_pct": 39.6729,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jay": {
+              "dem_votes": 1327,
+              "rep_votes": 3411,
+              "other_votes": 0,
+              "total_votes": 4738,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2084,
+              "margin_pct": 43.9848,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jefferson": {
+              "dem_votes": 3539,
+              "rep_votes": 5304,
+              "other_votes": 0,
+              "total_votes": 8843,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1765,
+              "margin_pct": 19.9593,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Jennings": {
+              "dem_votes": 1870,
+              "rep_votes": 5330,
+              "other_votes": 0,
+              "total_votes": 7200,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3460,
+              "margin_pct": 48.0556,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Johnson": {
+              "dem_votes": 19508,
+              "rep_votes": 26699,
+              "other_votes": 0,
+              "total_votes": 46207,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 7191,
+              "margin_pct": 15.5626,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Knox": {
+              "dem_votes": 2883,
+              "rep_votes": 6477,
+              "other_votes": 0,
+              "total_votes": 9360,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3594,
+              "margin_pct": 38.3974,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Kosciusko": {
+              "dem_votes": 5721,
+              "rep_votes": 13724,
+              "other_votes": 0,
+              "total_votes": 19445,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 8003,
+              "margin_pct": 41.1571,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Lagrange": {
+              "dem_votes": 1654,
+              "rep_votes": 4653,
+              "other_votes": 0,
+              "total_votes": 6307,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2999,
+              "margin_pct": 47.5503,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Lake": {
+              "dem_votes": 90069,
+              "rep_votes": 52997,
+              "other_votes": 0,
+              "total_votes": 143066,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -37072,
+              "margin_pct": -25.9125,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Lawrence": {
+              "dem_votes": 3804,
+              "rep_votes": 8525,
+              "other_votes": 0,
+              "total_votes": 12329,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4721,
+              "margin_pct": 38.2918,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Madison": {
+              "dem_votes": 16216,
+              "rep_votes": 20229,
+              "other_votes": 0,
+              "total_votes": 36445,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4013,
+              "margin_pct": 11.0111,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Marion": {
+              "dem_votes": 38006,
+              "rep_votes": 20101,
+              "other_votes": 0,
+              "total_votes": 58107,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -17905,
+              "margin_pct": -30.8138,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Marshall": {
+              "dem_votes": 3965,
+              "rep_votes": 7289,
+              "other_votes": 0,
+              "total_votes": 11254,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3324,
+              "margin_pct": 29.5362,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Martin": {
+              "dem_votes": 814,
+              "rep_votes": 2485,
+              "other_votes": 0,
+              "total_votes": 3299,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1671,
+              "margin_pct": 50.6517,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Miami": {
+              "dem_votes": 2234,
+              "rep_votes": 5304,
+              "other_votes": 0,
+              "total_votes": 7538,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3070,
+              "margin_pct": 40.727,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Monroe": {
+              "dem_votes": 29455,
+              "rep_votes": 12341,
+              "other_votes": 0,
+              "total_votes": 41796,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -17114,
+              "margin_pct": -40.9465,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Montgomery": {
+              "dem_votes": 3272,
+              "rep_votes": 6671,
+              "other_votes": 0,
+              "total_votes": 9943,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3399,
+              "margin_pct": 34.1849,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Morgan": {
+              "dem_votes": 6356,
+              "rep_votes": 13609,
+              "other_votes": 0,
+              "total_votes": 19965,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 7253,
+              "margin_pct": 36.3286,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Newton": {
+              "dem_votes": 1029,
+              "rep_votes": 2698,
+              "other_votes": 0,
+              "total_votes": 3727,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1669,
+              "margin_pct": 44.7813,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Noble": {
+              "dem_votes": 3328,
+              "rep_votes": 7279,
+              "other_votes": 0,
+              "total_votes": 10607,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3951,
+              "margin_pct": 37.249,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ohio": {
+              "dem_votes": 477,
+              "rep_votes": 1219,
+              "other_votes": 0,
+              "total_votes": 1696,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 742,
+              "margin_pct": 43.75,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Orange": {
+              "dem_votes": 1490,
+              "rep_votes": 3531,
+              "other_votes": 0,
+              "total_votes": 5021,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2041,
+              "margin_pct": 40.6493,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Owen": {
+              "dem_votes": 1887,
+              "rep_votes": 3998,
+              "other_votes": 0,
+              "total_votes": 5885,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2111,
+              "margin_pct": 35.8709,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Parke": {
+              "dem_votes": 1068,
+              "rep_votes": 3200,
+              "other_votes": 0,
+              "total_votes": 4268,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2132,
+              "margin_pct": 49.9531,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Perry": {
+              "dem_votes": 2820,
+              "rep_votes": 3447,
+              "other_votes": 0,
+              "total_votes": 6267,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 627,
+              "margin_pct": 10.0048,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Pike": {
+              "dem_votes": 1032,
+              "rep_votes": 2610,
+              "other_votes": 0,
+              "total_votes": 3642,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1578,
+              "margin_pct": 43.3278,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Porter": {
+              "dem_votes": 28843,
+              "rep_votes": 26718,
+              "other_votes": 0,
+              "total_votes": 55561,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -2125,
+              "margin_pct": -3.8246,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Posey": {
+              "dem_votes": 2716,
+              "rep_votes": 5013,
+              "other_votes": 0,
+              "total_votes": 7729,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2297,
+              "margin_pct": 29.7192,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Pulaski": {
+              "dem_votes": 883,
+              "rep_votes": 2614,
+              "other_votes": 0,
+              "total_votes": 3497,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1731,
+              "margin_pct": 49.4996,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Putnam": {
+              "dem_votes": 3094,
+              "rep_votes": 6549,
+              "other_votes": 0,
+              "total_votes": 9643,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3455,
+              "margin_pct": 35.8291,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Randolph": {
+              "dem_votes": 1633,
+              "rep_votes": 3956,
+              "other_votes": 0,
+              "total_votes": 5589,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2323,
+              "margin_pct": 41.5638,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Ripley": {
+              "dem_votes": 1589,
+              "rep_votes": 5055,
+              "other_votes": 0,
+              "total_votes": 6644,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3466,
+              "margin_pct": 52.1674,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Rush": {
+              "dem_votes": 1282,
+              "rep_votes": 3113,
+              "other_votes": 0,
+              "total_votes": 4395,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1831,
+              "margin_pct": 41.661,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Scott": {
+              "dem_votes": 1979,
+              "rep_votes": 3788,
+              "other_votes": 0,
+              "total_votes": 5767,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1809,
+              "margin_pct": 31.3681,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Shelby": {
+              "dem_votes": 3966,
+              "rep_votes": 7657,
+              "other_votes": 0,
+              "total_votes": 11623,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3691,
+              "margin_pct": 31.756,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Spencer": {
+              "dem_votes": 2245,
+              "rep_votes": 4338,
+              "other_votes": 0,
+              "total_votes": 6583,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2093,
+              "margin_pct": 31.794,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "St. Joseph": {
+              "dem_votes": 44274,
+              "rep_votes": 31900,
+              "other_votes": 0,
+              "total_votes": 76174,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -12374,
+              "margin_pct": -16.2444,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Starke": {
+              "dem_votes": 1877,
+              "rep_votes": 4170,
+              "other_votes": 0,
+              "total_votes": 6047,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2293,
+              "margin_pct": 37.9196,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Steuben": {
+              "dem_votes": 3347,
+              "rep_votes": 7097,
+              "other_votes": 0,
+              "total_votes": 10444,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3750,
+              "margin_pct": 35.9058,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Sullivan": {
+              "dem_votes": 1762,
+              "rep_votes": 4145,
+              "other_votes": 0,
+              "total_votes": 5907,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2383,
+              "margin_pct": 40.342,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Switzerland": {
+              "dem_votes": 724,
+              "rep_votes": 1779,
+              "other_votes": 0,
+              "total_votes": 2503,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1055,
+              "margin_pct": 42.1494,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Tippecanoe": {
+              "dem_votes": 25188,
+              "rep_votes": 18318,
+              "other_votes": 0,
+              "total_votes": 43506,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -6870,
+              "margin_pct": -15.7909,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Tipton": {
+              "dem_votes": 1633,
+              "rep_votes": 4089,
+              "other_votes": 0,
+              "total_votes": 5722,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2456,
+              "margin_pct": 42.9221,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Union": {
+              "dem_votes": 545,
+              "rep_votes": 1424,
+              "other_votes": 0,
+              "total_votes": 1969,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 879,
+              "margin_pct": 44.642,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vanderburgh": {
+              "dem_votes": 24697,
+              "rep_votes": 22896,
+              "other_votes": 0,
+              "total_votes": 47593,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -1801,
+              "margin_pct": -3.7842,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
+            "Vermillion": {
+              "dem_votes": 1578,
+              "rep_votes": 2747,
+              "other_votes": 0,
+              "total_votes": 4325,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1169,
+              "margin_pct": 27.0289,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Wabash": {
+              "dem_votes": 2505,
+              "rep_votes": 5501,
+              "other_votes": 0,
+              "total_votes": 8006,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2996,
+              "margin_pct": 37.4219,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Warren": {
+              "dem_votes": 708,
+              "rep_votes": 2070,
+              "other_votes": 0,
+              "total_votes": 2778,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 1362,
+              "margin_pct": 49.0281,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Warrick": {
+              "dem_votes": 8677,
+              "rep_votes": 11843,
+              "other_votes": 0,
+              "total_votes": 20520,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3166,
+              "margin_pct": 15.4288,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Washington": {
+              "dem_votes": 2229,
+              "rep_votes": 5993,
+              "other_votes": 0,
+              "total_votes": 8222,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 3764,
+              "margin_pct": 45.7796,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Wayne": {
+              "dem_votes": 6768,
+              "rep_votes": 9301,
+              "other_votes": 0,
+              "total_votes": 16069,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2533,
+              "margin_pct": 15.7633,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Wells": {
+              "dem_votes": 2080,
+              "rep_votes": 6366,
+              "other_votes": 0,
+              "total_votes": 8446,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4286,
+              "margin_pct": 50.7459,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "White": {
+              "dem_votes": 2242,
+              "rep_votes": 4616,
+              "other_votes": 0,
+              "total_votes": 6858,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 2374,
+              "margin_pct": 34.6165,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Whitley": {
+              "dem_votes": 3188,
+              "rep_votes": 7559,
+              "other_votes": 0,
+              "total_votes": 10747,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 4371,
+              "margin_pct": 40.6718,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
