@@ -1,5 +1,6 @@
 import argparse
 import csv
+import json
 import re
 from collections import defaultdict
 from dataclasses import dataclass
@@ -204,8 +205,21 @@ def open_writer(path: Path, *, header: list[str]) -> tuple[csv.DictWriter, objec
     return w, f
 
 
+def load_input_rows(input_path: Path) -> list[dict[str, object]]:
+    """Load either an IDOE CSV export or its equivalent JSON array."""
+    if input_path.suffix.lower() == ".json":
+        payload = json.loads(input_path.read_text(encoding="utf-8-sig"))
+        if not isinstance(payload, list) or any(not isinstance(row, dict) for row in payload):
+            raise ValueError(f"{input_path}: expected a JSON array of objects")
+        return payload
+
+    with input_path.open("r", newline="", encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+        return [dict(row or {}) for row in reader]
+
+
 def convert_file(
-    input_csv: Path,
+    input_path: Path,
     *,
     out_dir: Path,
     split_by_county: bool,
@@ -215,113 +229,124 @@ def convert_file(
     """
     Returns counts keyed by output file basename.
     """
-    writers_by_path: dict[Path, tuple[csv.DictWriter, object]] = {}
     counts: dict[str, int] = defaultdict(int)
+    aggregated_by_path: dict[Path, dict[tuple[str, ...], dict[str, str]]] = defaultdict(dict)
 
-    def get_writer(out_path: Path) -> csv.DictWriter:
-        if out_path not in writers_by_path:
-            header = OUTPUT_HEADER_WITH_BREAKDOWN if include_vote_breakdown else OUTPUT_HEADER_BASE
-            writers_by_path[out_path] = open_writer(out_path, header=header)
-        return writers_by_path[out_path][0]
+    raw_rows = load_input_rows(input_path)
+    canon_headers = {
+        canonicalize_header(str(h or ""))
+        for row in raw_rows[:1]
+        for h in row.keys()
+    }
+    required_any = {
+        "election",
+        "reportingcountyname",
+        "dataentryjurisdictionname",
+        "dataentrylevelname",
+        "office",
+        "officecategory",
+        "nameonballot",
+        "politicalparty",
+        "totalvotes",
+    }
+    missing = sorted(required_any - canon_headers)
+    if missing:
+        raise ValueError(f"{input_path}: missing required columns (canonicalized): {', '.join(missing)}")
 
-    with input_csv.open("r", newline="", encoding="utf-8-sig") as f:
-        reader = csv.DictReader(f)
-        canon_headers = {canonicalize_header(h or "") for h in (reader.fieldnames or [])}
-        required_any = {
-            "election",
-            "reportingcountyname",
-            "dataentryjurisdictionname",
-            "dataentrylevelname",
-            "office",
-            "officecategory",
-            "nameonballot",
-            "politicalparty",
-            "totalvotes",
+    rows = [
+        {canonicalize_header(str(k or "")): ("" if v is None else str(v)) for k, v in row.items()}
+        for row in raw_rows
+    ]
+
+    # Identify counties that already have precinct-level detail per election.
+    precinct_counties_by_election: dict[str, set[str]] = defaultdict(set)
+    for canon_row in rows:
+        level = (canon_row.get("dataentrylevelname") or "").strip().lower()
+        if level != "precinct":
+            continue
+        election_label = (canon_row.get("election") or "").strip()
+        county_name = (canon_row.get("reportingcountyname") or "").strip()
+        try:
+            precinct_votes = int((canon_row.get("totalvotes") or "0").strip().replace(",", "") or "0")
+        except ValueError:
+            precinct_votes = 0
+        if election_label and county_name and precinct_votes > 0:
+            precinct_counties_by_election[election_label].add(county_name)
+
+    for canon_row in rows:
+        level = (canon_row.get("dataentrylevelname") or "").strip().lower()
+        if not level:
+            continue
+
+        election_label = (canon_row.get("election") or "").strip()
+        county = (canon_row.get("reportingcountyname") or "").strip()
+        if not election_label or not county:
+            continue
+
+        # Non-precinct rows are used only as fallback for counties with no precinct rows.
+        if level != "precinct" and county in precinct_counties_by_election.get(election_label, set()):
+            continue
+
+        election_info = parse_election_info(canon_row["election"])
+        precinct = (canon_row.get("dataentryjurisdictionname") or "").strip()
+        if level != "precinct":
+            if not precinct:
+                precinct = "County Total"
+            # Keep fallback non-precinct rows from being treated as summary totals downstream.
+            precinct = f"{precinct} ({level.title()})"
+
+        office, district = normalize_office_and_district(canon_row.get("office"), canon_row.get("officecategory"))
+        candidate, is_write_in = normalize_candidate(canon_row.get("nameonballot"))
+        party = normalize_party(canon_row.get("politicalparty"), force_blank=is_write_in or candidate in {"Yes", "No"})
+
+        votes = int_required(canon_row.get("totalvotes"), field="TotalVotes")
+        seats = int_optional(canon_row.get("numberofofficeseats"), field="NumberofOfficeSeats")
+
+        out_paths: list[Path] = []
+        if consolidated:
+            out_paths.append(
+                out_dir
+                / f"{election_info.election_id}__{election_info.state}__{election_info.election_type}__precinct.csv"
+            )
+        if split_by_county:
+            county_slug = slugify_county(county)
+            out_paths.append(
+                out_dir
+                / f"{election_info.election_id}__{election_info.state}__{election_info.election_type}__{county_slug}__precinct.csv"
+            )
+
+        out_row = {
+            "county": county,
+            "precinct": precinct,
+            "office": office,
+            "district": district,
+            "seats": seats,
+            "party": party,
+            "candidate": candidate,
+            "votes": votes,
         }
-        missing = sorted(required_any - canon_headers)
-        if missing:
-            raise ValueError(f"{input_csv}: missing required columns (canonicalized): {', '.join(missing)}")
+        if include_vote_breakdown:
+            out_row["early_voting"] = ""
+            out_row["election_day"] = ""
+            out_row["absentee"] = ""
 
-        rows = [{canonicalize_header(k or ""): (v if v is not None else "") for k, v in (row or {}).items()} for row in reader]
+        for out_path in out_paths:
+            key = tuple(out_row[column] for column in OUTPUT_HEADER_BASE if column != "votes")
+            existing = aggregated_by_path[out_path].get(key)
+            if existing is None:
+                aggregated_by_path[out_path][key] = dict(out_row)
+            else:
+                existing["votes"] = str(int(existing["votes"]) + int(out_row["votes"]))
 
-        # Identify counties that already have precinct-level detail per election.
-        precinct_counties_by_election: dict[str, set[str]] = defaultdict(set)
-        for canon_row in rows:
-            level = (canon_row.get("dataentrylevelname") or "").strip().lower()
-            if level != "precinct":
-                continue
-            election_label = (canon_row.get("election") or "").strip()
-            county_name = (canon_row.get("reportingcountyname") or "").strip()
-            try:
-                precinct_votes = int((canon_row.get("totalvotes") or "0").strip().replace(",", "") or "0")
-            except ValueError:
-                precinct_votes = 0
-            if election_label and county_name and precinct_votes > 0:
-                precinct_counties_by_election[election_label].add(county_name)
-
-        for canon_row in rows:
-            level = (canon_row.get("dataentrylevelname") or "").strip().lower()
-            if not level:
-                continue
-
-            election_label = (canon_row.get("election") or "").strip()
-            county = (canon_row.get("reportingcountyname") or "").strip()
-            if not election_label or not county:
-                continue
-
-            # Non-precinct rows are used only as fallback for counties with no precinct rows.
-            if level != "precinct" and county in precinct_counties_by_election.get(election_label, set()):
-                continue
-
-            election_info = parse_election_info(canon_row["election"])
-            precinct = (canon_row.get("dataentryjurisdictionname") or "").strip()
-            if level != "precinct":
-                if not precinct:
-                    precinct = "County Total"
-                # Keep fallback non-precinct rows from being treated as summary totals downstream.
-                precinct = f"{precinct} ({level.title()})"
-
-            office, district = normalize_office_and_district(canon_row.get("office"), canon_row.get("officecategory"))
-            candidate, is_write_in = normalize_candidate(canon_row.get("nameonballot"))
-            party = normalize_party(canon_row.get("politicalparty"), force_blank=is_write_in or candidate in {"Yes", "No"})
-
-            votes = int_required(canon_row.get("totalvotes"), field="TotalVotes")
-            seats = int_optional(canon_row.get("numberofofficeseats"), field="NumberofOfficeSeats")
-
-            out_paths: list[Path] = []
-            if consolidated:
-                out_paths.append(
-                    out_dir
-                    / f"{election_info.election_id}__{election_info.state}__{election_info.election_type}__precinct.csv"
-                )
-            if split_by_county:
-                county_slug = slugify_county(county)
-                out_paths.append(
-                    out_dir
-                    / f"{election_info.election_id}__{election_info.state}__{election_info.election_type}__{county_slug}__precinct.csv"
-                )
-
-            out_row = {
-                "county": county,
-                "precinct": precinct,
-                "office": office,
-                "district": district,
-                "seats": seats,
-                "party": party,
-                "candidate": candidate,
-                "votes": votes,
-            }
-            if include_vote_breakdown:
-                out_row["early_voting"] = ""
-                out_row["election_day"] = ""
-                out_row["absentee"] = ""
-
-            for out_path in out_paths:
-                get_writer(out_path).writerow(out_row)
-                counts[out_path.name] += 1
-
-    for _, (_, handle) in writers_by_path.items():
-        handle.close()
+    header = OUTPUT_HEADER_WITH_BREAKDOWN if include_vote_breakdown else OUTPUT_HEADER_BASE
+    for out_path, aggregated in aggregated_by_path.items():
+        writer, handle = open_writer(out_path, header=header)
+        try:
+            for out_row in aggregated.values():
+                writer.writerow(out_row)
+        finally:
+            handle.close()
+        counts[out_path.name] = len(aggregated)
 
     return dict(counts)
 
@@ -330,7 +355,7 @@ def main() -> int:
     p = argparse.ArgumentParser(
         description="Convert IDOE AllOfficeResults precinct export CSV to OpenElections-style precinct CSVs."
     )
-    p.add_argument("inputs", nargs="+", type=Path, help="Input AllOfficeResults CSV file(s).")
+    p.add_argument("inputs", nargs="+", type=Path, help="Input AllOfficeResults CSV or JSON file(s).")
     p.add_argument(
         "--out-dir",
         type=Path,
@@ -359,9 +384,9 @@ def main() -> int:
     args = p.parse_args()
 
     all_counts: dict[str, int] = {}
-    for input_csv in args.inputs:
+    for input_path in args.inputs:
         counts = convert_file(
-            input_csv,
+            input_path,
             out_dir=args.out_dir,
             split_by_county=args.split_by_county,
             consolidated=args.consolidated,

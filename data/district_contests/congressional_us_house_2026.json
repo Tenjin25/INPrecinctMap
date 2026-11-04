@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "scope": "congressional",
+    "contest_type": "us_house",
+    "year": 2026,
+    "districts": 9,
+    "match_coverage_pct": 100.0,
+    "allocation": "precinct_sum_by_district_number",
+    "source": "Data/AllOfficeResults2026.json",
+    "result_status": "unofficial_incomplete",
+    "as_of_date": "2026-11-04",
+    "note": "Election-night snapshot; outstanding mail and overseas ballots may not be included."
+  },
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 127573,
+        "rep_votes": 73823,
+        "other_votes": 0,
+        "total_votes": 201396,
+        "dem_candidate": "Frank J. Mrvan",
+        "rep_candidate": "Barb Regnitz",
+        "margin": -53750,
+        "margin_pct": -26.6887,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "2": {
+        "dem_votes": 84973,
+        "rep_votes": 93698,
+        "other_votes": 4549,
+        "total_votes": 183220,
+        "dem_candidate": "Jamee Decio",
+        "rep_candidate": "Rudy Yakym",
+        "margin": 8725,
+        "margin_pct": 4.762,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "3": {
+        "dem_votes": 90248,
+        "rep_votes": 62702,
+        "other_votes": 13,
+        "total_votes": 152963,
+        "dem_candidate": "Kelly Thompson",
+        "rep_candidate": "Marlin A. Stutzman",
+        "margin": -27546,
+        "margin_pct": -18.0083,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "4": {
+        "dem_votes": 97142,
+        "rep_votes": 115013,
+        "other_votes": 43,
+        "total_votes": 212198,
+        "dem_candidate": "Drew Cox",
+        "rep_candidate": "Jim Baird",
+        "margin": 17871,
+        "margin_pct": 8.4219,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "5": {
+        "dem_votes": 134448,
+        "rep_votes": 125870,
+        "other_votes": 0,
+        "total_votes": 260318,
+        "dem_candidate": "J.d. Ford",
+        "rep_candidate": "Victoria Spartz",
+        "margin": -8578,
+        "margin_pct": -3.2952,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "6": {
+        "dem_votes": 68486,
+        "rep_votes": 93185,
+        "other_votes": 0,
+        "total_votes": 161671,
+        "dem_candidate": "Cynthia (Cinde) Wirth",
+        "rep_candidate": "Jefferson Shreve",
+        "margin": 24699,
+        "margin_pct": 15.2773,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "7": {
+        "dem_votes": 31792,
+        "rep_votes": 12259,
+        "other_votes": 1458,
+        "total_votes": 45509,
+        "dem_candidate": "André Carson",
+        "rep_candidate": "Patrick Mcauley",
+        "margin": -19533,
+        "margin_pct": -42.9212,
+        "winner": "DEM",
+        "color": "#2563eb"
+      },
+      "8": {
+        "dem_votes": 80049,
+        "rep_votes": 104751,
+        "other_votes": 0,
+        "total_votes": 184800,
+        "dem_candidate": "Mary Allen",
+        "rep_candidate": "Mark Messmer",
+        "margin": 24702,
+        "margin_pct": 13.3669,
+        "winner": "REP",
+        "color": "#dc2626"
+      },
+      "9": {
+        "dem_votes": 97845,
+        "rep_votes": 121402,
+        "other_votes": 5542,
+        "total_votes": 224789,
+        "dem_candidate": "Brad A. Meyer",
+        "rep_candidate": "Erin Houchin",
+        "margin": 23557,
+        "margin_pct": 10.4796,
+        "winner": "REP",
+        "color": "#dc2626"
+      }
+    }
+  }
+}
