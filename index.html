@@ -9495,6 +9495,47 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     border-color: rgba(208, 164, 73, 0.56) !important;
   }
 
+  .main-controls.minimized {
+    color: #fff !important;
+    background: linear-gradient(135deg, var(--atlas-navy-soft), var(--atlas-navy-strong)) !important;
+    border-color: rgba(208, 164, 73, 0.62) !important;
+    box-shadow: 0 12px 28px rgba(15, 32, 54, 0.24) !important;
+  }
+
+  .main-controls.minimized::before {
+    display: none !important;
+  }
+
+  .main-controls.minimized .controls-header {
+    background: transparent !important;
+    backdrop-filter: none !important;
+  }
+
+  .main-controls.minimized .controls-collapsed-label {
+    color: #fff !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding-inline: 4px !important;
+    text-shadow: none !important;
+  }
+
+  .main-controls.minimized .controls-collapsed-label::before {
+    background: var(--atlas-gold) !important;
+    box-shadow: 0 0 0 4px rgba(208, 164, 73, 0.16) !important;
+  }
+
+  .main-controls.minimized #controls-minimize-btn {
+    color: var(--atlas-navy-strong) !important;
+    background: var(--atlas-gold-soft) !important;
+    border-color: rgba(208, 164, 73, 0.74) !important;
+    box-shadow: 0 4px 12px rgba(7, 18, 31, 0.22) !important;
+  }
+
+  .main-controls.minimized #controls-minimize-btn:hover {
+    background: #fff7e6 !important;
+  }
+
   .desktop-fly-submit,
   .fly-search-submit,
   .smart-insights-inline-close {
