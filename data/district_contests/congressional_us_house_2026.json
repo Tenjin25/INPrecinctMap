@@ -8,8 +8,8 @@
     "allocation": "precinct_sum_by_district_number",
     "source": "Data/AllOfficeResults2026.json",
     "result_status": "unofficial_incomplete",
-    "as_of_date": "2026-11-04",
-    "note": "Election-night snapshot; outstanding mail and overseas ballots may not be included."
+    "as_of_date": "2026-11-05",
+    "note": "Post-election unofficial snapshot; outstanding mail and overseas ballots may not be included."
   },
   "general": {
     "results": {
@@ -52,12 +52,12 @@
       "4": {
         "dem_votes": 97142,
         "rep_votes": 115013,
-        "other_votes": 43,
-        "total_votes": 212198,
+        "other_votes": 59,
+        "total_votes": 212214,
         "dem_candidate": "Drew Cox",
         "rep_candidate": "Jim Baird",
         "margin": 17871,
-        "margin_pct": 8.4219,
+        "margin_pct": 8.4212,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -74,38 +74,38 @@
         "color": "#2563eb"
       },
       "6": {
-        "dem_votes": 68486,
-        "rep_votes": 93185,
+        "dem_votes": 90542,
+        "rep_votes": 111104,
         "other_votes": 0,
-        "total_votes": 161671,
+        "total_votes": 201646,
         "dem_candidate": "Cynthia (Cinde) Wirth",
         "rep_candidate": "Jefferson Shreve",
-        "margin": 24699,
-        "margin_pct": 15.2773,
+        "margin": 20562,
+        "margin_pct": 10.1971,
         "winner": "REP",
         "color": "#dc2626"
       },
       "7": {
-        "dem_votes": 31792,
-        "rep_votes": 12259,
-        "other_votes": 1458,
-        "total_votes": 45509,
+        "dem_votes": 159211,
+        "rep_votes": 42208,
+        "other_votes": 5452,
+        "total_votes": 206871,
         "dem_candidate": "André Carson",
         "rep_candidate": "Patrick Mcauley",
-        "margin": -19533,
-        "margin_pct": -42.9212,
+        "margin": -117003,
+        "margin_pct": -56.5584,
         "winner": "DEM",
         "color": "#2563eb"
       },
       "8": {
-        "dem_votes": 80049,
-        "rep_votes": 104751,
+        "dem_votes": 94865,
+        "rep_votes": 117391,
         "other_votes": 0,
-        "total_votes": 184800,
+        "total_votes": 212256,
         "dem_candidate": "Mary Allen",
         "rep_candidate": "Mark Messmer",
-        "margin": 24702,
-        "margin_pct": 13.3669,
+        "margin": 22526,
+        "margin_pct": 10.6127,
         "winner": "REP",
         "color": "#dc2626"
       },

@@ -8,8 +8,8 @@
     "allocation": "precinct_sum_by_district_number",
     "source": "Data/AllOfficeResults2026.json",
     "result_status": "unofficial_incomplete",
-    "as_of_date": "2026-11-04",
-    "note": "Election-night snapshot; outstanding mail and overseas ballots may not be included."
+    "as_of_date": "2026-11-05",
+    "note": "Post-election unofficial snapshot; outstanding mail and overseas ballots may not be included."
   },
   "general": {
     "results": {
@@ -182,38 +182,38 @@
         "color": "#dc2626"
       },
       "29": {
-        "dem_votes": 20290,
-        "rep_votes": 15559,
+        "dem_votes": 30210,
+        "rep_votes": 18677,
         "other_votes": 0,
-        "total_votes": 35849,
+        "total_votes": 48887,
         "dem_candidate": "Kristina Moorhead",
         "rep_candidate": "John Ruckelshaus",
-        "margin": -4731,
-        "margin_pct": -13.197,
+        "margin": -11533,
+        "margin_pct": -23.5911,
         "winner": "DEM",
         "color": "#2563eb"
       },
       "31": {
-        "dem_votes": 25650,
-        "rep_votes": 19732,
+        "dem_votes": 32017,
+        "rep_votes": 23344,
         "other_votes": 0,
-        "total_votes": 45382,
+        "total_votes": 55361,
         "dem_candidate": "Kerry J Forestal",
         "rep_candidate": "Juanita Albright",
-        "margin": -5918,
-        "margin_pct": -13.0404,
+        "margin": -8673,
+        "margin_pct": -15.6663,
         "winner": "DEM",
         "color": "#2563eb"
       },
       "38": {
-        "dem_votes": 2273,
-        "rep_votes": 6273,
+        "dem_votes": 14440,
+        "rep_votes": 21570,
         "other_votes": 0,
-        "total_votes": 8546,
+        "total_votes": 36010,
         "dem_candidate": "Kacey Blundell",
         "rep_candidate": "Greg Goode",
-        "margin": 4000,
-        "margin_pct": 46.8055,
+        "margin": 7130,
+        "margin_pct": 19.8001,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -266,13 +266,13 @@
         "color": "#dc2626"
       },
       "46": {
-        "dem_votes": 6454,
+        "dem_votes": 27674,
         "rep_votes": 0,
         "other_votes": 0,
-        "total_votes": 6454,
+        "total_votes": 27674,
         "dem_candidate": "Allissa Impink",
         "rep_candidate": "",
-        "margin": -6454,
+        "margin": -27674,
         "margin_pct": -100.0,
         "winner": "DEM",
         "color": "#2563eb"

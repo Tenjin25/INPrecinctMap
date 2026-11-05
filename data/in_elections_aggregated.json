@@ -62821,14 +62821,14 @@
               }
             },
             "Marion": {
-              "dem_votes": 37776,
-              "rep_votes": 18463,
-              "other_votes": 1854,
-              "total_votes": 58093,
+              "dem_votes": 186828,
+              "rep_votes": 65944,
+              "other_votes": 6131,
+              "total_votes": 258903,
               "dem_candidate": "Jessica Bailey",
               "rep_candidate": "Elise Nieshalla",
-              "margin": -19313,
-              "margin_pct": -33.245,
+              "margin": -120884,
+              "margin_pct": -46.6908,
               "winner": "DEM",
               "competitiveness": {
                 "color": "#2563eb"
@@ -63311,14 +63311,14 @@
               }
             },
             "Vigo": {
-              "dem_votes": 13948,
-              "rep_votes": 12041,
-              "other_votes": 1050,
-              "total_votes": 27039,
+              "dem_votes": 14107,
+              "rep_votes": 12040,
+              "other_votes": 891,
+              "total_votes": 27038,
               "dem_candidate": "Jessica Bailey",
               "rep_candidate": "Elise Nieshalla",
-              "margin": -1907,
-              "margin_pct": -7.0528,
+              "margin": -2067,
+              "margin_pct": -7.6448,
               "winner": "DEM",
               "competitiveness": {
                 "color": "#2563eb"
@@ -63473,12 +63473,12 @@
             "Bartholomew": {
               "dem_votes": 11136,
               "rep_votes": 10698,
-              "other_votes": 1403,
-              "total_votes": 23237,
+              "other_votes": 1404,
+              "total_votes": 23238,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
               "margin": -438,
-              "margin_pct": -1.8849,
+              "margin_pct": -1.8848,
               "winner": "DEM",
               "competitiveness": {
                 "color": "#2563eb"
@@ -64073,14 +64073,14 @@
               }
             },
             "Laporte": {
-              "dem_votes": 10117,
-              "rep_votes": 7836,
-              "other_votes": 781,
-              "total_votes": 18734,
+              "dem_votes": 13201,
+              "rep_votes": 8955,
+              "other_votes": 911,
+              "total_votes": 23067,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
-              "margin": -2281,
-              "margin_pct": -12.1757,
+              "margin": -4246,
+              "margin_pct": -18.4072,
               "winner": "DEM",
               "competitiveness": {
                 "color": "#2563eb"
@@ -64115,14 +64115,14 @@
               }
             },
             "Marion": {
-              "dem_votes": 37891,
-              "rep_votes": 15286,
-              "other_votes": 5108,
-              "total_votes": 58285,
+              "dem_votes": 185334,
+              "rep_votes": 54565,
+              "other_votes": 19615,
+              "total_votes": 259514,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
-              "margin": -22605,
-              "margin_pct": -38.7836,
+              "margin": -130769,
+              "margin_pct": -50.39,
               "winner": "DEM",
               "competitiveness": {
                 "color": "#2563eb"
@@ -64285,12 +64285,12 @@
             "Parke": {
               "dem_votes": 1439,
               "rep_votes": 2651,
-              "other_votes": 283,
-              "total_votes": 4373,
+              "other_votes": 284,
+              "total_votes": 4374,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
               "margin": 1212,
-              "margin_pct": 27.7155,
+              "margin_pct": 27.7092,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -64467,12 +64467,12 @@
             "St. Joseph": {
               "dem_votes": 46692,
               "rep_votes": 27269,
-              "other_votes": 2869,
-              "total_votes": 76830,
+              "other_votes": 2876,
+              "total_votes": 76837,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
               "margin": -19423,
-              "margin_pct": -25.2805,
+              "margin_pct": -25.2782,
               "winner": "DEM",
               "competitiveness": {
                 "color": "#2563eb"
@@ -64676,13 +64676,13 @@
             },
             "Wayne": {
               "dem_votes": 7380,
-              "rep_votes": 8103,
+              "rep_votes": 8113,
               "other_votes": 776,
-              "total_votes": 16259,
+              "total_votes": 16269,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
-              "margin": 723,
-              "margin_pct": 4.4468,
+              "margin": 733,
+              "margin_pct": 4.5055,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -65395,14 +65395,14 @@
               }
             },
             "Marion": {
-              "dem_votes": 38006,
-              "rep_votes": 20101,
+              "dem_votes": 187496,
+              "rep_votes": 71449,
               "other_votes": 0,
-              "total_votes": 58107,
+              "total_votes": 258945,
               "dem_candidate": "Coumba Kebe",
               "rep_candidate": "Daniel Elliott",
-              "margin": -17905,
-              "margin_pct": -30.8138,
+              "margin": -116047,
+              "margin_pct": -44.8153,
               "winner": "DEM",
               "competitiveness": {
                 "color": "#2563eb"
@@ -65879,6 +65879,20 @@
               "rep_candidate": "Daniel Elliott",
               "margin": 1169,
               "margin_pct": 27.0289,
+              "winner": "REP",
+              "competitiveness": {
+                "color": "#dc2626"
+              }
+            },
+            "Vigo": {
+              "dem_votes": 13090,
+              "rep_votes": 13927,
+              "other_votes": 0,
+              "total_votes": 27017,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": 837,
+              "margin_pct": 3.098,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
