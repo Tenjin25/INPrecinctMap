@@ -8,7 +8,7 @@
     "allocation": "precinct_sum_by_district_number",
     "source": "Data/AllOfficeResults2026.json",
     "result_status": "unofficial_incomplete",
-    "as_of_date": "2026-11-05",
+    "as_of_date": "2026-11-06",
     "note": "Post-election unofficial snapshot; outstanding mail and overseas ballots may not be included."
   },
   "general": {
@@ -86,14 +86,14 @@
         "color": "#2563eb"
       },
       "7": {
-        "dem_votes": 9971,
-        "rep_votes": 10133,
+        "dem_votes": 10213,
+        "rep_votes": 10460,
         "other_votes": 0,
-        "total_votes": 20104,
+        "total_votes": 20673,
         "dem_candidate": "Oliver Davis",
         "rep_candidate": "Jake Teshka",
-        "margin": 162,
-        "margin_pct": 0.8058,
+        "margin": 247,
+        "margin_pct": 1.1948,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -158,14 +158,14 @@
         "color": "#2563eb"
       },
       "13": {
-        "dem_votes": 7572,
-        "rep_votes": 12749,
+        "dem_votes": 7573,
+        "rep_votes": 12753,
         "other_votes": 469,
-        "total_votes": 20790,
+        "total_votes": 20795,
         "dem_candidate": "Brenna Geswein",
         "rep_candidate": "Matt Commons",
-        "margin": 5177,
-        "margin_pct": 24.9014,
+        "margin": 5180,
+        "margin_pct": 24.9098,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -914,14 +914,14 @@
         "color": "#dc2626"
       },
       "76": {
-        "dem_votes": 8659,
-        "rep_votes": 11114,
+        "dem_votes": 8765,
+        "rep_votes": 11282,
         "other_votes": 0,
-        "total_votes": 19773,
+        "total_votes": 20047,
         "dem_candidate": "Logan A. Patberg",
         "rep_candidate": "Wendy (Mac) Mcnamara",
-        "margin": 2455,
-        "margin_pct": 12.4159,
+        "margin": 2517,
+        "margin_pct": 12.5555,
         "winner": "REP",
         "color": "#dc2626"
       },

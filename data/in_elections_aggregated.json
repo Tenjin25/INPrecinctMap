@@ -62205,14 +62205,14 @@
               }
             },
             "Benton": {
-              "dem_votes": 753,
-              "rep_votes": 1472,
+              "dem_votes": 754,
+              "rep_votes": 1475,
               "other_votes": 68,
-              "total_votes": 2293,
+              "total_votes": 2297,
               "dem_candidate": "Jessica Bailey",
               "rep_candidate": "Elise Nieshalla",
-              "margin": 719,
-              "margin_pct": 31.3563,
+              "margin": 721,
+              "margin_pct": 31.3888,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -62792,6 +62792,20 @@
                 "color": "#2563eb"
               }
             },
+            "Laporte": {
+              "dem_votes": 16410,
+              "rep_votes": 13641,
+              "other_votes": 1012,
+              "total_votes": 31063,
+              "dem_candidate": "Jessica Bailey",
+              "rep_candidate": "Elise Nieshalla",
+              "margin": -2769,
+              "margin_pct": -8.9141,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
             "Lawrence": {
               "dem_votes": 3936,
               "rep_votes": 8016,
@@ -62977,12 +62991,12 @@
             "Owen": {
               "dem_votes": 1964,
               "rep_votes": 3706,
-              "other_votes": 207,
-              "total_votes": 5877,
+              "other_votes": 217,
+              "total_votes": 5887,
               "dem_candidate": "Jessica Bailey",
               "rep_candidate": "Elise Nieshalla",
               "margin": 1742,
-              "margin_pct": 29.641,
+              "margin_pct": 29.5906,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -63045,14 +63059,14 @@
               }
             },
             "Posey": {
-              "dem_votes": 2881,
-              "rep_votes": 4613,
-              "other_votes": 226,
-              "total_votes": 7720,
+              "dem_votes": 2986,
+              "rep_votes": 4769,
+              "other_votes": 237,
+              "total_votes": 7992,
               "dem_candidate": "Jessica Bailey",
               "rep_candidate": "Elise Nieshalla",
-              "margin": 1732,
-              "margin_pct": 22.4352,
+              "margin": 1783,
+              "margin_pct": 22.3098,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -63340,13 +63354,13 @@
             },
             "Warren": {
               "dem_votes": 729,
-              "rep_votes": 1964,
+              "rep_votes": 1965,
               "other_votes": 85,
-              "total_votes": 2778,
+              "total_votes": 2779,
               "dem_candidate": "Jessica Bailey",
               "rep_candidate": "Elise Nieshalla",
-              "margin": 1235,
-              "margin_pct": 44.4564,
+              "margin": 1236,
+              "margin_pct": 44.4764,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -63459,12 +63473,12 @@
             "Allen": {
               "dem_votes": 57502,
               "rep_votes": 42948,
-              "other_votes": 2988,
-              "total_votes": 103438,
+              "other_votes": 2994,
+              "total_votes": 103444,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
               "margin": -14554,
-              "margin_pct": -14.0703,
+              "margin_pct": -14.0694,
               "winner": "DEM",
               "competitiveness": {
                 "color": "#2563eb"
@@ -63485,14 +63499,14 @@
               }
             },
             "Benton": {
-              "dem_votes": 888,
-              "rep_votes": 1285,
+              "dem_votes": 889,
+              "rep_votes": 1288,
               "other_votes": 138,
-              "total_votes": 2311,
+              "total_votes": 2315,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
-              "margin": 397,
-              "margin_pct": 17.1787,
+              "margin": 399,
+              "margin_pct": 17.2354,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -63809,12 +63823,12 @@
             "Grant": {
               "dem_votes": 6400,
               "rep_votes": 9217,
-              "other_votes": 1014,
-              "total_votes": 16631,
+              "other_votes": 1015,
+              "total_votes": 16632,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
               "margin": 2817,
-              "margin_pct": 16.9382,
+              "margin_pct": 16.9372,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -63851,12 +63865,12 @@
             "Hancock": {
               "dem_votes": 12615,
               "rep_votes": 13436,
-              "other_votes": 2277,
-              "total_votes": 28328,
+              "other_votes": 2279,
+              "total_votes": 28330,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
               "margin": 821,
-              "margin_pct": 2.8982,
+              "margin_pct": 2.898,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -64073,14 +64087,14 @@
               }
             },
             "Laporte": {
-              "dem_votes": 13201,
-              "rep_votes": 8955,
-              "other_votes": 911,
-              "total_votes": 23067,
+              "dem_votes": 16970,
+              "rep_votes": 12986,
+              "other_votes": 1244,
+              "total_votes": 31200,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
-              "margin": -4246,
-              "margin_pct": -18.4072,
+              "margin": -3984,
+              "margin_pct": -12.7692,
               "winner": "DEM",
               "competitiveness": {
                 "color": "#2563eb"
@@ -64131,12 +64145,12 @@
             "Marshall": {
               "dem_votes": 4559,
               "rep_votes": 6355,
-              "other_votes": 562,
-              "total_votes": 11476,
+              "other_votes": 563,
+              "total_votes": 11477,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
               "margin": 1796,
-              "margin_pct": 15.6501,
+              "margin_pct": 15.6487,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -64339,14 +64353,14 @@
               }
             },
             "Posey": {
-              "dem_votes": 3126,
-              "rep_votes": 4263,
-              "other_votes": 379,
-              "total_votes": 7768,
+              "dem_votes": 3237,
+              "rep_votes": 4410,
+              "other_votes": 394,
+              "total_votes": 8041,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
-              "margin": 1137,
-              "margin_pct": 14.637,
+              "margin": 1173,
+              "margin_pct": 14.5877,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -64634,13 +64648,13 @@
             },
             "Warren": {
               "dem_votes": 873,
-              "rep_votes": 1794,
+              "rep_votes": 1795,
               "other_votes": 135,
-              "total_votes": 2802,
+              "total_votes": 2803,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
-              "margin": 921,
-              "margin_pct": 32.8694,
+              "margin": 922,
+              "margin_pct": 32.8933,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -64675,14 +64689,14 @@
               }
             },
             "Wayne": {
-              "dem_votes": 7380,
+              "dem_votes": 7401,
               "rep_votes": 8113,
-              "other_votes": 776,
-              "total_votes": 16269,
+              "other_votes": 777,
+              "total_votes": 16291,
               "dem_candidate": "Beau Bayh",
               "rep_candidate": "Max Engling",
-              "margin": 733,
-              "margin_pct": 4.5055,
+              "margin": 712,
+              "margin_pct": 4.3705,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -64779,14 +64793,14 @@
               }
             },
             "Benton": {
-              "dem_votes": 706,
-              "rep_votes": 1577,
+              "dem_votes": 707,
+              "rep_votes": 1580,
               "other_votes": 0,
-              "total_votes": 2283,
+              "total_votes": 2287,
               "dem_candidate": "Coumba Kebe",
               "rep_candidate": "Daniel Elliott",
-              "margin": 871,
-              "margin_pct": 38.1516,
+              "margin": 873,
+              "margin_pct": 38.1723,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -65088,13 +65102,13 @@
             },
             "Gibson": {
               "dem_votes": 2852,
-              "rep_votes": 5895,
+              "rep_votes": 6110,
               "other_votes": 0,
-              "total_votes": 8747,
+              "total_votes": 8962,
               "dem_candidate": "Coumba Kebe",
               "rep_candidate": "Daniel Elliott",
-              "margin": 3043,
-              "margin_pct": 34.7891,
+              "margin": 3258,
+              "margin_pct": 36.3535,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -65366,6 +65380,20 @@
                 "color": "#2563eb"
               }
             },
+            "Laporte": {
+              "dem_votes": 15904,
+              "rep_votes": 15038,
+              "other_votes": 0,
+              "total_votes": 30942,
+              "dem_candidate": "Coumba Kebe",
+              "rep_candidate": "Daniel Elliott",
+              "margin": -866,
+              "margin_pct": -2.7988,
+              "winner": "DEM",
+              "competitiveness": {
+                "color": "#2563eb"
+              }
+            },
             "Lawrence": {
               "dem_votes": 3804,
               "rep_votes": 8525,
@@ -65619,14 +65647,14 @@
               }
             },
             "Posey": {
-              "dem_votes": 2716,
-              "rep_votes": 5013,
+              "dem_votes": 2813,
+              "rep_votes": 5186,
               "other_votes": 0,
-              "total_votes": 7729,
+              "total_votes": 7999,
               "dem_candidate": "Coumba Kebe",
               "rep_candidate": "Daniel Elliott",
-              "margin": 2297,
-              "margin_pct": 29.7192,
+              "margin": 2373,
+              "margin_pct": 29.6662,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"
@@ -65914,13 +65942,13 @@
             },
             "Warren": {
               "dem_votes": 708,
-              "rep_votes": 2070,
+              "rep_votes": 2071,
               "other_votes": 0,
-              "total_votes": 2778,
+              "total_votes": 2779,
               "dem_candidate": "Coumba Kebe",
               "rep_candidate": "Daniel Elliott",
-              "margin": 1362,
-              "margin_pct": 49.0281,
+              "margin": 1363,
+              "margin_pct": 49.0464,
               "winner": "REP",
               "competitiveness": {
                 "color": "#dc2626"

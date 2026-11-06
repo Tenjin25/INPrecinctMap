@@ -8,7 +8,7 @@
     "allocation": "precinct_sum_by_district_number",
     "source": "Data/AllOfficeResults2026.json",
     "result_status": "unofficial_incomplete",
-    "as_of_date": "2026-11-05",
+    "as_of_date": "2026-11-06",
     "note": "Post-election unofficial snapshot; outstanding mail and overseas ballots may not be included."
   },
   "general": {
@@ -38,14 +38,14 @@
         "color": "#2563eb"
       },
       "6": {
-        "dem_votes": 19547,
-        "rep_votes": 25497,
+        "dem_votes": 19548,
+        "rep_votes": 25500,
         "other_votes": 0,
-        "total_votes": 45044,
+        "total_votes": 45048,
         "dem_candidate": "Kate-Lynn Holley",
         "rep_candidate": "James (Jay) Starkey",
-        "margin": 5950,
-        "margin_pct": 13.2093,
+        "margin": 5952,
+        "margin_pct": 13.2126,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -135,13 +135,13 @@
       },
       "23": {
         "dem_votes": 12796,
-        "rep_votes": 17507,
+        "rep_votes": 17508,
         "other_votes": 1689,
-        "total_votes": 31992,
+        "total_votes": 31993,
         "dem_candidate": "David A Sanders",
         "rep_candidate": "Spencer R. Deery",
-        "margin": 4711,
-        "margin_pct": 14.7256,
+        "margin": 4712,
+        "margin_pct": 14.7282,
         "winner": "REP",
         "color": "#dc2626"
       },
@@ -302,14 +302,14 @@
         "color": "#dc2626"
       },
       "49": {
-        "dem_votes": 17162,
-        "rep_votes": 18244,
+        "dem_votes": 17265,
+        "rep_votes": 18415,
         "other_votes": 0,
-        "total_votes": 35406,
+        "total_votes": 35680,
         "dem_candidate": "Cindi Clayton",
         "rep_candidate": "Jim Tomes",
-        "margin": 1082,
-        "margin_pct": 3.056,
+        "margin": 1150,
+        "margin_pct": 3.2231,
         "winner": "REP",
         "color": "#dc2626"
       }

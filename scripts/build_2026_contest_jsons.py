@@ -24,7 +24,7 @@ CONTESTS = DATA / "contests"
 DISTRICT_CONTESTS = DATA / "district_contests"
 YEAR = 2026
 RESULT_STATUS = "unofficial_incomplete"
-AS_OF_DATE = "2026-11-05"
+AS_OF_DATE = "2026-11-06"
 NOTE = "Post-election unofficial snapshot; outstanding mail and overseas ballots may not be included."
 SOURCE = "Data/AllOfficeResults2026.json"
 
