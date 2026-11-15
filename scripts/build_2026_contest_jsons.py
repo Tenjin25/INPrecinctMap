@@ -44,6 +44,11 @@ CROSSWALKS = {
         DATA / "crosswalks" / "county_to_2022_state_senate.csv",
     ),
 }
+OFFICIAL_2026_DISTRICTS = DATA / "crosswalks" / "precinct_to_2026_election_districts.csv"
+OFFICIAL_2026_DISTRICT_SOURCE = (
+    "https://gisdata.in.gov/server/rest/services/Hosted/"
+    "Voting_District_Boundaries_2026/FeatureServer/0"
+)
 
 ORDINALS = {
     "FIRST": "1", "SECOND": "2", "THIRD": "3", "FOURTH": "4", "FIFTH": "5",
@@ -55,6 +60,14 @@ ORDINALS = {
     "TWENTY FIFTH": "25", "TWENTY SIXTH": "26", "TWENTY SEVENTH": "27",
     "TWENTY EIGHTH": "28", "TWENTY NINTH": "29", "THIRTIETH": "30",
     "THIRTY FIRST": "31",
+}
+
+CARDINALS = {
+    "ONE": "1", "TWO": "2", "THREE": "3", "FOUR": "4", "FIVE": "5",
+    "SIX": "6", "SEVEN": "7", "EIGHT": "8", "NINE": "9", "TEN": "10",
+    "ELEVEN": "11", "TWELVE": "12", "THIRTEEN": "13", "FOURTEEN": "14",
+    "FIFTEEN": "15", "SIXTEEN": "16", "SEVENTEEN": "17", "EIGHTEEN": "18",
+    "NINETEEN": "19", "TWENTY": "20",
 }
 
 
@@ -74,9 +87,34 @@ def canonical_precinct(value: str) -> str:
     text = normalize_token(value)
     for phrase in sorted(ORDINALS, key=len, reverse=True):
         text = re.sub(rf"\b{re.escape(phrase)}\b", ORDINALS[phrase], text)
+    for word, number in CARDINALS.items():
+        text = re.sub(rf"\b{word}\b", number, text)
+    for direction, abbreviation in {
+        "NORTHWEST": "NW", "NORTHEAST": "NE", "SOUTHWEST": "SW", "SOUTHEAST": "SE",
+    }.items():
+        text = re.sub(rf"\b{direction}\b", abbreviation, text)
     text = re.sub(r"^\d+\s+", "", text)
     tokens = [t for t in text.split() if t not in {"PRECINCT", "PCT", "TOWNSHIP", "TWP"}]
-    return "".join(str(int(t)) if t.isdigit() else t for t in tokens)
+    normalized = []
+    for token in tokens:
+        if token.isdigit():
+            normalized.append(str(int(token)))
+            continue
+        mixed = re.fullmatch(r"([A-Z]*)(\d+)([A-Z]*)", token)
+        if mixed:
+            prefix, digits, suffix = mixed.groups()
+            normalized.append(f"{prefix}{int(digits)}{suffix}")
+        else:
+            normalized.append(token)
+    return "".join(normalized)
+
+
+def exact_precinct_key(county: str, precinct: str) -> str:
+    return f"{normalize_token(county)}|{normalize_token(precinct)}"
+
+
+def canonical_precinct_key(county: str, precinct: str) -> str:
+    return f"{normalize_token(county)}|{canonical_precinct(precinct)}"
 
 
 def party_bucket(value: str) -> str:
@@ -171,6 +209,46 @@ def load_crosswalk(path: Path, key_column: str) -> dict[str, list[tuple[int, flo
     return output
 
 
+def load_official_2026_districts(
+    path: Path,
+) -> tuple[dict[str, dict[str, int]], dict[str, dict[str, int]], dict[tuple[str, int, int], int]]:
+    exact: dict[str, dict[str, int]] = {}
+    aliases: dict[str, list[dict[str, int]]] = defaultdict(list)
+    senate_signatures: dict[tuple[str, int, int], set[int]] = defaultdict(set)
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        for row in csv.DictReader(handle):
+            districts = {
+                scope: int(row[scope])
+                for scope in ("congressional", "state_house", "state_senate")
+                if row.get(scope)
+            }
+            exact_key = exact_precinct_key(row["county"], row["precinct"])
+            if exact_key in exact and exact[exact_key] != districts:
+                raise ValueError(f"Conflicting official districts for {exact_key}")
+            exact[exact_key] = districts
+            alias_key = canonical_precinct_key(row["county"], row["precinct"])
+            aliases[alias_key].append(districts)
+            alias_name = alias_key.split("|", 1)[1]
+            if not re.search(r"\d", alias_name):
+                aliases[f"{alias_key}1"].append(districts)
+            if all(scope in districts for scope in ("congressional", "state_house", "state_senate")):
+                senate_signatures[(
+                    normalize_token(row["county"]),
+                    districts["congressional"],
+                    districts["state_house"],
+                )].add(districts["state_senate"])
+
+    safe_aliases: dict[str, dict[str, int]] = {}
+    for key, candidates in aliases.items():
+        signatures = {tuple(sorted(candidate.items())) for candidate in candidates}
+        if len(signatures) == 1:
+            safe_aliases[key] = candidates[0]
+    safe_senate_signatures = {
+        key: next(iter(values)) for key, values in senate_signatures.items() if len(values) == 1
+    }
+    return exact, safe_aliases, safe_senate_signatures
+
+
 def apportion(values: dict[int, float], target: int) -> dict[int, int]:
     floors = {district: int(math.floor(max(0.0, value))) for district, value in values.items()}
     remainder = target - sum(floors.values())
@@ -202,18 +280,25 @@ def build(input_csv: Path) -> None:
     statewide_candidates: dict[tuple[str, str], dict[str, int]] = defaultdict(lambda: defaultdict(int))
     district_votes: dict[tuple[str, str, int], dict[str, int]] = defaultdict(lambda: {"dem": 0, "rep": 0, "other": 0})
     district_candidates: dict[tuple[str, str, int, str], dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    observed_precinct_districts: dict[tuple[str, str], set[int]] = defaultdict(set)
 
     with input_csv.open("r", encoding="utf-8-sig", newline="") as handle:
         for row in csv.DictReader(handle):
             votes = int(row.get("votes") or 0)
-            if votes <= 0:
-                continue
             county = normalize_space(row.get("county") or "")
             precinct = normalize_space(row.get("precinct") or "")
             candidate = normalize_space(row.get("candidate") or "")
             party = party_bucket(row.get("party") or "")
             office = row.get("office") or ""
             district = row.get("district") or ""
+
+            mapped = district_contest(office, district)
+            if mapped and county and precinct:
+                scope, _contest_type, district_num = mapped
+                observed_precinct_districts[(scope, exact_precinct_key(county, precinct))].add(district_num)
+
+            if votes <= 0:
+                continue
 
             contest = statewide_contest(office, district)
             if contest in STATEWIDE_CONTESTS:
@@ -222,7 +307,6 @@ def build(input_csv: Path) -> None:
                 if candidate:
                     statewide_candidates[(contest, party)][candidate] += votes
 
-            mapped = district_contest(office, district)
             if mapped:
                 scope, contest_type, district_num = mapped
                 district_votes[(scope, contest_type, district_num)][party] += votes
@@ -291,6 +375,7 @@ def build(input_csv: Path) -> None:
         scope: (load_crosswalk(paths[0], "precinct_key"), load_crosswalk(paths[1], "county"))
         for scope, paths in CROSSWALKS.items()
     }
+    official_exact, official_aliases, official_senate_signatures = load_official_2026_districts(OFFICIAL_2026_DISTRICTS)
 
     for contest in sorted(STATEWIDE_CONTESTS):
         dem_candidate = top_candidate(statewide_candidates[(contest, "dem")])
@@ -304,18 +389,73 @@ def build(input_csv: Path) -> None:
             floats: dict[int, dict[str, float]] = defaultdict(lambda: {"dem": 0.0, "rep": 0.0, "other": 0.0})
             matched = 0
             matched_votes = 0
+            geometry_matched = 0
+            geometry_matched_votes = 0
+            official_matched = 0
+            official_matched_votes = 0
+            result_matched = 0
+            result_matched_votes = 0
             precinct_count = 0
             for (kind, county, precinct), values in precinct_votes.items():
                 if kind != contest:
                     continue
                 precinct_count += 1
-                key = f"{normalize_token(county)}|{canonical_precinct(precinct)}"
-                weights = precinct_xwalk.get(key)
-                if weights:
+                exact_key = exact_precinct_key(county, precinct)
+                canonical_key = canonical_precinct_key(county, precinct)
+                observed = observed_precinct_districts.get((scope, exact_key), set())
+                if len(observed) == 1:
+                    weights = [(next(iter(observed)), 1.0)]
                     matched += 1
                     matched_votes += sum(values.values())
+                    result_matched += 1
+                    result_matched_votes += sum(values.values())
+                elif (official_district := official_exact.get(exact_key, {}).get(scope)):
+                    weights = [(official_district, 1.0)]
+                    matched += 1
+                    matched_votes += sum(values.values())
+                    official_matched += 1
+                    official_matched_votes += sum(values.values())
+                elif (official_district := official_aliases.get(canonical_key, {}).get(scope)):
+                    weights = [(official_district, 1.0)]
+                    matched += 1
+                    matched_votes += sum(values.values())
+                    official_matched += 1
+                    official_matched_votes += sum(values.values())
+                elif scope == "state_senate":
+                    observed_congressional = observed_precinct_districts.get(("congressional", exact_key), set())
+                    observed_house = observed_precinct_districts.get(("state_house", exact_key), set())
+                    signature = None
+                    if len(observed_congressional) == 1 and len(observed_house) == 1:
+                        signature = (
+                            normalize_token(county),
+                            next(iter(observed_congressional)),
+                            next(iter(observed_house)),
+                        )
+                    official_district = official_senate_signatures.get(signature) if signature else None
+                    if official_district:
+                        weights = [(official_district, 1.0)]
+                        matched += 1
+                        matched_votes += sum(values.values())
+                        official_matched += 1
+                        official_matched_votes += sum(values.values())
+                    else:
+                        weights = precinct_xwalk.get(canonical_key)
+                        if weights:
+                            matched += 1
+                            matched_votes += sum(values.values())
+                            geometry_matched += 1
+                            geometry_matched_votes += sum(values.values())
+                        else:
+                            weights = county_xwalk.get(normalize_token(county), [])
                 else:
-                    weights = county_xwalk.get(normalize_token(county), [])
+                    weights = precinct_xwalk.get(canonical_key)
+                    if weights:
+                        matched += 1
+                        matched_votes += sum(values.values())
+                        geometry_matched += 1
+                        geometry_matched_votes += sum(values.values())
+                    else:
+                        weights = county_xwalk.get(normalize_token(county), [])
                 for district_num, weight in weights:
                     for party in ("dem", "rep", "other"):
                         floats[district_num][party] += values[party] * weight
@@ -339,10 +479,17 @@ def build(input_csv: Path) -> None:
                 "year": YEAR,
                 "districts": len(results),
                 "match_coverage_pct": round(len(results) / EXPECTED_DISTRICTS[scope] * 100, 2),
-                "allocation": "precinct_area_weighted_with_county_area_fallback",
+                "allocation": "district_contest_precinct_then_official_2026_gis_with_area_fallback",
                 "precinct_rows": precinct_count,
-                "precinct_geom_match_pct": round(matched / precinct_count * 100, 2) if precinct_count else 0.0,
-                "precinct_geom_match_vote_pct": round(matched_votes / sum(totals.values()) * 100, 2) if sum(totals.values()) else 0.0,
+                "precinct_district_match_pct": round(matched / precinct_count * 100, 2) if precinct_count else 0.0,
+                "precinct_district_match_vote_pct": round(matched_votes / sum(totals.values()) * 100, 2) if sum(totals.values()) else 0.0,
+                "precinct_geom_match_pct": round(geometry_matched / precinct_count * 100, 2) if precinct_count else 0.0,
+                "precinct_geom_match_vote_pct": round(geometry_matched_votes / sum(totals.values()) * 100, 2) if sum(totals.values()) else 0.0,
+                "official_2026_precinct_rows": official_matched,
+                "official_2026_precinct_vote_pct": round(official_matched_votes / sum(totals.values()) * 100, 2) if sum(totals.values()) else 0.0,
+                "election_result_precinct_rows": result_matched,
+                "election_result_precinct_vote_pct": round(result_matched_votes / sum(totals.values()) * 100, 2) if sum(totals.values()) else 0.0,
+                "official_2026_district_source": OFFICIAL_2026_DISTRICT_SOURCE,
                 **status_meta(),
             }
             payload = {"meta": meta, "general": {"results": results}}
