@@ -381,9 +381,9 @@
       "contest_type": "secretary_of_state",
       "file": "secretary_of_state_2018.json",
       "rows": 92,
-      "dem_total": 926435,
-      "rep_total": 1242576,
-      "other_total": 115850,
+      "dem_total": 926445,
+      "rep_total": 1273021,
+      "other_total": 85617,
       "match_coverage_pct": 100.0,
       "major_party_contested": true
     },

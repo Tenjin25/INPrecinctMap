@@ -44370,16 +44370,16 @@
             },
             "Gibson": {
               "dem_votes": 3680,
-              "rep_votes": 0,
-              "other_votes": 8407,
-              "total_votes": 12087,
+              "rep_votes": 8252,
+              "other_votes": 367,
+              "total_votes": 12299,
               "dem_candidate": "Jim Harper",
               "rep_candidate": "Connie Lawson",
-              "margin": -3680,
-              "margin_pct": -30.4459,
-              "winner": "DEM",
+              "margin": 4572,
+              "margin_pct": 37.1738,
+              "winner": "REP",
               "competitiveness": {
-                "color": "#2563eb"
+                "color": "#dc2626"
               }
             },
             "Grant": {
@@ -44817,17 +44817,17 @@
               }
             },
             "Ohio": {
-              "dem_votes": 671,
-              "rep_votes": 0,
-              "other_votes": 1683,
-              "total_votes": 2354,
+              "dem_votes": 681,
+              "rep_votes": 1609,
+              "other_votes": 74,
+              "total_votes": 2364,
               "dem_candidate": "Jim Harper",
               "rep_candidate": "Connie Lawson",
-              "margin": -671,
-              "margin_pct": -28.5047,
-              "winner": "DEM",
+              "margin": 928,
+              "margin_pct": 39.2555,
+              "winner": "REP",
               "competitiveness": {
-                "color": "#2563eb"
+                "color": "#dc2626"
               }
             },
             "Orange": {
@@ -45252,30 +45252,30 @@
             },
             "Wayne": {
               "dem_votes": 6633,
-              "rep_votes": 0,
-              "other_votes": 13096,
+              "rep_votes": 12286,
+              "other_votes": 810,
               "total_votes": 19729,
               "dem_candidate": "Jim Harper",
               "rep_candidate": "Connie Lawson",
-              "margin": -6633,
-              "margin_pct": -33.6206,
-              "winner": "DEM",
+              "margin": 5653,
+              "margin_pct": 28.6533,
+              "winner": "REP",
               "competitiveness": {
-                "color": "#2563eb"
+                "color": "#dc2626"
               }
             },
             "Wells": {
               "dem_votes": 2178,
-              "rep_votes": 0,
-              "other_votes": 8563,
+              "rep_votes": 8298,
+              "other_votes": 265,
               "total_votes": 10741,
               "dem_candidate": "Jim Harper",
               "rep_candidate": "Connie Lawson",
-              "margin": -2178,
-              "margin_pct": -20.2774,
-              "winner": "DEM",
+              "margin": 6120,
+              "margin_pct": 56.9779,
+              "winner": "REP",
               "competitiveness": {
-                "color": "#2563eb"
+                "color": "#dc2626"
               }
             },
             "White": {

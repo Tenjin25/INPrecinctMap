@@ -66937,7 +66937,7 @@
             "contest_type": "secretary_of_state",
             "year": 2018,
             "districts": 9,
-            "match_coverage_pct": 100,
+            "match_coverage_pct": 100.0,
             "allocation": "county_constrained_whole_county_exact_split_precinct_weighted",
             "precinct_rows": 5151,
             "whole_county_threshold": 0.999,
@@ -66950,7 +66950,14 @@
             "split_precinct_matched_votes": 327376,
             "split_counties_without_precinct_votes": [],
             "split_counties_dra_weighted": [],
-            "split_precinct_geom_match_vote_pct": 63.94
+            "split_precinct_geom_match_vote_pct": 63.94,
+            "candidate_party_correction_counties": [
+              "Gibson",
+              "Ohio",
+              "Wayne",
+              "Wells"
+            ],
+            "candidate_party_correction_allocation": "county_area_weights_for_split_counties"
           },
           "general": {
             "results": {
@@ -66980,13 +66987,13 @@
               },
               "3": {
                 "dem_votes": 78288,
-                "rep_votes": 147480,
-                "other_votes": 15487,
+                "rep_votes": 155778,
+                "other_votes": 7189,
                 "total_votes": 241255,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 69192,
-                "margin_pct": 28.68,
+                "margin": 77490,
+                "margin_pct": 32.1195,
                 "winner": "REP",
                 "color": "#dc2626"
               },
@@ -67016,13 +67023,13 @@
               },
               "6": {
                 "dem_votes": 87494,
-                "rep_votes": 145225,
-                "other_votes": 21214,
+                "rep_votes": 157511,
+                "other_votes": 8928,
                 "total_votes": 253933,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 57731,
-                "margin_pct": 22.7347,
+                "margin": 70017,
+                "margin_pct": 27.573,
                 "winner": "REP",
                 "color": "#dc2626"
               },
@@ -67040,25 +67047,25 @@
               },
               "8": {
                 "dem_votes": 91321,
-                "rep_votes": 151457,
-                "other_votes": 16932,
-                "total_votes": 259710,
+                "rep_votes": 159709,
+                "other_votes": 8892,
+                "total_votes": 259922,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 60136,
-                "margin_pct": 23.1551,
+                "margin": 68388,
+                "margin_pct": 26.311,
                 "winner": "REP",
                 "color": "#dc2626"
               },
               "9": {
-                "dem_votes": 115840,
-                "rep_votes": 163310,
-                "other_votes": 23557,
-                "total_votes": 302707,
+                "dem_votes": 115850,
+                "rep_votes": 164919,
+                "other_votes": 21948,
+                "total_votes": 302717,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 47470,
-                "margin_pct": 15.6818,
+                "margin": 49069,
+                "margin_pct": 16.2095,
                 "winner": "REP",
                 "color": "#dc2626"
               }
@@ -68689,10 +68696,17 @@
             "contest_type": "secretary_of_state",
             "year": 2018,
             "districts": 100,
-            "match_coverage_pct": 100,
+            "match_coverage_pct": 100.0,
             "allocation": "precinct_area_weighted_from_vtd20_precincts",
             "precinct_rows": 5151,
-            "precinct_geom_match_pct": 73
+            "precinct_geom_match_pct": 73.0,
+            "candidate_party_correction_counties": [
+              "Gibson",
+              "Ohio",
+              "Wayne",
+              "Wells"
+            ],
+            "candidate_party_correction_allocation": "county_area_weights_for_split_counties"
           },
           "general": {
             "results": {
@@ -69286,13 +69300,13 @@
               },
               "50": {
                 "dem_votes": 5559,
-                "rep_votes": 17731,
-                "other_votes": 1128,
+                "rep_votes": 18536,
+                "other_votes": 323,
                 "total_votes": 24418,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 12172,
-                "margin_pct": 49.8485,
+                "margin": 12977,
+                "margin_pct": 53.1452,
                 "winner": "REP",
                 "color": "#dc2626"
               },
@@ -69358,15 +69372,15 @@
               },
               "56": {
                 "dem_votes": 6681,
-                "rep_votes": 160,
-                "other_votes": 13119,
+                "rep_votes": 12446,
+                "other_votes": 833,
                 "total_votes": 19960,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": -6521,
-                "margin_pct": -32.6703,
-                "winner": "DEM",
-                "color": "#2563eb"
+                "margin": 5765,
+                "margin_pct": 28.8828,
+                "winner": "REP",
+                "color": "#dc2626"
               },
               "57": {
                 "dem_votes": 6335,
@@ -69454,13 +69468,13 @@
               },
               "64": {
                 "dem_votes": 13634,
-                "rep_votes": 15767,
-                "other_votes": 7960,
-                "total_votes": 37361,
+                "rep_votes": 22690,
+                "other_votes": 1215,
+                "total_votes": 37539,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 2133,
-                "margin_pct": 5.7092,
+                "margin": 9056,
+                "margin_pct": 24.1242,
                 "winner": "REP",
                 "color": "#dc2626"
               },
@@ -69501,14 +69515,14 @@
                 "color": "#dc2626"
               },
               "68": {
-                "dem_votes": 5988,
-                "rep_votes": 15610,
-                "other_votes": 2441,
-                "total_votes": 24039,
+                "dem_votes": 5998,
+                "rep_votes": 17219,
+                "other_votes": 832,
+                "total_votes": 24049,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 9622,
-                "margin_pct": 40.0266,
+                "margin": 11221,
+                "margin_pct": 46.6589,
                 "winner": "REP",
                 "color": "#dc2626"
               },
@@ -69586,13 +69600,13 @@
               },
               "75": {
                 "dem_votes": 9265,
-                "rep_votes": 15134,
-                "other_votes": 2278,
-                "total_votes": 26677,
+                "rep_votes": 16463,
+                "other_votes": 983,
+                "total_votes": 26711,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 5869,
-                "margin_pct": 22.0002,
+                "margin": 7198,
+                "margin_pct": 26.9477,
                 "winner": "REP",
                 "color": "#dc2626"
               },
@@ -69634,13 +69648,13 @@
               },
               "79": {
                 "dem_votes": 4907,
-                "rep_votes": 8962,
-                "other_votes": 8636,
+                "rep_votes": 16455,
+                "other_votes": 1143,
                 "total_votes": 22505,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 4055,
-                "margin_pct": 18.0182,
+                "margin": 11548,
+                "margin_pct": 51.313,
                 "winner": "REP",
                 "color": "#dc2626"
               },
@@ -74158,10 +74172,17 @@
             "contest_type": "secretary_of_state",
             "year": 2018,
             "districts": 50,
-            "match_coverage_pct": 100,
+            "match_coverage_pct": 100.0,
             "allocation": "precinct_area_weighted_from_vtd20_precincts",
             "precinct_rows": 5151,
-            "precinct_geom_match_pct": 73
+            "precinct_geom_match_pct": 73.0,
+            "candidate_party_correction_counties": [
+              "Gibson",
+              "Ohio",
+              "Wayne",
+              "Wells"
+            ],
+            "candidate_party_correction_allocation": "county_area_weights_for_split_counties"
           },
           "general": {
             "results": {
@@ -74383,13 +74404,13 @@
               },
               "19": {
                 "dem_votes": 13485,
-                "rep_votes": 20990,
-                "other_votes": 9640,
+                "rep_votes": 29288,
+                "other_votes": 1342,
                 "total_votes": 44115,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 7505,
-                "margin_pct": 17.0124,
+                "margin": 15803,
+                "margin_pct": 35.8223,
                 "winner": "REP",
                 "color": "#dc2626"
               },
@@ -74479,13 +74500,13 @@
               },
               "27": {
                 "dem_votes": 12291,
-                "rep_votes": 14743,
-                "other_votes": 14058,
+                "rep_votes": 27029,
+                "other_votes": 1772,
                 "total_votes": 41092,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 2452,
-                "margin_pct": 5.9671,
+                "margin": 14738,
+                "margin_pct": 35.8659,
                 "winner": "REP",
                 "color": "#dc2626"
               },
@@ -74670,14 +74691,14 @@
                 "color": "#dc2626"
               },
               "43": {
-                "dem_votes": 13976,
-                "rep_votes": 29421,
-                "other_votes": 3238,
-                "total_votes": 46635,
+                "dem_votes": 13986,
+                "rep_votes": 31030,
+                "other_votes": 1629,
+                "total_votes": 46645,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 15445,
-                "margin_pct": 33.1189,
+                "margin": 17044,
+                "margin_pct": 36.5398,
                 "winner": "REP",
                 "color": "#dc2626"
               },
@@ -74731,13 +74752,13 @@
               },
               "48": {
                 "dem_votes": 17967,
-                "rep_votes": 25420,
-                "other_votes": 9851,
-                "total_votes": 53238,
+                "rep_votes": 33672,
+                "other_votes": 1811,
+                "total_votes": 53450,
                 "dem_candidate": "Jim Harper",
                 "rep_candidate": "Connie Lawson",
-                "margin": 7453,
-                "margin_pct": 13.9994,
+                "margin": 15705,
+                "margin_pct": 29.3826,
                 "winner": "REP",
                 "color": "#dc2626"
               },
