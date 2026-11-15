@@ -422,17 +422,6 @@
     },
     {
       "year": 2020,
-      "contest_type": "auditor",
-      "file": "auditor_2020.json",
-      "rows": 1,
-      "dem_total": 3453,
-      "rep_total": 3818,
-      "other_total": 0,
-      "match_coverage_pct": 1.09,
-      "major_party_contested": true
-    },
-    {
-      "year": 2020,
       "contest_type": "governor",
       "file": "governor_2020.json",
       "rows": 92,

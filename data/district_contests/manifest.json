@@ -559,20 +559,6 @@
     {
       "scope": "congressional",
       "year": 2020,
-      "contest_type": "auditor",
-      "file": "congressional_auditor_2020.json",
-      "districts": 1,
-      "dem_total": 3453,
-      "rep_total": 3818,
-      "other_total": 0,
-      "major_party_contested": true,
-      "match_coverage_pct": 1.09,
-      "imputed_count": 0,
-      "imputed_from_contest": ""
-    },
-    {
-      "scope": "congressional",
-      "year": 2020,
       "contest_type": "governor",
       "file": "congressional_governor_2020.json",
       "districts": 9,
@@ -1373,20 +1359,6 @@
       "match_coverage_pct": 100.0,
       "allocation": "tabblock_crosswalk",
       "rows": 100,
-      "imputed_count": 0,
-      "imputed_from_contest": ""
-    },
-    {
-      "scope": "state_house",
-      "year": 2020,
-      "contest_type": "auditor",
-      "file": "state_house_auditor_2020.json",
-      "districts": 1,
-      "dem_total": 3453,
-      "rep_total": 3818,
-      "other_total": 0,
-      "major_party_contested": true,
-      "match_coverage_pct": 1.09,
       "imputed_count": 0,
       "imputed_from_contest": ""
     },
@@ -2202,20 +2174,6 @@
       "match_coverage_pct": 100.0,
       "allocation": "tabblock_crosswalk",
       "rows": 50,
-      "imputed_count": 0,
-      "imputed_from_contest": ""
-    },
-    {
-      "scope": "state_senate",
-      "year": 2020,
-      "contest_type": "auditor",
-      "file": "state_senate_auditor_2020.json",
-      "districts": 1,
-      "dem_total": 3453,
-      "rep_total": 3818,
-      "other_total": 0,
-      "major_party_contested": true,
-      "match_coverage_pct": 1.09,
       "imputed_count": 0,
       "imputed_from_contest": ""
     },

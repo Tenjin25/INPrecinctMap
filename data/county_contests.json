@@ -3,8 +3,8 @@
     "state": "Indiana",
     "generated_at_utc": "2026-11-04T23:44:18.124879+00:00",
     "source_manifest": "Data/contests/manifest.json",
-    "contest_files": 52,
-    "county_rows": 4690
+    "contest_files": 51,
+    "county_rows": 4689
   },
   "manifest": [
     {
@@ -425,17 +425,6 @@
       "rep_total": 1721998,
       "other_total": 0,
       "match_coverage_pct": 100.0,
-      "major_party_contested": true
-    },
-    {
-      "year": 2020,
-      "contest_type": "auditor",
-      "file": "auditor_2020.json",
-      "rows": 1,
-      "dem_total": 3453,
-      "rep_total": 3818,
-      "other_total": 0,
-      "match_coverage_pct": 1.09,
       "major_party_contested": true
     },
     {
@@ -46597,33 +46586,6 @@
             "rep_candidate": "Todd Rokita",
             "margin": 8228,
             "margin_pct": 48.8947,
-            "winner": "REP",
-            "color": "#dc2626"
-          }
-        ]
-      },
-      "auditor": {
-        "meta": {
-          "contest_type": "auditor",
-          "year": 2020,
-          "rows": 1,
-          "dem_total": 3453,
-          "rep_total": 3818,
-          "other_total": 0,
-          "major_party_contested": true,
-          "match_coverage_pct": 1.09
-        },
-        "rows": [
-          {
-            "county": "Vermillion",
-            "dem_votes": 3453,
-            "rep_votes": 3818,
-            "other_votes": 0,
-            "total_votes": 7271,
-            "dem_candidate": "Amy L. Tolbert",
-            "rep_candidate": "Brenda Furry",
-            "margin": 365,
-            "margin_pct": 5.0199,
             "winner": "REP",
             "color": "#dc2626"
           }
