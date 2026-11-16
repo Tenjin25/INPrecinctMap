@@ -9410,6 +9410,31 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     box-shadow: none !important;
   }
 
+  .control-summary {
+    color: var(--atlas-ink) !important;
+    border: 1px solid var(--atlas-line) !important;
+  }
+
+  .control-summary-title {
+    color: var(--atlas-ink);
+  }
+
+  .control-summary-kicker {
+    background: var(--atlas-surface-cool);
+    border: 1px solid var(--atlas-line);
+  }
+
+  .control-summary-pill,
+  .control-summary-pill-muted {
+    color: var(--atlas-navy-strong);
+    background: var(--atlas-surface-cool);
+    border: 1px solid var(--atlas-line);
+  }
+
+  .control-summary-pill-muted {
+    color: var(--atlas-muted);
+  }
+
   .legend-header {
     background: rgba(255, 255, 255, 0.96) !important;
     border-color: var(--atlas-line) !important;
@@ -9427,6 +9452,7 @@ body.focus-active #hover-tooltip[data-context="preview"] {
   #main-controls select,
   .tool-chip-select {
     color: var(--atlas-ink) !important;
+    -webkit-text-fill-color: var(--atlas-ink) !important;
     background-color: #fff !important;
     border-color: rgba(31, 54, 82, 0.28) !important;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.9), 0 1px 2px rgba(15,32,54,0.04) !important;
@@ -10644,8 +10670,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-11-15-remove-2020-auditor-v1';
-    const APP_BUILD_ID = '2026-11-15-remove-2020-auditor-v1';
+    const DATA_CACHE_BUSTER = '2026-11-15-theme-legislative-lines-v2';
+    const APP_BUILD_ID = '2026-11-15-theme-legislative-lines-v2';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
