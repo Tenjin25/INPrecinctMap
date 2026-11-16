@@ -2163,6 +2163,11 @@ def build_outputs() -> None:
         selected_groups[key] = "generated" if len(gen_cov) > len(root_cov) else "root"
 
     for (year, scope, contest_type), source_choice in sorted(selected_groups.items()):
+        # The legislative geometry is the 2022 district plan. Earlier direct
+        # House/Senate races used different lines, so district numbers would
+        # label results from the wrong districts on this map.
+        if year < 2022 and scope in {"state_house", "state_senate"}:
+            continue
         by_district = grouped_generated.get((year, scope, contest_type), {}) if source_choice == "generated" else grouped_root.get((year, scope, contest_type), {})
         expected = scope_to_expected_districts.get(scope, set())
         expected_count = len(expected) or len(by_district)

@@ -5,8 +5,11 @@
     "year": 2022,
     "districts": 100,
     "match_coverage_pct": 100.0,
-    "allocation": "precinct_sum_by_district_number",
-    "source": "openelections_generated"
+    "allocation": "district-specific_precinct_and_locality_sum",
+    "source": "Data/AllOfficeResults.json",
+    "calibration": {
+      "enabled": false
+    }
   },
   "general": {
     "results": {
@@ -1107,7 +1110,7 @@
         "rep_votes": 6135,
         "other_votes": 0,
         "total_votes": 13959,
-        "dem_candidate": "Reneé Pack",
+        "dem_candidate": "Rene\u00e9 Pack",
         "rep_candidate": "John L Couch",
         "margin": -1689,
         "margin_pct": -12.0997,

@@ -1253,18 +1253,6 @@
     {
       "scope": "state_house",
       "year": 2016,
-      "contest_type": "state_house",
-      "file": "state_house_state_house_2016.json",
-      "districts": 100,
-      "dem_total": 1833332,
-      "rep_total": 2727989,
-      "other_total": 128752,
-      "major_party_contested": true,
-      "match_coverage_pct": 100.0
-    },
-    {
-      "scope": "state_house",
-      "year": 2016,
       "contest_type": "superintendent",
       "file": "state_house_superintendent_2016.json",
       "districts": 100,
@@ -1317,18 +1305,6 @@
       "match_coverage_pct": 100.0,
       "imputed_count": 0,
       "imputed_from_contest": ""
-    },
-    {
-      "scope": "state_house",
-      "year": 2018,
-      "contest_type": "state_house",
-      "file": "state_house_state_house_2018.json",
-      "districts": 99,
-      "dem_total": 1432892,
-      "rep_total": 1647894,
-      "other_total": 176726,
-      "major_party_contested": true,
-      "match_coverage_pct": 99.0
     },
     {
       "scope": "state_house",
@@ -1421,18 +1397,6 @@
       "rows": 100,
       "imputed_count": 0,
       "imputed_from_contest": ""
-    },
-    {
-      "scope": "state_house",
-      "year": 2020,
-      "contest_type": "state_house",
-      "file": "state_house_state_house_2020.json",
-      "districts": 100,
-      "dem_total": 1424534,
-      "rep_total": 2304571,
-      "other_total": 42067,
-      "major_party_contested": true,
-      "match_coverage_pct": 100.0
     },
     {
       "scope": "state_house",
@@ -2082,18 +2046,6 @@
     {
       "scope": "state_senate",
       "year": 2016,
-      "contest_type": "state_senate",
-      "file": "state_senate_state_senate_2016.json",
-      "districts": 26,
-      "dem_total": 925948,
-      "rep_total": 1332425,
-      "other_total": 117369,
-      "major_party_contested": true,
-      "match_coverage_pct": 52.0
-    },
-    {
-      "scope": "state_senate",
-      "year": 2016,
       "contest_type": "superintendent",
       "file": "state_senate_superintendent_2016.json",
       "districts": 50,
@@ -2146,18 +2098,6 @@
       "match_coverage_pct": 100.0,
       "imputed_count": 0,
       "imputed_from_contest": ""
-    },
-    {
-      "scope": "state_senate",
-      "year": 2018,
-      "contest_type": "state_senate",
-      "file": "state_senate_state_senate_2018.json",
-      "districts": 25,
-      "dem_total": 587761,
-      "rep_total": 1037436,
-      "other_total": 113597,
-      "major_party_contested": true,
-      "match_coverage_pct": 50.0
     },
     {
       "scope": "state_senate",
@@ -2250,18 +2190,6 @@
       "rows": 50,
       "imputed_count": 0,
       "imputed_from_contest": ""
-    },
-    {
-      "scope": "state_senate",
-      "year": 2020,
-      "contest_type": "state_senate",
-      "file": "state_senate_state_senate_2020.json",
-      "districts": 25,
-      "dem_total": 713559,
-      "rep_total": 1073199,
-      "other_total": 0,
-      "major_party_contested": true,
-      "match_coverage_pct": 50.0
     },
     {
       "scope": "state_senate",
