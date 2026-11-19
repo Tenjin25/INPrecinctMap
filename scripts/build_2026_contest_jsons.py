@@ -24,7 +24,7 @@ CONTESTS = DATA / "contests"
 DISTRICT_CONTESTS = DATA / "district_contests"
 YEAR = 2026
 RESULT_STATUS = "unofficial_incomplete"
-AS_OF_DATE = "2026-11-15"
+AS_OF_DATE = "2026-11-19"
 NOTE = "Post-election unofficial snapshot; outstanding mail and overseas ballots may not be included."
 SOURCE = "Data/AllOfficeResults2026.json"
 
@@ -363,6 +363,14 @@ def build(input_csv: Path) -> None:
     write_json(contest_manifest_path, {"files": contest_manifest})
     election_agg["results_by_year"][str(YEAR)] = election_year
     write_json(election_agg_path, election_agg)
+
+    county_bundle_path = DATA / "county_contests.json"
+    county_bundle = json.loads(county_bundle_path.read_text(encoding="utf-8"))
+    county_bundle["manifest"] = contest_manifest
+    county_bundle["county_results_by_year"][str(YEAR)] = county_payloads
+    county_bundle["meta"]["contest_files"] = len(contest_manifest)
+    county_bundle["meta"]["county_rows"] = sum(int(entry["rows"]) for entry in contest_manifest)
+    write_json(county_bundle_path, county_bundle)
 
     district_manifest_path = DISTRICT_CONTESTS / "manifest.json"
     district_manifest = json.loads(district_manifest_path.read_text(encoding="utf-8"))["files"]
